@@ -117,8 +117,12 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:2rem;text-a
     يا همة الشيخ احضري<br>لنا بهذا المحضر<br>ولتعطفي بنظرة<br>تأتي لنا بالظفر
   </div>
   <div class="divider">✦ ✦ ✦</div>
-  <div class="verse-section">
-    <div class="verse-section-title">سورة الفاتحة — قراءة ورش عن نافع</div>
+  <div class="verse-panel">
+    <button class="verse-panel-toggle" onclick="toggleVerses(this)" aria-expanded="false">
+      <span>سورة الفاتحة — قراءة ورش عن نافع</span>
+      <span class="vpanel-arrow">▾</span>
+    </button>
+  <div class="verse-section hidden-panel">
     <div class="verse-block">
   <div class="verse-header"><span class="verse-num">1</span>
   <button class="play-btn" onclick="playAyah(1,this)">▶ ورش</button></div>
@@ -161,6 +165,7 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:2rem;text-a
   <div class="verse-text" dir="rtl">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</div>
   <audio id="audio-7" src="https://cdn.islamic.network/quran/audio/128/ar.husary/7.mp3" preload="none"></audio>
 </div>
+  </div>
   </div>
   <div class="divider">✦ ✦ ✦</div>
   <div id="tafsir-main">
@@ -379,6 +384,15 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:2rem;text-a
 </footer>
 <script>
 
+
+function toggleVerses(btn) {
+  const panel = btn.nextElementSibling;
+  const expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', !expanded);
+  panel.classList.toggle('hidden-panel', expanded);
+  btn.querySelector('.vpanel-arrow').style.transform = expanded ? '' : 'rotate(180deg)';
+}
+
 function toggleSheikh(btn) {
   const player = btn.nextElementSibling;
   const expanded = btn.getAttribute('aria-expanded') === 'true';
@@ -489,17 +503,20 @@ function setView(mode) {
   const arBlocks = document.querySelectorAll('.arabic-block');
   const enBlocks = document.querySelectorAll('.english-block');
   document.querySelectorAll('.view-btn').forEach(b => b.classList.remove('active'));
-  document.getElementById('btn' + mode.charAt(0).toUpperCase() + mode.slice(1)).classList.add('active');
+  const btnId = 'btn' + mode.charAt(0).toUpperCase() + mode.slice(1);
+  const btn = document.getElementById(btnId);
+  if (btn) btn.classList.add('active');
   if (mode === 'both') {
-    arBlocks.forEach(el => el.style.display = '');
-    enBlocks.forEach(el => el.style.display = '');
+    arBlocks.forEach(el => { el.style.display = 'block'; });
+    enBlocks.forEach(el => { el.style.display = 'block'; });
   } else if (mode === 'arabic') {
-    arBlocks.forEach(el => el.style.display = '');
-    enBlocks.forEach(el => el.style.display = 'none');
-  } else {
-    arBlocks.forEach(el => el.style.display = 'none');
-    enBlocks.forEach(el => el.style.display = '');
+    arBlocks.forEach(el => { el.style.display = 'block'; });
+    enBlocks.forEach(el => { el.style.display = 'none'; });
+  } else if (mode === 'english') {
+    arBlocks.forEach(el => { el.style.display = 'none'; });
+    enBlocks.forEach(el => { el.style.display = 'block'; });
   }
+  console.log('View set to:', mode, '| ar blocks:', arBlocks.length, '| en blocks:', enBlocks.length);
 }
 let cur=null,curBtn=null;
 function playAyah(n,btn){
