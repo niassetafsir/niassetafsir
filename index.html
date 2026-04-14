@@ -117,56 +117,24 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:2rem;text-a
     يا همة الشيخ احضري<br>لنا بهذا المحضر<br>ولتعطفي بنظرة<br>تأتي لنا بالظفر
   </div>
   <div class="divider">✦ ✦ ✦</div>
-  <div class="verse-panel">
-    <button class="verse-panel-toggle" onclick="toggleVerses(this)" aria-expanded="false">
-      <span>سورة الفاتحة — قراءة ورش عن نافع</span>
-      <span class="vpanel-arrow">▾</span>
-    </button>
-  <div class="verse-section hidden-panel">
-    <div class="verse-block">
-  <div class="verse-header"><span class="verse-num">1</span>
-  <button class="play-btn" onclick="playAyah(1,this)">▶ ورش</button></div>
-  <div class="verse-text" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</div>
-  <audio id="audio-1" src="https://cdn.islamic.network/quran/audio/128/ar.husary/1.mp3" preload="none"></audio>
-</div>
-<div class="verse-block">
-  <div class="verse-header"><span class="verse-num">2</span>
-  <button class="play-btn" onclick="playAyah(2,this)">▶ ورش</button></div>
-  <div class="verse-text" dir="rtl">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</div>
-  <audio id="audio-2" src="https://cdn.islamic.network/quran/audio/128/ar.husary/2.mp3" preload="none"></audio>
-</div>
-<div class="verse-block">
-  <div class="verse-header"><span class="verse-num">3</span>
-  <button class="play-btn" onclick="playAyah(3,this)">▶ ورش</button></div>
-  <div class="verse-text" dir="rtl">الرَّحْمَنِ الرَّحِيمِ</div>
-  <audio id="audio-3" src="https://cdn.islamic.network/quran/audio/128/ar.husary/3.mp3" preload="none"></audio>
-</div>
-<div class="verse-block">
-  <div class="verse-header"><span class="verse-num">4</span>
-  <button class="play-btn" onclick="playAyah(4,this)">▶ ورش</button></div>
-  <div class="verse-text" dir="rtl">مَالِكِ يَوْمِ الدِّينِ</div>
-  <audio id="audio-4" src="https://cdn.islamic.network/quran/audio/128/ar.husary/4.mp3" preload="none"></audio>
-</div>
-<div class="verse-block">
-  <div class="verse-header"><span class="verse-num">5</span>
-  <button class="play-btn" onclick="playAyah(5,this)">▶ ورش</button></div>
-  <div class="verse-text" dir="rtl">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</div>
-  <audio id="audio-5" src="https://cdn.islamic.network/quran/audio/128/ar.husary/5.mp3" preload="none"></audio>
-</div>
-<div class="verse-block">
-  <div class="verse-header"><span class="verse-num">6</span>
-  <button class="play-btn" onclick="playAyah(6,this)">▶ ورش</button></div>
-  <div class="verse-text" dir="rtl">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</div>
-  <audio id="audio-6" src="https://cdn.islamic.network/quran/audio/128/ar.husary/6.mp3" preload="none"></audio>
-</div>
-<div class="verse-block">
-  <div class="verse-header"><span class="verse-num">7</span>
-  <button class="play-btn" onclick="playAyah(7,this)">▶ ورش</button></div>
-  <div class="verse-text" dir="rtl">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</div>
-  <audio id="audio-7" src="https://cdn.islamic.network/quran/audio/128/ar.husary/7.mp3" preload="none"></audio>
-</div>
+
+  <!-- Sūrat al-Fātiḥa — Warsh text with compact players -->
+  <div class="quran-section">
+    <div class="quran-header">
+      <span class="quran-title">سُورَةُ الْفَاتِحَة</span>
+      <span class="quran-meta">Sūrat al-Fātiḥa (Q. 1:1–7) · Warsh ʿan Nāfiʿ · Ḥuṣarī</span>
+    </div>
+    <div class="quran-verses">
+      <div class="qv"><span class="qv-num">١</span><span class="qv-text" dir="rtl">بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ</span><button class="qv-play" onclick="playV(1,this)">▶</button><audio id="av1" src="https://cdn.islamic.network/quran/audio/128/ar.husary/1.mp3" preload="none"></audio></div>
+      <div class="qv"><span class="qv-num">٢</span><span class="qv-text" dir="rtl">الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ</span><button class="qv-play" onclick="playV(2,this)">▶</button><audio id="av2" src="https://cdn.islamic.network/quran/audio/128/ar.husary/2.mp3" preload="none"></audio></div>
+      <div class="qv"><span class="qv-num">٣</span><span class="qv-text" dir="rtl">الرَّحْمَنِ الرَّحِيمِ</span><button class="qv-play" onclick="playV(3,this)">▶</button><audio id="av3" src="https://cdn.islamic.network/quran/audio/128/ar.husary/3.mp3" preload="none"></audio></div>
+      <div class="qv"><span class="qv-num">٤</span><span class="qv-text" dir="rtl">مَالِكِ يَوْمِ الدِّينِ</span><button class="qv-play" onclick="playV(4,this)">▶</button><audio id="av4" src="https://cdn.islamic.network/quran/audio/128/ar.husary/4.mp3" preload="none"></audio></div>
+      <div class="qv"><span class="qv-num">٥</span><span class="qv-text" dir="rtl">إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ</span><button class="qv-play" onclick="playV(5,this)">▶</button><audio id="av5" src="https://cdn.islamic.network/quran/audio/128/ar.husary/5.mp3" preload="none"></audio></div>
+      <div class="qv"><span class="qv-num">٦</span><span class="qv-text" dir="rtl">اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ</span><button class="qv-play" onclick="playV(6,this)">▶</button><audio id="av6" src="https://cdn.islamic.network/quran/audio/128/ar.husary/6.mp3" preload="none"></audio></div>
+      <div class="qv"><span class="qv-num">٧</span><span class="qv-text" dir="rtl">صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ</span><button class="qv-play" onclick="playV(7,this)">▶</button><audio id="av7" src="https://cdn.islamic.network/quran/audio/128/ar.husary/7.mp3" preload="none"></audio></div>
+    </div>
   </div>
-  </div>
+
   <div class="divider">✦ ✦ ✦</div>
   <div id="tafsir-main">
     <div class="lesson-heading">الدرس الأول — الاستعاذة والبسملة</div>
@@ -519,11 +487,12 @@ function setView(mode) {
   console.log('View set to:', mode, '| ar blocks:', arBlocks.length, '| en blocks:', enBlocks.length);
 }
 let cur=null,curBtn=null;
-function playAyah(n,btn){
-  const a=document.getElementById('audio-'+n);
-  if(cur&&cur!==a){cur.pause();cur.currentTime=0;if(curBtn){curBtn.textContent='▶ ورش';curBtn.classList.remove('playing');}}
-  if(a.paused){a.play();btn.textContent='⏸ إيقاف';btn.classList.add('playing');cur=a;curBtn=btn;a.onended=()=>{btn.textContent='▶ ورش';btn.classList.remove('playing');cur=null;curBtn=null;};}
-  else{a.pause();btn.textContent='▶ ورش';btn.classList.remove('playing');cur=null;curBtn=null;}
+function playV(n,btn){
+  const a=document.getElementById('av'+n);
+  if(!a) return;
+  if(cur&&cur!==a){cur.pause();cur.currentTime=0;if(curBtn){curBtn.textContent='▶';curBtn.classList.remove('playing');}}
+  if(a.paused){a.play();btn.textContent='⏸';btn.classList.add('playing');cur=a;curBtn=btn;a.onended=()=>{btn.textContent='▶';btn.classList.remove('playing');cur=null;curBtn=null;};}
+  else{a.pause();btn.textContent='▶';btn.classList.remove('playing');cur=null;curBtn=null;}
 }
 </script>
 </body>
