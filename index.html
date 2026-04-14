@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>في رياض التفسير — الشيخ إبراهيم نياس | niassetafsir.com</title>
 <meta name="description" content="النسخة الرقمية من تفسير الشيخ إبراهيم نياس رضي الله عنه — في رياض التفسير">
+<link rel="manifest" href="/manifest.json">
+<meta name="theme-color" content="#C9A84C">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Niasse Tafsir">
+<link rel="apple-touch-icon" href="/icon-192.png">
+<meta name="mobile-web-app-capable" content="yes">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
 <style>
@@ -548,6 +555,37 @@ function playV(n,btn){
   if(cur&&cur!==a){cur.pause();cur.currentTime=0;if(curBtn){curBtn.textContent='▶';curBtn.classList.remove('playing');}}
   if(a.paused){a.play();btn.textContent='⏸';btn.classList.add('playing');cur=a;curBtn=btn;a.onended=()=>{btn.textContent='▶';btn.classList.remove('playing');cur=null;curBtn=null;};}
   else{a.pause();btn.textContent='▶';btn.classList.remove('playing');cur=null;curBtn=null;}
+}
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/sw.js')
+      .then(reg => console.log('SW registered:', reg.scope))
+      .catch(err => console.log('SW failed:', err));
+  });
+}
+</script>
+<div id="installBanner" class="install-banner hidden">
+  <span>📲 Add to Home Screen for offline access</span>
+  <button onclick="installApp()" class="install-yes">Install</button>
+  <button onclick="document.getElementById('installBanner').classList.add('hidden')" class="install-no">✕</button>
+</div>
+<script>
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt', e => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('installBanner').classList.remove('hidden');
+});
+function installApp() {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(() => {
+      deferredPrompt = null;
+      document.getElementById('installBanner').classList.add('hidden');
+    });
+  }
 }
 </script>
 </body>

@@ -1,0 +1,28 @@
+{
+  "name": "في رياض التفسير — نياس",
+  "short_name": "Niasse Tafsir",
+  "description": "The digital edition of Sheikh Ibrahim Niasse's Tafsir — Fi Riyad al-Tafsir",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D1F0A",
+  "theme_color": "#C9A84C",
+  "orientation": "portrait-primary",
+  "lang": "ar",
+  "dir": "rtl",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "books", "religion"],
+  "screenshots": []
+}
