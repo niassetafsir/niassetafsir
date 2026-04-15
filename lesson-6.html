@@ -117,6 +117,17 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 .bilingual-layout.show-english-only .ar-column{display:none;}
 .bilingual-layout.show-english-only .en-column{grid-column:1/-1;}
 
+
+.tafsir-panel{margin:1rem 0;}
+.tafsir-toggle{width:100%;background:rgba(201,168,76,0.07);border:1px solid rgba(201,168,76,0.25);border-radius:6px;padding:.7rem 1rem;cursor:pointer;display:flex;align-items:center;gap:.7rem;direction:ltr;color:var(--gold-light);font-family:"EB Garamond",serif;font-size:.95rem;transition:all .2s;text-align:left;}
+.tafsir-toggle:hover{background:rgba(201,168,76,0.12);}
+.tafsir-toggle-icon{flex-shrink:0;font-size:1.1rem;}
+.tafsir-toggle-label{flex:1;}
+.tafsir-toggle-arrow{color:rgba(201,168,76,0.5);transition:transform .2s;font-size:.85rem;flex-shrink:0;}
+.tafsir-toggle[aria-expanded="true"] .tafsir-toggle-arrow{transform:rotate(180deg);}
+.tafsir-body{border:1px solid rgba(201,168,76,0.15);border-top:none;border-radius:0 0 6px 6px;display:none;}
+.tafsir-body.open{display:block;}
+
 </style>
 </head>
 <body>
@@ -1936,7 +1947,14 @@ following was revealed:</div>
 </div>
   <div class="sheikh-panel"><button class="sheikh-toggle" onclick="togglePanel(this)" aria-expanded="false"><span class="sheikh-icon">🎙</span><span class="sheikh-label">Arabic Audio — الشيخ إبراهيم نياس</span><span class="sheikh-arrow">▾</span></button><div class="sheikh-player hidden"><iframe src="https://www.youtube.com/embed/Yipy707PFs0?rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:100%;height:280px;border:none;border-radius:4px"></iframe></div></div>
     <div class="sheikh-panel" style="margin-top:.4rem"><button class="sheikh-toggle" onclick="togglePanel(this)" aria-expanded="false"><span class="sheikh-icon">🔊</span><span class="sheikh-label">English Audio — coming soon</span><span class="sheikh-arrow">▾</span></button><div class="sheikh-player hidden" style="padding:.8rem;direction:ltr;font-family:'EB Garamond',serif;color:rgba(245,237,214,0.55);font-style:italic;font-size:.88rem">English audio narration will be available here.</div></div>
-  <div class="bilingual-layout">
+  <div class="tafsir-panel">
+  <button class="tafsir-toggle" onclick="toggleTafsir(this)" aria-expanded="true">
+    <span class="tafsir-toggle-icon">📜</span>
+    <span class="tafsir-toggle-label"><span dir="rtl">النص الثنائي اللغة</span> · Bilingual Tafsīr Text</span>
+    <span class="tafsir-toggle-arrow">▾</span>
+  </button>
+  <div class="tafsir-body open">
+    <div class="bilingual-layout">
   <div class="en-column">
 <p class="forthcoming-note">English translation forthcoming.</p>
   </div>
@@ -2111,6 +2129,8 @@ following was revealed:</div>
 <div class="footnote"><span class="fn-num">3</span><span class="fn-content">تفسير الجلالين والصاوي في حاشيته عليه. ج247/1.</span></div>
 <div class="footnote"><span class="fn-num">4</span><span class="fn-content">(إن الصلوات كفارة لما بينهن ما اجتنبت الكبائر) صحيح مسلم: كتاب الطهارة/ باب الصلوات الخمس والجمعة إلى الجمعة(344).</span></div>
   </div>
+  </div>
+</div>
 </div>
   <div class="lesson-bottom-nav">
   <a href="/lesson-5.html" class="nav-btn nav-btn-prev">← Lesson Five</a>
@@ -2125,9 +2145,16 @@ following was revealed:</div>
   <div class="footer-en">Translation & Digital Edition: Amadu Kunateh · niassetafsir.com · © 2026</div>
 </footer>
 <script>
+
+function toggleTafsir(btn){
+  const body=btn.nextElementSibling;
+  const exp=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',String(!exp));
+  body.classList.toggle('open',!exp);
+  btn.querySelector('.tafsir-toggle-arrow').style.transform=exp?'':'rotate(180deg)';
+}
+
 function setView(mode){
-  document.querySelectorAll('.arabic-block').forEach(el=>el.style.display=mode==='english'?'none':'block');
-  document.querySelectorAll('.english-block').forEach(el=>el.style.display=mode==='arabic'?'none':'block');
   document.querySelectorAll('.bilingual-layout').forEach(el=>{
     el.classList.remove('show-arabic-only','show-english-only');
     if(mode==='arabic') el.classList.add('show-arabic-only');
@@ -2137,28 +2164,12 @@ function setView(mode){
     const oc=b.getAttribute('onclick')||'';
     b.classList.toggle('active', oc.includes("'"+mode+"'") || oc.includes('"'+mode+'"'));
   });
-});
-  // Legacy support for old button IDs
-  ['btnBoth','btnArabic','btnEnglish','btn-both','btn-ar','btn-en'].forEach(id=>{
-    const el=document.getElementById(id);
-    if(el) el.classList.remove('active');
-  });
-  const modeMap={'both':'btnBoth','arabic':'btnArabic','english':'btnEnglish','both':'btn-both','arabic':'btn-ar','english':'btn-en'};
-  // Just toggle visibility directly
-  document.querySelectorAll('.arabic-block').forEach(el=>el.style.display=mode==='english'?'none':'block');
-  document.querySelectorAll('.english-block').forEach(el=>el.style.display=mode==='arabic'?'none':'block');
-  // Mark active button in toolbar
-  document.querySelectorAll('.view-toolbar button, .inline-lang-toggle button').forEach(b=>{
-    const onclick=b.getAttribute('onclick')||'';
-    b.classList.toggle('active', onclick.includes("'"+mode+"'") || onclick.includes('"'+mode+'"'));
-    b.classList.toggle('ilt-btn', b.closest('.inline-lang-toggle')!==null);
-  });
 }
 
 function togglePanel(btn){
   const p=btn.nextElementSibling;
   const exp=btn.getAttribute('aria-expanded')==='true';
-  btn.setAttribute('aria-expanded',!exp);
+  btn.setAttribute('aria-expanded',String(!exp));
   p.classList.toggle('hidden',exp);
   const arrow=btn.querySelector('.sheikh-arrow');
   if(arrow) arrow.style.transform=exp?'':'rotate(180deg)';
@@ -2168,23 +2179,23 @@ function toggleCompanion(id,btn){
   const c=document.getElementById(id);
   if(!c) return;
   const exp=btn.getAttribute('aria-expanded')==='true';
-  btn.setAttribute('aria-expanded',!exp);
+  btn.setAttribute('aria-expanded',String(!exp));
   c.classList.toggle('open',!exp);
   const arrow=btn.querySelector('.companion-arrow');
   if(arrow) arrow.style.transform=exp?'':'rotate(180deg)';
 }
 
-function toggleCompanionLang(panelId, lang) {
-  const panel = document.getElementById(panelId);
-  if (!panel) return;
-  const enEl = panel.querySelector('.companion-en');
-  const arEl = panel.querySelector('.companion-ar-orig');
-  panel.querySelectorAll('.clb').forEach(b => b.classList.remove('active'));
-  const ab = panel.querySelector('.clb[data-lang="' + lang + '"]');
-  if (ab) ab.classList.add('active');
-  if (lang === 'en') { if (enEl) enEl.style.display='block'; if (arEl) arEl.style.display='none'; }
-  else if (lang === 'ar') { if (enEl) enEl.style.display='none'; if (arEl) arEl.style.display='block'; }
-  else { if (enEl) enEl.style.display='block'; if (arEl) arEl.style.display='block'; }
+function toggleCompanionLang(panelId,lang){
+  const panel=document.getElementById(panelId);
+  if(!panel) return;
+  const enEl=panel.querySelector('.companion-en');
+  const arEl=panel.querySelector('.companion-ar-orig');
+  panel.querySelectorAll('.clb').forEach(b=>b.classList.remove('active'));
+  const ab=panel.querySelector('.clb[data-lang="'+lang+'"]');
+  if(ab) ab.classList.add('active');
+  if(lang==='en'){if(enEl)enEl.style.display='block';if(arEl)arEl.style.display='none';}
+  else if(lang==='ar'){if(enEl)enEl.style.display='none';if(arEl)arEl.style.display='block';}
+  else{if(enEl)enEl.style.display='block';if(arEl)arEl.style.display='block';}
 }
 
 function toggleCite(btn){
@@ -2192,15 +2203,14 @@ function toggleCite(btn){
   const open=c.classList.toggle('open');
   btn.querySelector('.cite-toggle-arrow').style.transform=open?'rotate(180deg)':'';
 }
+
 function copyCite(el){
-  const text=el.innerText;
-  navigator.clipboard.writeText(text).then(()=>{
+  navigator.clipboard&&navigator.clipboard.writeText(el.innerText).then(()=>{
     const orig=el.style.background;
     el.style.background='rgba(201,168,76,0.15)';
     setTimeout(()=>el.style.background=orig,600);
   });
 }
-
 </script>
 </body>
 </html>
