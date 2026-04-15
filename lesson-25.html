@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>الدرس الخامس والعشرون — Fī Riyāḍ Tafsīr al-Qurʾān al-Karīm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+,::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0D1F0A;--gold:#C9A84C;--gold-light:#E8D4A0;--text:#E8E8E0;--fn-bg:#0a1a07;--border:rgba(201,168,76,0.25)}
+body{background:var(--bg);color:var(--text);font-family:"Amiri","Traditional Arabic",serif;font-size:18px;line-height:2;direction:rtl;min-height:100vh}
+header{background:linear-gradient(180deg,#0a1706 0%,var(--bg) 100%);border-bottom:2px solid var(--gold);padding:1.5rem 2rem;text-align:center}
+.site-arabic{font-size:2rem;font-weight:700;color:var(--gold)}
+.site-en{font-family:"EB Garamond",serif;font-size:.85rem;color:rgba(232,212,160,0.5);direction:ltr;letter-spacing:.08em;margin-top:.3rem}
+nav{text-align:center;padding:.6rem;border-bottom:1px solid var(--border);background:rgba(0,0,0,0.2);font-family:"EB Garamond",serif;font-size:.85rem}
+nav a{color:rgba(201,168,76,0.65);text-decoration:none;margin:0 .6rem;direction:ltr}
+nav a:hover{color:var(--gold)}
+.view-toolbar{position:fixed;top:.8rem;left:.8rem;z-index:999;display:flex;gap:.3rem;background:rgba(13,31,10,0.92);border:1px solid rgba(201,168,76,0.3);border-radius:24px;padding:.25rem .35rem}
+.view-btn{background:none;border:none;color:rgba(201,168,76,0.6);font-family:"EB Garamond",serif;font-size:.75rem;padding:.25rem .6rem;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap;direction:ltr}
+.view-btn.active{background:var(--gold);color:#0D1F0A;font-weight:600}
+.container{max-width:860px;margin:0 auto;padding:2rem 1.5rem 6rem}
+.lesson-heading{font-size:1.4rem;color:var(--gold);font-weight:700;margin:2rem 0 1rem;padding-bottom:.4rem;border-bottom:1px solid var(--border)}
+.lesson-en-label{font-family:"EB Garamond",serif;font-size:.9rem;color:rgba(201,168,76,0.5);font-weight:400;font-style:italic}
+.arabic-block{margin:1.5rem 0}
+.tafsir-text{font-size:1.05rem;line-height:2.1;color:var(--text);margin:.7rem 0;text-align:justify}
+.english-block{margin:1rem 0 2rem;padding:1.5rem;background:rgba(201,168,76,0.04);border-right:3px solid var(--gold);direction:ltr;text-align:left;font-family:"EB Garamond",serif;font-size:17px;line-height:1.9;color:#F5EDD6;border-radius:0 6px 6px 0}
+.en-para{margin-bottom:.9em}
+.en-footnotes{margin-top:1rem;border-top:1px solid rgba(201,168,76,0.15);padding-top:.7rem}
+.en-fn{font-size:13px;color:rgba(245,237,214,0.7);margin-bottom:.4em;line-height:1.6}
+.footnote{display:flex;gap:1rem;margin:1rem 0;padding:1rem 1.2rem;background:var(--fn-bg);border-right:3px solid var(--gold);border-radius:0 4px 4px 0;font-size:.9rem;line-height:1.9}
+.fn-num{color:var(--gold);font-weight:700;font-size:.85rem;flex-shrink:0;min-width:1.5rem}
+.fn-content{color:rgba(245,237,214,0.8);flex:1}
+.sheikh-panel{margin:1.2rem 0}
+.sheikh-toggle{width:100%;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.2);border-radius:6px;padding:.65rem 1rem;cursor:pointer;display:flex;align-items:center;gap:.7rem;direction:rtl;color:var(--gold-light);font-family:"Amiri",serif;font-size:.9rem;transition:all .2s}
+.sheikh-toggle:hover{background:rgba(201,168,76,0.1)}
+.sheikh-icon{flex-shrink:0}
+.sheikh-label{flex:1;text-align:right}
+.sheikh-arrow{color:rgba(201,168,76,0.4);transition:transform .2s;font-size:.8rem;flex-shrink:0}
+.sheikh-player{border:1px solid rgba(201,168,76,0.15);border-top:none;border-radius:0 0 6px 6px;overflow:hidden}
+.sheikh-player.hidden{display:none}
+.divider{text-align:center;color:var(--gold);opacity:.25;margin:2.5rem 0;font-size:1.2rem;letter-spacing:.5em}
+footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text-align:center;margin-top:4rem}
+.footer-ar{font-size:1rem;color:var(--gold);margin-bottom:.3rem}
+.footer-en{font-family:"EB Garamond",serif;font-size:.78rem;color:rgba(201,168,76,0.35);direction:ltr;margin-top:.2rem}
+@media(max-width:600px){.site-arabic{font-size:1.6rem}.container{padding:1.5rem 1rem 4rem}}
+
+.companion-panel{margin:1.2rem 0;}
+.companion-toggle{width:100%;background:rgba(70,100,150,0.08);border:1px solid rgba(70,100,150,0.25);border-radius:6px;padding:.65rem 1rem;cursor:pointer;display:flex;align-items:center;gap:.7rem;direction:ltr;color:#d4e0f0;font-family:"EB Garamond",serif;font-size:.88rem;transition:all .2s;text-align:left;}
+.companion-toggle:hover{background:rgba(70,100,150,0.15)}
+.companion-icon{flex-shrink:0}
+.companion-label{flex:1}
+.companion-arrow{color:rgba(100,150,220,0.5);transition:transform .2s;font-size:.8rem;flex-shrink:0}
+.companion-content{border:1px solid rgba(70,100,150,0.2);border-top:none;border-radius:0 0 6px 6px;display:none;background:rgba(5,15,30,0.8)}
+.companion-content.open{display:block}
+.companion-text{padding:1.2rem 1.5rem;direction:ltr;text-align:left;font-family:"EB Garamond",Georgia,serif;font-size:15px;line-height:1.85;color:#c8d8e8;white-space:pre-wrap;}
+.companion-source{font-size:.72rem;color:rgba(100,150,220,0.45);direction:ltr;padding:.4rem 1.5rem .8rem;font-family:"EB Garamond",serif;font-style:italic}
+
+
+.lesson-bottom-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:4rem 0 2rem;padding:1.5rem;border-top:1px solid rgba(201,168,76,0.2);flex-wrap:wrap;}
+.nav-btn{font-family:"EB Garamond",Georgia,serif;font-size:.95rem;padding:.6rem 1.2rem;border-radius:6px;cursor:pointer;text-decoration:none;direction:ltr;transition:all .2s;display:flex;align-items:center;gap:.5rem;}
+.nav-btn-next{background:var(--gold);color:#0D1F0A;border:none;font-weight:600;}
+.nav-btn-next:hover{background:#b8943c;}
+.nav-btn-toc{background:none;border:1px solid rgba(201,168,76,0.35);color:rgba(201,168,76,0.7);}
+.nav-btn-toc:hover{border-color:var(--gold);color:var(--gold);}
+.nav-btn-prev{background:none;border:1px solid rgba(201,168,76,0.25);color:rgba(201,168,76,0.5);}
+.nav-btn-prev:hover{border-color:rgba(201,168,76,0.5);color:rgba(201,168,76,0.7);}
+.nav-lesson-title{text-align:center;font-family:"EB Garamond",serif;font-size:.82rem;color:rgba(201,168,76,0.4);direction:ltr;}
+
+
+.inline-lang-toggle{display:flex;align-items:center;gap:.5rem;margin:1.5rem 0 1rem;padding:.7rem 1rem;background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:6px;direction:ltr;flex-wrap:wrap;}
+.ilt-label{font-family:"EB Garamond",serif;font-size:.78rem;color:rgba(201,168,76,0.5);letter-spacing:.05em;flex-shrink:0;}
+.ilt-btn{background:none;border:1px solid rgba(201,168,76,0.2);color:rgba(201,168,76,0.55);font-family:"EB Garamond",serif;font-size:.8rem;padding:.25rem .65rem;border-radius:16px;cursor:pointer;transition:all .15s;}
+.ilt-btn:hover{border-color:rgba(201,168,76,0.5);color:rgba(201,168,76,0.8);}
+.ilt-btn.active{background:var(--gold);color:#0D1F0A;border-color:var(--gold);font-weight:600;}
+
+
+.work-title{text-align:center;padding:1.5rem 1rem .8rem;border-bottom:1px solid rgba(201,168,76,0.15);margin-bottom:1.5rem;}
+.work-title-ar{font-family:"Amiri","Traditional Arabic",serif;font-size:1.6rem;color:var(--gold);direction:rtl;margin-bottom:.4rem;}
+.work-title-trans{font-family:"EB Garamond",Georgia,serif;font-size:.9rem;color:rgba(201,168,76,0.55);direction:ltr;font-style:italic;letter-spacing:.04em;}
+.companion-header{display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem;border-bottom:1px solid rgba(70,100,150,0.15);flex-wrap:wrap;gap:.4rem;}
+.companion-title-ar{font-family:"Amiri",serif;font-size:1rem;color:#a0c0e0;direction:rtl;}
+.companion-title-en{font-family:"EB Garamond",serif;font-size:.82rem;color:rgba(100,150,220,0.6);direction:ltr;font-style:italic;}
+.companion-lang-btns{display:flex;gap:.3rem;}
+.clb{background:none;border:1px solid rgba(70,100,150,0.3);color:rgba(100,150,220,0.55);font-family:"EB Garamond",serif;font-size:.72rem;padding:.2rem .5rem;border-radius:12px;cursor:pointer;transition:all .15s;}
+.clb.active{background:rgba(70,100,150,0.3);color:#c0d8f0;border-color:rgba(100,150,220,0.5);}
+.companion-en{display:block}.companion-ar-orig{display:none}
+
+</style>
+</head>
+<body>
+<div class="view-toolbar" dir="ltr">
+  <button onclick="setView('arabic')" id="btn-ar">&#x639;&#x631;&#x628;&#x64A;</button>
+  <button onclick="setView('both')" id="btn-both" class="active">AR + EN</button>
+  <button onclick="setView('english')" id="btn-en">EN</button>
+</div>
+<div class="container">
+  <div class="work-title">
+    <div class="work-title-ar">&#1601;&#1616;&#1610; &#1585;&#1616;&#1610;&#1614;&#1575;&#1590;&#1616; &#1578;&#1614;&#1601;&#1618;&#1587;&#1616;&#1610;&#1585;&#1616; &#1575;&#1604;&#1618;&#1602;&#1615;&#1585;&#1618;&#1570;&#1606;&#1616; &#1575;&#1604;&#1618;&#1603;&#1614;&#1585;&#1616;&#1610;&#1605;&#1616;</div>
+    <div class="work-title-trans">F&#299; Riy&#257;&#7693; Tafs&#299;r al-Qur&#702;&#257;n al-Kar&#299;m</div>
+  </div>
+  <div class="lesson-heading">الدرس الخامس والعشرون <span class="lesson-en-label">— Sūrat Hūd (Q. 11)</span></div>
+  <div class="inline-lang-toggle" dir="ltr">
+    <span class="ilt-label">View:</span>
+    <button class="ilt-btn active" id="ilt-both" onclick="setView('both')">Arabic + English</button>
+    <button class="ilt-btn" id="ilt-arabic" onclick="setView('arabic')">Arabic only</button>
+    <button class="ilt-btn" id="ilt-english" onclick="setView('english')">English only</button>
+  </div>
+  <div class="companion-panel" id="outer-jal-25">
+  <button class="companion-toggle" onclick="toggleCompanion('jal-25',this)" aria-expanded="false">
+    <span class="companion-icon">&#128214;</span>
+    <span class="companion-label" dir="rtl">&#1578;&#1601;&#1587;&#1610;&#1585; &#1575;&#1604;&#1580;&#1604;&#1575;&#1604;&#1610;&#1606; &middot; <em style="font-style:italic;opacity:.8">Tafs&#299;r al-Jal&#257;layn</em></span>
+    <span class="companion-arrow">&#9662;</span>
+  </button>
+  <div class="companion-content" id="jal-25">
+    <div class="companion-header">
+      <div><div class="companion-title-ar">&#1578;&#1601;&#1587;&#1610;&#1585; &#1575;&#1604;&#1580;&#1604;&#1575;&#1604;&#1610;&#1606;</div>
+      <div class="companion-title-en">Tafs&#299;r al-Jal&#257;layn</div></div>
+      <div class="companion-lang-btns">
+        <button class="clb active" data-lang="en" onclick="toggleCompanionLang('jal-25','en')">EN</button>
+        <button class="clb" data-lang="ar" onclick="toggleCompanionLang('jal-25','ar')">&#1593;&#1585;&#1576;&#1610;</button>
+      </div>
+    </div>
+    <div class="companion-text companion-en">[11:1]
+Alif lām rā’: God knows best what He means by these [letters]; this is, a Book whose verses have been set
+clear, through marvellous arrangement and wonderful meanings, and then detailed, expounded, through
+rulings, stories and admonitions, from One Wise, Informed, that is, [from] God.
+[11:2]
+[Saying:] ‘Worship none but God. Truly I am to you a warner from Him, of chastisement, if you disbelieve,
+and a bearer of good tidings’, of reward, if you believe.
+[11:3]
+And [bidding you]: ‘Ask forgiveness of your Lord, for [your] idolatry, then repent, return, to Him, through
+[acts of] obedience, and He will give you, in this world, fair enjoyment, in the way of pleasant living and
+abundant provision, until a time appointed, namely, death, and He will give, in the Hereafter, every person
+of merit, in deed, [the due for] his merit, his reward. But if you turn away (tawallaw: one of the two tā’
+letters [of tatawallaw] has been omitted), in other words, if you object, I fear for you the chastisement of an
+awful day, namely, the Day of Resurrection.
+[11:4]
+Unto God is your return, and He has power over all things’, including reward and chastisement.
+[11:5]
+
+226
+
+As reported by al-Bukhārī [by way of an isnād] from Ibn ‘Abbās, the following was revealed regarding those
+who were embarrassed to withdraw [to relieve nature] or to have sexual intercourse [without their clothes]
+and become exposed to the heaven. It is also said: [that it was revealed] regarding the hypocrites: Lo!, they
+fold up their breasts that they may hide from Him, that is, [from] God; lo! the moment they cover
+themselves with their garments, wrapping themselves up therewith, He, God, exalted be He, knows what
+they keep hidden and what they proclaim, and so their hiding is to no avail. Truly He knows what is in the
+breasts [of men], that is, what is in the hearts.
+[11:6]
+And there is not (wa-mā min: min is extra) a creature (dābba is that [creature] which treads [dabba]) in the
+earth but the sustenance thereof rests on God, [sustenance] which He has undertaken [to provide], out of
+His bounty, exalted be He. And He knows its habitation, its dwelling-place in this world — or in the loins —
+and its repository, after death, or in the womb. All, that which is mentioned, is in a manifest, a clear, Book,
+which is the Preserved Tablet (al-lawh al-mahfūz).
+[11:7]
+And He it is Who created the heavens and the earth in six days, the first of which was Sunday and the last,
+Friday — and His Throne, before creating them, was upon the water, borne by the winds — that He might
+try you (li-yabluwakum is semantically connected to khalaqa, ‘He [Who] created’), in other words, He
+created them and all that is beneficial and good for you in them, in order to test you: which of you is best in
+conduct, that is, [which of you] is most obedient to God. And if you were to say, O Muhammad (s), to them:
+‘Truly you shall be raised again after death’, those who disbelieve will say, ‘This, Qur’ān that speaks of
+resurrection — or, [this] that you are saying — is nothing but manifest, clear, sorcery’ (sihrun: a variant
+reading has sāhirun, ‘sorcerer’, in which case the reference is to the Prophet (s).
+[11:8]
+And if we postpone the chastisement for them until, the arrival of, a reckoned time, [reckoned] moments,
+they will surely say, in mockery: ‘What is detaining it?’, what is preventing it from being sent down? God,
+exalted be He, says: Verily on the day when it comes to them, it cannot be averted, warded off, from them,
+and that, chastisement, which they derided shall surround them, [it] shall come down upon them.
+[11:9]
+And if We cause, the disbelieving, man to taste some mercy from Us, [such as] wealth and [good] health,
+and then wrest it from him, lo! he is despairing, having lost hope of God’s mercy, ungrateful, intensely
+ungrateful to Him.
+[11:10]
+But if We cause him to taste prosperity after some misery, [such as] impoverishment and hardship, that had
+befallen him, assuredly he will say, ‘The ills, the afflictions, have gone from me’, when he had not
+anticipated that they would go away; yet still he does not give thanks for this; lo!, he is exultant, wanton,
+boastful, to people of what he has been given;
+[11:11]
+save, but, those who endure, misery, [patiently] and perform righteous deeds, during times of comfort;
+theirs will be forgiveness and a great reward, which is Paradise.
+[11:12]
+Perhaps, O Muhammad (s), you might [think to] leave out some of what is revealed to you, such that you do
+not convey it to them, for they do not take it seriously, and that your breast should be straitened by it, by
+227
+
+reciting it to them, because they say, ‘Why has a treasure not been sent down for him, or an angel not come
+with him?’, to confirm his sincerity, as we had requested? You are but a warner, and yours is only to convey
+[the Message], not to produce what they have requested; and God is Guardian over all things, He is
+Preserver [of all things], so He will requite them [accordingly].
+[11:13]
+Or do they say, ‘He has invented it’?, that is, the Qur’ān. Say: ‘Then bring ten sūras the like thereof, in terms
+of clarity and rhetorical excellence, invented, for you are Arabs who speak [Arabic] eloquently, like myself —
+he challenged them to these [ten sūras] first, and then to one sūra — and call, in order [for them] to assist
+you, upon whom you can beside God, that is, [on] other than Him, if you are truthful’, about it [the Qur’ān]
+being an invention of lies.
+[11:14]
+Then, if they, that is, those on whom you call for assistance, do not answer you, know, this address is to the
+idolaters, that it has been revealed, enwrapped, only in God’s knowledge, not as an invention of lies against
+Him, and that (an is softened, in other words [understand it as] annahu) there is no god save Him. Will you
+then submit?, after this definitive argument; in other words: ‘Submit!’
+[11:15]
+He who desires the life of this world and its adornment, by persisting in idolatry — it is said that this was
+[revealed] regarding the dissimulators — We shall repay them their deeds, that is, the requital of any good
+that they did, such as charity or kindness to kin, in it, by giving them abundant provision, and therein, that
+is, in this world, they shall not be defrauded, they shall [not] be made to suffer diminution in anything.
+[11:16]
+Those are they for whom there is nothing in the Hereafter but the Fire; what they contrive will have failed,
+[will] be invalid, therein, that is, in the Hereafter, and will not be rewarded, and useless is that which they
+used to do.
+[11:17]
+Is he who relies on a clear proof, a clear statement, from his Lord, meaning the Prophet (s), or the
+believers; it [the proof] being the Qur’ān, [a clear proof] which is followed by a witness, to it of its veracity
+[as being], from Him, that is, from God; he [the witness] being Gabriel, and before it, [before] the Qur’ān,
+was the Book of Moses, the Torah, also a witness to it, as an example and a mercy? (imāman wa-rahmatan
+is a circumstantial qualifier) [is such a person] like one who is not so? No! Those, that is, the ones who rely
+on a clear proof, they believe in it, that is, in the Qur’ān, and so for them will be Paradise; but he who
+disbelieves in it of the partisans, [namely] all the disbelievers, the Fire shall be his appointed place. So do
+not be in doubt, in uncertainty, concerning it, concerning the Qur’ān. Truly it is the Truth from your Lord,
+but most of mankind, that is, the people of Mecca, do not believe.
+[11:18]
+And who, that is, none, does greater wrong than he who invents a lie concerning God?, by ascribing to Him
+partner and child. Those, they shall be brought before their Lord, on the Day of Resurrection, amid [the rest
+of] creation, and the witnesses (ashhād is the plural of shāhid) namely, the angels, who will bear witness
+that the messengers conveyed [the Message] and that the disbelievers denied [them], will say, ‘These are
+they who lied concerning their Lord’. Surely the curse of God is upon the wrong-doers, the idolaters;
+[11:19]
+they who bar [people] from God’s way, [from] the religion of Islam, desiring [to have] it, seeking that the
+228
+
+way be, crooked; and in the Hereafter they (hum, ‘they’, is [reiterated] for emphasis) are disbelievers.
+[11:20]
+Such will not escape, God, in the earth and, beside God, other than Him, they [can] have no allies, [no]
+helpers to protect them against His chastisement. For them the chastisement will be double, for their having
+led others astray. They could not hear, the truth, nor did they use to see, it; that is to say, because of their
+extreme aversion to it, it is as though they did not have the [physical] capacity for it.
+[11:21]
+Such are they who have lost their souls, for their journey’s end shall be to the Fire, made everlasting for
+them; and that which they used to invent, [of lies] concerning God, in the way of claiming [that He has] a
+partner, has failed them, is absent [before them].
+[11:22]
+Without doubt, verily, they will be the greatest losers in the Hereafter.
+[11:23]
+Truly those who believe and perform righteous deeds and humble themselves, [who] are at peace and feel
+reassured, or [who] repent, before their Lord: such will be the inhabitants of Paradise, abiding therein.
+[11:24]
+The likeness, the description, of the two parties, the disbelievers and the believers, is as the blind and the
+deaf, this being the likeness of the disbeliever, and the one who sees and the one who hears, this being the
+likeness of the believer, are they equal in likeness? No! Will you not then remember? (tadhakkarūn: the
+original tā’ [of tatadhakkarūn] has been assimilated with the dhāl) [will you not then] be admonished?
+[11:25]
+And verily We sent Noah to his people [and he said]: ‘I am (annī: a variant reading has innī, in which case
+‘he said’ has been omitted) for you a clear warner, one whose warning is plain.
+[11:26]
+That, you worship none but God. Lo! I fear for you, should you worship other than Him, the chastisement of
+a painful day’, painful in this world and in the Hereafter.
+[11:27]
+The council, the respected elders, of his people who disbelieved, said: ‘We see you but a mortal like us, and
+you have no merit over us, and we see not that any follow you save the vilest among us, the riffraff among
+us, such as the weavers and the shoemakers, [through] rash opinion (bādiya’l-ra’ya: read with hamza or
+without [in both cases]), in other words, impulsively, without thinking you over (it [bādiya’l-ra’ya] is in the
+accusative because it is an adverbial clause, that is to say: at the time that their opinion first came into
+being). We do not see that you have any merit over us, for which you would deserve our following you; nay,
+we deem you liars’, with regard to your claim to [be bringing] a Message: they [the disbelievers] included
+his folk with him in their address [to him].
+[11:28]
+He said, ‘O my people, have you considered: — inform me — if I am [acting] upon a clear proof, a clear
+statement, from my Lord and He has given me mercy — prophethood — from Him, and it has been
+229
+
+obscured, concealed, from you (‘amiyat, ‘obscured’, a variant reading has the passive ‘ummiyat), can we
+compel you to it, are we [able] to force you to accept it, while you are averse to it? We are not able to do
+that.
+[11:29]
+And O my people, I do not ask of you any wealth, which you should give me, for this, for conveying the
+Message. My wage, my reward, falls only upon God and I will not drive away those who believe, as you have
+commanded me; they shall surely meet their Lord, at the Resurrection, and He will requite them and exact
+vengeance for them from those who wronged them and drove them away. But I see you are a people who
+are ignorant, of the consequence of your affair.
+[11:30]
+And O my people, who would help, [who would] defend, me against God, that is, [against] His
+chastisement, if I drive them away?, in other words, there is none to help me. Will you not then remember?
+(tadhakkarūn: the original second tā’ [in tatadhakkarūn] has been assimilated with the dhāl), [will you not
+then] be admonished?
+[11:31]
+And I do not say to you, “I possess the treasure houses of God” nor, “I have knowledge of the Unseen”; nor
+do I say, “I am an angel”, nay, I am human like you. Nor do I say to those whom your eyes scorn that God
+will not give them any good — God knows best what is in their souls, [in] their hearts. Lo! if I were to say
+this, then indeed I would be of the evildoers’.
+[11:32]
+They said, ‘O Noah, you have disputed with us and disputed with us at length, so bring upon us that
+wherewith you are threatening us, in the way of chastisement, if you are of the truthful’.
+[11:33]
+He said, ‘Only God will bring it upon you, if He wills, to hasten it on for you, for the decision is His, not mine;
+and you cannot escape Him, elude God.
+[11:34]
+And my counsel will not benefit you if I desire to counsel you when God desires to keep you astray (the
+response to the conditional is indicated by wa-lā yanfa‘ukum nushī, ‘and my counsel will not benefit you’).
+He is your Lord and to Him you will be brought back’.
+[11:35]
+God, exalted be He, says: Or do they, the disbelievers of Mecca, say, ‘He has invented it’?, Muhammad (s)
+has invented the Qur’ān? Say: ‘If I have invented it, then my crime will be upon me, my sin [will be upon
+me], that is, the punishment for it; and I am innocent of what you commit’, of crime, when you attribute
+invention to me.
+[11:36]
+And it was revealed to Noah that: ‘None of your people will believe except he who has already believed. Do
+not be distressed, grieved, because of what they do, in the way of idolatry. So, he [Noah] invoked God
+against them with the words: My Lord, leave not [one of the disbelievers] upon the earth [Q. 71:26]. God
+responded to this invocation of his and said:
+
+230
+
+[11:37]
+Build the Ark, the ship, under Our eyes, under Our watch and protection, and by Our inspiration, [by] Our
+command, and do not address Me concerning those who have done evil, [those who] have disbelieved, [by
+asking] that I should refrain from destroying them; lo! they shall be drowned’.
+[11:38]
+And he was building the Ark (yasna‘ is narrating a past state [in the present tense]) and whenever a council,
+a group, of his people passed him, they scoffed at him, mocked him. He said, ‘Though you scoff at us, yet
+we scoff at you, even as you scoff, when we are saved, while you drown;
+[11:39]
+and you shall know to whom (man introduces the relative clause which constitutes the direct object of the
+[action of] ‘knowing’) will come a chastisement degrading him, and upon whom an enduring, an everlasting,
+chastisement will fall’.
+[11:40]
+Such that when (hattā represents the objective for [the action of] ‘building’) Our command came, for their
+destruction, and the, baker’s, oven gushed forth, with water — this was the sign for Noah — We said, ‘Load
+therein, in the ship, of every kind, [of every] male and female, that is, of every species of these two, two, a
+male and a female (ithnayn constitutes the direct object). According to the story, God gathered for Noah all
+the beasts of prey and birds and other [animals]; he [Noah] would go through every species [to select
+them] with his hands, and his right hand would fall upon a male and the left upon a female, whereupon he
+would take them aboard the ship; and your family — that is, his wife and children — save those against
+whom the Word has already gone forth, from among them, that they be destroyed: this was his wife and his
+son Canaan, in contrast with Shem, Ham and Japheth, whom he took aboard together with their three
+wives, and those who believe’. And none but a few believed with him: it is said that these were six men and
+their wives; it is also said that the number of all those aboard the ship was eighty, half of whom were men
+and the other half, women.
+[11:41]
+And he, Noah, said, ‘Embark therein! In the Name of God be its course and its mooring (read majrāhā and
+marsāhā, or mujrāhā and mursāhā, both being verbal nouns, meaning, the length of its course and where it
+docks, in other words, the entire journey). Truly my Lord is Forgiving, Merciful’, for He did not destroy us.
+[11:42]
+And it sailed with them amid waves like mountains, in terms of their height and size, and Noah called out to
+his son, Canaan, who was standing away, from the ship, ‘O my son, embark with us and do not be with the
+disbelievers!’
+[11:43]
+He said, ‘I shall take refuge in a mountain that will protect me, preserve me, from the water’. Said he, ‘This
+day there is none that can protect from God’s command, [from] His chastisement, except — but — him on
+whom He, God, has mercy’, he will be protected. God, exalted be He, says: And the waves came between
+them, so he was among the drowned.
+[11:44]
+And it was said, ‘O earth, swallow your waters, that have sprung forth from you — and it reabsorbed it [all]
+except for what came down from the sky and formed rivers and seas — and O heaven, abate!’, withhold the
+231
+
+rain, and it did. And the waters subsided, decreased. And the affair was accomplished, the matter of the
+destruction of Noah’s people was complete, and it settled, [and] the ship came to rest, upon al-Jūdī, a
+mountain in Mespotamia (al-jazīra), near Mosul; and it was said: ‘Away with — perish — the evildoing, the
+disbelieving, folk!’
+[11:45]
+And Noah called out to his Lord and said, ‘My Lord, lo! my son, Canaan, is of my family, and You promised
+me that they would be saved, and truly Your promise is the Truth, which never fails, and You are the Most
+Just of Judges’, the most knowledgeable and the fairest of them.
+[11:46]
+He, [God] exalted be He, said: ‘O Noah, lo! he is not of your family, of those [who will be] saved, or of the
+followers of your religion; lo! it, that is, your asking me to save him, is not a righteous deed, for he is a
+disbeliever and there is no deliverance for disbelievers (‘āmalun ghayru sālihin, ‘it is not a righteous deed’: a
+variant reading has ‘āmila, the verb, with ghayra in the accusative, in which case the person governing [the
+verb ‘amila] is his son). So do not ask of Me (read either fa-lā tas’alanni, or fa-lā tas’alni) that whereof you
+have no knowledge, in respect to saving your son. I admonish you lest you be among the ignorant’, when
+you ask about what you do not know.
+[11:47]
+He said, ‘My Lord, I seek refuge in You, from [the sin], that I should ask of You that whereof I have no
+knowledge. Unless You forgive me, my excess, and have mercy on me I shall be among the losers’.
+[11:48]
+It was said, ‘O Noah, go down, disembark from the ship, in peace, in safety, or with a greeting, from Us and
+blessings, good things, upon you and upon some communities [that will spring] from those with you, in the
+ship, that is, from their children and their seed, those who are [and those who will be] the believers. And
+[there will be other] communities (read umamun), [to spring] from those with you, to whom We shall give
+enjoyment, in this world, and then a painful chastisement will befall them’, in the Hereafter, and these will
+be the disbelievers.
+[11:49]
+Those, that is, these verses, containing [stories such as] the story of Noah, are of the tidings of the Unseen,
+[of] the tales of that which was hidden from you, which We inspire in you, O Muhammad (s). You yourself
+did not know it, nor did your people [know it] before this, Qur’ān. So be patient, in conveying [the Message]
+and in [enduring] your people’s hurt, as Noah endured. Truly the, praiseworthy, sequel is for those who are
+God-fearing.
+[11:50]
+And, We sent, to ‘Ād their brother, from the tribe, Hūd. He said, ‘O my people, worship God!, affirm His
+Oneness. You have no god (min ilāhin: min is extra) other than He. You, in your worship of graven images,
+do but invent, [you do but] invent lies against God.
+[11:51]
+O my people, I do not ask of you any wage for it, for the affirmation of His Oneness. Lo! my wage falls only
+upon Him Who originated me, created me. Will you not understand?
+[11:52]
+
+232
+
+And, O my people, ask forgiveness of your Lord, for [your] idolatry, then turn, return, to Him repentant,
+through obedience; He will release the sky, [He will release] the rain — for they had been denied it — upon
+you in abundance, with abundant rainfall, and He will add to you strength to your strength, through wealth
+and children. Do not turn away as sinners’, idolaters.
+[11:53]
+They said, ‘O Hūd, you have not brought us any clear proof, [any] evidence for what you say, and we are
+not going to forsake our gods on [the basis of] your saying, that is, because of what you say, and we are
+not believers in you.
+[11:54]
+We say nothing, concerning you, save that one of our gods has possessed you in some evil way’, rendering
+you insane, for your having cursed them, and so you are raving. He said, ‘Lo! I call God to bear witness, for
+me, and you, bear witness also, that I am innocent of what you associate, with Him,
+[11:55]
+beside Him; so plot against me, devise ways to destroy me, all together, you and your graven images, then
+give me no respite, grant me [no] reprieve.
+[11:56]
+Truly I have put my trust in God, my Lord and your Lord; there is no (mā min: min is extra) creature, no
+living thing that treads upon this earth, but He takes it by the forelock, that is, [but] He is its possessor and
+subjugator, so that no benefit or harm occurs except by His permission — the forelock is specifically used
+here because he who is taken by his forelock suffers the ultimate humiliation. Surely my Lord is on a straight
+path, that is, [on] the way of truth and justice.
+[11:57]
+And if you turn away (tawallaw: one of the two tā’ letters [of tatawallaw] has been omitted), that is, if you
+object, still I have conveyed to you that wherewith I was sent to you, and my Lord will set in place of you a
+folk other than you. You cannot injure Him in any way, by your idolatry. Truly My Lord is Preserver,
+Watcher, over all things’.
+[11:58]
+And when Our command, Our chastisement, came to pass We delivered Hūd and those who believed with
+him by a mercy, by guidance, from Us, and We delivered them from a harsh, a severe, chastisement.
+[11:59]
+And that was ‘Ād — [this is] an allusion to their remains; in other words, go forth in the land and look at
+these [remains]. God then describes their case, saying: they knowingly denied the signs of their Lord and
+disobeyed His messengers (rusulahu is in the plural, because when a person disobeys a messenger he has
+[effectively] disobeyed all of them, since they share a common principle in that [Message] with which they
+come, namely, [the principle of] God’s Oneness); and they, that is, the riffraff, followed the command of
+every rebellious tyrant, [every] leader of theirs who is obstinate with regard to the truth.
+[11:60]
+And a curse was made to follow them in this world, from people, and on the Day of Resurrection, a curse
+[will follow them] for all creatures to see. ‘Lo! ‘Ād disbelieved in, they knowingly denied, their Lord. Lo!
+away, [far] from God’s mercy, with ‘Ād, the folk of Hūd!’
+233
+
+[11:61]
+And, We sent, to Thamūd their brother, from the tribe, Sālih. He said, ‘O my people, worship God!, affirm
+His Oneness. You have no god other than He. He it is Who produced you, [Who] began your creation, from
+the earth, by creating your father Adam from it, and has given you to live therein, He has made you
+inhabitants, living therein; so ask forgiveness of Him, from idolatry, then turn, return, to Him repentant,
+through [acts of] obedience. Truly my Lord is Near, to His creation by [virtue of] His knowledge,
+Responsive’, to those who ask of Him.
+[11:62]
+They said, ‘O Sālih, you had been one of promise among us, that is to say, we had hoped that you would
+become [our] chief, before this, that has issued from you. Do you forbid us to worship what our fathers
+worshipped?, in the way of graven images? Truly we are in grave doubt, [doubt] creating [great]
+uncertainty, concerning that to which you are calling us’, in the way of [affirming] God’s Oneness.
+[11:63]
+He said, ‘O my people, have you considered: if I am [acting] upon a clear proof, a [clear] statement, from
+my Lord, and He has given me from Him mercy, prophethood, who will help me, [who will] defend me,
+against God, [against] His chastisement, if I disobey Him? You would only be adding, by commanding me to
+do that, to my loss, [my] misguidance.
+[11:64]
+And, O my people, this is the she-camel of God, a sign for you (āyatan is a circumstantial qualifier operated
+by the demonstrative noun [hādhihi, ‘this’]). Leave her to eat in God’s earth and do not cause her any harm,
+[by] hamstringing [her], lest you be seized by a near chastisement’, if you do hamstring her.
+[11:65]
+But they hamstrung her, Qudār hamstrung her at their command, and he, Sālih, said, ‘Enjoy [yourselves],
+live, in your dwellings for three days, whereafter you will be destroyed. That is a promise that will not be
+belied’.
+[11:66]
+So, when Our command came, for their destruction, We delivered Sālih and those who believed with him,
+they numbered 4000, by a mercy from Us, and, We delivered them, from the ignominy of that day (read
+yawmi’idhin [if understood] as declinable, or read yawma’idhin on the basis of it [yawm, ‘day’] being
+annexed to an invariable [idhin, ‘that’], which is the majority view). Truly your Lord is the Strong, the
+Mighty, the Victor.
+[11:67]
+And those who did evil were seized by the Cry, so that they ended up lying lifeless prostrate in their
+habitations, keeled over their knees, dead,
+[11:68]
+as if (ka-an had been softened and its subject omitted, in other words [understand it as] ka’annahum) they
+had not dwelt there, in their dwelling-place: ‘Lo! Thamūd disbelieved in their Lord, lo! away with Thamūd!’
+(this may be read, declined, li-Thamūdan, or left, as indeclinable, li-Thamūda, referring to the district or the
+tribe).
+
+234
+
+[11:69]
+And verily Our messengers came to Abraham with good tidings, of [the birth of] Isaac and, after him, Jacob.
+They said, ‘Peace!’ (salāman is a verbal noun). He said, ‘Peace!’, be upon you, and did not delay to bring a
+roasted calf.
+[11:70]
+And when he saw their hands not reaching to it, he was suspicious of them and conceived, he kept secret in
+himself, a fear of them. They said, ‘Fear not. Lo! we have been sent to the people of Lot’, to destroy them.
+[11:71]
+And his wife, that is, Abraham’s wife, Sarah, standing by, serving them, laughed, at the good tiding of their
+destruction; and so We gave her the good tiding of Isaac, and, after Isaac, of Jacob, his son, whom she
+would live to see.
+[11:72]
+She said, ‘Woe to me! (yā waylatā is an expression used in [reaction to] a serious matter; the alif [suffixed
+in waylatā] substitutes for the yā’ of the genitive annexation [waylatī, ‘my woe’]). Shall I bear a child when I
+am an old woman, 99 years old, and this my husband is an old man?, 100 or 120 years old (shaykhan is in
+the accusative because it is a circumstantial qualifier, operated by the demonstrative import of dhā, ‘this’).
+Truly this is a strange thing’, that a child should be born to such an aged couple.
+[11:73]
+They said, ‘Are you astonished by God’s command?, [by] His power? The mercy of God and His blessings be
+upon you, O, people of the House!, the House of Abraham. Truly He is Praised, Glorious!’, Generous.
+[11:74]
+And when the awe, the fear, departed from Abraham and the good tiding came to him, of a child, he began
+to plead with Us, pleading with Our messengers, concerning the, matter of the, people of Lot.
+[11:75]
+Assuredly Abraham was forbearing, long-suffering, imploring, penitent, always returning [to God] in
+repentance: thus he said to them, ‘Would you destroy a town in which there are 300 believers?’ They said,
+‘No’. He said, ‘Would you destroy a town in which there are 200 believers?’ They said, ‘No’. He said, ‘Would
+you destroy a town in which there are 40 believers?’ They said, ‘No’. He said, ‘Would you destroy a town in
+which there are 14 believers?’ They said, ‘No’. He said, ‘What if there were one believer in it?’ They said,
+‘No’. He said, ‘Lot is in it’. They said, ‘We know full well who is in it’ … to the end [of the narrative].
+[11:76]
+When he had pleaded with them at length, they said: ‘O Abraham, desist from this, pleading. Truly your
+Lord’s command, for their destruction, has gone forth, and truly there will come upon them a chastisement
+which cannot be repelled’.
+[11:77]
+And when Our messengers came to Lot, he was distressed, he was grieved on their account, and felt
+constrained in his power to protect them, because they had handsome faces and were dressed as [visiting]
+guests, and so he feared for them from his people, and he said, ‘This is a distressful, a very difficult, day’.
+
+235
+
+[11:78]
+And his people, when they became aware of them, came to him, running, hastening, towards him — and
+previously, before they came, they had been committing abominations, namely, penetrative sexual
+intercourse with men. He, Lot, said, ‘O my people! Here are my daughters, marry with them; they are purer
+for you. So fear God, and do not degrade me, [do not] disgrace me, before my guests. Is there not among
+you any upright man?’, to enjoin decency and forbid indecency?
+[11:79]
+They said, ‘You know full well that we have no right to, no need of, your daughters, and you know well what
+we desire’, in the way of sexual intercourse with men.
+[11:80]
+He said, ‘Would that I had strength, power, to resist you or could resort to some strong support!’, [to] some
+clan that would help me, I would surely fall upon you. So, when the angels saw this,
+[11:81]
+they said, ‘O Lot, truly we are messengers of your Lord. They shall not reach you, with any harm, so travel
+with your family during a part of the night, and let not one of you turn round, lest they see the terrible
+predicament that will befall them, except for your wife: (read illā imra’atuka, in the nominative, as a
+substitute for ahadun; a variant reading has illā imra’ataka, in the accusative, as [her being] an exception
+among [his] ‘family’, in other words, do no take her along when you travel) lo! she shall be smitten by that
+which smites them: it is said that he did not take her along with him; it is also said that she did set out [with
+them] and turned round, and so exclaimed, ‘Woe is my people!’, at which point a stone struck her and killed
+her. When he [Lot] asked them about the time of their destruction, they replied: Truly their tryst is [for] the
+morning, and when he said, ‘I want it to be sooner’, they said: is the morning not nigh [enough]?’
+[11:82]
+So when Our command, for their destruction, came to pass We made their uppermost, that is, their cities,
+the nethermost — when Gabriel raised them to the sky and dropped them upside down to the earth, and We
+rained upon them stones of baked clay, clay baked in fire, one after another,
+[11:83]
+marked, [each one of them] with the name of the person it would strike, with your Lord (‘inda rabbik is an
+adverbial qualifier for these [stones]), and they, the stones — or their lands — are not far from the
+evildoers, that is, [from] the people of Mecca.
+[11:84]
+And, We sent, to Midian their brother Shu‘ayb. He said, ‘O my people, worship God!, affirm His Oneness.
+You have no god other than He. And diminish not the measure or the weight. I see you in prosperity,
+[enjoying] a grace which precludes any need for stinting [people]; and I fear for you, should you not
+believe, the chastisement of a besetting day, [besetting] you, destroying you (the attribution of this term
+[‘besetting’] to ‘a day’ [as opposed to ‘the chastisement’] is figurative, for it [the chastisement] will take
+place thereupon).
+[11:85]
+O my people, give full measure and weight, fulfil [the due of] both of these, in justice, and do not defraud
+people in respect of their goods, do not diminish anything of their due, and do not be degenerate in the
+land, working corruption, by killing or otherwise ([lā ta‘thaū] derives from ‘athiya, meaning afsada, ‘he
+236
+
+corrupted’; mufsidīn, ‘working corruption’, is a circumstantial qualifier reiterating the import of the term
+operating it, ta‘thaū, ‘[do not] be degenerate’).
+[11:86]
+The remainder [which is] from God, that provision of His which remains for you after you have given full
+measure and weight, is better for you, than fraud, if you are believers; and I am not a guardian over you’, a
+watcher, that I should requite you for your deeds: I was sent only as a warner.
+[11:87]
+They said, to him mockingly: ‘O Shu‘ayb, does your [way of] prayer command you, with the obligation [to
+make sure], that we should leave what our fathers [used to] worship, of idols, or, that we should cease, to
+do as we will with our goods?, meaning that such a command is an absurdity which no person calling to
+good would commend. You are indeed the forbearing, the right-guided’: they said this in mockery.
+[11:88]
+He said, ‘O my people, have you considered that I might be [acting] upon a clear proof from my Lord and
+that He has provided me with fair, wholesome, sustenance from Him?, should I then blemish it with what is
+unlawful, in the way of fraud or stinting? And I do not desire to be inconsistent, and then partake, in what I
+forbid you, thus committing the same. I desire only to set things right, in your case, by way of [enjoining]
+justice, so far as I am able. My success, my ability to do this [successfully] and [to enjoin] other acts of
+obedience, is only with God. In Him I trust and to Him I turn, I return, [repentant].
+[11:89]
+And, O my people, let not the breach with me, the dispute [you have] with me (shiqāqī, ‘the breach with
+me’, is the subject of the verb yajrimannakum, ‘make you deserve’, in which the [suffixed] pronoun [-kum,
+‘you’] constitutes the first direct object, the second being [what follows]) make you deserve, earn you [as
+punishment], that there befall you the like of what befell the people of Noah, or the people of Hūd, or the
+people of Sālih, in the way of chastisement; and the people of Lot, that is, their dwelling-places or the era in
+which they were destroyed, are not far away from you, so take heed [of this].
+[11:90]
+And ask forgiveness of your Lord, then repent to Him. Truly my Lord is Merciful, to believers, Affectionate’,
+loving towards them.
+[11:91]
+They said, in proclamation of their lack of concern: ‘O Shu‘ayb, we do not understand much of what you say.
+Truly we see you are weak, abject, among us, and were it not for your clan, we would have stoned you; for
+you are not, too, powerful, [too] venerable, for us’, to stone, but it is your clan that is powerful.
+[11:92]
+He said, ‘O my people, is my clan more venerable in your sight than God?, such that you refrain from killing
+me because of them, instead of [your] protecting me for [being the Messenger of] God? And do you put
+Him, God, behind you, neglected?, rejected, behind your backs, not mindful of Him? Truly my Lord
+encompasses, in knowledge, what you do, and will requite you.
+[11:93]
+And, O my people, act according to your ability, your circumstances, lo! I [too] am acting, according to
+mine. You will soon know upon whom (man is the relative particle introducing the direct object of [the action
+237
+
+of] ‘knowing’) will come the chastisement that will abase him, and who is a liar. And sit in watch, wait for
+the consequence of your affair: I too will be with you watching’, waiting.
+[11:94]
+And when Our command came, for their destruction, We delivered Shu‘ayb and those who believed with him
+by a mercy from Us; and the Cry seized those who were evildoers — Gabriel cried at them — and they
+ended up lying lifeless prostrate in their habitations, keeled over on their knees, dead,
+[11:95]
+as if (ka-an is softened, in other words [understand it as] ka-annahum) they had never dwelt there: ‘Lo!
+Away with Midian, just as Thamūd was done away with!’
+[11:96]
+And verily We sent Moses with Our signs and a clear warrant, a manifest and evident proof,
+[11:97]
+to Pharaoh and his council; but they followed Pharaoh’s command, and Pharaoh’s command was not rightguided, appropriate.
+[11:98]
+He will go before his people on the Day of Resurrection, and they will follow him, as they did in this world,
+and he will lead them, he will admit them, to the Fire — an evil place, it is, for those entering it!
+[11:99]
+And a curse was made to follow them in this [world], as well as, a curse, on the Day of Resurrection — evil
+is the assistance offered!, in their case.
+[11:100]
+That, which is mentioned (dhālika is the subject, the predicate of which [follows]), is [something] of the
+tidings of the towns, which We relate to you, O Muhammad (s). Some of them, that is, [of] the towns, are
+standing, only its inhabitants having been destroyed, and some, of them, have been cut down, destroyed
+together with its inhabitants, such that there are no vestiges thereof, much like crops harvested with sickles.
+[11:101]
+And We did not wrong them, destroying them for not having committed any sins, but they wronged
+themselves, through idolatry. Their gods did not avail, defend, them in any way (min shay’in: min is extra),
+those [gods] upon whom they called, [whom] they worshipped, besides God, that is, other than Him, when
+the command of your Lord, His chastisement, came; and they [their gods] — through their [the
+disbelievers’] worship of these [gods], did not increase them in anything but ruin, [but] loss.
+[11:102]
+Such, like that seizing, is the seizing of your Lord when He seizes the towns, meaning its inhabitants, while
+they are doing wrong, by way of sins: in other words, nothing can avail them in any way when He seizes
+them. Truly His seizing is painful, severe. The two Shaykhs [Bukhārī and Muslim] reported [by way of an
+isnād] from Abū Mūsā al-Ash‘arī that he said, ‘The Prophet (s) said, “God gives [extended] respite to the
+evildoer, but when He seizes him there is no escape for him”, whereupon the Prophet (s) recited the verse:
+Such is the seizing of your Lord [Q. 11:102, above]’.
+238
+
+[11:103]
+There is indeed in that, which is mentioned of stories, a sign, a lesson, for him who fears the chastisement
+of the Hereafter: that, in other words, the Day of Resurrection, is a day to which, on which, mankind will be
+gathered, and that is a day witnessed, witnessed by all creatures.
+[11:104]
+And We do not defer it but to a term [already] reckoned, [but] to a time predetermined by God.
+[11:105]
+The day it, that day, comes, no soul shall speak (takallamu: one of the tā’ letters [of tatakallamu] has been
+omitted) except by His permission, exalted be He. Some of them, that is, [some] creatures, will be wretched,
+and [some], of them, joyous, each having been determined [to be thus] from pre-eternity.
+[11:106]
+As for those who are damned, according to God’s [prior] knowledge, they will be in the Fire; their lot therein
+will be wailing, which is a loud sound, and sighing, which is a faint sound;
+[11:107]
+abiding therein for as long as the heavens and the earth endure, that is, [for] the length of the duration of
+both in this world, except, other than, what your Lord may will, in the way of adding to the duration of these
+two, such that it [their abiding] becomes indefinite: meaning that they will abide therein forever. Truly your
+Lord is Doer of what He desires.
+[11:108]
+And as for those who are fortunate (read sa‘idū or su‘idū) they shall be in Paradise, abiding therein for as
+long as the heavens and the earth endure except, other than, what your Lord may will — as mentioned
+already [of increasing the duration], which in their case is indicated by His words, an endless bounty, [one
+not] to be cut off. The interpretation given above seems to be the clear and obvious one, devoid of
+affectation, but God knows best what it means.
+[11:109]
+So do not be, O Muhammad (s), in doubt, in uncertainty, concerning what these [folk] worship, of idols: We
+will indeed chastise them as We did those before them — this is intended as solace for the Prophet (s). They
+worship only as their fathers worshipped — that is, in the same way — before, and indeed We chastised
+them; and We shall surely pay them, like those [fathers of theirs], their whole due, their portion of the
+chastisement, undiminished, that is, in full.
+[11:110]
+And We verily gave Moses the Scripture, the Torah, but differences arose concerning it, some believing,
+others denying, just as [is the case] with the Qur’ān; and were it not for a word that went forth from your
+Lord, to defer the reckoning and the requital for creatures to the Day of Resurrection, the case would have
+been decided between them, in this world, regarding that over which they differed; and truly they, that is,
+those who deny it, are in grave doubt concerning it, [doubt] creating [great] uncertainty.
+[11:111]
+And assuredly (read wa-in or wa-inna) to each, that is, to all creatures, verily (la-mā: the mā is extra and
+239
+
+the lām is in the place of an implied oath or a separator; a variant reading has lammā, with the sense of illā,
+‘but’, making the [preceding] in for negation), your Lord will pay for his works, that is, the requital thereof,
+in full. Truly He is Aware of what they do, knowing the inner and outer aspects thereof.
+[11:112]
+So remain upright, acting in accordance with the commandment of your Lord and supplicating Him, as you
+have been commanded, and, let him also remain upright, he who repents, [who] believes, with you; and do
+not transgress, [do not] overstep the bounds of God. Truly He sees what you do, and will requite you for it.
+[11:113]
+And do not incline toward the evildoers, through affection or adulation, or [by showing] satisfaction with
+their actions, lest the Fire touch, smite, you, and you have, besides God, other than Him, no protectors (min
+awliyā’: min is extra), to guard you from Him; and then you will not be helped, you will [not] be protected
+from His chastisement.
+[11:114]
+And establish prayer at the two ends of the day, at first light and before sunset, that is, [pray] in the
+morning, at noon, and in the afternoon, and in some watches (zulafan is the plural of zulfa), a portion, of
+the night, that is, at sunset and late evening. Indeed good deeds, such as the five prayers, annul misdeeds,
+minor sins: this was revealed regarding one who kissed a female stranger and told the Prophet (s) about it,
+and then asked him, ‘Is this [verse true] for me?’ and the Prophet said to him, ‘It is [so] for every person of
+my community’, as reported by the two Shaykhs [Bukhārī and Muslim]. That is a remembrance for the
+mindful, an admonition for those who heed them.
+[11:115]
+And be patient, O Muhammad (s), in [enduring] the harm inflicted [upon you] by your people, or in
+[performing] prayer, for indeed God does not waste the wage of those who are virtuous, by patiently
+enduring through [acts of] obedience [to God].
+[11:116]
+If only there had been among the generations, past communities, before you men possessing a remnant [of
+good sense], men of religion and virtue, forbidding corruption in the earth (this [statement] is intended to
+be a negation, in other words, ‘there never were such [men] among them’), except, but, a few of those
+whom (mimman: min is explicative) We delivered from among them, did forbid [corruption] and were thus
+delivered. But those who did wrong, through corruption and neglecting to forbid, followed that by which
+they were made profligate, and were sinners.
+[11:117]
+Yet your Lord would never destroy the towns through injustice, on His part, against them, while their
+inhabitants were righteous, that is, believers.
+[11:118]
+Had your Lord willed, He would have made mankind one community, people of one religion, but they
+continue to differ, in religion,
+[11:119]
+except those on whom your Lord has mercy, [those] for whom He desires good, and so they do not differ in
+it — and that is why He created them, that is, [He created] those of difference for that [in other words, so
+240
+
+that they should differ] and those deserving mercy for that [in other words, so that they should receive
+mercy]. And the Word of your Lord has been fulfilled, namely: ‘I will surely fill Hell with jinn and mankind
+together’.
+[11:120]
+And all that (kullān is in the accusative because [it is the direct object] of naqussu, ‘We relate’; and the
+nunation compensates for a [missing] genitive annexation), that is, all that is necessary, We relate to you of
+the accounts of the messengers, that (mā substitutes for kullan, ‘all that’) with which We might strengthen,
+reassure, your heart. And in these, accounts, or verses, there has come to you the Truth and an admonition
+and a reminder to the believers: they are specifically mentioned here because they are the ones to benefit
+from them, through their belief [in them], in contrast to [the case with] the disbelievers.
+[11:121]
+And say to those who do not believe: ‘Act according to your ability, [according] to your status, we are
+acting, according to our status — [this is] a threat for them.
+[11:122]
+And wait, for the consequence of your affair, we are also waiting’, for this.</div>
+    <div class="companion-text companion-ar-orig" style="display:none;direction:rtl;text-align:right;font-family:'Amiri',serif;font-size:1.05rem;line-height:2;">[Arabic source forthcoming]</div>
+    <div class="companion-source">Tafsīr al-Jalālayn · Jalāl al-Dīn al-Maḥallī and Jalāl al-Dīn al-Suyūṭī · English trans. Feras Hamza (Royal Aal al-Bayt Institute, 2007)</div>
+  </div>
+</div>
+  <div class="companion-panel" id="outer-rab-25">
+  <button class="companion-toggle" onclick="toggleCompanion('rab-25',this)" aria-expanded="false">
+    <span class="companion-icon">&#128215;</span>
+    <span class="companion-label" dir="rtl">&#1585;&#1615;&#1608;&#1581;&#1615; &#1575;&#1604;&#1618;&#1576;&#1614;&#1610;&#1614;&#1575;&#1606;&#1616; &middot; <em style="font-style:italic;opacity:.8">R&#363;&#7717; al-Bay&#257;n</em></span>
+    <span class="companion-arrow">&#9662;</span>
+  </button>
+  <div class="companion-content" id="rab-25">
+    <div class="companion-header">
+      <div><div class="companion-title-ar">&#1585;&#1615;&#1608;&#1581;&#1615; &#1575;&#1604;&#1618;&#1576;&#1614;&#1610;&#1614;&#1575;&#1606;&#1616; &#1601;&#1616;&#1610; &#1578;&#1614;&#1601;&#1618;&#1587;&#1616;&#1610;&#1585;&#1616; &#1575;&#1604;&#1618;&#1602;&#1615;&#1585;&#1618;&#1570;&#1606;&#1616;</div>
+      <div class="companion-title-en">R&#363;&#7717; al-Bay&#257;n · Ism&#257;&#703;&#299;l &#7716;aqq&#299; al-Bur&#363;saw&#299;</div></div>
+      <div class="companion-lang-btns">
+        <a href="https://usul.ai/t/ruh-bayan" target="_blank" rel="noopener"
+           style="font-family:'EB Garamond',serif;font-size:.75rem;color:rgba(100,180,120,0.7);border:1px solid rgba(100,180,120,0.3);padding:.2rem .6rem;border-radius:12px;text-decoration:none;">
+          Open on Usul.ai &#8599;</a>
+      </div>
+    </div>
+    <div class="companion-text" style="color:rgba(150,200,150,0.45);font-family:'EB Garamond',serif;font-size:.85rem;direction:ltr;font-style:italic;">
+      Arabic text for Sūrat Hūd (Q. 11) — available at Usul.ai (link above).</div>
+    <div class="companion-source">Ism&#257;&#703;&#299;l &#7716;aqq&#299; al-Bur&#363;saw&#299;, R&#363;&#7717; al-Bay&#257;n. Digital edition: usul.ai/t/ruh-bayan</div>
+  </div>
+</div>
+  <div class="sheikh-panel" dir="ltr">
+    <details>
+      <summary>&#x1F3A7; Sheikh Ibrāhīm Niasse — Arabic Audio (YouTube)</summary>
+      <a href="https://www.youtube.com/playlist?list=PLZ5oMWd9FHnMr2IxNaR6KFSmfMrfBHJOn" target="_blank" rel="noopener" style="color:rgba(201,168,76,0.6);font-size:.8rem;direction:ltr;">&#x1F517; Open Playlist &#8599;</a>
+    </details>
+  </div>
+  <div class="arabic-block" dir="rtl">
+<p>أعوذ بالله من الشيطان الرجيم بسم اللّٰه الرحمن الرحيم اللهم صل على سيدنا محمد الفاتح لما أغلق والخاتم لما سبق ناصر الحق بالحق والهادي إلى صراطك لمستقيم وعلى آله حق قدره ومقداره العظيم ورضي اللّٰه تعالى عن أصحاب رسول اللّٰه صلى اللّه عليه وسلم، ولا حول ولا قوة إلا بالله العلي العظيم</p>
+<p>يا همة الشيخ احضري</p>
+<p>لنا بهذا المحضر</p>
+<p>ولتعطفي بنظرة</p>
+<p>تأتي لنا بالظفر</p>
+<p>( وَمَا صِ دَآبَّةٍ فِي الأَرْضِ إِلَّ عَلَى اللَّهِ رِزْفُهَا)) الدابة ما دب على وجه الأرض أو كل دبيب سواء في البر أو في البحر، «إلاَّ عَلَى اللَّهِ رِزْفُهَا» إلا تكفل اللّٰه تبارك وتعالى برزقها فضلا منه تبارك وتعالى. وأتى بصيغة &quot;عَلَى&quot; والله تبارك وتعالى مستحيل أن يكون عليه شيء، ولكن حيث ضمن أرزاق العباد وهو كريم لا يخلف وعده أتى بصيغة على لنَزداد ثقة بوعده تبارك وتعالى. ذكر أن كل دابة في الأرض رزقها على اللّٰه تبارك وتعالى، فعلى هذا معتمد أهل السنة على أن الرزق قسمان: حلال وحرام، لأننا نرى إنسانا ينتفع بشيء حرام مدة حياته، لو قلنا إن ذلك ليس برزقه لخالف الآية وإذا كان هذا رزقه علمنا أنه رزق حرام، إذاً كل ما دخل في يد الإنسان وانتفع به فهو رزقه سواء حلال أم حرام، فلهذا يسألون اللّٰه تبارك وتعالى الرزق الحلال 1 (وَيَعْلَمْ مُسْتَفَرَّهَا) مسكنها في الدنيا أو الصلب</p>
+<p class="footnote">1 - لحديث علي رضي اللّٰه عنه عن رسول اللّٰه صلى اللّٰه عليه وسلم (اللهم اكفني بحلالك عن حرامك وأغنني بفضلك عمن سواك) أخرجه الترمذي في سننه: كتاب الدعوات/ باب في دعاء النبي (3486)</p>
+<p>ولأحمد في مسنده: مسند العشرة المبشرين بالجنة/ مسند علي بن أبي طالب رضي اللّٰه عنه (1250).</p>
+<p>196</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>(وَمَسْتَوْدَعَهَآ ) بعد الموت أو في الرحم (كُلِّ مِي كِتَبٍ مَبِ) والله تبارك وتعالى المتكفل بالرزق لا يخفى عليه شيء في الأرض ولا في السماء يعلم محل كل شيء من المخلوقات، محله في الدنيا ومحله في الآخرة، محله في صلب أبيه ومحله في رحم أمه، وفي حياته وفي موته.</p>
+<p>يروى ان موسى عليه الصلاة والسلام لما بعثه اللّٰه إلى فرعون وقد ترك أهله في تلك الحالة، تركهم في الفلاة وقد نفست زوجته فتعلق قلبه بهم وتساءل كيف يعيشون بعده لما أرسله اللّٰه إلى فرعون، فأوحى اللّٰه إليه أن يضرب بعصاه الحجر، فضرب الحجر الذي أمامه فانفلق فإذا بصخرة، فأمر بضربها أيضا فضربها فانفلقت فإذا بصخرة ثانية فأمر بضربها فضربها فإذا بدودة صغيرة في فمها بعض الحشرات الصغيرة تأكلها حتى امتلأ بطنها، فقالت إنها تحمد اللّٰه الذي لم ينسها وهي في صخرة في صخرة في صخرة، لم ينسها ولم يجهل محلها.</p>
+<p>علم موسى أن القادر على إطعام هذه الدودة قادر على إطعام أهله، فاطمأن باله وذهب إلى فرعون وما تذكر أهله حتى هلك فرعون بعد أربعين سنة1 .</p>
+<p>كان أنس وعبد اللّٰه بن مسعود مع رسول اللّٰه صلى اللّٰه عليه وسلم فسمعا طائرا يتكلم، قال هل سمعتما ما يقول؟ قالا: لا، قال: قال: يا رب خلقتني أعمى وأنا جائع فأطعمني.</p>
+<p>قال هذا هو ما قاله هذا الطائر، فرأوا جرادة طارت ودخلت في فم الطائر فابتلعها فشبع، فتكلم أيضا قال الرسول صلى اللّٰه عليه وسلم: هل سمعتما ما قال؟ قالا: لا، قال إنه يحمد</p>
+<p class="footnote">1 - قال الصاوي في حاشيته على الجلالين: فلما وصل موسى إلى تلك النار التي أبصرها خاطبه اللّٰه وأرسله إلى فرعون وخلف أهله بالموضع الذي تركهم فيه، فلم يزالوا مقيمين فيه حتى مر بهم راع من أهل مدين فعرفهم فحملهم إلى شعيب فمكثوا عنده حتى جاوز موسى بيني إسرائيل البحر وغرق فرعون وقومه فبعثهم شعيب إلى موسى بمصر. ج50/3. وفي روح البيان ج96/4.</p>
+<p>197</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>اللّٰه الذي لم يعجزه أن يطعمه في حالته وهو ضعيف أعمى 1. الرزق على اللّٰه تبارك وتعالى.</p>
+<p>كان الحسين بن علي يكتب في سيفه: الرزق مقسوم، والحاسد محروم، والبخيل مذموم 2</p>
+<p>(كُلِّ فِي كِتَبٍ مَبِير) بين هو اللوح المحفوظ (وَهُوَ ألذِ خَلَقَ السَّمَوَاتِ وَالأَرْضَ فِي سِتَّةِ أَيَّامِ) هم كانوا يثنون صدورهم ليستخفوا من اللّٰه تبارك وتعالى، فبين لهم أنه يعلم ما يسرون وما يعلنون وأنه عليم بذات الصدور، وأنه ما من دابة في الأرض إلا عليه رزقها ويعلم مستقرها ومستودعها كل في كتاب مبين، أتى بحجة فوق ذلك كلا &quot; وَهُوَ ألذِى خَلَقَ أْلسَّمَٰوَاتِ وَالأَرْضَ فِى سِتَّةِ أَيَّامِ</p>
+<p>مِ&quot; اللّٰه المستحق للعبادة لابد أن يتصف بالعلم والقدرة. وصفه في الآية</p>
+<p>المتقدمة بيّن كونه عالما تبارك وتعالى حيث يعلم ما في الصدور، ويعلم ما يسرون وما يعلنون، ويعلم مستقر كل دابة ومستودعها، هذا يكفي أنه عالم بكل شيء، ولابد للإله من أن يكون قادرا أيضا فبيّن أنه هو الذي خلق السماوات والأرض في ستة أيام أولها الأحد وآخرها الجمعة 3 (وَكَانَ عَرْشُهُ قبل خلقهما ( عَلَى الْمَاءِ) والماء على متن الريح. اللّٰه تبارك وتعالى أول ما أوجد درة بيضاء وهي الحقيقة المحمدية، فنظر إليها نظر هيبة فصار منها البحار عرقا، فلم يزل البحر يرتعد من ذلك الوقت إلى يومنا هذا من شدة الهيبة التي نظر بها الجليل إلى الدرة البيضاء، فجعل الماء على متن الريح4، هذا قبل خلق السماوات والأرض، فخلق السماوات والأرض وخلق الكرسي وخلق العرش، والعرش فوق</p>
+<p class="footnote">1 - ذكرها البروسوي في روح البيان ج96/4.</p>
+<p class="footnote">2 - جاء في تفسير روح البيان ما نصه: قيل كان مكتوبا على سيف الحسين بن علي رضي اللّٰه عنه أربع كلمات: الرزق مقسوم والحريص محروم والبخيل مذموم والحاسد مغموم. ج97/4.</p>
+<p class="footnote">3 - قاله جلال الدين السيوطي في الجلالين انظر حاشية الصاوي ج208/2.</p>
+<p class="footnote">4 - نقله القرطبي عن كعب الأحبار، الجامع لأحكام القرآن ج9/ ص8.</p>
+<p>198</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>جميع العوالم ومحيط بجميع العوالم، وهو أعظم المخلوقات الجسمانية بحيث أن جميع المخلوقات مندرجة تحت العرش 1، فخلق السماوات السبع والأرضين السبع ووضعها على متن الحوت، حوت رأسه وذنبه يلتقيان عند العرش، وذلك الحوت على قرن ثور، جعل الحوت الذي هل العوالم كلا بين قرنيه، والثور على صخرة والصخرة بيد اللّٰه تبارك وتعالى، وتلك الصخرة هي المذكورة في سورة لقمان &quot;يَبْنَىِ إِنَّهَآ إن تَكُ مِثْقَالُ حَبَّهِ مِنْ حَزْدَلِ بَتَكْر مِي صَحْرَة أزْيِ الشَمَوَتِ أَوْ مي الأَرْضِ&quot; لما قال فتكن في صخرة أو في السماوات أو في الأرض علمنا أن تلك الصخرة ليست في السماوات ولا في الأرض، وهي الصخرة الخضراء التي بخضرتها انصبغت هذه السماء التي تلينا2، فإذا أراد اللّٰه فناء العالم يفتح الحوت فمه فتسيل البحار كلا في فمه وتصير يبسا في أسرع من لمحة، «وَكَانَ عَرْشُهُ, عَلَى ألْمَاءِ» قبل أن يخلق السماوات والأرض، الماء هو أول المخلوقات بعد الحقيقة المحمدية، وكون العرش فوق الماء لا يعني ملاصقتهما، ولكن كان الماء تحت والعرش فوق. وما بينهما غير موجود حتى خلق اللّه السماوات والأرضين وما فيهما من المخلوقات. فجعل اللّه آدم خليفة في الأرض وأسكنه فيها سكنها بنو آدم إلى آخر الدهر، والملائكة سكنوا السماوات، وأولوا العزم من الرسل سكنوا بأرواحهم الكرسي، وروح خاتم الأنبياء سكن العرش، وهذا الروح الذي سكن العرش هو الحقيقة المحمدية وهو معنى &quot;الرَّحْمَلُ عَلَى الْعَرْشِ إسْتَوى&#x27;&quot; الذي أتعب العلماء ولم يفهموه. الروح خاتم الأنبياء وهو الذي استوى على العرش وأرواح أولي العزم من الرسل على الكرسي، وباقي العوالم &quot;وَمَا مِنَّآ إِلاَّا لَهُو مَفَامٌ مَعْلُومٌ . العرش محيط بجميع العوالم عرش الرحمن، والذي سكن العرش هو رحمة اللّٰه تبارك وتعالى التي وسعت كل شيء، حيث أن</p>
+<p class="footnote">1 - القرطبي ج303-302/8.</p>
+<p class="footnote">2- راجع حاشية الصاوي على الجلالين ج257/3.</p>
+<p>199</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>الرحمة مظهرها الموجودات، والموجودات كلهم تحت العرش عبر بأن الرحمن فوق العرش، لأن مظهر تلك الصفة في العوالم التي تحت العرش والعرش فوق والشرع تحت. الشرع مقلوب العرش. العرش نزل عليه القرآن فنزل إلى الأرض فصار شرعا، فمن تمسك بهذا الشرع ترقى إلى ذلك العرش (ليَبْلَوَكُمْ ) أي خلقهما وما فيهما منافع لكم ومصالح ليختيبركم (أَيْكُمْ  أَحْسَنْ عَمَلًا) قال المفسر : أطوع لله. خلق اللّٰه تبارك وتعالى جميع العوالم ليبلو الخلق أيهم أحسن عملا. الإنسان إما أن يكون قصده بلسانه وبقلبه وبعمله هو الآخرة فهذا حسن نيةً وعملا، أو كان قصده بلسانه وبقلبه وبعمله الدنيا فهذا سيء عملا، وإما أن يكون قصده بقلبه هو الدنيا وبلسانه هو الآخرة فهذا هو المنافق، هذا أسوأ عملا، وإما أن يكون قصده بلسانه وبقلبه وبعمله هو وجه اللّٰه فهذا أحسن عملا. حسنٌ عملا، وسيءٌ عملا، وأسوأ عملا، وأحسن عملا. (وَلَسِي فُلْتَ) يا محمد لهم (إِنَّكُم مَبْعُوثُونَ مِنْ بَعْدِ الْمَوْتِ لَيَفُولَىَّ الذِينَ كَقَرُوَاْ إِنْ هَٰذَآ إِلَّ سِحْرٌ مُبِيسٌّ) الكفار لكفرهم وعنادهم إذا وعدهم النبي صلى اللّٰه عليه وسلم وعلمهم أنهم سيبعثون بعد الموت يقولون: هذا القرآن الذي ينطق بالبعث إنما هو سحر مبين. محمد ساحر والقرآن سحر، فلهذا أنكروا البعث، استغربوا الإعادة، والذي بدأ الخلق أولا قادر على إعادته عند كل عاقل، { وَلَبِيَ اخَّرْنَا عَنْهُمُ الْعَذَابَ إِلَى أمَّةٍ) أوقات (مَعْدُودَةٍ لَيَفُولُنَّ مَا يَحْبِسُةُ ) كفر وراء كفر، قالوا إن القرآن سحر وإذا أخر اللّه عنهم العذاب يقولون ما يحبس العذاب عن النزول، هلا نزل؟. الأمة جماعة من الناس إذا عاشوا زمنا يكون قرنا، وإذا انقضى قرن والعذاب لم ينزل يقولون إن هذا العذاب لم يأت، أي شيء يحبسه؟ يريدون بذلك تكذيب النبي صلى اللّٰه عليه وسلم قال تعالى (ألاَ يَوْمَ يَاتِيهِمْ لَيْسَ مَصْرُوماً عَنْهُمْ} بين لهم أن العذاب وإن استعجلوه سيأتي يوما وهو</p>
+<p class="footnote">1 - هو جلال الدين السيوطي.</p>
+<p>200</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>إذا أتى غير مندفع ووَحَاق بِهِم مَا كَانُوا بِهِ، يَسْتَهْزِءُولَ) أنواع الاستهزاء التي يستهزتون</p>
+<p>اني صلى الل علي ل ين عا ن ن ا (لَنَ ذَقْنَا الإنسَالَ مِنَّا</p>
+<p>رَحْمَةَ) غنى وصحة (ثُمَّ نَزَعْنَٰهَا مِنْهُ إِنَّهُو لَيَقْوس كَبّورَ اللّه تبارك وتعالى إذا من على إنسان من الكفار بنعمة فأعطاه غنى وصحة وسلبه تلك النعمة بعد يكون الإنسان قانطا من رحمة اللّٰه تبارك وتعالى شديد الكفر، يقول إن اللّٰه ما أعطاني شيئا (وَلَينَ آذَفْنَهُ نَعْمَآءَ تعذ فَرَّاةَ) فقر وشدة (مَسَّثْهَ لَيَفُولَنَّ دَهَبَ ألسَّيِنَتَ) المصائب ( عَتّيْ كذلك إذا</p>
+<p>ذهبت الشدائد يقول ذهبت عني المصائب وفرح بما بيده ولا يتوقع زواله أيضا ولا يشكر الله تبارك وتعالى (إِنَّهُ لَقَرِحٌ بطر مَخُورُ) على الناس بما أوتي (الا لكن (الذِين</p>
+<p>صتروا على الضراء (وَعَبِلُواْ الصَّلِحَتِ) في النعماء ( أزَّيِكَ لَهْم مَغْيِرَةَ رَأَجْرٌ كَبِيرَ)</p>
+<p>أما الإنسان الذي إذا افتقر صبر وإذا وجد نعمة شكر اللّٰه تبارك وتعالى، فأولئك الذين لهم مغفرة لذنوبهم وأجر كبير هو الجنة (قَلَعَلَّكَ) يا محمد ( تَارِكٌ بَعْضَ مَا يُوجِىّ إِلَيْكَ)</p>
+<p>فلا تبلغهم إياه لتهاونهم به و وَضَائِقَ بِهِ، صَدْرُكَ) بتلاوته عليهم، خاطب النبي صلى اللّٰه عليه وسلم، كان يتأسف لكفر قومه. والكفار يأتونه ويستهزئون به يقولون: آتنا بقرآن ليس هذا القرآن الذي يشتم آلهتنا ويسبنا ويسب آباءنا، آت بقرآن آخر غير هذا، هذا لا يمكن أننا نؤمن به أبدا، والرسول صلى اللّٰه عليه وسلم ينزل عليه القرآن ويشتم آلهتهم وهو يعلم أنه بتبليغ هذا يزدادون استهزاء وتهاونا بالقرآن، ربما يضيق صدره بتبليغ بعض القرآن إليهم حذرا أن يتهاونوا به، وهو لابد أن يرتكب أحد الأمرين: إما عدم التبليغ وهو خيانة مستحيلة في حق الأنبياء، عدم التبليغ ما يمكن، وإذا بلغ يجد الإذاية من قِبلهم، فأمِر بارتكاب أخف الضررين، الخيانة لا سبيل إليها في حق الرسول صلى اللّٰه عليه وسلم، فلبلغ القرآن ولو لقي ما لقي منهم ( أَنْ يَفُولُوا لَوْلَاَ أنزِلَ عَلَيْهِ كَنزُّ أَوْ جَآءَ مَعَهُ مَلَكً)</p>
+<p>201</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>يقولون يا محمد أنت فقير تدّعي أنك رسول اللّه وليس عندك شيء من المال؟ لا نؤمن بهذا، إذا كنت رسولا فليكن عندك المال الوافر وليأتنا ملك يصدقك كما اقترحنا، (انَمَا</p>
+<p>أنت نذيره اللّه تبارك وتعال خطبه بأن لا ليك لا البلا، لي ليك الإتيان بما اترحوه</p>
+<p>( وَاللهُ عَلَى كُلِّ شَيْءٍ وَكِيل حفيظ فيجازيهم به. لا يَعْظم عند أبناء الدنيا إلا أمر المال حتى يظنون أن النبي لا يستحق الرسالة إلا بكثرة المال، والنبي جاء ليزهد الناس في الدنيا ليقبلوا على الآخرة، فهو لا يبالي بالمال أصلا وهم يريدون أن يجد المال ليكون كبيرا له رئاسة وجاه فيستحق النبوة (آمْ يَفُولُونَ إجْتَرِيةُ) أم يقولون إن النبي صلى اللّٰه عليه وسلم هو الذي أتى بالقرآن من عنده { فُلْ بَاتُواْ بِعَشْرِ سُوَرٍ مِثْلِهِ) في الفصاحة والبلاغة ( مُبْتَرَيَتٍ) فإنكم عرب فصحاء مثلي، تحداهم بها أولا ثم بسورة، هذا هو التحدي، النبي يأتي بشيء يعجز المخلوقات جميعا ويقول آتوا بمثل هذا ولا يأتون بمثله. تحداهم أولا بالقرآن جميعا &quot; فُل لَبِنِ إجْتَمَعَتِ الانس وَالْجِرُّ عَلَىَ أَنْ يَاتُواْ بِمِثْلِ هَذَا الْفُرْءَالِ لاَ يَاتُوسَ بِمِثْلِهِ، وَلَوْ كَانَ بَعْضُهُمْ لِبَعْضٍ ظَهِيرا&quot; أقروا بعجزهم عن الإتيان بمثل القرآن. فتحداهم ثانيا «فُلْ بَانُواْ بِعَشْرِ سُوَرٍ مِثْلِهِ، مُفْتَرَيَتٍ» آتوا بعشر سور مثل القرآن، فعجزوا، فتحداهم بسورة واحدة قل: &quot; جَاتُواْ بِسُورَةٍ مِ مِثْلِهِ&quot; وإعجاز القرآن من باب الفصاحة، بلغ القرآن من الفصاحة مبلغا ما بلغه كلام أبدا، وكذلك البلاغة وكذلك النظم، وكذلك الإخبار بالمغيبات، كل هذا إعجاز. ولكن تحداهم بالإعجاز حيث أنهم لم يأتوا بعشر سور مثله في الفصاحة مفتريات، وإن كان مضمون تلك السور أكاذيب، ولكن يكون في فصاحة القرآن بهذه المرتبة، وهم عاجزون عن ذلك، فلما عجزوا عن ذلك قامت الحجة عليهم أن القرآن من عند اللّٰه لو كان من عند النبي وهو عربي مثلهم وهم عرب مثله لقدروا أن يأتوا بمثل ما أتى به النبي صلى اللّٰه عليه وسلم، ولكن عجزوا تماما، كل العرب أقروا بعجزهم عن أن ينطقوا</p>
+<p>202</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>بسيء يشاكل القرآن في الفصاحة والبلاغة، بعضهم دخل الإسلام بفصاحة القرآن فقط، سمع أعرابي قارئا يقرأ &quot;قَاصْدَعْ بِمَا تُومَرُ&quot; فسجد لله قالوا: لأي شيء؟ قال: لفصاحة</p>
+<p>قاصدَ غ&quot;٦ (وَادْعَوأ للمعاونة على ذلك (مَيِ إستَطعتَم مس دَون اللَهِم غيره هوان كَنتُمْ</p>
+<p>مفي في أنه اراء ( قَمْ يَسْتَجِيُوا لَكُمْ) من دعوقوهم للمعاونة ا غلَوْا خطاب</p>
+<p>للمشركين (أَنَّمَآ أنزِلَ أنزل القرآن متلبسا (ويعلْمِ اللَّهِ) وليس افتراء (وَأن) وأنه هولا</p>
+<p>الة إلاَ هَرَّ بَلَ آنتُم مُسْلِئُونَ ) بعد هذه الحجة القاطعة أسلموا (مَ كَانَ يَرِيدُ الحَيْرَة الَنْ</p>
+<p>عملوه من خير كصدقة وصلة رحم (فِيهَا) بأن نوسع عليهم رزقهم (وَهُمْ جِيهَا) في الدنيا ولا يَبْخَسُونَ) لا ينقصون شيئا (أَوْلُبِكَ أَلذِيرَ لَيْسَ لَهُمْ مِي الآخِرَةِ إِلاَّ التَّازَ ليس لهم جزاء في الآخرة (وَحَبِطَ) بطل مَا صَنَعُواْ فِيهَا)) في الآخرة فلا ثواب له (وَبَطِلٌ مَا كَانُواْ يَعْتَلُونَ أَجَمَى كَانَ عَلَىٰ بَيّنَةٍ) بيان ( مِ رَبِّهِ، وَيَتْلُوْ) يتبعه (قَاهِدَ) له يصدقه (مَنْهُ) من اللّٰه وهو جبريل (وَمِ فَبْلِهِ) قبل القرآن (كِتَبُ مُوسِىّ) التوراة شاهدا له أيضا ( إِمَاماً وَرَحْمَةً كمن ليس كذلك اوْلَيِكَ) أي من كان على بينة ( يومِنُونَ بِهِ)</p>
+<p>بالقرآن فلهم الجنة » وَمَنْ يَكْبُرْبِهِ القرآن مَ الاحْزَابِ) جميع الكفار ( بَالنَّارُ مَوْعِدَةٌ جَلَاَتَكُ بِى مِرْيَةِ شك مِنْهُ) من القرآن (إِنَّهُ الْحَقُّ مِن رَبِّكَ وَلَكِنَّ أَكْثَرَ اْلنَّاسِ) أهل مكة (لا يُومِنُونَ) كان أبو هريرة كلما قال رسول اللّٰه صلى اللّٰه عليه وسلم شيئا طلب مصداقه في القرآن ووجده، فجلس قوم يوما يتحدثون: عجبا لإبراهيم اتخذه اللّٰه خليلا، عجبا لموسى بن عمران كلمه اللّٰه تكليما، ما هو بأعجب من عيسى الذي خلق من روح</p>
+<p class="footnote">1 - الشفا بتعريف حقوق المصطفى للقاضي عياض، ج262/1.</p>
+<p>203</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>اللّٰه تبارك وتعالى 1، خرج إليهم رسول اللّٰه صلى اللّٰه عليه وسلم فقال لهم: والذي نفسي بيده لو عاش موسى بن عمران الذي أنزل عليه التوراة، وعيسى بن مريم الذي أنزل عليه الإنجيل ما وسعهما إلا اتباعي 2، وكل من أدركني ولم يتبعني فهو من أهل النار3، قال أبو</p>
+<p class="footnote">1 - أخرج الترمذي والدارمي في سننهما واللفظ للترمذي عن ابن عباس قال: جلس ناس من أصحاب رسول اللّٰه صلى اللّٰه عليه وسلم ينتظرونه، قال فخرج حتى إذا دنا منهم سمعهم يتذاكرون فسمع حديثهم فقال بعضهم: عجبا إن اللّٰه عز وجل اتخذ من خلقه خليلا اتخذ إبراهيم خليلا، وقال آخر: ماذا بأعجب من كلام موسى كلمه تكليما، وقال آخر: فعيسى كلمة اللّٰه وروحه، وقال آخر: آدم اصطفاه اللّه فخرج عليهم فسلم وقال: قد سمعت كلامكم وعجبكم إن إبراهيم خليل اللّٰه وهو كذلك، وموسى نجي اللّٰه وهو كذلك، وعيسى روح اللّٰه وكلمته وهو كذلك، وآدم اصطفاه اللّه وهو كذلك، ألا وأنا حبيب اللّه ولا فخر، وأنا حامل لواء الحمد يوم القيامة ولا فخر، وأنا أول شافع وأول مشفع يوم القيامة ولا فخر، وأنا أول من يحرك حلق الجنة فيفتح اللّٰه لي فيدخلنيها ومعي فقراء المؤمنين ولا فخر، وأنا أكرم الأولين والآخرين ولا فخر. الترمذي: كتاب المناقب / باب في فضل النبي (3549) وفي سنن الدارمي: المقدمة (47). تقدم في الدرس 7.</p>
+<p class="footnote">2 - ذكره ابن كثير دون إسناد قال: وفي بعض الأحاديث (لو كان موسى وعيسى حيين لما وسعهما إلا اتباعي) ج 379/1. ولأحمد في مسنده عن جابر بن عبد اللّٰه (... والذي نفسي بيده لو أن موسى صلى اللّٰه عليه وسلم كان حيا ما وسعه إلا أن يتبعني) مسند أحمد: مسند المكثرين/</p>
+<p>(14326)، وأيضا مسند أحمد/ مسند جابر بن عبد اللّٰه (14104) وللدارمي عن جابر (والذي نفس محمد بيده لو بدا لكم موسى فاتبعتموه وتركتموني لضللتم عن سواء السبيل ولو كان حيا وأدرك نبوتي لا تبعني) سنن الدارمي: المقدمة/ باب ما يتقى من تفسير قول النبي وقول غيره عند قوله (436).</p>
+<p>تقدم بعضه في الدرس 7.</p>
+<p class="footnote">3 - أخرج مسلم في صحيحه عن أبي هريرة عن رسول اللّٰه صلى اللّٰه عليه وسلم أنه قال: (والذي نفس محمد بيده لا يسمع بي أحد من هذه الأمة يهودي ولا نصراني ثم يموت ولم يؤمن بالذي أرسلت</p>
+<p>204</p>
+<p>بي رياض التفسير</p>
+<p>سورة هود</p>
+<p>هريرة فكنت أطلب دليل هذا في القرآن حتى وجدت هذه الآية1 «وَمَنْ يَكْعَرُ بِهِ مِنَ الأَحْزَابِ فَالنَّارُ مَوْعِدُهُ و قَلاَ تَكُ في مِرْيَةٍ مِنْهُ» كل من كان على أي دين كان ولو بلغ ما بلغ من التقشف والعبادات إن لم يؤمن بالرسول صلى اللّٰه عليه وسلم فهو كافر وهو شقي من أهل النار «إِنَّهَ ألْحَقُّ ص رَيِّكَ وَلَكِنَّ أَكْثَرَ ألتَاس لا يَومِيُونٌ» (وَمَرَ ٱَظلَمْ مِمَّى إقتربى عَلَى ألَهِ كَذِباً بنسبة الشريك والولد إليه (اوْلِّيِكَ يُعْرَضُونَ عَلَىٰ رَبِّهِمْ } يوم القيامة في حملة الخلق (وَيَفُولُ الاَشْهَدُ) جمع شاهد وهم الملائكة يشهدون للرسل بالإبلاغ وعلى الكفار بالتكذيب هَؤُلاءِ اِلذِيرَ كَذَبُواْ عَلَى رَبِّهِمْ  أَلا لَعْنَةُ اللَّهِ عَلَى الظَّلِمِينَ) المشركين (الذِيسَ يَصُدُّونَ عَى سَبِيلِ اللَّهِ) دين الإسلام ( وَيَبْعُونَهَا عِوَجَاً)) معوجة (وَهُم بِالآَخِرَةِ هُمْ عِرُونَ أوْلُيِكَ لَمْ يَكُونُواْ مُعْجِزِيَ) اللّه مِي الاَرْضِ وَمَا كَانَ لَهُم مِ دُونِ اللَّهِ) غيره ( اوْلِيَآءَ) أنصار (يُضَعَفُ لَهُمْ الْعَذَاب بإضلالهم غيرهم ( مَا كَانُواْ يَسْتَطِيْعُونَ السَّمْعَ) للحق {وَمَا كَانُواْ يُبْصِرُونَ نه لفرط كراهتهم له كأنهم لم يستطيعوا ذلك ( أَولِّيكَ الذِيرَ خَسِرُواْ أَنْمُسَهُمْ لمصيرهم إلى النار المؤبدة عليهم (وَضَلَّ) غاب (عَنْهُم مَا كَانُواْ</p>
+<p>به إلا كان من أصحاب النار) صحيح مسلم: كتاب الإيمان/ باب وجوب الإيمان برسالة نبينا محمد صلى اللّٰه عليه وسلم (218).</p>
+<p class="footnote">1 - ذكر ابن كثير في تفسيره عن سعيد بن جبير قال: كنت لا أسمع بحديث النبي صلى اللّٰه عليه وسلم على وجهه إلا وجدت مصداقه أو قال تصديقه في القرآن فبلغني أن النبي صلى اللّٰه عليه وسلم قال: لا يسمع بي أحد من هذه الأمة يهودي أو نصراني فلا يومن بي إلا دخل النار&quot; فجعلت أقول أين مصداقه في كتاب الله؟ قال: وقلما سمعت عن رسول اللّه صلى اللّٰه عليه وسلم إلا وجدت له تصديقا في القرآن حتى وجدت هذه الآية (وَمَنْ يَكْبَرْ بِهِ، مِ الأَحْرَابِ بَالنَّارُ مَوْعِدُهد). ابن كثير</p>
+<p>.441/2г</p>
+<p>205</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>يَجْتَرُونَ) على اللّٰه من دعوى الشريك (لا جَرَمَ) حقا وأنَّهُمْ في الآخِرَةِ هُمُ الآَخْسَرُونُ إِنَّ ألذِينَ ءَامَنُواْ وَعَمِلُواْ الصَّلِحَٰتِ وَأَخْبَتُوا) سكنوا واطمأنوا وأنابوا {إِلَى رَبِّهِمُدَ أَوْلِيِكَ أَصْحَبُ ألْجَنَّةُ هُمْ جِيهَا خَٰلِدُونّ مَقَلُ ألْبَرِيفَيْنِ) صفة الفريقين الكفار والمؤمنين (كَالاَعْبى وَالاَصَيم)</p>
+<p>الكافر بمنزلة الأعمى والأصم، هم عمي وصم (وَالْبَصِيرِ وَالسَّمِيعُ)) المسلم بمنزلة السميع البصير، المسلم سميع بصير، سميع لما يقال له بصير، والكافر أعمى وأصم ( هَلْ يَسْتَوِيَيِ</p>
+<p>مثلا لا بَلا تَذَّكَّرُون تتعظون .</p>
+<p>كل سورة نزلت على كفار مكة لابد أن يأتي فيها قصص الأنبياء وذلك تعريض بهم أن الذين كذبوا الأنبياء هلكوا وأنتم كذبتم النبي فستهلكون (وَلَفَدَ آَرْسَلْنَا نُوحاً إِلَىٰ فَوْمِيِ)</p>
+<p>أول الأنبياء أنبياء الشرائع هو يشكر 1 سمي نوحا لكثرة بكائه يقول المفسرون إن سبب نياحته لما دعا على قومه &quot;رَبِّ لا تَذَرْ عَلَى الأَرْضِ مِنَ الْكَمِرِينَ دَيَّارا ندم على ذلك فصار يبكي، وقيل بكى لطلب نجاة ولده كنعان كما سيأتي، وقيل بكى لأنه عاب كلبا يوما قال له: ما أقبحك، أوحى اللّٰه إليه: عبته أم عبتني أنا خالقه؟ فصار يبكي 2. وعلى كل فسمي نوحا لكثرة نياحته، أرسله اللّٰه إلى قومه ابن أربعين سنة فمكث تسعمائة وخمسين سنة يدعوهم إلى اللّٰه تبارك وتعالى، فكفروا فدعا عليهم فهلكوا بالطوفان، وعاش بعد الطوفان ستين سنة إنِّ بأني (لَكُمْ نَذِيرٌ مُبِينٌ) بين الإنذار ( آن لاَّ تَعْبُدُواْ إِلَّ اللَّهُ إِنِّبِيَ أَخَافُ عَلَيْكُمْ) إن عبدتم غيره ( عَذَابَ يَوْمِ الِيمْ) مؤلم في الدنيا والآخرة جَقَالَ ألْمَلَ أَلِذِيرَ كَجَرْوام قَوْمِهِ) الملأهم الأشراف، من ملأ إذا امتلاً، سمي الأشراف من الجماعة ملأ لأنهم يملأون عيون الناس أو يملأون المجالس أو يملأون الملابس، على كل فالملأ هم الأشراف</p>
+<p class="footnote">1 - القرطبي: كان اسمه يشكر، ج334/13.</p>
+<p class="footnote">2 - وردت هذه الأقوال في حاشية الصاوي على الجلالين ج80/2.</p>
+<p>206</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>من قومه ومَا نَرِيْكَ إِلاَّ بَشَراً مِثْلَنَا يا نوح لا فضل لك علينا حيث تكون نبيا مرسلا ونحن لسنا بأنبياء وأنت بشر مثلنا فقط. ألقوا ثلاث شُبَهِ: الشبهة الأولى ما نراك إلا بشرا مثلنا طووَمَا نَرِيْكَ إتَّبَعَكَ إِلاَّ الذِينَ هُمُوَ أَرَاذِلْتَا وأيضا لو كنت نبيا لأتبعك الأكابر والرؤساء، ولكن ما رأيناك اتبعك إلا أسافلنا، الفقراء والحاكة والأساكفة، وهؤلاء ليسوا بشيء بَادِي الرَّأْي وهذا يراه الإنسان من غير تفكر، هذه هي الشبهة الثانية (وَمَا نرى لَكُمْ عَلَيْنَا مِ قَصْلٍ ما رأينا عندكم فضلا في الخلق ولا في العقل ولا في أي شيء، كيف تكون نبيا ونحن لسنا بأنبياء؟ (بَل نَطَتُكُمْ كَذِيِينَ) هذا كلام الكفار، شبهة إبليس الأولى «مَا نَرِيُكَ إِلاَّ بَشَرَاً مِثْلَنَا وَمَا نَرِيْكَ إتَّبَعَكَ إِلَّ ألذِينَ هُمُ  أَرَاذِلْتَا» «وَمَا تَرِى لَكْمْ عَلَيْنَا صِ فَضْلٍ» فتستحقون الإتباع منا، «بَلْ نَظْتُّكُمْ كَذِبِينٌ» في دعوى الرسالة (قَالَ يَقَوْمِ) هو يرد عليهم وأرِّيْتُمُ ) أخبروني إِن كُنتُ عَلَى بَيّنَةِ) بيان (مِس رَبِّ وَءَاتَيْنِ</p>
+<p>رَحْمَة) نبوة (منْ عندِهِ بَعَبِيَتْ خفيت عَلَيْكُمْ و أَنْلْزِمُكُمُوهَا ) أنجيركم على قبولها</p>
+<p>(وَنتُمْ لَهَا كَرِهُونَ) لا نقدر على ذلك. رد عليهم بأنه إذا أتاه نبوة من اللّٰه تبارك وتعالى وأعمى اللّٰه بصائرهم حتى لم يبصروا فليس له قوة على أن يجبرهم على قبولها ( وَيَقَوْمٍ لَا أَسْتَلُكُمْ عَلَيْهِ مَالًا إِنَ اجْرِى إِلَّ عَلَى اللَّهِ) رد شبهة أخرى بقوله: إن رأيتموني فقيرا ليس عندي مال فأنا لا أطلب منكم شيئا أبدا «اتَ آجْرِيَ إِلاَّ عَلَى اللَّهِ» لا تخافوا من فقري تظنون أني أكلفكم رزقي أنا رزقي على اللّٰه تبارك وتعالى. ورد على الشبهة الثالثة (وَمَا أَنَا بِطَارِدِ إِلذِينَ ءَامَنُوا الأراذل الذين أشرتم إلى أني أطردهم ما أنا بطاردهم ( إِنَّهُم مُلَفُوا رَبِِّهِمْ) بالبعث فيجازيهم ويأخذ لهم ممن ظلمهم وطردهم (وَلَكِنِّيَ أَرِيْكُمْ فَوْماً تَجْهَلُونَ) ولكن الذي أعلم أنكم جهلة لا تعلمون عاقبة أمركم، عمي البصائر. الكفار ما رأيت أشد من حماقتهم، إنسان كامل عاقل متصف بجميع الكمالات لا يستحق الرسالة والاتباع،</p>
+<p>207</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>وحجر لا يعقل ولا يسمع ولا يبصر يستحق الألوهية والعبادة، ما أشد حماقتهم. نوح ليس إلا بشرا فقط ولكن بشر كامل العقل متصف بالكمالات لا يستحق أن يكون متبوعا فقط والحجر يستحق أن يكون إلها يعبد! (وَيَقَوْمِ مَنْ يَنصَّرني) يمنعني (مِنَ أللَّهِ إن طَرَدتُّهُم ) لا ناصر لي (أَبَلا تَذَّكَّرُونُ وَلَا أَفُولُ لَكُمْ عِندِ خَرَآبِنُ أَللَّهِ وَلَا أَعْلَمُ الْغَيْبَ وَلَا أَفُولُ إِنِّه مَلَكّ) تكلموا بكثير من الاستهزاء، يقولون تبدل لنا الجبال ذهبا وتأتينا بالملائكة وتفعل وتفعل، قال لهم لا أقول لكم إني قادر على شيء من ذلك ( وَلَا أَفُولُ لِلذِينَ تَزْدَرِة أَعْيَنُكُمْ لَنْ يَوتِيَهُمْ اللَّهُ خَيْرا اللَّهُ أَعْلَمُ بِمَا مِتِ أَنمسهِم قلوبهم (إِنِّي إِذا إن قلت ذلك (لَمِنَ الظَلِمِينٌ فَالُواْ يَنُوحُ فَدْ جَدَلْتَنَام خاصمتنا (بَأَكْثَرْتَ جِدَلَنَا بَاتِنَا بِمَا تَعِدُنَآ إِن كُنتَ مِنَ الصَّدِفِينَ لما رد على شبههم حتى لم يبق بيدهم شيء إلا أبطله بحجته قالوا له إن جداله كثير فليأت بالعذاب فقط («فَالَ إِنَّمَا يَاتِيكُم بِهِ اللَّهُ إِل شَاءَه تعجيله لكم فإن أمره إليه لا إلي أنا (وَمَا أَنْتُم بِمُعْجِزِينٌ) فائتين اللّٰه تبارك وتعالى {وَلاَ يَنبَعُكُمْ نُصْحِىَ إِنَ أَرَدتُّ أَىَ أنصَحَ لَكُمُ وَ إِن كَانَ أْللَّهُ يْرِيدُ أَنْ يُغْوِيَكُمْ) إغواءكم (هُوَ رَبُّكُمْ وَالَيْهِ تُرْجَعُونَ) قال تعالى (أَمْ يَفْولُونَ إمْتَرِيةٌ) أم يقول الكفار إن النبي صلى اللّٰه عليه وسلم افترى هذا القرآن ( فُلِ إِنِ إِبْتَرَيْتُهُو بَعَلَىَّ إِجْرَامٍ) إنمي {وَأَنَا بَرِءٌ مِمَّا تُجْرِمُونَ) من إجرامكم بنسبة الافتراء إلي (وَأُوحِيَ إِلَى نُوحِ آنَّهُو لَنْ يُومِسَ صِ فَوْمِكَ إِلاَّ مَى فَدَ امَنَ) أوحى اللّٰه تبارك وتعالى إلى نوح أن القوم طبعوا على الكفر فلا يؤمنون أبدا. سبق من آمن منهم، انتهى ذلك، بعد هذا لن يؤمن أحد منهم ( لاَ تَبْتَيِسْ بِمَا كَانُوا يَبْعَلُونَ) لا تحزن بإذايتهم لك، فلما تبين له أنهم لا يؤمنون بعدُ دعا عليهم بقوله &quot;رَبِّ لاَ تَذَرْ عَلَى ألاَرْضِ مِنَ الْكِفِرِيَ دَيَّاراً هكذا الكفار مع الأنبياء، وهكذا المنكرون لأولياء اللّٰه مع أولياء اللّٰه تبارك وتعالى، والله تبارك وتعالى يأمرهم بالتخلق بالخلق الحسن «وَلاَ تَبْتَبِسْ بِمَا كَانُواْ</p>
+<p>208</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>تَمْعَلُونَ»، في البداية يحتملون ويصبرون وفي الوسط لا يرون الإساءة منهم إذا تم التوحيد، الفاعل هو الله، وفي النهاية يرون كل إساءة إحسانا، فلا يبتئسون بهذا. الكدر لا يرفع من الدنيا ولا يرفع عن أحد إنما يرفع التكدر. الأكدار تجري دائما ولكن العبد يبلغ مبلغا لا بتكدر بالأكدار، وتلك هي العافية. العافية هي الرضا بالقضاءا</p>
+<p>1. قالوا إن المصطفى طلب</p>
+<p>العافية، ومات مسموما، وأبو بكر طلب العافية من اللّه ومات ملدوغا، وعمر طلب العافية ومات مقتولا، وعثمان مات مذبوحا، وعلي مات مقتولا. كلهم طلب العافية من اللّٰه ووجدها، وكلهم آخره كما نرى هذا لا يشبه العافية عند العامة ولكنهم هم لا يتكدرون بهذه الأكدار. (وَاصْنَعِ الْجُلْكَ) السفينة (بِأَعْيُنِتَا) أوحى اللّٰه إلى نوح أنه سيهلك قومه بالطوفان، وأنه يصنع سفينة ينجو بها هو ومن آمن به. قال: كيف أصنع سفينة وأنا لست بنجار وما خالطت نجارا قط؟ قال: بأعيننا ( وَحْيِنَا) اللّٰه هو الذي يأمره بكيفية صنع السفينة ويحفظه عن الغلط. قيل جاء جبريل يملي عليه، وقيل بل أوحى اللّٰه إلى الفأس، إذا ضرب بالفأس وقع كما ينبغي أن يقع فقط لمصلحة السفينة2. ومن الغرائب أن نوحا عليه الصلاة والسلام أول من اتخذ كلبا للحراسة، كان كلما صنع شيئا من السفينة جاء قومه</p>
+<p class="footnote">1 - قال سيدي علي حرازم في جواهر المعاني ج136/2: وسألته رضي اللّه عنه عن معنى العافية وحقيقتها فقال: اعلم أن حقيقة العافية هي القيام مع اللّٰه تعالى في مطابقة مراده بكمال الرضى والتسليم والتفويض والاستسلام وسقوط التدبير والحيل ودوام التبري من جميع الملاحظات والمساكنات والمصاحبات والمرادات حتى لا يكون له غير اللّٰه في كل نفس أبدا دائما سرمدا وصحة ذلك ومصداقه بأن لا يخطر غير اللّٰه على قلبه دائما فهذه هي العافية، وإذا سألت العافية من اللّٰه فاسأله العافية من حيث يعلمها لك عافية لا فيما تريده وتختاره.</p>
+<p class="footnote">2 - القرطبي ج31/9.</p>
+<p>209</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>وأفسدوه، فأوصاه جبريل أنه يتخذ كلبا، فاتخذ كلبا إذا جاؤوا نبح الكلب فطردهم نوح1، غرس الأشجار وصنع السفينة في أربع سنوات. طول السفينة ثلاثمائة ذراع وعرضها ثمانون ذراعا وارتفاعها في الهواء ثلاثون ذراعا على ثلاث طبقات: طبقة سفلى للهوام والوحوش، والوسطى للدواب، والعليا جلس فيها هو ومن معه. وقيل سألوا عيسى عليه الصلاة والسلام أن يبعث لهم من رأى سفينة نوح فأخذ قبضة من الأرض قال لهم: تعلمون هذا؟ قالوا: لا، قال: هذا كعب بن حام بن نوح، فناداه فأجابه فوقف رجلا شائبا، قال: من أنت؟ قال: أنا كعب بن حام بن نوح. قال له: كيف شبت وأنت مت قبل وجود الشيب؟ قال: لما ناديتني ظننت أن القيامة قد قامت فشبت من ذلك. قال له: كم طول سفينة نوح؟ قال: ألف ذراع ومائتا ذراع في ستمائة، فقال له: ارجع فرجع كما كان قبضة من الأرض فقط 2. فعلى هذه الرواية يكون طولها ألفاً ومائتي ذراع وعرضها ستمائة. (وَلا</p>
+<p class="footnote">1 - روح البيان ج123/4.</p>
+<p class="footnote">2 - جاء في تفسير ابن كثير: ذكر الإمام أبو جعفر بن جرير أثرا غريبا من حديث علي بن زيد بن جدعان عن يوسف بن مهران عن عبد اللّٰه بن عباس أنه قال: قال الحواريون لعيسى بن مريم: لو بعثت لنا رجلا شهد السفينة فحدثنا عنها، قال فانطلق بهم حتى انتهى إلى كثيب من تراب فأخذ كفا من ذلك التراب بكفه فقال: أتدرون ما هذا؟ قالوا: اللّٰه ورسوله أعلم، قال: هذا كعب بن حام بن نوح، قال فضرب الكثيب بعصاه فقال قم بإذن اللّٰه فإذا هو قائم ينفض التراب عن رأسه قد شاب، قال له عيسى عليه السلام أهكذا هلكت؟ قال: لا ولكني مت وأنا شاب ولكنني ظننت أنها الساعة فمن ثم شبت. قال: حدثنا عن سفينة نوح. قال: كان طولها ألف ذراع ومائتي ذراع وعرضها ستمائة ذراع وكانت ثلاث طبقات: فطبقة فيها الدواب والوحوش، وطبقة فيها الإنس، وطبقة فيها الطير.</p>
+<p>فلما كثرت الدواب أوحى اللّٰه عز وجل إلى نوح عليه السلام أن اغمز ذنب الفيل فغمزه فوقع منه خنزير وخنزيرة فأقبلا على الروث، فلما وقع الفأر بجوف السفينة يقرضها وحبالها أوحى اللّٰه إليه أن</p>
+<p>210</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>تخاطِبْنِي في الذِيسَ ظَلَمَوَا إِنَّهَم مَعْرَفُونَ وَبَصْنَعُ أَلْمُلْكَ) حكاية حال ماضية ( وَكُلُمَا مَرَّ عَلَيْهِ مَلا جماعة ( مس فَوْمِهِ، سَخِرُوا مِنْةَ ) استهزوا به، يقولون: سبحان اللّٰه صرت نجارا بعدما كنت نبيا {قَالَ إِى تَسْخَرُواْ مِنَّا بَرِنَّا تَسْخَرُ مِنْكُمْ كَمَا تَسْكَرُونٌ) سنجازيكم على سخريتكم، هذا بمنزلة &quot; وَجَزّؤَا سَيِّئَةٍ سَيِّئَةٌ مِثْلَهَا أما السخرية فلا تصدر من الأنبياء (بَسَوْقَ تَعْلَمُونَ مَنْ يَاتِيهِ عَذَابٌ يُخْزِيهِ وَيَحِلُّ عَلَيْهِ عَذَابٌ مُفِيتّ دائم (حَتَّى إِذَا جَآءَ امْرُنَاه بإهلاكهم (وَجَارَ التَّنُّورَ) للخباز بالماء وكان ذلك علامة لنوح (فَلْنَا إحيل جِيهَا) في السفينة (ص كُلِّ زَوْجَيْ) ذكرا وأنثى (إثْنَيْنِ وَأَهْلَكَ)) أي زوجته وأولاده (إلاَّ مَن سَبَقَ عَلَيْهِ الْفَوْلُ) منهم بالهلاك وهو زوجته الكافرة وولده كنعان بخلاف سام وحام ويافث نحملهم وزوجاتهم الثلاث ({وَمَرَ امَنَ وَمَآ ءَامَىَ مَعَهُ إِلاَّا فَلِيل) قيل كانوا ستة رجال ونساءهم، وقيل جميع من كانوا في السفينة ثمانون نصفهم رجال ونصفهم نساء1، هذا هو الصحيح، هم الذين بنوا قرية الثمانين قرب الموصل هناك بالعراق 2. أوحى اللّٰه تبارك وتعالى</p>
+<p>أضرب بين عيني الأسد فضرب فخرج من منخره سنور وسنورة فأقبلا على الفأر. فقال له عيسى عليه السلام: كيف علم نوح أن البلاد قد غرقت؟ قال: بعث الغراب يأتيه بالخبر فوجد جيفة فوقع عليها فدعا عليه بالخوف فلذلك لا يألف البيوت، قال: ثم بعث الحمامة فجاءت بورق زيتون بمنقارها وطين برجلها فعلم أن البلاد قد غرقت قال فطوقها الخضرة التي في عنقها ودعا لها أن تكون في أنس وأمان فمن ثم تألف البيوت. قال فقلنا: يا رسول اللّٰه ألا ننطلق به إلى أهلينا فيجلس معنا ويحدثنا؟ قال:</p>
+<p>كيف يتبعكم من لا رزق له؟ قال فقال له: عد بإذن اللّٰه فعاد ترابا. ابن كثير ج445/2.</p>
+<p class="footnote">1 - قولان ذكرهما جلال الدين السيوطي في تفسير الجلالين ج216/2.</p>
+<p class="footnote">2 - في تنوير المقباس من تفسير ابن عباس قال &quot;وَمَا ءَامَلَ مَعَهُ إِلاَّ فَلِيلٌ &quot; ثمانون إنسانا. وفي تفسير القرطبي قال: قال ابن عباس رضي اللّٰه عنهما آمن من قومه تمانون إنسانا منهم ثلاثة من بنيه وثلاث</p>
+<p>211</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>إلى نوح أن القوم سيهلكون بالطوفان، فطلب علامة فأخبره اللّٰه تبارك وتعالى بأنه إذا رأى التنور المحل الذي يخبز فيه عيشه إذا رآه يفيض ماء فذلك علامة هلاك القوم، فلما أصبح وجد التنور يفيض ماء علم أن الهلاك قد قرب فدخل في السفينة، فقال اللّٰه إنه يدخل من كل صنف زوجين ذكرا وأنثى فقال: كيف أفعل هذا؟ فحشر اللّٰه جميع الأشياء إلى نوح إذا مد يده اليمنى دخل ذكر واليسرى أنثى فيدخلهم في السفينة حتى أدخل جميع الأشياء، آخر ما دخل الحمار، لما أدخل يديه تمسك إبليس بذنبه فلم يقدر على الدخول فقال له نوح: ادخل فتأخر، ادخل فتأخر، ادخل يا ملعون فدخل ودخل إبليس. رأى شيخا كبارا في السفينة ما عرفه قال له: من أنت؟ من أدخلك سفينتي؟ قال: أنت، قلت للحمار ادخل يا ملعون وليس ثم ملعون إلا أنا فدخلت، بهذا دخل إبليس في السفينة فقال له نوح: لابد أن تخرج. قال: لا تخرجني إن اللّٰه تبارك وتعالى علمني خمسة أشياء هي التي يفسد بها بنو آدم، وأنا أعلمك منها ثلاثة، اثنان لا أعلمكهما. أوحى اللّٰه إلى نوح: خل عنك الثلاثة ويعلمك الاثنين فقط، قال علمني الاثنين واترك الثلاثة: قال: الحسد به لُعِنتُ والحرص به خرج آدم من الجنة2. فلما دخل جميع الحيوانات في السفينة وفاض الماء حتى أتى إلى أصلاب الناس وفاض حتى جاء في تراقيهم، البشرية لا تفارق الإنسان، أشفق نوح على ولده كنعان، فدعاه أنه يأتي يؤمن بالله ويركب في السفينة، فأجابه بالجواب الآتي:</p>
+<p>&quot;سَئَاوِة إِلَى جَبَلٍ يَعْصِمْنِ مِنَ أَلْمَاءِ. فدخلوا في السفينة هذا في رجب، جرت بهم السفينة</p>
+<p>كنائن له (امرأة الإبن أو الأخ) ولما خرجوا من السفينة بنوا قرية وهي اليوم تدعى قرية الثمانين بناحية الموصل. القرطبي ج35/9.</p>
+<p class="footnote">1 - راجع الجامع لأحكام القرآن للقرطبي ج 44/9.</p>
+<p class="footnote">2 - تفسير روح البيان ج127/4.</p>
+<p>212</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>ستة أشهر: رجب شعبان رمضان شوال ذو القعدة ذو الحجة يوم عاشوراء رست السفينة بالجودي بالموصل، فلما كانوا في السفينة تكاثر الفعران فشكا نوح إلى مولاه، فأمره أن بمسح جبهة الأسد، فمسح جبهة الأسد فعطس فخرجت الهرة فأكلت جميع الفعران 1، وكانوا يخشون على حبال السفينة، فلما كثر الغائط في السفينة أمره اللّٰه تبارك وتعالى أن يمسح جبهة الفيل فخرج منه خنزير ، هرتان وخنزيران أو هرة وخنزير فصار يأكل العذرة من السفينة، فلما طال بهم الزمن قال نوح إنه يحذر جميع الذكور من القرب من إناثهم لعلا يقع النسل ولم يدروا متى يخرجون من السفينة، فكلهم اعتزل أنثاه إلا الكلب أتاها فنم به السنور فأنكر، فدعا عليه نوح، فلما عاد بقي على حالته التي تقع له الآن 2 لم يقدر على النزع حتى علم به نوح، فدعا هو على السنور أنه فضحه والله يفضحه فاستجيب له دعاؤه في السنور كلما وقع على أهله افتضح وكل الناس يسمعونه. إن كان اللّه يستجيب الدعوة من الكلب فمن باب أولى مسلم موحد، نسألك من فضلك العظيم. فلما رسوا بالجودي يوم عاشوراء صامه نوح عليه الصلاة والسلام شكرا لله تبارك وتعالى، وجمع بقية ما عندهم من الزاد فطبخوا وأكلوا، فهذا أصل عاشوراء، وبنوا قرية بالموصل وسموها الثمانين لأنهم ثمانون، إلى الآن اسم القرية ثمانون ولكن اللّٰه تبارك وتعالى عقم أرحام أولئك الناس، قطع نسلهم لم يقع النسل إلا لأولاد نوح، فصار نوح هو آدم الثاني 3 كل ما وقع بعده من الذرية فمن ذريته هو، أولاده ثلاثة سام وحام ويافث. سام ولد رمز &quot;عرف&quot;: العرب والروم</p>
+<p>وفارس. وحام</p>
+<p>&quot;سبق&quot;: السودان والبربر والقبط. ويافث &quot;صيت&quot;: الصقالبة، ويأجوج</p>
+<p class="footnote">1 - انظر هامش الصفحة 10.</p>
+<p class="footnote">2 - قصص الأنبياء المسمى بالعرائس ص34.</p>
+<p class="footnote">3 - القرطبي عن ابن عباس ج 48/9.</p>
+<p>213</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>ومأجوج، والترك. الترك والهند والصين وهند الصين تلك البلاد كلا من بقايا يأجوج ومأجوج. ترى أن العرب والروم وفارس أولاد سام، وحام ولد السودان والبربر والقبط، السودان والبربر والقبط كلهم سودان أو سود الجلود أو حمر، يروى عن حام بن نوح أنه نام نوح وتجرد فانكشفت عورته فجاء يضحك من ذلك حتى جاء سام وستره، فدعا نوح على حام فبذلك اسودت جلود أبنائه، هذه القصة من الإسرائيليات التي لا أصل لها. إنما السواد والحمرة والبياض بحسب الأغذية والهواء والبلدان والمناكح فقط، رأيت القبط وهم سودان رأيت فرعون وهو أسود، والسودان وفارس سودان. ( وَفَالَ إرْكَبُواْ فِيهَا بِسْمِ اللَّهِ مُجْرِيْهَا وَمُرْسِيْهَا) أوحى اللّٰه إلى نوح أن يركبوا في السفينة بسم الله، &quot;بِسْمِ اللَّهِ&quot; بَها تجري السفينة وبها ترسو ( إِلَّ رَبِّى لَغَجُورٌ رَحِيم) حيث لم يهلكنا. ذكر الرسول صلى اللّٰه عليه وسلم (أنا في أمتي بمنزلة سفينة نوح من ركب فيها نجا ومن لم يركب فيها هلك) 1 كذلك الرسول صلى اللّٰه عليه وسلم من اتبع دينه نجا في الدنيا والآخرة ومن لم يتبعه فلا نصيب له من نعيم الآخرة أبدا ( وَهِيَ تَجْرِ بِهِمْ مِح مَوْجِ كَالْجِبَالِ في الارتفاع والعظم ( وَنَادِى نُوحُّ إبْنَهُو ) كنعان كان ولده هذا كافرا (وَكَانَ فِي مَعْزِلِ) عن السفينة (يَبُنَىّ إرْكَبْ مَعَنَا وَلَا تَكْر مَعَ الْكَفِرِين) أمره بالركوب أي أمره بالإيمان الذي به يستحق ركوب السفينة معهم (فَالَ سَئَاوِتَ إِلَى جَبَلٍ يَعْصِمْنِ) يمنعني مَ ألْمَآءِ فَالَ) نوح ولاَ عَصِمَ الْيَوْمَ مِنَ آمْرِ اللَّهِ عذابه (إِلّ) لكن م رَحِمْ الله، فهو المعصوم قال تعالى ( وَحَالَ بَيْنَهُمَا الْمَوْجُ) عندما تجاوبا جاء موج فحمل كنعان فألقاه في الطوفان مَكَالَ مِنَ ٱلْمُغْرَفِينَ)). مكثوا في السفينة ستة أشهر (وَفِيلَ يَأَرْضُ إِبْلَعِى مَآءَكِ) الذي نبع منك</p>
+<p class="footnote">1- أخرج الحاكم في المستدرك (مثل أهل بيتي مثل سفينة نوح من ركبها نجا ومن تخلف عنها غرق)</p>
+<p>37312</p>
+<p>214</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>فشربته دون ما نزل من السماء فصار أنهارا وبحارا {وَيَسَمَاءُ أَفْلِعِي) امسكي عن المطر فامسكت (وَغِيضَ نقص {ألْمَآءُ وَفَضِىَ الامْرَ) تم أمر هلاك قوم نوح ( وَاسْتَوَثْ)</p>
+<p>السفية (لَى الْجُود جبل بالجة ب المول ل بع لَقَومِ الظامين م</p>
+<p>ذكر أن اللّٰه تبارك وتعالى أوحى إلى نوح أنه سيرسي سفينته على أحد الجبال، فتطاول كل جبل رجاء</p>
+<p>أن ترسو السفينة عليه: الطور وأحد وقبيس وثبير كلهم يرى أنه هو الذي يستحق هذا، فتواضع الجودي فقال إنه يعلم أنه لا يستحق هذا، فلهذا رست السفينة على الجودي، جبل صغير متواضع جدا بالقرب من الموصل. من تواضع لله رفعه اللّٰه ومن تكبر وضعه اللّٰه وَنَادِى نُوحٌ رَبَّهُ و جَفَالَ رَبِّ إِنَّ آبْنِ) كنعان ومِنَ آهْلِ) وقد وعدتني نجاهم (وَالَّ وَعْدَكَ الْحَقِّ) الذي لا خلف فيه (وَأَنتَ أَحْكَمُ الْحَٰكِمِينَ) أعلمهم وأعدهم فَالَ) تعالى ويَنُوحُ إِنَّهُو لَيْسَ مِنَ اهْلِكَ) الناجين، إنه ليس من أهلك الذين ينجون أو إنه ليس من أهل دينك إِنَّهُ ) أي سؤالك إياي نجاته (عَمَلّ غَيْرُ صَلِحْ) فإنه كافر ولا نجاة للكافرين. الأنبياء معصومون ولكن يصدر منهم ما لا يليق بمنصبهم وهو سيئاتهم. حسنات الأبرار سيئات المقربين 1. البشرية اقتضت منه الشفقة على ابنه وطلب نجاته يظن أن ذلك يمكن، فلما عوتب بأن ذلك لا سبيل إليه رجع إلى اللّٰه تبارك وتعالى بالتوبة، ولا ذنب حقيقة إلا إذا كان حسنات الأبرار سيئات المقربين. أو «إِنَّهُ» كنعان</p>
+<p class="footnote">1- (حسنات الأبرار سيئات المقربين) نقله في عون المعبود (شرح سنن أبي داود) عن القاري ج 90/9 باب ما جاء في يمين النبي ما كانت ولم ينسبه للحديث. وأورده في كشف الخفاء / حرف الحاء تحت الرقم 1137 وقال معلقا عليه: هو من كلام أبي سعيد الخراز وهو من كبار الصوفية (ت280) وعده بعضهم حديثا وليس كذلك. وقد ذكره الإمام الغزالي في مجموع رسائله ص 469. وتكرر ذكره عند الصاوي في حاشيته دون عزو ج218/2.</p>
+<p>215</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>«عَمَلُ» صاحب عمل «غَيْرُ صَلِحٌ» له أعمال غير صالحة، أو إنه عمِلَ غيرَ صالح1 أو</p>
+<p>&quot;إِنَّهُو عَمَلُ&quot; ولد &quot;غَيْرٌ صَلِحٌ&quot; ولد ليس بصالح (إن أطيب ما أكل الرجل من كسبه وإن ولده من كسبه) 2 &quot;تَبَّتْ يَدَآ أَيِي لَهَبٍ وَتَبّ مَا أَغْبِى عَنْهُ مَالُهُ و وَمَا كَسَبَ&quot; الكسب هنا معناه الولد. الولد يسمى عملا، فعلى هذا تأويلات. (قَلاَ تَسْلَيِّء مَا لَيْسَ لَكَ بِهِ عِلْمّ) من إنجاء ابنك الكافر (إِنّيَ أَعِظَكَ أَن تَكُونَ مِنَ الْجَامِلِينَ) بسؤالك ما لم تعلم (فَالَ رَبِّ إِنِّيَ أَعْوذُ بِكَ أَنَ اسْئَلَكَ مَا لَيْسَ لِي بِهِ، عِلْمٌ وَالاَّ تَغْبِرْ لِ) ما فرط مني (وَتَرْحَمْنِيِ أَكْر مِ الْخَسِرِينٌ فِيلَ يَنُوحُ اهْبِط) انزل من السفينة (بِسَلَمٍ) بسلامة أو بتحية ( مِنَّا وَبَرَكَتٍ خيرات ( عَلَيْكَ وَعَلَى أُمَمِ مِمَّر مَعَكَ في السفينة أي من أولادهم وذريتهم وهم المؤمنون (وَأمَم سَنْمَتِّعُهُمْ) في الدنيا (قَمَّ يَمَسُّهُم مِنَّا عَذَابُّ الِيم) بشره اللّٰه تبارك وتعالى بأنه ينزل ومعه البركات وأن أولاده سيكون فيهم المؤمنون وسيكون فيهم أبناء الدنيا يعطيهم متاعا في الدنيا وفي الآخرة لهم عذاب أليم، فنزل نوح. يروى أنه لما أراد أن يعرف هل قرب انكشاف الماء بعث بغراب يذهب ينظر له ما فعل الماء فذهب ورأى جيفة واشتغل بها ونسي رسالة نوح، فلما طال الزمان أرسل نوح الحمامة، وأول ما غيض من الماء ما يلي الكعبة بمكة، فأتت الحمامة فألصقت يدها بتراب ورجعت إلى نوح وأرته ذلك، قيل ذهبت أولا فأخذت شيئا من ورق الشجر فأرته نوحا فعلم أن الماء نزل حتى بلغ الأشجار، وبعد زمن رجعت وأرته ترابا لصق بيدها فطوقها هذا الطوق ودعا لها بالأمن،</p>
+<p class="footnote">1 - على قراءة ابن عباس وعروة وعكرمة ويعقوب والكسائي. القرطبي ج46/9.</p>
+<p class="footnote">2 - (إن أطيب ما أكلتم من كسبكم وإن أولادكم من كسبكم) للترمذي وللنسائي وابن ماجه كلهم عن عائشة. حديث صحيح. سنن الترمذي: كتاب الأحكام/ باب ما جاء أن الوالد يأخذ من مال ولده (1278)، وفي سنن ابن ماجه: كتاب التجارات/ باب ما للرجل من مال ولده (2281).</p>
+<p>216</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>فلهذا بقيت الحمامة آمنة لا تخاف شيئا، ولما جاء الغراب دعا عليه بعدم الأمن 1 فهم يتشاءمون به دائما أن اسمه من الغربة. لما نزل يوم عاشوراء صام ذلك اليوم، فلما جاء الرسول صلى اللّٰه عليه وسلم إلى المدينة وجد اليهود يصومون يوم عاشوراء قال: ومَ ممتموه؟ قالوا: كان يصومه موسى عليه الصلاة والسلام فصمناه، قال: (نحن أحق بموسى منكم فصامه وأمر بصيامه) 2. إن اللّٰه أكرم فيه عشرة من الأنبياء فسمي عاشوراء: نوح نزل من السفينة يوم عاشوراء 3 وأخرج إبراهيم من النار يوم عاشوراء، وأغرق فرعون ونجا موسى ومن معه يوم عاشوراء، وخرج يوسف من السجن ورجع ملكا يوم عاشوراء، واستجاب اللّٰه دعوة داود يوم عاشوراء، ورجع ملك سليمان إلى سليمان كذلك يوم عاشوراء، ورفع اللّٰه عيسى بن مريم إلى السماء يوم عاشوراء، وكشف بلاء أيوب كذلك يوم عاشوراء، ولقي</p>
+<p class="footnote">1- تفسير القرطبي ج44/9.</p>
+<p class="footnote">2- أخرج البخاري في صحيحه عن ابن عباس رضي اللّٰه عنهما قال: قدم النبي صلى اللّٰه عليه وسلم المدينة فرأى اليهود تصوم يوم عاشوراء فقال: ما هذا؟ قالوا: هذا يوم صالح هذا يوم نجى اللّٰه بني إسرائيل من عدوهم فصامه موسى قال: (فأنا أحق بموسى منكم فصامه وأمر بصيامه) وفي رواية أخرى له: (أنتم أحق بموسى منهم فصوموا) ولفظ ابن ماجه عن ابن عباس (نحن أحق بموسى منكم فصامه وأمر بصيامه) صحيح البخاري: كتاب الصوم / باب صيام يوم عاشوراء (2004)، وفي سنن ابن ماجه: كتاب الصيام/ باب صيام يوم عاشوراء (1724).</p>
+<p class="footnote">3 - أخرج أحمد في مسنده عن أبي هريرة قال: مر النبي صلى اللّٰه عليه وسلم بأناس من اليهود قد صاموا يوم عاشوراء فقال: ما هذا من الصوم قالوا: هذا اليوم الذي نجى اللّٰه موسى وبني إسرائيل من الغرق وغرق فيه فرعون وهذا يوم استوت فيه السفينة على الجودي فصامه نوح وموسى شكرا لله تعالى، فقال النبي صلى اللّٰه عليه وسلم: أنا أحق بموسى وأحق بصوم هذا اليوم فأمر أصحابه بالصوم.</p>
+<p>مسند أحمد: مسند المكثرين / (8360)</p>
+<p>217</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>بعقوب يوسف بمصر كذلك يوم عاشوراء، فبإكرام عشرة من الأنبياء سمي يوم عاشوراء1 فقال النبي صلى اللّٰه عليه وسلم (نحن أحق بموسى منكم فصامه وأمر بصيامه) ويقول (صيام يوم عاشوراء إني أحتسب على اللّٰه أن يكفر السنة التي قبله، وصيام يوم عرفة إني أحتسب على اللّه أن يكفر السنة التي قبله والسنة التي بعده)2. تِلْكَ مِنَ انْبَآءِ الْغَيْبِ نُوحِيهَا إِلَيْكَ مَا كُنتَ تَعْلَمُهَا أَنتَ وَلا فَوْمُكَ مِ فَبْلِ هَٰذَا بَاصْبِرٌ إِنَّ ٱلْعَفِبَةَ لِلْمُتَّفِينَ وَالَىٰ عَادٍ آخَاهُمْ) من القبيلة هُودا فَالَ يَفَوْمِ اِعْبُدُواْ اللَّهِ) وحدوه (مَا لَكْم مٍ اِلَهِ غَيْرُهُ إِلَ انتُمْ في عبادتكم الأوثان (إِلَّ مُفْتَرُونَ) كاذبون (يَفَوْمِ لَا أَسْئَلُكُمْ عَلَيْهِ) على التوحيد (أَجْراً إنَ آجْرِي إِلاَّ عَلَى ألذِ بَطَرَنِي إن أجري إلا على الله، اللّٰه تبارك وتعالى عادته يبعث الأنبياء فقراء ولكن مع فقرهم لا يطلبون بتبليغ الرسالة أجرا، كلهم يقول إن أجري إلا على الذي فطرني خلقني ( أَبَلا تَعْفِلُونُ وَيَفَوْمِ اسْتَغْمِرُواْ رَبَّكُمْ) من الشرك وثُمَّ تُوبُوا ه ارجعوا (إِلَيْهِ)</p>
+<p>بالطاعة ( يُرْسِلِ السَّمَآءَ) المطر وكانوا قد منعوه ( عَلَيْكُم مِدْرَاراً) كثير الدرور ( وَيَزِدْكُمْ فُوَّةً إِلَىٰ فُوَّتِكُمْ) مع قوتكم بالمال والولد (وَلَا تَتَوَلَّوْاْ مُجْرِمِين) مشركين ( فَالُواْ يَهُودُ مَا</p>
+<p class="footnote">1 - أخرج الحاكم في المستدرك: ولد عيسى بن مريم يوم عاشوراء. ج648/2 حديث رقم (4205)</p>
+<p>وفي كنز العمال: - إن نوحا هبط من السفينة على الجودي يوم عاشوراء فصام نوح وأمر من معه بصيامه شكرا لله تعالى وفي يوم عاشوراء تاب اللّه تعالى على آدم وعلى أهل مدينة يونس، وفيه فلق البحر لبني إسرائيل، وفيه ولد إبراهيم وابن مريم. (أبو الشيخ في الثواب عن عبد الغفور بن عبد العزيز بن سعيد بن زيد بن عمرو بن نفيل عن أبيه عن جده). كنز العمال: 24256.</p>
+<p class="footnote">2 - أخرجه مسلم في صحيحه طرفا من حديث أبي قتادة وفيه قال: (صيام يوم عرفة أحتسب على اللّٰه أن يكفر السنة التي قبله والسنة التي بعده، وصيام يوم عاشوراء أحتسب على اللّٰه أن يكفر السنة التي قبله) صحيح مسلم: كتاب الصيام/ باب استحباب صوم ثلاثة أيام من كل شهر (1976).</p>
+<p>218</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>جِبْتَنَا بِبَيّنَةِ برهان على قولك (وَمَا نَحْرُ بِتَارِكِحَ ءَالِهَيِنَا عَى قَوْلِكَ) لقولك ( وَمَا نَخْرُ لَكَ بِمُومِنِينَ إى نَفُولَ في شأنك (إِلَّ ]عْتَرِيْكَ) أصابك (بَعْضَ ءَالِقَتِنَا بِسْوَه نحن</p>
+<p>اعتقادنا أن آلهتنا التي تسبها هي التي خبلت عقلك فقط فصرت تهذي، هذا هذيان المجنون فقط (فَالَ إِنِّيَ اشْهِدُ اللَّه) علي (وَاشْهَدُواْ أَنٍّ بَرِتةٌ مِمَّا تَشْرِكُونَ مِ دُونِهِ، بَكِيدُونِ )</p>
+<p>احتالوا في هلاكي جَمِيعاً) أنتم وأوثانكم (ثُمَّ لا تُنظِرُونْ) لا تمهلوني، لا يبالي بهم {إنّهِ تَوَكَّلْتُ عَلَى أللَّهِ رَيّهِ وَرَبِّكُم مَا صٍ دَآبَّةِ نسمة تدب على الأرض {لاَ هَوَ ءَاخِذَّ بِنَاصِيَتِهَا) مالكها أو قاهرها فلا نفع ولا ضرر إلا بإذنه (إِنَّ رَتِّي عَلَىٰ صِرَاطٍ مُسْتَفِيوَ )</p>
+<p>طريق الحق والعدل {إِن تَوَلَوْا تعرضوا (جَفَدَ ٱبْلَغْتُكْم مَا أُرْسِلْتُ بِهِ إِلَيْكُمْ وَيَسْتَخْلِفْ رَبِي قَوْماً غَيْرَكُمْ وَلا تَضُرُّونَهُو شَيْئَاكه بإشراككم (وانَّ رَبِّه عَلَىٰ كُلِّ شَيْءٍ حَمِيظٌ) رقيب (وَلَمَّا جَآءَ امْرُنَا عذابنا نَجَيْنَا هودا نبي الله ( وَالذِيلَ ءَامَنُوا مَعَهُ بِرَحْمَةِ) هداية (مِنَّا وَنَجَّيْنَهُم مِنْ عَذَابٍ غَلِيظٌ نجا هو ومن آمن به وهم أربعة آلاف1 (وَتِلْكَ عَادٌ) إشارة إلى آثارهم فسيحوا في الأرض فانظروا إليها، ثم وصف أحوالهم فقال (جَحَدُواْ بَايَتِ رَبِّهِمْ وَعَصَوْاْ رُسُلَهُو لأن من عصى رسولا عصى جميع الرسل لاشتراكهم في أصل ما جاؤوا به وهو التوحيد (وَاتَّبَعُوا أي السفلة (( أَمْرَ كُلِّ جَبَّارٍ عَنِيدٌ) معاند للحق من رؤسائهم (وَاتْبِعُوا بِى هَٰذِهِ الدُّنْيا لَعْنَةَ من الناس (وَيَوْمَ الْفِيَمَةٌ لعنة على رؤوس الخلائق (أَلا إِلَّ عَاداً كَبَروا جحدوا رَبَّهُمْ و أَلا بُعْدا من رحمة اللّٰه لِعَادٍ فَوْمِ هُودٌ وَ أرسلنا (إِلَى ثَمُودَ أَخَاهُمْ) من القبيلة (صَلِحَاً فَالَ يَفَوْمِ إِعْبُدُوا ألَّهَ) وحدوه ( مَا لَكُم مِسِ اِلَهِ غَيْرَةٌ.</p>
+<p>هُوَ أَنشَأَكُم) ابتدأ خلقكم (مِ الاَرْضِ) بخلق أبيكم آدم منها (وَاسْتَعْمَرَكُمْ جِيهَاه)</p>
+<p>جعلكم عمارا تسكنون بها بَاسْتَغْمِرُوهُ) من الشرك (ثُمَّ تُوبُوا إِلَيْهُ إِنَّ رَبِّ قَرِيبٌ مَحِيبٌ</p>
+<p class="footnote">1 - قاله الخازن في تفسيره ج338/2، ومثله للصاوي في حاشيته ج220/2.</p>
+<p>219</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>كانوا يشتغلون بعمارة الدنيا يبنون في الصخور ويبنون في السهول، وكل ما أعطى اللّٰه لابن آدم له لا عليه إلا شيئا صرفه في الماء والطين، البنيان. البنيان قسمان: من بنى قدر حاجته وقدر حاجة عياله ومنازل الضيف، هذا بنيان صالح، لا يسكن فيه هو ولا عياله ولا أحد من خلق اللّه إلا وكتبت له حسنات حتى يؤول خرابا، ومن بنى فوق حاجته وتطاول في البنيان إنما يهلك ماله في الماء والطين ويكون حسرة عليه يوم القيامة، وهم استعمرهم اللّه في الدنيا اشتغلوا بعمارة الدنيا (فَالُواْ يَصَلِحْ فَدْ كُنتَ فِينَا مَرْجُواً) يا صالح أنت لما كنت صغيرا كنا نرجو أنك إن عشت ستكون سيدا، رجاء محقق قَبْلَ هَذآ الذي صدر منك، قبل أن تقول هذا كنت مرجوا فينا ( أَتَنْهِيْنَآ أَن تَعْبُدَ مَا يَعْبُدْ ءَابَآونَا تريد أن تمنعنا من عبادة الأوثان ( وَإِنَّنَا لَصِح شَكٍ مِمَّا تَدْعُونَا إِلَيْهِ وهذا التوحيد الذي تدعو إليه نحن لا نثق به ( مُرِيب) موقع في الريب ( فَالَ يَفَوْمٍ أَزَيْتُمْ إِن كُنتُ عَلَىٰ بَيِّنَةِ بيان (صِ رَبِّي وَءَاتِيْينِي مِنْهُ رَحْمَةً) نبوة ( جَمَنْ يَنصُرُنِى) يمنعني مِنَ اللَّهِ إِنْ عَصَيْتَو قَمَا تَزِيدُونَنِي) بأمركم لي بذلك ( غَيْرَ تَخْسِيرِ) تضليل (وَيَفَوْمِ هَٰذِهِ نَافَةُ اللَّهِ لَكُمُ وَ ءَايَةَ) قالوا له إنهم لا يؤمنون به حتى تتمخض تلك الهضبة وتلد ناقة مع ولدها نحلب ما نشاء من اللبن، فقال لهم احضروا فحضروا فدعا فتمخضت الهضبة وخرجت الناقة وخرج فصيلها معها فقال لهم (بَذَرُوهَا تَاكُلْ مِجِ أَرْضِ اللَّهِ وَلَا تَمَسُّوهَا بِسُوءٍ عقر ( جَيَاخُذَكُمْ عَذَابٌ فَرِيبٌ) إن عقرتموها (بَعَفَرُوهَا) عقرها قُدار بأمرهم (فَالَ) صالح ( تَمَتَّعُواْ عيشوا ومِى دارِكُمْ ثَلَئَةَ أَيَّامِ ثم تهلكون ( ذَلِكَ وَعْدُّ غَيْرُ مَكْذُوبٍ) قالوا له عقرنا الناقة وقتلناها وتقاسمنا اللحم وأكلنا ما تقول؟ قال: وما قالت؟ قالوا: صاح فصيلها ثلاث مرات 1، قال لهم: بقي لكم ثلاثة أيام، ستهلكون بعدها. قالوا: آتنا بعلامة، قال لهم: اليوم يوم الأربعاء غدا يوم</p>
+<p>ا - أي الفصيل، قاله القرطبي ج60/9.</p>
+<p>220</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>الخميس تكون مصفرة وجوهكم، وبعد غد يوم الجمعة تكون محمرة، ويوم السبت تكون مسودة، ويوم الأحد ينزل عليكم العذاب فكان كما قال 1. (قَلَمَّا جَآءَ امْرُنَا) بإهلاكهم (تَجَيْنَا صَلِحاً وَالذِيلَ عَامَنُواْ مَعَهُر وهم أربعة آلاف 2 ( بِرَحْمَةِ مَنَّا وَ نجيناهم {مِنْ خِزْي يَوْمَئِذَ) أنزل اللّه عليهم الخزي وما سلم إلا من آمن بصالح (الَّ رَبَّكَ هُوَ ألْقَوِىِّ الْعَزِيزُ)</p>
+<p>الغالب (وَأَخَذَ ألذِيسَ ظَلَمُواْ ألصَّيْحَةُ بَأَصْبَحُواْ مِي دِيْرِهِمْ جَئِمِينَ)) باركين على الركب ميتين (كَاد) كأنهم لَمْ يَغْنَوْا يقيموا (جِيهَا) في دارهم (أَلا إِنَّ تَمُوداً كَجَرْواْ رَبَّهُمّ  أَلاَ بَعْداً لِقَمُودٌ) قوم صالح {وَلَفَدْ جَآءَتْ رَسُلُنَآ إِبْرَهِيمَ بِالْبُشْرِى) جاءت رسل اللّٰه وهم الملائكة أتوا بالبشرى إلى إبراهيم بشروه بإسحاق ولدا ويعقوب ولد ولد فَالُواْ سَلَماضَ سلمنا عليك سلاما (فَالَ سَلَمٌ)) قال: عليكم سلام، إبراهيم كان مكرما للضيوف، لما دخل الضيف وسلموا عليه خرج إبراهيم (بَمَا لَبِثَ أَن جَآءَ بِعِجْلٍ حَنِيذٌ ) ذهب وأخذ عجلا سمينا كما قال في سورة أخرى 3 وشواه وأتاهم به مشويا (بَلَمَّا بِءَآ أَيْدِيَهُمْ لَا تَصِلُ إِلَيْهِ نَكِرَهُمْ فنظر إلى الضيف ما تناولوا الطعام، لم يأكلوا، والمضيف إذا رأى الضيف يمتنع من طعامه يخاف منه، نكرهم خاف منهم (وَأَوْجَسَ مِنْهُمْ خِيمَةً) أضمر في نفسه خيفة أنهم هل أتوا بخير أم بشر ( فَالُواْ لا تَخَفِ إِنَّا أَرْسِلْنَا إِلَى فَوْمِ لُوطٌ) لنهلكهم، بشروه أنهم أتوا لهلاك قوم لوط ولوط ابن أخيه هاران وكان تلميذا له أرسله اللّٰه إلى قرى ( وَامْرَأَتُهُو امرأة إبراهيم سارة</p>
+<p>(آئِمَة) تخدمهم (بَضَحِكَتْ) استبشارا بهلاك قوم لوط، أو فضحكت حاضت4</p>
+<p class="footnote">1 - القرطبي ج60/9.</p>
+<p class="footnote">2- قاله جلال الدين السيوطي في تفسيره. حاشية الصاوي على تفسير الجلالين ج221/2.</p>
+<p class="footnote">3 - هي سورة الذاريات الآية 26 &quot;بَرَاغَ إِلَى أَهْلِهِ، وَجَآءَ بِعِجْلٍ سَمِينِ&quot;.</p>
+<p class="footnote">4 - ذكر الخازن هذه الأقوال كلها ج340/2.</p>
+<p>221</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>فرحت حتى خرج منها الحيض ( بَشَّرْنَٰهَا بِإِسْحَقَ) بشرها الملائكة بأن ستجد ولدا اسمه إسحاق (وَمِنْ وَرَآءِ اسْحَقَ يَعْفُوب وإسحاق هذا سيولد له ولد اسمه يعقوب، وهي تعيش حتى ترى ولد ولدها الذي هو يعقوب (فَالَتْ يَوَيْلَبَى) كلمة تعجب ( الِدُه أنا ألد ( وَأَنَا عَجُوزٌ ) لي تسع وتسعون سنة ما ولدت قط، ألد بعد هذا؟ {وَهَٰذَا بَعْلِ) إبراهيم (شَيْخاً) إبراهيم له مائة وعشرون سنة ليس لنا ولد، أيمكن أننا نجد ولدا بعد هذا؟ (الَّ هَذَا لَشَيْءُ عَجِيبٌ أن يولد ولد لهرمين (فَالَوَاْ أَتعْجَيِسَ مِنَ آمْرِ اللَّهِ قدرته (رَحْمَتُ ألَّهِ وَبَرَكَتُهُو عَلَيْكُمُوَ أَهْلَ الْبَيْتُ) إن اللّٰه ينزل رحمته وبركته على أهل بيت إبراهيم (إِنَّهُ )</p>
+<p>اللّٰه (حَمِيدٌ) محمود (مَجِيدٌ بَلَمَّا ذَهَبَ عَى ابْرَهِيمَ ألرَّوْعُ) زال الخوف من قلب إبراهيم (وَجَاءَتْهُ الْبُشْرِى) وأتته البشارة بالولد أخذ (يُجَدِلْتَا يجادل رسلنا (مِ فَوْمِ لُوطٌ) في شأن قوم لوط (إِلَّ إِبْرَهِيمَ لَحَلِيمٌ) كثير الأناة (آوّة) رجّاع إلى اللّٰه ومُّنِيبُّ) بطاعة اللّه تبارك وتعالى. والمجادلة هاهي: قال لهم: أتهلكون قرية فيها ثلاثمائة مؤمن؟ قالوا: لا، قال:</p>
+<p>أفتهلكون قرية فيها مائتا مؤمن؟ قالوا: لا، قال: أفتهلكون قرية فيها أربعون مؤمنا؟ قالوا:</p>
+<p>لا، قال: أفتهلكون قرية فيها أربعة عشر مؤمنا؟ قالوا: لا، قال: أفرايتم إن كان فيها مؤمن واحد؟ قالوا: لا، قال: إن فيها لوطا1، إذا لا تهلكوهم لأن فيها لوطا. قالوا: نحن أعلم بمن فيها، فلما أطال إبراهيم مجادلة الملائكة قالوا ( يِبْرَهِيمُ أَعْرِضْ عَنْ هَذَا) الجدال (إِنَّهُ فَدْ جَاءَ امْرُ رَبِّكٌ وَإِنَّهُمَ ءَاتِيهِمْ عَذَابٌ غَيْرُ مَرْدودَ تكلم سلطان الألوهية: اعرض عن هذا يا إبراهيم. هؤلاء هلاكهم أتى ولا مرد له، حتى الخليل لا ينفع في هذا (وَلَمَّا جَاءَتْ رُسُلْنَا لُوطاً سْءَ بِهِمْ جاء القوم وهم ملائكة إلى لوط فحزن لما رآهم، التجليات واحدة وكل</p>
+<p class="footnote">1 - المحاورة نقلها ابن كثير في تفسيره عن سعيد بن جبير ج453/2. وفي الجلالين راجع حاشية الصاوي على الجلالين ج223/2.</p>
+<p>222</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>مشاهد يشاهد ما يناسب حاله، أتوا إلى إبراهيم بالبشرى وأتوا إلى لوط بأي شيء؟ سيئ بهم. إبراهيم وجد البشارة لما راهم قالوا سلاما قال سلام، ولوط لما رآهم سيئ بهم وَضَاق بِهِمْ ذَرْعام كما وقع جمال لإبراهيم وقع جلال للوط، كما وجد إبراهيم البسط وجد لوط القبض، كما وجد إبراهيم الأنس وجد لوط الهيبة. جاؤوا وهم حسان الوجوه، أحسنهم جبريل عليه الصلاة والسلام، كلهم مرد حسان قَلَ) لوط (هَذَا يَوْم عَصِيب شديد علي. كان قوم لوط هم أول من ارتكبوا هذه الفاحشة، يجلسون في ناديهم إذا جاء ضيف يأخذونه ويطأونه في الدبر، يتناوبونه إذا فرغ هذا قام هذا، إذا فرغ هذا قام هذا حتى يفعلوا</p>
+<p>كلهم. وإذا جلسوا ولم يجدوا ضيفا حمل بعضهم على بع تعاملا به نهام للم</p>
+<p>ينفع، فانتقل مهاجرا وزوجته واهلة كافرة عدو قلبها مع الكفار. لما خرج لوط إلى الهجرة خافوا من ذلك أنهم لا يجدون ضيفا يفعلون به ما يشتهون، قالت لهم المرأة: لا تخافوا لا يفوتكم شيء، إذا جاءه ضيف إن كان ليلا فأنا أوقد نارا، إذا رأيتم نارا بالليل فاعلموا أن هنالك ضيفا، وإذا كان نهارا أدخن أوقد نارا إذا رأيتم دخانا نهارا فاعلموا أن هناك ضيفا.</p>
+<p>فجاء ضيوف شبان مرد حسان أحسنهم جبريل، فحزن لوط يخاف أن القوم سيعملون كعادتهم فدخنت المرأة (وَجَآءَهُو فَوْمُهُ ) لما علموا بهم { يُهْرَعُولَ يسرعون ( إِلَيْهِ وَمِن فَبْلُ) قبل مجيئهم ( كَانُواْ يَعْمَلُونَ السَّيِّئَاتُ وهي إتيان الرجال في الأدبار (فَالَ) لوط (يَفَوْمِ هؤْلَاءٍ بَنَاتِى) اتركوا ضيفي وتزوجوا بناتي، لوط ليس له من الأولاد إلا البنات.</p>
+<p>أمرهم بتزويج بناته بشرط الإسلام، أسلموا فأزوجكم بناتي فتستغنون بهن عن إتيان الرجال في الأدبار. أو يعني بناتي بنات الأمة كلا لأن الرسول كل بنات الأمة بناته، اكتفوا بزوجاتكم اللاتي هن كلا بناتي ولا تتعرضوا لأضيافي (هنَّ أَطْهَرْ لَكُمْ بَاتَّفُواْ أللَّهَ وَلَا تَخْزُونِ) لا تفضحوني ( ضَيْهِىُّ أَلَيْسَ مِنكُمْ رَجُلٌ رَشِيدَّ) يأمر بالمعروف وينهى عن</p>
+<p>223</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>المنكر فَالُواْ لَفَدْ عَلِمْتَ مَا لَنَا مِي بَنَاتِكَ مِنْ حَقِّ) من حاجة، لا حاجة لنا في بناتك (وَإِنَّكَ لَتَعْلَمُ مَا نُرِيذٌ) من إتيان الرجال في أدبارهم (فَالَ لَوَ آنَّ لِيِ بِكُمْ فُوَةَّ طاقة ( أَوَ</p>
+<p>-اوِتَ إِلَىٰ رُكْرٍ شَدِيدٌ) عشيرة تنصرني لبطشت بكم، قال لوط لو كان لي قوة أو كان لي عشيرة لبطشت بكم. يقول الرسول صلى اللّٰه عليه وسلم (رحم اللّٰه أخي لوطا كان يأوي إلى ركن شديد) 1. من ذلك الوقت ما أرسل اللّه نبيا إلا في عشيرة قوية (فَالُواْ يَالُوطُ إِنَّا رُسُلُ رَبِّكَ لَنْ يَصِلُواْ إِلَيْكٌ جَاسْرِ بِأَهْلِكَ بِفِطْعٍ مِنَ أليْلِ وَلا يَلْتَعِتْ مِنكُمُوَ أَحَدُّ إِلَّ إَمْرَأَئَكُ إِنَّهُ و مُصِيبُهَا مَآ أَصَابَهُمُوَ) قال الملائكة للوط لا تخف هؤلاء لا يصلون إلينا فاسر أنت بأهلك فقط إذا جن الليل فاخرج ولا يلتفت أحد من جماعتك لئلا يرى عظيم ما ينزل بهم لأن من رأى العذاب ربما أذاق منه، إلا امرأتك فهي من الكفار مصيبها ما أصابهم. لم يخرج بها وقيل خرجت والتفتت فقالت واقوماه فجاءها حجر فقتلها. لما أتى القوم نهارا هرولوا إلى الضيف وفي مقدمتهم جبريل وهو أجملهم فجاء رجل وأخذ جبريل يريد أن يعمل به العمل فمسح جبريل وجهه فرجع الوجه كالقفا كل من دنا منه مسح وجهه فصار كالقفا فلم يبق لهم عين ولا أذن ولا فم ولا شيء، بقوا يموجون ويقولون لوط هذا سحرنا 2 هذ</p>
+<p class="footnote">1 - أخرج الترمذي في سننه عن أبي هريرة قال: قال رسول اللّٰه صلى اللّٰه عليه وسلم إن الكريم ابن الكريم ابن الكريم ابن الكريم يوسف بن يعقوب بن إسحق بن إبراهيم، قال: ولو لبثت في السجن ما لبث يوسف ثم جاءني الرسول أجبت ثم قرا &quot;لَمَّا جَآءَهُ الرَّسُولُ فَالَ إَرْجِعِ إِلَىٰ رَبِّكَ بَسْئَلْهُ مَا بَالَ النِّسْوَةِ التِ فَطَّعْرَ أَيْدِيَهُنٌّ&quot; قال ورحمة اللّٰه على لوط إن كان ليأوي إلى ركن شديد إذ قال &quot;لَوَ آنَّ ليم بِكُمْ فُوَّةً آَوَاوِتَ إِلَى رُكْرِ شَدِيدٌ&quot; فما بعث اللّٰه من بعده نبيا إلا في ذروة من قومه. سنن الترمذي:</p>
+<p>كتاب تفسير القرآن/ باب ومن سورة يونس (3041).</p>
+<p class="footnote">2 - ذكره الصاوي في حاشيته ج224/2.</p>
+<p>224</p>
+<p>في رياض التفسير</p>
+<p>سورة هود</p>
+<p>أول ما ذاقوا في النهار، وخرجوا ليلا سأل لوط (إِلَّ مَوْعِدَهُمْ الصُّبْخُ) فقال لوط: أريد أعجل من ذلك، قالوا (أَلَيْسَ الصُّبْحَ بِقَرِيبٌ جَلَمَّا جَآءَ امْرَنَا) بإهلاكهم (جَعَلْنَا عَلِيَهَا)</p>
+<p>قراهم ( سَاعِلَهَا) لما جاء الليل نزل جبريل فأخذ خمس مدن من مدنهم الكبار وحملها على ريشه إلى أن بلغ عنان السماء فقلب القرى فصارت عاليها سافلها وأغرقهم في البحر وأمطروا أثناء ذلك بحجارة من السماء أيضا. عُثر في هذه السنين الأخيرة على تلك القرى التي أغرقها جبريل في البحر (وَأَمْطَرْنَا عَلَيْهَا حِجَارَةَ مِ سيجِيلٍ) جبريل وحده رفع تلك القرى بكاملها إلى أن بلغت السماء ما صاح ديك ولا نهق حمار ولا نبح كلب ولم يستيقظ أحد منهم حتى دمرهم جميعا. بهذا تعلم أن خمسة آلاف من الملائكة نزلوا يوم بدر إكرام للمصطفى فقط، وأما هلاك الكفار فيكفيه جبريل وحده، هم نزلوا تعظيما لشأن المصطفى وإكراما له، لو قُصد هلاكهم لكفى جبريل وحده لهلاك جميع الأمم، فهو الذي أهلك جميع من تقدم من الأمم &quot;وَأَمْطَرْنَا عَلَيْهَا حِجَارَةَ صِ سِجِّيلِ&quot; طين طبخ بالنار ( مَنضُودِ)</p>
+<p>متتابع ( مُسَوَّمَةً) معلَّمة عليها اسم من يُرمَى بها عِنْدَ رَبِّكً) وهذا وقع عند اللّٰه تبارك وتعالى، عند اللّٰه أي في حكم الله، اللّٰه ليس له ظرف مكان ولا زمان، عنده أي في حكمه فقط، هذا حكم اللّٰه وَمَا هِى الحجارة أو بلادهم ( مِنَ الظَّلِمِينَ) أهل مكة ( ببَعِيدٌ)</p>
+<p>وآثار تلك القرى مرئية لقريش في أسفارهم إلى الشام يمرون بقرى القوم الذين هلكوا، هلا تدبروا أنهم سيهلكون كهؤلاء. اللهم صل على سيدنا محمد.</p>
+<p>225</p>
+<p>في رياض التفسير</p>
+<p>المحتويات</p>
+<p>المحتويات</p>
+<p>3</p>
+<p>30</p>
+<p>44</p>
+<p>الدرس الحادي والعشرون</p>
+<p>74</p>
+<p>سورة التوبة . .</p>
+<p>86.</p>
+<p>الدرس الثاني والعشرون</p>
+<p>129</p>
+<p>الدرس الثالث والعشرون .</p>
+<p>158</p>
+<p>سورة يونس . ..</p>
+<p>165</p>
+<p>193</p>
+<p>الدرس الرابع والعشرون .</p>
+<p>196</p>
+<p>سورة هود ..</p>
+<p>227</p>
+<p>المحتويات</p>
+<p>227</p>
+  </div>
+  <div class="english-block" dir="ltr">
+    <p style="color:rgba(201,168,76,0.35);font-style:italic;font-size:.9rem;">English translation of الدرس الخامس والعشرون forthcoming.</p>
+  </div>
+  <div class="lesson-bottom-nav">
+    <a href="/lesson-24.html" class="nav-btn nav-btn-prev">&#8592; Lesson 24</a>
+    <a href="/" class="nav-btn nav-btn-toc">&#x21A9; Table of Contents</a>
+    <a href="/lesson-26.html" class="nav-btn nav-btn-next">Lesson 26 &#8594;</a>
+  </div>
+</div>
+<footer>
+  <div class="footer-ar">&#1601;&#1616;&#1610; &#1585;&#1616;&#1610;&#1614;&#1575;&#1590;&#1616; &#1578;&#1614;&#1601;&#1618;&#1587;&#1616;&#1610;&#1585;&#1616; &#1575;&#1604;&#1618;&#1602;&#1615;&#1585;&#1618;&#1570;&#1606;&#1616; &#1575;&#1604;&#1618;&#1603;&#1614;&#1585;&#1616;&#1610;&#1605;&#1616;</div>
+  <div style="font-family:'EB Garamond',serif;font-size:.8rem;color:rgba(201,168,76,0.3);margin-top:.3rem">niassetafsir.com</div>
+</footer>
+<script>
+function togglePanel(btn){
+  const p=btn.nextElementSibling;
+  const exp=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',!exp);
+  p.classList.toggle('hidden',exp);
+  btn.querySelector('.sheikh-arrow').style.transform=exp?'':'rotate(180deg)';
+}
+function setView(mode){
+  document.querySelectorAll('.view-btn').forEach(b=>b.classList.remove('active'));
+  const btn=document.getElementById('btn'+mode.charAt(0).toUpperCase()+mode.slice(1));
+  if(btn)btn.classList.add('active');
+  document.querySelectorAll('.arabic-block').forEach(el=>el.style.display=mode==='english'?'none':'block');
+  document.querySelectorAll('.english-block').forEach(el=>el.style.display=mode==='arabic'?'none':'block');
+}
+
+function toggleCompanion(id,btn){
+  const c=document.getElementById(id);
+  const exp=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',!exp);
+  c.classList.toggle('open',!exp);
+  btn.querySelector('.companion-arrow').style.transform=exp?'':'rotate(180deg)';
+}
+
+
+function toggleCompanionLang(panelId, lang) {
+  const panel = document.getElementById(panelId);
+  if (!panel) return;
+  const enEl = panel.querySelector('.companion-en');
+  const arEl = panel.querySelector('.companion-ar-orig');
+  const btns = panel.querySelectorAll('.clb');
+  btns.forEach(b => b.classList.remove('active'));
+  const activeBtn = panel.querySelector('.clb[data-lang="' + lang + '"]');
+  if (activeBtn) activeBtn.classList.add('active');
+  if (lang === 'en') {
+    if (enEl) enEl.style.display = 'block';
+    if (arEl) arEl.style.display = 'none';
+  } else if (lang === 'ar') {
+    if (enEl) enEl.style.display = 'none';
+    if (arEl) arEl.style.display = 'block';
+  } else {
+    if (enEl) enEl.style.display = 'block';
+    if (arEl) arEl.style.display = 'block';
+  }
+}
+
+</script>
+</body>
+</html>
