@@ -295,51 +295,60 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
   <div class="footer-en">Translation & Digital Edition: Amadu Kunateh · niassetafsir.com · © 2026</div>
 </footer>
 <script>
+function setView(mode){
+  // Update all toolbar/toggle buttons
+  document.querySelectorAll('[data-view]').forEach(b=>{
+    b.classList.toggle('active', b.getAttribute('data-view')===mode);
+    b.classList.toggle('ilt-btn', true);
+  });
+  // Legacy support for old button IDs
+  ['btnBoth','btnArabic','btnEnglish','btn-both','btn-ar','btn-en'].forEach(id=>{
+    const el=document.getElementById(id);
+    if(el) el.classList.remove('active');
+  });
+  const modeMap={'both':'btnBoth','arabic':'btnArabic','english':'btnEnglish','both':'btn-both','arabic':'btn-ar','english':'btn-en'};
+  // Just toggle visibility directly
+  document.querySelectorAll('.arabic-block').forEach(el=>el.style.display=mode==='english'?'none':'block');
+  document.querySelectorAll('.english-block').forEach(el=>el.style.display=mode==='arabic'?'none':'block');
+  // Mark active button in toolbar
+  document.querySelectorAll('.view-toolbar button, .inline-lang-toggle button').forEach(b=>{
+    const onclick=b.getAttribute('onclick')||'';
+    b.classList.toggle('active', onclick.includes("'"+mode+"'") || onclick.includes('"'+mode+'"'));
+    b.classList.toggle('ilt-btn', b.closest('.inline-lang-toggle')!==null);
+  });
+}
+
 function togglePanel(btn){
   const p=btn.nextElementSibling;
   const exp=btn.getAttribute('aria-expanded')==='true';
   btn.setAttribute('aria-expanded',!exp);
   p.classList.toggle('hidden',exp);
-  btn.querySelector('.sheikh-arrow').style.transform=exp?'':'rotate(180deg)';
-}
-function setView(mode){
-  document.querySelectorAll('.view-btn').forEach(b=>b.classList.remove('active'));
-  const btn=document.getElementById('btn'+mode.charAt(0).toUpperCase()+mode.slice(1));
-  if(btn)btn.classList.add('active');
-  document.querySelectorAll('.arabic-block').forEach(el=>el.style.display=mode==='english'?'none':'block');
-  document.querySelectorAll('.english-block').forEach(el=>el.style.display=mode==='arabic'?'none':'block');
+  const arrow=btn.querySelector('.sheikh-arrow');
+  if(arrow) arrow.style.transform=exp?'':'rotate(180deg)';
 }
 
 function toggleCompanion(id,btn){
   const c=document.getElementById(id);
+  if(!c) return;
   const exp=btn.getAttribute('aria-expanded')==='true';
   btn.setAttribute('aria-expanded',!exp);
   c.classList.toggle('open',!exp);
-  btn.querySelector('.companion-arrow').style.transform=exp?'':'rotate(180deg)';
+  const arrow=btn.querySelector('.companion-arrow');
+  if(arrow) arrow.style.transform=exp?'':'rotate(180deg)';
 }
-
 
 function toggleCompanionLang(panelId, lang) {
   const panel = document.getElementById(panelId);
   if (!panel) return;
   const enEl = panel.querySelector('.companion-en');
   const arEl = panel.querySelector('.companion-ar-orig');
-  const btns = panel.querySelectorAll('.clb');
-  btns.forEach(b => b.classList.remove('active'));
-  const activeBtn = panel.querySelector('.clb[data-lang="' + lang + '"]');
-  if (activeBtn) activeBtn.classList.add('active');
-  if (lang === 'en') {
-    if (enEl) enEl.style.display = 'block';
-    if (arEl) arEl.style.display = 'none';
-  } else if (lang === 'ar') {
-    if (enEl) enEl.style.display = 'none';
-    if (arEl) arEl.style.display = 'block';
-  } else {
-    if (enEl) enEl.style.display = 'block';
-    if (arEl) arEl.style.display = 'block';
-  }
+  panel.querySelectorAll('.clb').forEach(b => b.classList.remove('active'));
+  const ab = panel.querySelector('.clb[data-lang="' + lang + '"]');
+  if (ab) ab.classList.add('active');
+  if (lang === 'en') { if (enEl) enEl.style.display='block'; if (arEl) arEl.style.display='none'; }
+  else if (lang === 'ar') { if (enEl) enEl.style.display='none'; if (arEl) arEl.style.display='block'; }
+  else { if (enEl) enEl.style.display='block'; if (arEl) arEl.style.display='block'; }
 }
-
 </script>
 </body>
 </html>
