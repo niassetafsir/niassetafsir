@@ -140,6 +140,23 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 .tafsir-body{border:1px solid rgba(201,168,76,0.15);border-top:none;border-radius:0 0 6px 6px;display:none;}
 .tafsir-body.open{display:block;}
 
+
+.audio-panel{margin:1rem 0;}
+.audio-toggle{width:100%;background:rgba(180,100,30,0.08);border:1px solid rgba(220,140,40,0.25);border-radius:6px;padding:.7rem 1rem;cursor:pointer;display:flex;align-items:center;gap:.7rem;direction:ltr;color:#f0d090;font-family:"EB Garamond",serif;font-size:.95rem;transition:all .2s;text-align:left;}
+.audio-toggle:hover{background:rgba(180,100,30,0.15);}
+.audio-toggle-arrow{color:rgba(220,140,40,0.5);transition:transform .2s;font-size:.85rem;margin-left:auto;flex-shrink:0;}
+.audio-body{border:1px solid rgba(220,140,40,0.15);border-top:none;border-radius:0 0 6px 6px;display:none;background:rgba(10,8,0,0.6);}
+.audio-body.open{display:block;}
+.audio-tabs{display:flex;gap:0;border-bottom:1px solid rgba(220,140,40,0.15);}
+.audio-tab{flex:1;padding:.5rem 1rem;background:none;border:none;color:rgba(240,208,144,0.5);font-family:"EB Garamond",serif;font-size:.82rem;cursor:pointer;transition:all .15s;direction:ltr;}
+.audio-tab.active{background:rgba(220,140,40,0.1);color:#f0d090;border-bottom:2px solid rgba(220,140,40,0.6);}
+.audio-pane{display:none;padding:.8rem 1rem 1rem;}
+.audio-pane.active{display:block;}
+.audio-pane iframe{width:100%;border:none;border-radius:4px;}
+.audio-session-info{font-family:"EB Garamond",serif;font-size:.75rem;color:rgba(240,208,144,0.4);direction:ltr;padding:.4rem 1rem .2rem;font-style:italic;}
+.audio-confidence-low{color:rgba(240,208,144,0.3);}
+.audio-pending{padding:1rem;color:rgba(240,208,144,0.3);font-style:italic;font-size:.85rem;font-family:"EB Garamond",serif;text-align:center;}
+
 </style>
 </head>
 <body>
@@ -2334,13 +2351,7 @@ will be wary, of discoursing thus.</div>
   </div>
 </div>
 
-  <div class="sheikh-panel" dir="ltr">
-    <details>
-      <summary>&#x1F3A7; Sheikh Ibrāhīm Niasse — Arabic Audio (YouTube)</summary>
-      <p style="font-size:.8rem;color:rgba(201,168,76,0.5);direction:ltr;">Audio of Sheikh Ibrāhīm Niasse delivering الدرس السادس عشر in Arabic. Use the YouTube playlist to locate the corresponding session.</p>
-      <a href="https://www.youtube.com/playlist?list=PLZ5oMWd9FHnMr2IxNaR6KFSmfMrfBHJOn" target="_blank" rel="noopener" style="color:rgba(201,168,76,0.6);font-size:.8rem;direction:ltr;">&#x1F517; Open Playlist on YouTube &#8599;</a>
-    </details>
-  </div>
+  
 
   <div class="tafsir-panel">
   <button class="tafsir-toggle" onclick="toggleTafsir(this)" aria-expanded="false">
@@ -2659,6 +2670,22 @@ will be wary, of discoursing thus.</div>
 </footer>
 
 <script>
+
+function toggleAudio(btn){
+  const body=btn.nextElementSibling;
+  const exp=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',String(!exp));
+  body.classList.toggle('open',!exp);
+  btn.querySelector('.audio-toggle-arrow').style.transform=exp?'':'rotate(180deg)';
+}
+function switchAudioTab(tabEl, paneId){
+  const parent=tabEl.closest('.audio-body');
+  parent.querySelectorAll('.audio-tab').forEach(t=>t.classList.remove('active'));
+  parent.querySelectorAll('.audio-pane').forEach(p=>p.classList.remove('active'));
+  tabEl.classList.add('active');
+  document.getElementById(paneId).classList.add('active');
+}
+
 
 function toggleTafsir(btn){
   const body=btn.nextElementSibling;
