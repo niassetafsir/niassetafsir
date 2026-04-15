@@ -88,6 +88,22 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 .clb.active{background:rgba(70,100,150,0.3);color:#c0d8f0;border-color:rgba(100,150,220,0.5);}
 .companion-en{display:block}.companion-ar-orig{display:none}
 
+
+.copyright-bar{background:rgba(0,0,0,0.3);border-top:1px solid rgba(201,168,76,0.15);padding:.6rem 1.5rem;direction:ltr;font-family:"EB Garamond",serif;font-size:.78rem;color:rgba(255,255,255,0.45);text-align:center;line-height:1.6;}
+.copyright-bar a{color:rgba(201,168,76,0.5);text-decoration:none;}
+.copyright-bar a:hover{color:var(--gold);}
+.cite-panel{margin:2rem 0 1rem;border:1px solid rgba(201,168,76,0.15);border-radius:6px;overflow:hidden;direction:ltr;}
+.cite-toggle{width:100%;background:rgba(201,168,76,0.04);border:none;padding:.65rem 1rem;cursor:pointer;display:flex;align-items:center;gap:.6rem;color:rgba(255,255,255,0.6);font-family:"EB Garamond",serif;font-size:.82rem;text-align:left;transition:all .2s;}
+.cite-toggle:hover{background:rgba(201,168,76,0.08);color:rgba(255,255,255,0.85);}
+.cite-toggle-arrow{color:rgba(201,168,76,0.4);transition:transform .2s;margin-left:auto;font-size:.75rem;}
+.cite-content{display:none;padding:1rem 1.2rem;background:rgba(0,0,0,0.2);}
+.cite-content.open{display:block;}
+.cite-block{margin-bottom:1rem;}
+.cite-label{font-family:"EB Garamond",serif;font-size:.7rem;color:rgba(201,168,76,0.6);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.3rem;}
+.cite-text{font-family:"EB Garamond",serif;font-size:.85rem;color:rgba(255,255,255,0.8);line-height:1.7;background:rgba(255,255,255,0.04);padding:.5rem .8rem;border-radius:4px;border-left:2px solid rgba(201,168,76,0.25);cursor:text;user-select:all;}
+.cite-note{font-size:.72rem;color:rgba(255,255,255,0.35);margin-top:.4rem;font-style:italic;}
+.watermark-notice{font-size:.72rem;color:rgba(255,255,255,0.3);margin-top:.8rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:.6rem;}
+
 </style>
 </head>
 <body>
@@ -349,6 +365,21 @@ function toggleCompanionLang(panelId, lang) {
   else if (lang === 'ar') { if (enEl) enEl.style.display='none'; if (arEl) arEl.style.display='block'; }
   else { if (enEl) enEl.style.display='block'; if (arEl) arEl.style.display='block'; }
 }
+
+function toggleCite(btn){
+  const c=btn.nextElementSibling;
+  const open=c.classList.toggle('open');
+  btn.querySelector('.cite-toggle-arrow').style.transform=open?'rotate(180deg)':'';
+}
+function copyCite(el){
+  const text=el.innerText;
+  navigator.clipboard.writeText(text).then(()=>{
+    const orig=el.style.background;
+    el.style.background='rgba(201,168,76,0.15)';
+    setTimeout(()=>el.style.background=orig,600);
+  });
+}
+
 </script>
 </body>
 </html>
