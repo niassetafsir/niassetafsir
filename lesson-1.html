@@ -46,6 +46,18 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 .footer-ar{font-size:1rem;color:var(--gold);margin-bottom:.3rem}
 .footer-en{font-family:"EB Garamond",serif;font-size:.78rem;color:rgba(201,168,76,0.35);direction:ltr;margin-top:.2rem}
 @media(max-width:600px){.site-arabic{font-size:1.6rem}.container{padding:1.5rem 1rem 4rem}}
+
+.companion-panel{margin:1.2rem 0;}
+.companion-toggle{width:100%;background:rgba(70,100,150,0.08);border:1px solid rgba(70,100,150,0.25);border-radius:6px;padding:.65rem 1rem;cursor:pointer;display:flex;align-items:center;gap:.7rem;direction:ltr;color:#d4e0f0;font-family:"EB Garamond",serif;font-size:.88rem;transition:all .2s;text-align:left;}
+.companion-toggle:hover{background:rgba(70,100,150,0.15)}
+.companion-icon{flex-shrink:0}
+.companion-label{flex:1}
+.companion-arrow{color:rgba(100,150,220,0.5);transition:transform .2s;font-size:.8rem;flex-shrink:0}
+.companion-content{border:1px solid rgba(70,100,150,0.2);border-top:none;border-radius:0 0 6px 6px;display:none;background:rgba(5,15,30,0.8)}
+.companion-content.open{display:block}
+.companion-text{padding:1.2rem 1.5rem;direction:ltr;text-align:left;font-family:"EB Garamond",Georgia,serif;font-size:15px;line-height:1.85;color:#c8d8e8;white-space:pre-wrap;}
+.companion-source{font-size:.72rem;color:rgba(100,150,220,0.45);direction:ltr;padding:.4rem 1.5rem .8rem;font-family:"EB Garamond",serif;font-style:italic}
+
 </style>
 </head>
 <body>
@@ -232,6 +244,15 @@ function setView(mode){
   document.querySelectorAll('.arabic-block').forEach(el=>el.style.display=mode==='english'?'none':'block');
   document.querySelectorAll('.english-block').forEach(el=>el.style.display=mode==='arabic'?'none':'block');
 }
+
+function toggleCompanion(id,btn){
+  const c=document.getElementById(id);
+  const exp=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',!exp);
+  c.classList.toggle('open',!exp);
+  btn.querySelector('.companion-arrow').style.transform=exp?'':'rotate(180deg)';
+}
+
 </script>
 </body>
 </html>
