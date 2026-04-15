@@ -163,45 +163,6 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
   <button onclick="setView('both')" id="btn-both" class="active">AR + EN</button>
   <button onclick="setView('english')" id="btn-en">EN</button>
 </div>
-
-  <div class="audio-panel">
-  <button class="audio-toggle" onclick="toggleAudio(this)" aria-expanded="false">
-    <span>&#127911;</span>
-    <span style="flex:1">&#1589;&#1608;&#1578; &#1575;&#1604;&#1588;&#1610;&#1582; &middot; Sheikh&#x27;s Audio &#x2014; Arabic &amp; Wolof</span>
-    <span class="audio-toggle-arrow">&#9662;</span>
-  </button>
-  <div class="audio-body">
-    <div class="audio-tabs">
-      <button class="audio-tab active" onclick="switchAudioTab(this,'wolof-25')">&#x1F50A; Wolof Tafs&#299;r</button>
-      <button class="audio-tab" onclick="switchAudioTab(this,'arabic-25')">&#x1F50A; Arabic Tafs&#299;r</button>
-    </div>
-    <div class="audio-pane active" id="wolof-25">
-      <div style="font-family:'EB Garamond',serif;font-size:.72rem;color:rgba(240,208,144,0.4);direction:ltr;padding:.5rem 1rem .2rem;font-style:italic;">
-        Wolof Tafs&#299;r &middot; Hūd (approximate) &middot; TAFS&#206;R DE BAYE NIASS (RTA)
-      </div>
-      <div style="padding:.2rem 1rem .8rem;">
-        <iframe src="https://www.youtube.com/embed/videoseries?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_"
-          width="100%" height="110" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"
-          style="border-radius:4px;display:block;"></iframe>
-        <p style="font-size:.7rem;color:rgba(240,208,144,0.3);direction:ltr;margin-top:.3rem;font-family:'EB Garamond',serif;">
-          Navigate to the Hūd session in the playlist. &nbsp;
-          <a href="https://www.youtube.com/playlist?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_" target="_blank" rel="noopener" style="color:rgba(220,140,40,0.4);">Open full playlist &#x2197;</a>
-        </p>
-      </div>
-    </div>
-    <div class="audio-pane" id="arabic-25" style="display:none;">
-      <div style="padding:.5rem 1rem .8rem;">
-        <iframe src="https://www.youtube.com/embed/videoseries?list=PLZ5oMWd9FHnMr2IxNaR6KFSmfMrfBHJOn"
-          width="100%" height="110" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"
-          style="border-radius:4px;display:block;"></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
-  
 <div class="container">
   <div class="work-title">
     <div class="work-title-ar">&#1601;&#1616;&#1610; &#1585;&#1616;&#1610;&#1614;&#1575;&#1590;&#1616; &#1578;&#1614;&#1601;&#1618;&#1587;&#1616;&#1610;&#1585;&#1616; &#1575;&#1604;&#1618;&#1602;&#1615;&#1585;&#1618;&#1570;&#1606;&#1616; &#1575;&#1604;&#1618;&#1603;&#1614;&#1585;&#1616;&#1610;&#1605;&#1616;</div>
@@ -213,14 +174,46 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
     <button class="ilt-btn" id="ilt-english" onclick="setView('english')">English only</button>
   </div>
 
+  <div class="audio-panel">
+  <button class="audio-toggle" onclick="toggleAudio(this)" aria-expanded="false">
+    <span>&#127911;</span>
+    <span style="flex:1">&#1589;&#1608;&#1578; &#1575;&#1604;&#1588;&#1610;&#1582; &middot; Sheikh&#x27;s Audio</span>
+    <span class="audio-toggle-arrow">&#9662;</span>
+  </button>
+  <div class="audio-body">
+    <div class="audio-tabs">
+      <button class="audio-tab active" onclick="switchAudioTab(this,'wolof-25')">&#x1F50A; Wolof Tafs&#299;r</button>
+      <button class="audio-tab" onclick="switchAudioTab(this,'arabic-25')">&#x1F50A; Arabic Tafs&#299;r</button>
+    </div>
+    <div class="audio-pane active" id="wolof-25">
+      <div style="padding:.5rem 1rem .8rem;">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_"
+          width="100%" height="110" frameborder="0" allowfullscreen loading="lazy"
+          style="border-radius:4px;display:block;border:none;"></iframe>
+        <p style="font-size:.7rem;color:rgba(240,208,144,0.35);direction:ltr;margin-top:.3rem;font-family:'EB Garamond',serif;">
+          Hūd &middot; <a href="https://www.youtube.com/playlist?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_" target="_blank" rel="noopener" style="color:rgba(220,140,40,0.4);">Open full playlist &#x2197;</a>
+        </p>
+      </div>
+    </div>
+    <div class="audio-pane" id="arabic-25" style="display:none;">
+      <div style="padding:.5rem 1rem .8rem;">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLZ5oMWd9FHnMr2IxNaR6KFSmfMrfBHJOn"
+          width="100%" height="110" frameborder="0" allowfullscreen loading="lazy"
+          style="border-radius:4px;display:block;border:none;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
   <div class="tafsir-panel">
   <button class="tafsir-toggle" onclick="toggleTafsir(this)" aria-expanded="false">
-    <span class="tafsir-toggle-icon">📜</span>
-    <span class="tafsir-toggle-label"><span dir="rtl">النص الثنائي اللغة</span> · Bilingual Tafsīr Text</span>
-    <span class="tafsir-toggle-arrow">▾</span>
+    <span class="tafsir-toggle-icon">&#128220;</span>
+    <span class="tafsir-toggle-label"><span dir="rtl">&#1575;&#1604;&#1606;&#1589; &#1575;&#1604;&#1579;&#1606;&#1575;&#1574;&#1610; &#1575;&#1604;&#1604;&#1594;&#1577;</span> &middot; Bilingual Tafs&#299;r Text</span>
+    <span class="tafsir-toggle-arrow">&#9662;</span>
   </button>
   <div class="tafsir-body">
     <div class="bilingual-layout">
+
   <div class="en-column">
 <p style="color:rgba(201,168,76,0.35);font-style:italic;font-size:.9rem;">English translation of الدرس الخامس والعشرون forthcoming.</p>
   </div>
@@ -485,9 +478,10 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 <p>227</p>
 <p>المحتويات</p>
 <p>227</p>
+  
+    </div>
   </div>
 </div>
-  </div>
 
   <div class="companion-panel" id="outer-jal-25">
   <button class="companion-toggle" onclick="toggleCompanion('jal-25',this)" aria-expanded="false">
@@ -499,8 +493,9 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
     <div class="companion-header">
       <div>
         <div class="companion-title-ar">&#1578;&#1601;&#1587;&#1610;&#1585; &#1575;&#1604;&#1580;&#1604;&#1575;&#1604;&#1610;&#1606;</div>
-        <div class="companion-title-en">Tafs&#299;r al-Jal&#257;layn &middot; English trans. Feras Hamza</div>
-      </div>
+        <div class="companion-title-en">Tafs&#299;r al-Jal&#257;layn &middot; English trans. Feras Hamza
+  </div>
+</div>
 
   <div class="companion-panel" id="outer-rab-25">
   <button class="companion-toggle" onclick="toggleCompanion('rab-25',this)" aria-expanded="false">
@@ -516,8 +511,9 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
         <a href="https://usul.ai/t/ruh-bayan" target="_blank" rel="noopener"
            style="font-family:'EB Garamond',serif;font-size:.75rem;color:rgba(100,180,120,0.7);border:1px solid rgba(100,180,120,0.3);padding:.2rem .6rem;border-radius:12px;text-decoration:none;">
           Open on Usul.ai &#8599;</a>
-      </div>
-    </div>
+      
+  </div>
+</div>
 
   
 
@@ -527,6 +523,7 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
     <a href="/lesson-26.html" class="nav-btn nav-btn-next">Lesson 26 &#8594;</a>
   </div>
 </div>
+
 
 <footer>
   <div class="footer-ar">&#1601;&#1616;&#1610; &#1585;&#1616;&#1610;&#1614;&#1575;&#1590;&#1616; &#1578;&#1614;&#1601;&#1618;&#1587;&#1616;&#1610;&#1585;&#1616; &#1575;&#1604;&#1618;&#1602;&#1615;&#1585;&#1618;&#1570;&#1606;&#1616; &#1575;&#1604;&#1618;&#1603;&#1614;&#1585;&#1616;&#1610;&#1605;&#1616;</div>

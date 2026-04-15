@@ -153,11 +153,16 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
   <button class="view-btn" id="btnArabic" onclick="setView('arabic')">عربي</button>
   <button class="view-btn" id="btnEnglish" onclick="setView('english')">EN</button>
 </div>
+<div class="container">
+  <div class="work-title">
+      <div class="work-title-ar">فِي رِيَاضِ تَفْسِيرِ الْقُرْآنِ الْكَرِيمِ</div>
+  <div class="lesson-heading">الدرس السابع <span class="lesson-en-label">— Al-Māʾida</span></div>
+  
 
   <div class="audio-panel">
   <button class="audio-toggle" onclick="toggleAudio(this)" aria-expanded="false">
     <span>&#127911;</span>
-    <span style="flex:1">&#1589;&#1608;&#1578; &#1575;&#1604;&#1588;&#1610;&#1582; &middot; Sheikh&#x27;s Audio &#x2014; Arabic &amp; Wolof</span>
+    <span style="flex:1">&#1589;&#1608;&#1578; &#1575;&#1604;&#1588;&#1610;&#1582; &middot; Sheikh&#x27;s Audio</span>
     <span class="audio-toggle-arrow">&#9662;</span>
   </button>
   <div class="audio-body">
@@ -166,56 +171,34 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
       <button class="audio-tab" onclick="switchAudioTab(this,'arabic-7')">&#x1F50A; Arabic Tafs&#299;r</button>
     </div>
     <div class="audio-pane active" id="wolof-7">
-      <div style="font-family:'EB Garamond',serif;font-size:.72rem;color:rgba(240,208,144,0.4);direction:ltr;padding:.5rem 1rem .2rem;font-style:italic;">
-        Wolof Tafs&#299;r &middot; Al-Baqara (approximate) &middot; TAFS&#206;R DE BAYE NIASS (RTA)
-      </div>
-      <div style="padding:.2rem 1rem .8rem;">
+      <div style="padding:.5rem 1rem .8rem;">
         <iframe src="https://www.youtube.com/embed/videoseries?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_"
-          width="100%" height="110" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"
-          style="border-radius:4px;display:block;"></iframe>
-        <p style="font-size:.7rem;color:rgba(240,208,144,0.3);direction:ltr;margin-top:.3rem;font-family:'EB Garamond',serif;">
-          Navigate to the Al-Baqara session in the playlist. &nbsp;
-          <a href="https://www.youtube.com/playlist?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_" target="_blank" rel="noopener" style="color:rgba(220,140,40,0.4);">Open full playlist &#x2197;</a>
+          width="100%" height="110" frameborder="0" allowfullscreen loading="lazy"
+          style="border-radius:4px;display:block;border:none;"></iframe>
+        <p style="font-size:.7rem;color:rgba(240,208,144,0.35);direction:ltr;margin-top:.3rem;font-family:'EB Garamond',serif;">
+          Al-Baqara &middot; <a href="https://www.youtube.com/playlist?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_" target="_blank" rel="noopener" style="color:rgba(220,140,40,0.4);">Open full playlist &#x2197;</a>
         </p>
       </div>
     </div>
     <div class="audio-pane" id="arabic-7" style="display:none;">
       <div style="padding:.5rem 1rem .8rem;">
         <iframe src="https://www.youtube.com/embed/videoseries?list=PLZ5oMWd9FHnMr2IxNaR6KFSmfMrfBHJOn"
-          width="100%" height="110" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"
-          style="border-radius:4px;display:block;"></iframe>
+          width="100%" height="110" frameborder="0" allowfullscreen loading="lazy"
+          style="border-radius:4px;display:block;border:none;"></iframe>
       </div>
     </div>
   </div>
 </div>
 
-  
-<header>
-  <div class="site-arabic">في رياض التفسير</div>
-  <div class="site-en">Sheikh Ibrahim Niasse · niassetafsir.com</div>
-</header>
-<nav>
-  <a href="/">← Home</a>
-  <a href="/toc.html">Contents</a>
-  <a href="/lesson-6.html">← الدرس 6</a>
-  <a href="/lesson-8.html">الدرس 8 →</a>
-</nav>
-<div class="container">
-  <div class="work-title">
-      <div class="work-title-ar">فِي رِيَاضِ تَفْسِيرِ الْقُرْآنِ الْكَرِيمِ</div>
-  <div class="lesson-heading">الدرس السابع <span class="lesson-en-label">— Al-Māʾida</span></div>
-  
-
   <div class="tafsir-panel">
   <button class="tafsir-toggle" onclick="toggleTafsir(this)" aria-expanded="false">
-    <span class="tafsir-toggle-icon">📜</span>
-    <span class="tafsir-toggle-label"><span dir="rtl">النص الثنائي اللغة</span> · Bilingual Tafsīr Text</span>
-    <span class="tafsir-toggle-arrow">▾</span>
+    <span class="tafsir-toggle-icon">&#128220;</span>
+    <span class="tafsir-toggle-label"><span dir="rtl">&#1575;&#1604;&#1606;&#1589; &#1575;&#1604;&#1579;&#1606;&#1575;&#1574;&#1610; &#1575;&#1604;&#1604;&#1594;&#1577;</span> &middot; Bilingual Tafs&#299;r Text</span>
+    <span class="tafsir-toggle-arrow">&#9662;</span>
   </button>
   <div class="tafsir-body">
     <div class="bilingual-layout">
+
   <div class="en-column">
 <p class="forthcoming-note">English translation forthcoming.</p>
   </div>
@@ -356,9 +339,10 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 <div class="footnote"><span class="fn-num">2</span><span class="fn-content">أخرجه أحمد في مسند العشرة المبشرين بالجنة/ مسند علي بن أبي طالب (904).</span></div>
 <div class="footnote"><span class="fn-num">3</span><span class="fn-content">صحيح البخاري: كتاب تفسير القرآن/ باب فلا يربو عند اللّٰه من أعطى عطية يبتغي أفضل منه (4774) وفي صحيح مسلم: كتاب صفة القيامة والجنة والنار / باب الدخان (5006)</span></div>
 <div class="footnote"><span class="fn-num">4</span><span class="fn-content">جاء في تفسير الخازن أنه صلى اللّٰه عليه وسلم نهى عن التصدق على المشركين كي تحملهم الحاجة إلى الدخول في الإسلام لحرصه صلى اللّه عليه وسلم على إسلامهم فنزل &quot;لَيْسَ عَلَيْكَ هُدِيُهُمْ&quot;. الخازن ج200 /1. ط/ دار المعرفة للطباعة والنشر . بيروت.</span></div>
-<div class="footnote"><span class="fn-num">5</span><span class="fn-content">(أنا سيد ولد آدم يوم القيامة وأول من ينشق عنه القبر وأول شافع وأول مشفع) صحيح مسلم: كتاب الفضائل/ باب تفضيل نبينا على جميع الخلائق (4223). 8 في رياض التفسير سورة البقرة عليه وسلم أفضل من سائر الأنبياء 1. أعلى الأنبياء مقاما إبراهيم وموسى وعيسى؛ موسى عليه الصلاة والسلام جاء للميقات لمناجاة اللّٰه تبارك وتعالى ومناجاته عند جبل الطور، والنبي صلى اللّٰه عليه وسلم تجاوز سبع سماوات ثم دنا فتدلى حتى كان &quot;فَابَ فَوْسَيْ أَوَ آدْنبى) فنودي في ذلك المقام هذا أعلى من مناجاة موسى عند جبل الطور. وموسى أخبر اللّٰه تبارك وتعالى في حقه أنه طلب الرؤية &quot;رَبِّ أَرِني أَنظِرِ الَيْكَ&quot; فكان الجواب: &quot;لَن تَرِني&quot; ومحمد صلى اللّٰه عليه وسلم أخبر القرآن: &quot;مَا كَذَبَ الْفُؤَادُ مَا رأىٰ&quot; وموسى خر صعقا&quot;وَخَرَّ مُوسىٰ صَعِفاً&quot; أي مغشيا عليه، ومحمد صلى اللّٰه عليه وسلم &quot;مَا زَاغ ألْبَصَرُ وَمَا طَغِىٰ&quot;. اللّٰه خاطب جميع الأنبياء والمرسلين بأسمائهم يا نوح يا إبراهيم يا موسى يا عيسى يا آدم يا داود كلهم يناديه بتجريد اسمه لأنّهم على جلالة مقاماتِهِم كلهم عبد له فقط، وأما محمد صلى اللّٰه عليه وسلم فما دعاه باسمه ولو مرة واحدة: يا أيها الرسول، يا أيها النبي، يا أيها المدثر، نعم ذكر اسمه في القرآن لأنه لو لم يذكر اسمه لا نعرف هذا الخلق العظيم من هو، فذكره وما ذكره إلا وقرن مع ذكره الرسالة، &quot;وَمَا مُحَمَّدُ إِلاَّ رَسُولٌ&quot;، &quot;مُحَمَّدٌ رَسُولُ اللَّهِ&quot;، &quot;مَا كَانَ مُحَمَّدُ آبَآ أَحَدٍ مِن رِجَالِكُمْ وَلَكِن رَسُولَ اللَّهِ وَخَاتِمَ التَّبِيِينَ&quot;. هذا الفرق بين نبينا والأنبياء قبله، وحيث نص القرآن أنه فضّل بعض الأنبياء على بعض وشاهدنا هذه الفضائل وهذه الحجج الدامغة على كون محمد صلى اللّٰه عليه وسلم أفضل الأنبياء، فما يشك في أفضلية محمد صلى اللّٰه عليه وسلم إلا من لم يؤمن هذا القرآن فخرج من الدين تماما. 1- عن أبي هريرة أن رسول اللّٰه صلى اللّٰه عليه وسلم قال (فضلتُ على الأنبياء بست أعطيتُ جوامع الكلم ونصرت بالرعب وأحلت لي الغنائم وجعلت لي الأرض طهورا ومسجدا وأرسلت إلى الخلق كافة وختم بي النبيون) صحيح مسلم: كتاب المساجد ومواضع الصلاة (812). 9 سورة البهرة في رياض التفسير (وَءَاتَيْنَا عِيسَى ابْنَ مَرْيَمَ ألْبَيِّنَتِ وَأَيَّدْنَهُ) قويناه {بِرُوحِ الْفُدُس} جبريل يسير معه حيث سار{وَلَوْشآء اللَّهُ }هدى الناس جميعا {ماَ اَقْتَتَل الَّذِينَ مِن بَعْدِهِم }بعد  الرسل مِن بَعْدٍ مَا جَاءَتْهُمْ الْبَيّنَـٰت} لاختلافهم وتضليل بعضهم بعضا {وَلَكِن إختَلَفَوَا } لمشيئته {فَمنْهُم مَنَ اَمَنَ) ثبت على إيمانه {وَمِنْهَم مَن كَفَرَكالنصارى بعد المسيح{وَلَوْشَآء أللَّهُ مَا إَفتتلُوا} تاكيد {وَلَكِنَّ اللهَ يَفْعَلُ مَا يَرِيدُ} من توفيق من شاء وخذلان من شاء(يَأَيُّهَا أَلذِينَ ءَامَتْوَأ أَنِفِقُوا مِمَّا رَزَقْنَكَم} زكاته {مِن قَبْلِ أَن يَاتِيَ يَوْمٌ لاَبَيْعٌ} فداء{فِيهِ وَلا خَلَّةٍ } صداقة تنفع {وَلا شَقَعَةٌ} بغير إذنه وذلك اليوم يوم القيامة {وَالْكَفِرُونَ بالله أو بما فرض عليهم {هُمْ الظِّلِمُونَ } الكفار هم الظالمون. قال العلماء الحمد لله لما لم يقل الظالمون هم الكافرون، بل الكافرون هم الظالمون 1. عادة القرآن إذا ذكر القصص يذكر الأحكام ويذكر التوحيد لأن الصبر على نوع واحد صعب على بني آدم حتى في الأطعمة، يحبون الانتقال من طعام إلى طعام، من لون إلى لون، ذلك ألذ عندهم، فجاء القرآن هكذا يأتي بالقصص ثم يأتي بالأحكام ثم يأتي بالتوحيد. أتى بالتوحيد هذه أعظم آية في القرآن، قال الرسول صلى اللّٰه عليه وسلم: آدم سيد البشر، وأنا سيد العرب، وآية الكرسي سيد الآيات، وسلمان سيد فارس، وبلال سيد الحبشة، والجمعة سيد الأيام2</span></div>
+<div class="footnote"><span class="fn-num">5</span><span class="fn-content">(أنا سيد ولد آدم يوم القيامة وأول من ينشق عنه القبر وأول شافع وأول مشفع) صحيح مسلم: كتاب الفضائل/ باب تفضيل نبينا على جميع الخلائق (4223). 8 في رياض التفسير سورة البقرة عليه وسلم أفضل من سائر الأنبياء 1. أعلى الأنبياء مقاما إبراهيم وموسى وعيسى؛ موسى عليه الصلاة والسلام جاء للميقات لمناجاة اللّٰه تبارك وتعالى ومناجاته عند جبل الطور، والنبي صلى اللّٰه عليه وسلم تجاوز سبع سماوات ثم دنا فتدلى حتى كان &quot;فَابَ فَوْسَيْ أَوَ آدْنبى) فنودي في ذلك المقام هذا أعلى من مناجاة موسى عند جبل الطور. وموسى أخبر اللّٰه تبارك وتعالى في حقه أنه طلب الرؤية &quot;رَبِّ أَرِني أَنظِرِ الَيْكَ&quot; فكان الجواب: &quot;لَن تَرِني&quot; ومحمد صلى اللّٰه عليه وسلم أخبر القرآن: &quot;مَا كَذَبَ الْفُؤَادُ مَا رأىٰ&quot; وموسى خر صعقا&quot;وَخَرَّ مُوسىٰ صَعِفاً&quot; أي مغشيا عليه، ومحمد صلى اللّٰه عليه وسلم &quot;مَا زَاغ ألْبَصَرُ وَمَا طَغِىٰ&quot;. اللّٰه خاطب جميع الأنبياء والمرسلين بأسمائهم يا نوح يا إبراهيم يا موسى يا عيسى يا آدم يا داود كلهم يناديه بتجريد اسمه لأنّهم على جلالة مقاماتِهِم كلهم عبد له فقط، وأما محمد صلى اللّٰه عليه وسلم فما دعاه باسمه ولو مرة واحدة: يا أيها الرسول، يا أيها النبي، يا أيها المدثر، نعم ذكر اسمه في القرآن لأنه لو لم يذكر اسمه لا نعرف هذا الخلق العظيم من هو، فذكره وما ذكره إلا وقرن مع ذكره الرسالة، &quot;وَمَا مُحَمَّدُ إِلاَّ رَسُولٌ&quot;، &quot;مُحَمَّدٌ رَسُولُ اللَّهِ&quot;، &quot;مَا كَانَ مُحَمَّدُ آبَآ أَحَدٍ مِن رِجَالِكُمْ وَلَكِن رَسُولَ اللَّهِ وَخَاتِمَ التَّبِيِينَ&quot;. هذا الفرق بين نبينا والأنبياء قبله، وحيث نص القرآن أنه فضّل بعض الأنبياء على بعض وشاهدنا هذه الفضائل وهذه الحجج الدامغة على كون محمد صلى اللّٰه عليه وسلم أفضل الأنبياء، فما يشك في أفضلية محمد صلى اللّٰه عليه وسلم إلا من لم يؤمن هذا القرآن فخرج من الدين تماما. 1- عن أبي هريرة أن رسول اللّٰه صلى اللّٰه عليه وسلم قال (فضلتُ على الأنبياء بست أعطيتُ جوامع الكلم ونصرت بالرعب وأحلت لي الغنائم وجعلت لي الأرض طهورا ومسجدا وأرسلت إلى الخلق كافة وختم بي النبيون) صحيح مسلم: كتاب المساجد ومواضع الصلاة (812). 9 سورة البهرة في رياض التفسير (وَءَاتَيْنَا عِيسَى ابْنَ مَرْيَمَ ألْبَيِّنَتِ وَأَيَّدْنَهُ) قويناه {بِرُوحِ الْفُدُس} جبريل يسير معه حيث سار{وَلَوْشآء اللَّهُ }هدى الناس جميعا {ماَ اَقْتَتَل الَّذِينَ مِن بَعْدِهِم }بعد  الرسل مِن بَعْدٍ مَا جَاءَتْهُمْ الْبَيّنَـٰت} لاختلافهم وتضليل بعضهم بعضا {وَلَكِن إختَلَفَوَا } لمشيئته {فَمنْهُم مَنَ اَمَنَ) ثبت على إيمانه {وَمِنْهَم مَن كَفَرَكالنصارى بعد المسيح{وَلَوْشَآء أللَّهُ مَا إَفتتلُوا} تاكيد {وَلَكِنَّ اللهَ يَفْعَلُ مَا يَرِيدُ} من توفيق من شاء وخذلان من شاء(يَأَيُّهَا أَلذِينَ ءَامَتْوَأ أَنِفِقُوا مِمَّا رَزَقْنَكَم} زكاته {مِن قَبْلِ أَن يَاتِيَ يَوْمٌ لاَبَيْعٌ} فداء{فِيهِ وَلا خَلَّةٍ } صداقة تنفع {وَلا شَقَعَةٌ} بغير إذنه وذلك اليوم يوم القيامة {وَالْكَفِرُونَ بالله أو بما فرض عليهم {هُمْ الظِّلِمُونَ } الكفار هم الظالمون. قال العلماء الحمد لله لما لم يقل الظالمون هم الكافرون، بل الكافرون هم الظالمون 1. عادة القرآن إذا ذكر القصص يذكر الأحكام ويذكر التوحيد لأن الصبر على نوع واحد صعب على بني آدم حتى في الأطعمة، يحبون الانتقال من طعام إلى طعام، من لون إلى لون، ذلك ألذ عندهم، فجاء القرآن هكذا يأتي بالقصص ثم يأتي بالأحكام ثم يأتي بالتوحيد. أتى بالتوحيد هذه أعظم آية في القرآن، قال الرسول صلى اللّٰه عليه وسلم: آدم سيد البشر، وأنا سيد العرب، وآية الكرسي سيد الآيات، وسلمان سيد فارس، وبلال سيد الحبشة، والجمعة سيد الأيام2</span>
+    </div>
   </div>
-  </div>
+</div>
 
   <div class="companion-panel" id="outer-jal-7">
   <button class="companion-toggle" onclick="toggleCompanion('jal-7',this)" aria-expanded="false">
@@ -370,8 +354,9 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
     <div class="companion-header">
       <div>
         <div class="companion-title-ar">&#1578;&#1601;&#1587;&#1610;&#1585; &#1575;&#1604;&#1580;&#1604;&#1575;&#1604;&#1610;&#1606;</div>
-        <div class="companion-title-en">Tafs&#299;r al-Jal&#257;layn &middot; English trans. Feras Hamza</div>
-      </div>
+        <div class="companion-title-en">Tafs&#299;r al-Jal&#257;layn &middot; English trans. Feras Hamza
+  </div>
+</div>
 
   
 
@@ -384,6 +369,7 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
     <a href="/lesson-8.html" class="nav-btn nav-btn-next">Lesson Eight →</a>
     <div class="nav-lesson-title">الدرس الثامن · Lesson Eight</div>
 </div>
+
 
 <footer>
   <div class="footer-ar">في رياض التفسير — الشيخ إبراهيم نياس رضي الله عنه</div>

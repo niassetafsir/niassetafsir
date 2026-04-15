@@ -153,11 +153,16 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
   <button class="view-btn" id="btnArabic" onclick="setView('arabic')">عربي</button>
   <button class="view-btn" id="btnEnglish" onclick="setView('english')">EN</button>
 </div>
+<div class="container">
+  <div class="work-title">
+      <div class="work-title-ar">فِي رِيَاضِ تَفْسِيرِ الْقُرْآنِ الْكَرِيمِ</div>
+  <div class="lesson-heading">الدرس الرابع <span class="lesson-en-label">— Al-Baqara continued</span></div>
+  
 
   <div class="audio-panel">
   <button class="audio-toggle" onclick="toggleAudio(this)" aria-expanded="false">
     <span>&#127911;</span>
-    <span style="flex:1">&#1589;&#1608;&#1578; &#1575;&#1604;&#1588;&#1610;&#1582; &middot; Sheikh&#x27;s Audio &#x2014; Arabic &amp; Wolof</span>
+    <span style="flex:1">&#1589;&#1608;&#1578; &#1575;&#1604;&#1588;&#1610;&#1582; &middot; Sheikh&#x27;s Audio</span>
     <span class="audio-toggle-arrow">&#9662;</span>
   </button>
   <div class="audio-body">
@@ -166,56 +171,34 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
       <button class="audio-tab" onclick="switchAudioTab(this,'arabic-4')">&#x1F50A; Arabic Tafs&#299;r</button>
     </div>
     <div class="audio-pane active" id="wolof-4">
-      <div style="font-family:'EB Garamond',serif;font-size:.72rem;color:rgba(240,208,144,0.4);direction:ltr;padding:.5rem 1rem .2rem;font-style:italic;">
-        Wolof Tafs&#299;r &middot; Al-Baqara (approximate) &middot; TAFS&#206;R DE BAYE NIASS (RTA)
-      </div>
-      <div style="padding:.2rem 1rem .8rem;">
+      <div style="padding:.5rem 1rem .8rem;">
         <iframe src="https://www.youtube.com/embed/videoseries?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_"
-          width="100%" height="110" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"
-          style="border-radius:4px;display:block;"></iframe>
-        <p style="font-size:.7rem;color:rgba(240,208,144,0.3);direction:ltr;margin-top:.3rem;font-family:'EB Garamond',serif;">
-          Navigate to the Al-Baqara session in the playlist. &nbsp;
-          <a href="https://www.youtube.com/playlist?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_" target="_blank" rel="noopener" style="color:rgba(220,140,40,0.4);">Open full playlist &#x2197;</a>
+          width="100%" height="110" frameborder="0" allowfullscreen loading="lazy"
+          style="border-radius:4px;display:block;border:none;"></iframe>
+        <p style="font-size:.7rem;color:rgba(240,208,144,0.35);direction:ltr;margin-top:.3rem;font-family:'EB Garamond',serif;">
+          Al-Baqara &middot; <a href="https://www.youtube.com/playlist?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_" target="_blank" rel="noopener" style="color:rgba(220,140,40,0.4);">Open full playlist &#x2197;</a>
         </p>
       </div>
     </div>
     <div class="audio-pane" id="arabic-4" style="display:none;">
       <div style="padding:.5rem 1rem .8rem;">
         <iframe src="https://www.youtube.com/embed/videoseries?list=PLZ5oMWd9FHnMr2IxNaR6KFSmfMrfBHJOn"
-          width="100%" height="110" frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"
-          style="border-radius:4px;display:block;"></iframe>
+          width="100%" height="110" frameborder="0" allowfullscreen loading="lazy"
+          style="border-radius:4px;display:block;border:none;"></iframe>
       </div>
     </div>
   </div>
 </div>
 
-  
-<header>
-  <div class="site-arabic">في رياض التفسير</div>
-  <div class="site-en">Sheikh Ibrahim Niasse · niassetafsir.com</div>
-</header>
-<nav>
-  <a href="/">← Home</a>
-  <a href="/toc.html">Contents</a>
-  <a href="/lesson-3.html">← الدرس 3</a>
-  <a href="/lesson-5.html">الدرس 5 →</a>
-</nav>
-<div class="container">
-  <div class="work-title">
-      <div class="work-title-ar">فِي رِيَاضِ تَفْسِيرِ الْقُرْآنِ الْكَرِيمِ</div>
-  <div class="lesson-heading">الدرس الرابع <span class="lesson-en-label">— Al-Baqara continued</span></div>
-  
-
   <div class="tafsir-panel">
   <button class="tafsir-toggle" onclick="toggleTafsir(this)" aria-expanded="false">
-    <span class="tafsir-toggle-icon">📜</span>
-    <span class="tafsir-toggle-label"><span dir="rtl">النص الثنائي اللغة</span> · Bilingual Tafsīr Text</span>
-    <span class="tafsir-toggle-arrow">▾</span>
+    <span class="tafsir-toggle-icon">&#128220;</span>
+    <span class="tafsir-toggle-label"><span dir="rtl">&#1575;&#1604;&#1606;&#1589; &#1575;&#1604;&#1579;&#1606;&#1575;&#1574;&#1610; &#1575;&#1604;&#1604;&#1594;&#1577;</span> &middot; Bilingual Tafs&#299;r Text</span>
+    <span class="tafsir-toggle-arrow">&#9662;</span>
   </button>
   <div class="tafsir-body">
     <div class="bilingual-layout">
+
   <div class="en-column">
 <p class="forthcoming-note">English translation forthcoming.</p>
   </div>
@@ -304,9 +287,10 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 <div class="footnote"><span class="fn-num">١</span><span class="fn-content">انظر القصة في حاشية الصاوي على الجلالين ج87/1 دار الفكر</span></div>
 <div class="footnote"><span class="fn-num">2</span><span class="fn-content">جاء في الجامع الصغير ج2/ رقم 7915 بلفظ: (ما زالت أكلة خيبر تعتادني كل عام حتى كان هذا أوان قطع أبهري) وكذلك أخرجه أحمد في مسنده: كتاب مسند الأنصار / باب حديث امرأة أطعمه فمات أيقاد منه (3913). كعب بن مالك (22807) وأبو داود في صحيحه: كتاب الديات/ باب في من سقى رجلا سما أو</span></div>
 <div class="footnote"><span class="fn-num">3</span><span class="fn-content">قال نافع بن الأزرق لابن عباس: أخبرني عن قول اللّٰه تعالى &quot;لا بَارِضٌ&quot; قال الهرمة، أما سمعت قول الشاعر :</span></div>
-<div class="footnote"><span class="fn-num">4</span><span class="fn-content">في حاشية العلامة الصاوي على الجلالين: قوله أو كذّان بفتح الكاف وتشديد الذال المعجمة الحجر اللين. ج69/1/ دار الفكر. وفي المنجد: الكذان حجارة رخوة نخرة.</span></div>
+<div class="footnote"><span class="fn-num">4</span><span class="fn-content">في حاشية العلامة الصاوي على الجلالين: قوله أو كذّان بفتح الكاف وتشديد الذال المعجمة الحجر اللين. ج69/1/ دار الفكر. وفي المنجد: الكذان حجارة رخوة نخرة.</span>
+    </div>
   </div>
-  </div>
+</div>
 
   <div class="companion-panel" id="outer-jal-4">
   <button class="companion-toggle" onclick="toggleCompanion('jal-4',this)" aria-expanded="false">
@@ -318,8 +302,9 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
     <div class="companion-header">
       <div>
         <div class="companion-title-ar">&#1578;&#1601;&#1587;&#1610;&#1585; &#1575;&#1604;&#1580;&#1604;&#1575;&#1604;&#1610;&#1606;</div>
-        <div class="companion-title-en">Tafs&#299;r al-Jal&#257;layn &middot; English trans. Feras Hamza</div>
-      </div>
+        <div class="companion-title-en">Tafs&#299;r al-Jal&#257;layn &middot; English trans. Feras Hamza
+  </div>
+</div>
 
   
 
@@ -332,6 +317,7 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
     <a href="/lesson-5.html" class="nav-btn nav-btn-next">Lesson Five →</a>
     <div class="nav-lesson-title">الدرس الخامس · Lesson Five</div>
 </div>
+
 
 <footer>
   <div class="footer-ar">في رياض التفسير — الشيخ إبراهيم نياس رضي الله عنه</div>
