@@ -153,6 +153,45 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
   <button class="view-btn" id="btnArabic" onclick="setView('arabic')">عربي</button>
   <button class="view-btn" id="btnEnglish" onclick="setView('english')">EN</button>
 </div>
+
+  <div class="audio-panel">
+  <button class="audio-toggle" onclick="toggleAudio(this)" aria-expanded="false">
+    <span>&#127911;</span>
+    <span style="flex:1">&#1589;&#1608;&#1578; &#1575;&#1604;&#1588;&#1610;&#1582; &middot; Sheikh&#x27;s Audio &#x2014; Arabic &amp; Wolof</span>
+    <span class="audio-toggle-arrow">&#9662;</span>
+  </button>
+  <div class="audio-body">
+    <div class="audio-tabs">
+      <button class="audio-tab active" onclick="switchAudioTab(this,'wolof-7')">&#x1F50A; Wolof Tafs&#299;r</button>
+      <button class="audio-tab" onclick="switchAudioTab(this,'arabic-7')">&#x1F50A; Arabic Tafs&#299;r</button>
+    </div>
+    <div class="audio-pane active" id="wolof-7">
+      <div style="font-family:'EB Garamond',serif;font-size:.72rem;color:rgba(240,208,144,0.4);direction:ltr;padding:.5rem 1rem .2rem;font-style:italic;">
+        Wolof Tafs&#299;r &middot; Al-Baqara (approximate) &middot; TAFS&#206;R DE BAYE NIASS (RTA)
+      </div>
+      <div style="padding:.2rem 1rem .8rem;">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_"
+          width="100%" height="110" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"
+          style="border-radius:4px;display:block;"></iframe>
+        <p style="font-size:.7rem;color:rgba(240,208,144,0.3);direction:ltr;margin-top:.3rem;font-family:'EB Garamond',serif;">
+          Navigate to the Al-Baqara session in the playlist. &nbsp;
+          <a href="https://www.youtube.com/playlist?list=PL2YYOWr-rCssZm2trrdTezp9nQwwiFfb_" target="_blank" rel="noopener" style="color:rgba(220,140,40,0.4);">Open full playlist &#x2197;</a>
+        </p>
+      </div>
+    </div>
+    <div class="audio-pane" id="arabic-7" style="display:none;">
+      <div style="padding:.5rem 1rem .8rem;">
+        <iframe src="https://www.youtube.com/embed/videoseries?list=PLZ5oMWd9FHnMr2IxNaR6KFSmfMrfBHJOn"
+          width="100%" height="110" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media" allowfullscreen loading="lazy"
+          style="border-radius:4px;display:block;"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
 <header>
   <div class="site-arabic">في رياض التفسير</div>
   <div class="site-en">Sheikh Ibrahim Niasse · niassetafsir.com</div>
@@ -914,31 +953,6 @@ following was revealed:</div>
   <div class="footer-en">Translation & Digital Edition: Amadu Kunateh · niassetafsir.com · © 2026</div>
 </footer>
 <script>
-
-function toggleAudio(btn){
-  const body=btn.nextElementSibling;
-  const exp=btn.getAttribute('aria-expanded')==='true';
-  btn.setAttribute('aria-expanded',String(!exp));
-  body.classList.toggle('open',!exp);
-  btn.querySelector('.audio-toggle-arrow').style.transform=exp?'':'rotate(180deg)';
-}
-function switchAudioTab(tabEl, paneId){
-  const parent=tabEl.closest('.audio-body');
-  parent.querySelectorAll('.audio-tab').forEach(t=>t.classList.remove('active'));
-  parent.querySelectorAll('.audio-pane').forEach(p=>p.classList.remove('active'));
-  tabEl.classList.add('active');
-  document.getElementById(paneId).classList.add('active');
-}
-
-
-function toggleTafsir(btn){
-  const body=btn.nextElementSibling;
-  const exp=btn.getAttribute('aria-expanded')==='true';
-  btn.setAttribute('aria-expanded',String(!exp));
-  body.classList.toggle('open',!exp);
-  btn.querySelector('.tafsir-toggle-arrow').style.transform=exp?'':'rotate(180deg)';
-}
-
 function setView(mode){
   document.querySelectorAll('.bilingual-layout').forEach(el=>{
     el.classList.remove('show-arabic-only','show-english-only');
@@ -950,7 +964,6 @@ function setView(mode){
     b.classList.toggle('active', oc.includes("'"+mode+"'") || oc.includes('"'+mode+'"'));
   });
 }
-
 function togglePanel(btn){
   const p=btn.nextElementSibling;
   const exp=btn.getAttribute('aria-expanded')==='true';
@@ -959,7 +972,6 @@ function togglePanel(btn){
   const arrow=btn.querySelector('.sheikh-arrow');
   if(arrow) arrow.style.transform=exp?'':'rotate(180deg)';
 }
-
 function toggleCompanion(id,btn){
   const c=document.getElementById(id);
   if(!c) return;
@@ -969,7 +981,6 @@ function toggleCompanion(id,btn){
   const arrow=btn.querySelector('.companion-arrow');
   if(arrow) arrow.style.transform=exp?'':'rotate(180deg)';
 }
-
 function toggleCompanionLang(panelId,lang){
   const panel=document.getElementById(panelId);
   if(!panel) return;
@@ -982,13 +993,36 @@ function toggleCompanionLang(panelId,lang){
   else if(lang==='ar'){if(enEl)enEl.style.display='none';if(arEl)arEl.style.display='block';}
   else{if(enEl)enEl.style.display='block';if(arEl)arEl.style.display='block';}
 }
-
+function toggleTafsir(btn){
+  const body=btn.nextElementSibling;
+  const exp=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',String(!exp));
+  body.classList.toggle('open',!exp);
+  const arrow=btn.querySelector('.tafsir-toggle-arrow');
+  if(arrow) arrow.style.transform=exp?'':'rotate(180deg)';
+}
+function toggleAudio(btn){
+  const body=btn.nextElementSibling;
+  const exp=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',String(!exp));
+  body.classList.toggle('open',!exp);
+  const arrow=btn.querySelector('.audio-toggle-arrow');
+  if(arrow) arrow.style.transform=exp?'':'rotate(180deg)';
+}
+function switchAudioTab(tabEl,paneId){
+  const parent=tabEl.closest('.audio-body');
+  parent.querySelectorAll('.audio-tab').forEach(t=>t.classList.remove('active'));
+  parent.querySelectorAll('.audio-pane').forEach(p=>p.classList.remove('active'));
+  tabEl.classList.add('active');
+  const pane=document.getElementById(paneId);
+  if(pane) pane.classList.add('active');
+}
 function toggleCite(btn){
   const c=btn.nextElementSibling;
   const open=c.classList.toggle('open');
-  btn.querySelector('.cite-toggle-arrow').style.transform=open?'rotate(180deg)':'';
+  const arrow=btn.querySelector('.cite-toggle-arrow');
+  if(arrow) arrow.style.transform=open?'rotate(180deg)':'';
 }
-
 function copyCite(el){
   navigator.clipboard&&navigator.clipboard.writeText(el.innerText).then(()=>{
     const orig=el.style.background;
