@@ -162,6 +162,25 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 .audio-body.open{display:block;}
 .tafsir-body{display:none;}
 .tafsir-body.open{display:block;}
+
+/* Fix 1: Horizontal bold lesson heading block */
+.lesson-header-block{text-align:center;padding:1.2rem 0 .8rem;border-bottom:2px solid rgba(201,168,76,0.2);margin-bottom:1.2rem;}
+.lesson-header-ar{font-family:"Amiri",serif;font-size:1.5rem;font-weight:700;color:var(--gold);direction:rtl;line-height:1.4;}
+.lesson-header-en{font-family:"EB Garamond",serif;font-size:1rem;color:rgba(255,255,255,0.75);direction:ltr;margin-top:.2rem;font-style:italic;}
+.lesson-header-sura-ar{font-size:1.1rem;color:rgba(201,168,76,0.7);margin-top:.15rem;direction:rtl;}
+.lesson-header-sura-en{font-size:.82rem;color:rgba(255,255,255,0.5);direction:ltr;font-family:"EB Garamond",serif;font-style:italic;}
+
+/* Fix 2: English text white in bilingual */
+.en-column p, .en-column .en-para{color:#ffffff !important;}
+.en-column .en-fn{color:rgba(255,255,255,0.7) !important;}
+.en-column .en-footnotes p{color:rgba(255,255,255,0.65) !important;}
+.en-column .footnote{color:#ffffff;}
+
+/* Fix 3: Language nav */
+.lang-nav{display:flex;justify-content:center;gap:.5rem;padding:.5rem 1rem;background:rgba(0,0,0,0.25);border-bottom:1px solid rgba(201,168,76,0.15);}
+.lang-btn{font-family:"EB Garamond",serif;font-size:.78rem;color:rgba(255,255,255,0.5);background:none;border:1px solid rgba(201,168,76,0.2);border-radius:14px;padding:.2rem .7rem;cursor:pointer;transition:all .15s;text-decoration:none;}
+.lang-btn:hover,.lang-btn.active{color:var(--gold);border-color:rgba(201,168,76,0.5);}
+
 </style>
 </head>
 <body>
@@ -171,9 +190,10 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
   <button onclick="setView('english')" id="btn-en">EN</button>
 </div>
 <div class="container">
-  <div class="work-title">
-    <div class="work-title-ar">&#1601;&#1616;&#1610; &#1585;&#1616;&#1610;&#1614;&#1575;&#1590;&#1616; &#1578;&#1614;&#1601;&#1618;&#1587;&#1616;&#1610;&#1585;&#1616; &#1575;&#1604;&#1618;&#1602;&#1615;&#1585;&#1618;&#1570;&#1606;&#1616; &#1575;&#1604;&#1618;&#1603;&#1614;&#1585;&#1616;&#1610;&#1605;&#1616;</div>
-  <div class="lesson-heading">الدرس السابع عشر <span class="lesson-en-label">— Sūrat al-Anʿām (Q. 6, continued)</span></div>
+  <div class="lesson-header-block">
+    <div class="lesson-header-ar">&#x641;&#x64A; &#x631;&#x64A;&#x627;&#x636; &#x627;&#x644;&#x62A;&#x641;&#x633;&#x64A;&#x631; &nbsp;|&nbsp; الدرس السابع عشر &nbsp;|&nbsp; سورة الأنعام</div>
+    <div class="lesson-header-en">In the Gardens of Qur&#702;&#257;nic Commentary &nbsp;|&nbsp; Lesson Seventeen &nbsp;|&nbsp; Sūrat al-Anʿām</div>
+  </div>
   <div class="inline-lang-toggle" dir="ltr">
     <span class="ilt-label">View:</span>
     <button class="ilt-btn active" id="ilt-both" onclick="setView('both')">Arabic + English</button>
@@ -1011,6 +1031,18 @@ mentioned, in calumny against God. Verily they have gone astray and are not guid
   <div style="font-family:'EB Garamond',serif;font-size:.8rem;color:rgba(201,168,76,0.3);margin-top:.3rem">niassetafsir.com</div>
 </footer>
 <script>
+
+var SITE_LANG = 'en';
+var TRANSLATIONS = {
+  en: {audio:'Sheikh\'s Audio', tafsir:'Bilingual Tafsīr Text', jalalayn:'Tafsīr al-Jalālayn', rab:'Rūḥ al-Bayān', toc:'Table of Contents', prev:'Previous', next:'Next'},
+  ar: {audio:'صوت الشيخ', tafsir:'النص الثنائي', jalalayn:'تفسير الجلالين', rab:'روح البيان', toc:'فهرس المحتويات', prev:'السابق', next:'التالي'},
+  fr: {audio:'Audio du Sheikh', tafsir:'Texte Bilingue', jalalayn:'Tafsīr al-Jalālayn', rab:'Rūḥ al-Bayān', toc:'Table des matières', prev:'Précédent', next:'Suivant'}
+};
+function setSiteLang(lang){
+  SITE_LANG = lang;
+  document.querySelectorAll('.lang-btn').forEach(function(b){b.classList.toggle('active', b.textContent.trim()===(lang==='en'?'English':lang==='ar'?'عربي':'Français'));});
+}
+
 function setView(mode){
   document.querySelectorAll('.bilingual-layout').forEach(function(el){
     el.classList.remove('show-arabic-only','show-english-only');
