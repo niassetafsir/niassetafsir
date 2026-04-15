@@ -102,6 +102,31 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 .cite-note{font-size:.72rem;color:rgba(255,255,255,0.35);margin-top:.4rem;font-style:italic;}
 .watermark-notice{font-size:.72rem;color:rgba(255,255,255,0.3);margin-top:.8rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:.6rem;}
 
+
+/* ── Bilingual two-column layout ── */
+.bilingual-layout{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:1.5rem 0;align-items:start;}
+.ar-column{direction:rtl;text-align:justify;padding:0 1.2rem 0 .8rem;border-right:2px solid rgba(201,168,76,0.2);}
+.en-column{direction:ltr;text-align:left;padding:0 .8rem 0 1.2rem;font-family:"EB Garamond",Georgia,serif;font-size:16px;line-height:1.9;color:#F5EDD6;}
+.ar-column p{font-size:1.05rem;line-height:2.1;color:var(--text);margin:.6rem 0;}
+.en-column p{margin:.6rem 0;color:#F5EDD6;}
+.en-column .en-footnotes{margin-top:1.5rem;border-top:1px solid rgba(201,168,76,0.15);padding-top:.8rem;}
+.en-column .en-fn{font-size:12.5px;color:rgba(255,255,255,0.6);margin-bottom:.4em;line-height:1.6;}
+.en-column .footnote{font-size:.85rem;color:rgba(255,255,255,0.7);margin:.5rem 0;line-height:1.8;}
+.forthcoming-note{color:rgba(255,255,255,0.25);font-style:italic;font-size:.88rem;margin-top:2rem;padding:1rem;border:1px dashed rgba(201,168,76,0.1);border-radius:4px;text-align:center;}
+
+/* Mobile: stack Arabic first, English below */
+@media(max-width:720px){
+  .bilingual-layout{grid-template-columns:1fr;gap:0;}
+  .ar-column{border-right:none;border-bottom:1px solid rgba(201,168,76,0.15);padding:0 0 1.5rem 0;margin-bottom:1.5rem;}
+  .en-column{padding:0;}
+}
+
+/* View toggle overrides */
+.bilingual-layout.show-arabic-only .en-column{display:none;}
+.bilingual-layout.show-arabic-only .ar-column{grid-column:1/-1;border-right:none;}
+.bilingual-layout.show-english-only .ar-column{display:none;}
+.bilingual-layout.show-english-only .en-column{grid-column:1/-1;}
+
 </style>
 </head>
 <body>
@@ -776,7 +801,11 @@ admit them into His mercy, His Paradise. Truly God is Forgiving, to those who ob
       <a href="https://www.youtube.com/playlist?list=PLZ5oMWd9FHnMr2IxNaR6KFSmfMrfBHJOn" target="_blank" rel="noopener" style="color:rgba(201,168,76,0.6);font-size:.8rem;direction:ltr;">&#x1F517; Open Playlist &#8599;</a>
     </details>
   </div>
-  <div class="arabic-block" dir="rtl">
+  <div class="bilingual-layout">
+  <div class="en-column">
+<p style="color:rgba(201,168,76,0.35);font-style:italic;font-size:.9rem;">English translation of الدرس الثاني والعشرون forthcoming.</p>
+  </div>
+  <div class="ar-column">
 <p>أعوذ بالله من الشيطان الرجيم بسم اللّٰه الرحمن الرحيم اللهم صل على سيدنا محمد الفاتح لما أغلق والخاتم لما سبق ناصر الحق بالحق والهادي إلى صراطك المستقيم وعلى آله حق قدره ومقداره العظيم ورضي اللّٰه تعالى عن أصحاب رسول اللّٰه صلى اللّٰه عليه وسلم، ولا حول ولا قوة إلا بالله العلي العظيم</p>
 <p>يا همة الشيخ احضري</p>
 <p>لنا بهذا المحضر</p>
@@ -1125,9 +1154,7 @@ admit them into His mercy, His Paradise. Truly God is Forgiving, to those who ob
 <p>في رياض التفسير</p>
 <p>سورة التوبة</p>
   </div>
-  <div class="english-block" dir="ltr">
-    <p style="color:rgba(201,168,76,0.35);font-style:italic;font-size:.9rem;">English translation of الدرس الثاني والعشرون forthcoming.</p>
-  </div>
+</div>
   <div class="lesson-bottom-nav">
     <a href="/lesson-21.html" class="nav-btn nav-btn-prev">&#8592; Lesson 21</a>
     <a href="/" class="nav-btn nav-btn-toc">&#x21A9; Table of Contents</a>
@@ -1140,11 +1167,18 @@ admit them into His mercy, His Paradise. Truly God is Forgiving, to those who ob
 </footer>
 <script>
 function setView(mode){
-  // Update all toolbar/toggle buttons
-  document.querySelectorAll('[data-view]').forEach(b=>{
-    b.classList.toggle('active', b.getAttribute('data-view')===mode);
-    b.classList.toggle('ilt-btn', true);
+  document.querySelectorAll('.arabic-block').forEach(el=>el.style.display=mode==='english'?'none':'block');
+  document.querySelectorAll('.english-block').forEach(el=>el.style.display=mode==='arabic'?'none':'block');
+  document.querySelectorAll('.bilingual-layout').forEach(el=>{
+    el.classList.remove('show-arabic-only','show-english-only');
+    if(mode==='arabic') el.classList.add('show-arabic-only');
+    if(mode==='english') el.classList.add('show-english-only');
   });
+  document.querySelectorAll('.view-toolbar button, .inline-lang-toggle button').forEach(b=>{
+    const oc=b.getAttribute('onclick')||'';
+    b.classList.toggle('active', oc.includes("'"+mode+"'") || oc.includes('"'+mode+'"'));
+  });
+});
   // Legacy support for old button IDs
   ['btnBoth','btnArabic','btnEnglish','btn-both','btn-ar','btn-en'].forEach(id=>{
     const el=document.getElementById(id);

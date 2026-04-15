@@ -92,6 +92,31 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 .cite-note{font-size:.72rem;color:rgba(255,255,255,0.35);margin-top:.4rem;font-style:italic;}
 .watermark-notice{font-size:.72rem;color:rgba(255,255,255,0.3);margin-top:.8rem;border-top:1px solid rgba(255,255,255,0.06);padding-top:.6rem;}
 
+
+/* ── Bilingual two-column layout ── */
+.bilingual-layout{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:1.5rem 0;align-items:start;}
+.ar-column{direction:rtl;text-align:justify;padding:0 1.2rem 0 .8rem;border-right:2px solid rgba(201,168,76,0.2);}
+.en-column{direction:ltr;text-align:left;padding:0 .8rem 0 1.2rem;font-family:"EB Garamond",Georgia,serif;font-size:16px;line-height:1.9;color:#F5EDD6;}
+.ar-column p{font-size:1.05rem;line-height:2.1;color:var(--text);margin:.6rem 0;}
+.en-column p{margin:.6rem 0;color:#F5EDD6;}
+.en-column .en-footnotes{margin-top:1.5rem;border-top:1px solid rgba(201,168,76,0.15);padding-top:.8rem;}
+.en-column .en-fn{font-size:12.5px;color:rgba(255,255,255,0.6);margin-bottom:.4em;line-height:1.6;}
+.en-column .footnote{font-size:.85rem;color:rgba(255,255,255,0.7);margin:.5rem 0;line-height:1.8;}
+.forthcoming-note{color:rgba(255,255,255,0.25);font-style:italic;font-size:.88rem;margin-top:2rem;padding:1rem;border:1px dashed rgba(201,168,76,0.1);border-radius:4px;text-align:center;}
+
+/* Mobile: stack Arabic first, English below */
+@media(max-width:720px){
+  .bilingual-layout{grid-template-columns:1fr;gap:0;}
+  .ar-column{border-right:none;border-bottom:1px solid rgba(201,168,76,0.15);padding:0 0 1.5rem 0;margin-bottom:1.5rem;}
+  .en-column{padding:0;}
+}
+
+/* View toggle overrides */
+.bilingual-layout.show-arabic-only .en-column{display:none;}
+.bilingual-layout.show-arabic-only .ar-column{grid-column:1/-1;border-right:none;}
+.bilingual-layout.show-english-only .ar-column{display:none;}
+.bilingual-layout.show-english-only .en-column{grid-column:1/-1;}
+
 </style>
 </head>
 <body>
@@ -205,7 +230,12 @@ days of this world.</div>
 </div>
     <div class="sheikh-panel"><button class="sheikh-toggle" onclick="togglePanel(this)" aria-expanded="false"><span class="sheikh-icon">🎙</span><span class="sheikh-label">Arabic Audio — الشيخ إبراهيم نياس</span><span class="sheikh-arrow">▾</span></button><div class="sheikh-player hidden"><iframe src="https://www.youtube.com/embed/WYYzSYEUsUc?rel=0" allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture" allowfullscreen loading="lazy" style="width:100%;height:280px;border:none;border-radius:4px"></iframe></div></div>
     <div class="sheikh-panel" style="margin-top:.4rem"><button class="sheikh-toggle" onclick="togglePanel(this)" aria-expanded="false"><span class="sheikh-icon">🔊</span><span class="sheikh-label">English Audio — coming soon</span><span class="sheikh-arrow">▾</span></button><div class="sheikh-player hidden" style="padding:.8rem;direction:ltr;font-family:'EB Garamond',serif;color:rgba(245,237,214,0.55);font-style:italic;font-size:.88rem">English audio narration will be available here.</div></div>
-  <div class="arabic-block"><p class="tafsir-text">أعوذ بالله من الشيطان الرجيم بسم اللّٰه الرحمن الرحيم اللهم صل على سيدنا محمد الفاتح لما أغلق والخاتم لما سبق ناصر الحق بالحق والهادي إلى صراطك لمستقيم وعلى آله حق قدره ومقداره العظيم ورضي اللّٰه تعالى عن أصحاب رسول اللّٰه صلى اللّٰه عليه وسلم، ولا حول ولا قوة إلا بالله العلي العظير ياهمة الشيخ احضري لنا بهذا المحضر</p>
+  <div class="bilingual-layout">
+  <div class="en-column">
+<p class="forthcoming-note">English translation forthcoming.</p>
+  </div>
+  <div class="ar-column">
+<p class="tafsir-text">أعوذ بالله من الشيطان الرجيم بسم اللّٰه الرحمن الرحيم اللهم صل على سيدنا محمد الفاتح لما أغلق والخاتم لما سبق ناصر الحق بالحق والهادي إلى صراطك لمستقيم وعلى آله حق قدره ومقداره العظيم ورضي اللّٰه تعالى عن أصحاب رسول اللّٰه صلى اللّٰه عليه وسلم، ولا حول ولا قوة إلا بالله العلي العظير ياهمة الشيخ احضري لنا بهذا المحضر</p>
 <p class="tafsir-text">ولتعطفي بنظرة</p>
 <p class="tafsir-text">تأتي لنا بالظفر</p>
 <p class="tafsir-text">(يَسْتَبْشِرُونَ بِنِعْمَةِ مِنَ اللَّهِ وَبَضْلٍ) الشهداء يستبشرون بثواب اللّٰه تبارك وتعالى وفضله زيادته عليه (وَأَنَّ اللَّهَ لا يُضِيعُ أَجْرَ ألْمُومِنِينَ) بل يأجرهم. الشهداء وصفهم اللّه في القرآن بأنّهم أحياء عند ربّهم. الشهيد لا يسقط إلا وقد اهتدى لمقعده في الجنة، يوضع على رأسه تاج الكرامة، ويغفر له جميع خطاياه ويشفع في سبعين من أهل بيته، ويزوج اثنتين وسبعين من الحور العين 1، فيستبشرون هذا الثواب وما زادهم اللّٰه تبارك وتعالى من فضله الذي لا حد له. وأنواع الشهادة كثيرة: الشهيد في المعركة شهيد ومن ماتت بجمع، أي امرأة ماتت بالولادة شهيدة، وامرأة ماتت بكرا عذراء، وامرأة ماتت بالغيرة، من صبرت على الغيرة حتى</p>
@@ -392,10 +422,9 @@ days of this world.</div>
 <div class="footnote"><span class="fn-num">1</span><span class="fn-content">(خذوا عني خذوا عني قد جعل الله لهن سبيلا البكر بالبكر جلد مائة ونفي سنة، والثيب بالثيب جلد مائة والرجم). حديث صحيح. صحيح مسلم: كتاب الحدود / باب حد الزنا (3199).</span></div>
 <div class="footnote"><span class="fn-num">2</span><span class="fn-content">(من وقي شر لقلقه وقبقبه وذبذبه وجبت له الجنة) البيهقي في شعب الإيمان عن أنس. الجلع الصغير ج2/ رقم 9083. وأورده ابن قتيبة في غريب الحديث بلفظ &quot; من وقي شر لقلقه وشر قبقبه وشر ذبذبه فقد وقي&quot; غريب الحديث ج170/1. 3- ورد في الصحيحين أن رسول اللّٰه صلى اللّٰه عليه وسلم قال: (اطلعت في الجنة فرأيت أكثر أهلها الفقراء واطلعت في النار فرأيت أكثر أهلها النساء) متفق عليه. صحيح البخاري عن عمران: كاب الرقاق / باب صفة الجنة والنار (6546)، صحيح مسلم عن ابن عباس: كتاب الذكر والدعاء والتوية والاستغفار/ باب أكثر أهل الجنة الفقراء وأكثر أهل النار النساء (4920). 4- جاء في صحيح البخاري: عن ابن عباس قال قال النبي صلى اللّٰه عليه وسلم: أريت النار قإدا أكثر أهلها النساء يكفرن، قيل أيكفرن بالله؟ قال: يكفرن العشير ويكفرن الإحسان، لو أحسنت إلى إحداهن الدهر ثم رأت منك شيئا قالت ما رأيت منك خيرا قط) كتاب الإيمان/ باب كفران العثة وكفر دون كفر (29).</span></div>
 <div class="footnote"><span class="fn-num">3</span><span class="fn-content">جاء في صحيح البخاري عن سهل بن سعد: (من يضمن لي ما بين لحييه وما بين رجليه أضمن له الجنة) وفي رواية من توكل. كتاب الرقاق/ باب حفظ اللسان (6474) وفي سنن الترمذي: عن</span></div>
-
-  
+  </div>
 </div>
-<div class="lesson-bottom-nav">
+  <div class="lesson-bottom-nav">
   <a href="/lesson-9.html" class="nav-btn nav-btn-prev">← Lesson Nine</a>
   <a href="/" class="nav-btn nav-btn-toc">↩ Table of Contents</a>
   <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.3rem">
@@ -409,11 +438,18 @@ days of this world.</div>
 </footer>
 <script>
 function setView(mode){
-  // Update all toolbar/toggle buttons
-  document.querySelectorAll('[data-view]').forEach(b=>{
-    b.classList.toggle('active', b.getAttribute('data-view')===mode);
-    b.classList.toggle('ilt-btn', true);
+  document.querySelectorAll('.arabic-block').forEach(el=>el.style.display=mode==='english'?'none':'block');
+  document.querySelectorAll('.english-block').forEach(el=>el.style.display=mode==='arabic'?'none':'block');
+  document.querySelectorAll('.bilingual-layout').forEach(el=>{
+    el.classList.remove('show-arabic-only','show-english-only');
+    if(mode==='arabic') el.classList.add('show-arabic-only');
+    if(mode==='english') el.classList.add('show-english-only');
   });
+  document.querySelectorAll('.view-toolbar button, .inline-lang-toggle button').forEach(b=>{
+    const oc=b.getAttribute('onclick')||'';
+    b.classList.toggle('active', oc.includes("'"+mode+"'") || oc.includes('"'+mode+'"'));
+  });
+});
   // Legacy support for old button IDs
   ['btnBoth','btnArabic','btnEnglish','btn-both','btn-ar','btn-en'].forEach(id=>{
     const el=document.getElementById(id);
