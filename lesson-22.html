@@ -179,9 +179,24 @@ footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text
 .lang-btn{font-family:"EB Garamond",serif;font-size:.78rem;color:rgba(255,255,255,0.5);background:none;border:1px solid rgba(201,168,76,0.2);border-radius:14px;padding:.2rem .7rem;cursor:pointer;transition:all .15s;text-decoration:none;}
 .lang-btn:hover,.lang-btn.active{color:var(--gold);border-color:rgba(201,168,76,0.5);}
 
+
+.site-nav{display:flex;align-items:center;justify-content:space-between;padding:.5rem 1.2rem;background:rgba(0,0,0,0.35);border-bottom:1px solid rgba(201,168,76,0.18);direction:ltr;}
+.site-nav-logo{font-family:"Amiri",serif;font-size:1rem;color:var(--gold);text-decoration:none;font-weight:700;}
+.site-nav-links{display:flex;align-items:center;gap:.4rem;}
+.site-nav-btn{font-family:"EB Garamond",serif;font-size:.78rem;color:rgba(255,255,255,0.55);text-decoration:none;padding:.25rem .7rem;border:1px solid rgba(201,168,76,0.2);border-radius:14px;transition:all .15s;}
+.site-nav-btn:hover,.site-nav-btn.home{color:var(--gold);border-color:rgba(201,168,76,0.5);}
+
 </style>
 </head>
 <body>
+<nav class="site-nav">
+  <a class="site-nav-logo" href="/">&#x641;&#x64A; &#x631;&#x64A;&#x627;&#x636; &#x627;&#x644;&#x62A;&#x641;&#x633;&#x64A;&#x631;</a>
+  <div class="site-nav-links">
+    <a class="site-nav-btn home" href="/">&#x2302; Home</a>
+    <a class="site-nav-btn" href="/introduction.html">Introduction</a>
+    <a class="site-nav-btn" href="/about.html">About</a>
+  </div>
+</nav>
 <div class="view-toolbar" dir="ltr">
   <button onclick="setView('arabic')" id="btn-ar">&#x639;&#x631;&#x628;&#x64A;</button>
   <button onclick="setView('both')" id="btn-both" class="active">AR + EN</button>
