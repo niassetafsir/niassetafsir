@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>الدرس الثالث عشر — Fī Riyāḍ Tafsīr al-Qurʾān al-Karīm</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+
+,::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#0D1F0A;--gold:#C9A84C;--gold-light:#E8D4A0;--text:#E8E8E0;--fn-bg:#0a1a07;--border:rgba(201,168,76,0.25)}
+body{background:var(--bg);color:var(--text);font-family:"Amiri","Traditional Arabic",serif;font-size:18px;line-height:2;direction:rtl;min-height:100vh}
+header{background:linear-gradient(180deg,#0a1706 0%,var(--bg) 100%);border-bottom:2px solid var(--gold);padding:1.5rem 2rem;text-align:center}
+.site-arabic{font-size:2rem;font-weight:700;color:var(--gold)}
+.site-en{font-family:"EB Garamond",serif;font-size:.85rem;color:rgba(232,212,160,0.5);direction:ltr;letter-spacing:.08em;margin-top:.3rem}
+nav{text-align:center;padding:.6rem;border-bottom:1px solid var(--border);background:rgba(0,0,0,0.2);font-family:"EB Garamond",serif;font-size:.85rem}
+nav a{color:rgba(201,168,76,0.65);text-decoration:none;margin:0 .6rem;direction:ltr}
+nav a:hover{color:var(--gold)}
+.view-toolbar{position:fixed;top:.8rem;left:.8rem;z-index:999;display:flex;gap:.3rem;background:rgba(13,31,10,0.92);border:1px solid rgba(201,168,76,0.3);border-radius:24px;padding:.25rem .35rem}
+.view-btn{background:none;border:none;color:rgba(201,168,76,0.6);font-family:"EB Garamond",serif;font-size:.75rem;padding:.25rem .6rem;border-radius:20px;cursor:pointer;transition:all .2s;white-space:nowrap;direction:ltr}
+.view-btn.active{background:var(--gold);color:#0D1F0A;font-weight:600}
+.container{max-width:860px;margin:0 auto;padding:2rem 1.5rem 6rem}
+.lesson-heading{font-size:1.4rem;color:var(--gold);font-weight:700;margin:2rem 0 1rem;padding-bottom:.4rem;border-bottom:1px solid var(--border)}
+.lesson-en-label{font-family:"EB Garamond",serif;font-size:.9rem;color:rgba(201,168,76,0.5);font-weight:400;font-style:italic}
+.arabic-block{margin:1.5rem 0}
+.tafsir-text{font-size:1.05rem;line-height:2.1;color:var(--text);margin:.7rem 0;text-align:justify}
+.english-block{margin:1rem 0 2rem;padding:1.5rem;background:rgba(201,168,76,0.04);border-right:3px solid var(--gold);direction:ltr;text-align:left;font-family:"EB Garamond",serif;font-size:17px;line-height:1.9;color:#F5EDD6;border-radius:0 6px 6px 0}
+.en-para{margin-bottom:.9em}
+.en-footnotes{margin-top:1rem;border-top:1px solid rgba(201,168,76,0.15);padding-top:.7rem}
+.en-fn{font-size:13px;color:rgba(245,237,214,0.7);margin-bottom:.4em;line-height:1.6}
+.footnote{display:flex;gap:1rem;margin:1rem 0;padding:1rem 1.2rem;background:var(--fn-bg);border-right:3px solid var(--gold);border-radius:0 4px 4px 0;font-size:.9rem;line-height:1.9}
+.fn-num{color:var(--gold);font-weight:700;font-size:.85rem;flex-shrink:0;min-width:1.5rem}
+.fn-content{color:rgba(245,237,214,0.8);flex:1}
+.sheikh-panel{margin:1.2rem 0}
+.sheikh-toggle{width:100%;background:rgba(201,168,76,0.06);border:1px solid rgba(201,168,76,0.2);border-radius:6px;padding:.65rem 1rem;cursor:pointer;display:flex;align-items:center;gap:.7rem;direction:rtl;color:var(--gold-light);font-family:"Amiri",serif;font-size:.9rem;transition:all .2s}
+.sheikh-toggle:hover{background:rgba(201,168,76,0.1)}
+.sheikh-icon{flex-shrink:0}
+.sheikh-label{flex:1;text-align:right}
+.sheikh-arrow{color:rgba(201,168,76,0.4);transition:transform .2s;font-size:.8rem;flex-shrink:0}
+.sheikh-player{border:1px solid rgba(201,168,76,0.15);border-top:none;border-radius:0 0 6px 6px;overflow:hidden}
+.sheikh-player.hidden{display:none}
+.divider{text-align:center;color:var(--gold);opacity:.25;margin:2.5rem 0;font-size:1.2rem;letter-spacing:.5em}
+footer{background:#070f06;border-top:1px solid var(--border);padding:1.5rem;text-align:center;margin-top:4rem}
+.footer-ar{font-size:1rem;color:var(--gold);margin-bottom:.3rem}
+.footer-en{font-family:"EB Garamond",serif;font-size:.78rem;color:rgba(201,168,76,0.35);direction:ltr;margin-top:.2rem}
+@media(max-width:600px){.site-arabic{font-size:1.6rem}.container{padding:1.5rem 1rem 4rem}}
+
+.companion-panel{margin:1.2rem 0;}
+.companion-toggle{width:100%;background:rgba(70,100,150,0.08);border:1px solid rgba(70,100,150,0.25);border-radius:6px;padding:.65rem 1rem;cursor:pointer;display:flex;align-items:center;gap:.7rem;direction:ltr;color:#d4e0f0;font-family:"EB Garamond",serif;font-size:.88rem;transition:all .2s;text-align:left;}
+.companion-toggle:hover{background:rgba(70,100,150,0.15)}
+.companion-icon{flex-shrink:0}
+.companion-label{flex:1}
+.companion-arrow{color:rgba(100,150,220,0.5);transition:transform .2s;font-size:.8rem;flex-shrink:0}
+.companion-content{border:1px solid rgba(70,100,150,0.2);border-top:none;border-radius:0 0 6px 6px;display:none;background:rgba(5,15,30,0.8)}
+.companion-content.open{display:block}
+.companion-text{padding:1.2rem 1.5rem;direction:ltr;text-align:left;font-family:"EB Garamond",Georgia,serif;font-size:15px;line-height:1.85;color:#c8d8e8;white-space:pre-wrap;}
+.companion-source{font-size:.72rem;color:rgba(100,150,220,0.45);direction:ltr;padding:.4rem 1.5rem .8rem;font-family:"EB Garamond",serif;font-style:italic}
+
+
+.lesson-bottom-nav{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:4rem 0 2rem;padding:1.5rem;border-top:1px solid rgba(201,168,76,0.2);flex-wrap:wrap;}
+.nav-btn{font-family:"EB Garamond",Georgia,serif;font-size:.95rem;padding:.6rem 1.2rem;border-radius:6px;cursor:pointer;text-decoration:none;direction:ltr;transition:all .2s;display:flex;align-items:center;gap:.5rem;}
+.nav-btn-next{background:var(--gold);color:#0D1F0A;border:none;font-weight:600;}
+.nav-btn-next:hover{background:#b8943c;}
+.nav-btn-toc{background:none;border:1px solid rgba(201,168,76,0.35);color:rgba(201,168,76,0.7);}
+.nav-btn-toc:hover{border-color:var(--gold);color:var(--gold);}
+.nav-btn-prev{background:none;border:1px solid rgba(201,168,76,0.25);color:rgba(201,168,76,0.5);}
+.nav-btn-prev:hover{border-color:rgba(201,168,76,0.5);color:rgba(201,168,76,0.7);}
+.nav-lesson-title{text-align:center;font-family:"EB Garamond",serif;font-size:.82rem;color:rgba(201,168,76,0.4);direction:ltr;}
+
+
+.inline-lang-toggle{display:flex;align-items:center;gap:.5rem;margin:1.5rem 0 1rem;padding:.7rem 1rem;background:rgba(201,168,76,0.05);border:1px solid rgba(201,168,76,0.15);border-radius:6px;direction:ltr;flex-wrap:wrap;}
+.ilt-label{font-family:"EB Garamond",serif;font-size:.78rem;color:rgba(201,168,76,0.5);letter-spacing:.05em;flex-shrink:0;}
+.ilt-btn{background:none;border:1px solid rgba(201,168,76,0.2);color:rgba(201,168,76,0.55);font-family:"EB Garamond",serif;font-size:.8rem;padding:.25rem .65rem;border-radius:16px;cursor:pointer;transition:all .15s;}
+.ilt-btn:hover{border-color:rgba(201,168,76,0.5);color:rgba(201,168,76,0.8);}
+.ilt-btn.active{background:var(--gold);color:#0D1F0A;border-color:var(--gold);font-weight:600;}
+
+
+.work-title{text-align:center;padding:1.5rem 1rem .8rem;border-bottom:1px solid rgba(201,168,76,0.15);margin-bottom:1.5rem;}
+.work-title-ar{font-family:"Amiri","Traditional Arabic",serif;font-size:1.6rem;color:var(--gold);direction:rtl;margin-bottom:.4rem;}
+.work-title-trans{font-family:"EB Garamond",Georgia,serif;font-size:.9rem;color:rgba(201,168,76,0.55);direction:ltr;font-style:italic;letter-spacing:.04em;}
+.companion-header{display:flex;align-items:center;justify-content:space-between;padding:.6rem 1rem;border-bottom:1px solid rgba(70,100,150,0.15);flex-wrap:wrap;gap:.4rem;}
+.companion-title-ar{font-family:"Amiri",serif;font-size:1rem;color:#a0c0e0;direction:rtl;}
+.companion-title-en{font-family:"EB Garamond",serif;font-size:.82rem;color:rgba(100,150,220,0.6);direction:ltr;font-style:italic;}
+.companion-lang-btns{display:flex;gap:.3rem;}
+.clb{background:none;border:1px solid rgba(70,100,150,0.3);color:rgba(100,150,220,0.55);font-family:"EB Garamond",serif;font-size:.72rem;padding:.2rem .5rem;border-radius:12px;cursor:pointer;transition:all .15s;}
+.clb.active{background:rgba(70,100,150,0.3);color:#c0d8f0;border-color:rgba(100,150,220,0.5);}
+.companion-en{display:block}.companion-ar-orig{display:none}
+
+
+</style>
+</head>
+<body>
+<div class="view-toolbar" dir="ltr">
+  <button onclick="setView('arabic')" id="btn-ar">&#x639;&#x631;&#x628;&#x64A;</button>
+  <button onclick="setView('both')" id="btn-both" class="active">AR + EN</button>
+  <button onclick="setView('english')" id="btn-en">EN</button>
+</div>
+<div class="container">
+  <div class="work-title">
+    <div class="work-title-ar">&#1601;&#1616;&#1610; &#1585;&#1616;&#1610;&#1614;&#1575;&#1590;&#1616; &#1578;&#1614;&#1601;&#1618;&#1587;&#1616;&#1610;&#1585;&#1616; &#1575;&#1604;&#1618;&#1602;&#1615;&#1585;&#1618;&#1570;&#1606;&#1616; &#1575;&#1604;&#1618;&#1603;&#1614;&#1585;&#1616;&#1610;&#1605;&#1616;</div>
+    <div class="work-title-trans">F&#299; Riy&#257;&#7693; Tafs&#299;r al-Qur&#702;&#257;n al-Kar&#299;m</div>
+  </div>
+  <div class="lesson-heading">الدرس الثالث عشر <span class="lesson-en-label">— Sūrat al-Nisāʾ (Q. 4:24 area)</span></div>
+
+  <!-- Inline language toggle -->
+  <div class="inline-lang-toggle" dir="ltr">
+    <span class="ilt-label">View:</span>
+    <button class="ilt-btn active" id="ilt-both" onclick="setView('both')">Arabic + English</button>
+    <button class="ilt-btn" id="ilt-arabic" onclick="setView('arabic')">Arabic only</button>
+    <button class="ilt-btn" id="ilt-english" onclick="setView('english')">English only</button>
+  </div>
+
+  <div class="companion-panel" id="outer-jal-13">
+  <button class="companion-toggle" onclick="toggleCompanion('jal-13',this)" aria-expanded="false">
+    <span class="companion-icon">&#128214;</span>
+    <span class="companion-label" dir="rtl">&#1578;&#1601;&#1587;&#1610;&#1585; &#1575;&#1604;&#1580;&#1604;&#1575;&#1604;&#1610;&#1606; &middot; <em style="font-style:italic;opacity:.8">Tafs&#299;r al-Jal&#257;layn</em></span>
+    <span class="companion-arrow">&#9662;</span>
+  </button>
+  <div class="companion-content" id="jal-13">
+    <div class="companion-header">
+      <div>
+        <div class="companion-title-ar">&#1578;&#1601;&#1587;&#1610;&#1585; &#1575;&#1604;&#1580;&#1604;&#1575;&#1604;&#1610;&#1606;</div>
+        <div class="companion-title-en">Tafs&#299;r al-Jal&#257;layn</div>
+      </div>
+      <div class="companion-lang-btns">
+        <button class="clb active" data-lang="en" onclick="toggleCompanionLang('jal-13','en')">EN</button>
+        <button class="clb" data-lang="ar" onclick="toggleCompanionLang('jal-13','ar')">&#1593;&#1585;&#1576;&#1610;</button>
+      </div>
+    </div>
+    <div class="companion-text companion-en">[4:24]
+And, forbidden to you are, wedded women, those with spouses, that you should marry them before they
+have left their spouses, be they Muslim free women or not; save what your right hands own, of captured
+[slave] girls, whom you may have sexual intercourse with, even if they should have spouses among the
+enemy camp, but only after they have been absolved of the possibility of pregnancy [after the completion of
+one menstrual cycle]; this is what God has prescribed for you (kitāba is in the accusative because it is the
+verbal noun). Lawful for you (read passive wa-uhilla, or active wa-ahalla), beyond all that, that is, except
+what He has forbidden you of women, is that you seek, women, using your wealth, by way of a dowry or a
+88
+
+price, in wedlock and not, fornicating, in illicitly. Such wives as you enjoy thereby, and have had sexual
+intercourse with, give them their wages, the dowries that you have assigned them, as an obligation; you are
+not at fault in agreeing together, you and they, after the obligation, is waived, decreased or increased. God
+is ever Knowing, of His creatures, Wise, in what He has ordained for them.
+[4:25]
+And whoever has not the means wherewith, [whoever] is not wealthy enough, to be able to marry believing
+(al-mu’mināt, ‘believing’, is in accordance with the prevalent practice, and does not add to the import), free,
+women in wedlock, let him take, in marriage, believing maids whom your right hands own. God knows very
+well your faith, so suffice yourself with its outward manifestation and leave the innermost matters to Him,
+for He is the One to know her [true] merit: many a slavegirl may be more excellent [in faith] than a free
+woman, and this is meant to encourage marriage with slavegirls; the one of you is as the other, being equal
+in religion, so do not disdain to marry with them. So marry them, with the permission of their folk, their
+guardians, and give them their wages, their dowries, honourably, without procrastination or diminution, as
+women in wedlock (muhsanāt, a circumstantial qualifier), in decency, not illicitly, openly fornicating, or
+taking lovers, companions fornicating in secret. But when they are given in wedlock, [when] they are
+married off (a variant reading [for the passive uhsinna, ‘they are given in wedlock’] has the active ahsanna,
+‘they enter into wedlock’), if they commit lewdness, such as adultery, they shall be liable to half the
+chastisement, the legal punishment, of married, free, virgin, women, who commit adultery, and are thus
+given fifty lashes and banished for half a year; [male] slaves by analogy are liable to the same punishment.
+Here, God has not made wedlock the precondition for the prescribed punishment to show that stoning does
+not apply in their case [sc. slavegirls]. That, marrying of slavegirls on account of insufficient means, is for
+those of you who fear the distress of sin, fornication (al-‘anat originally means distress, but is used to mean
+zinā, ‘fornication’, because of the distress that it causes in the way of the punishment in this world and in
+the Hereafter), as opposed to those of you who might not have such a fear [of distress] with regard to their
+free women and for whom it is unlawful to marry her [the slavegirl]; likewise for one who has sufficient
+means to marry a free woman [it is unlawful for him to marry a slavegirl instead]: this is the opinion of alShāfi‘ī. Moreover, God’s words ‘believing maids’ precludes unbelieving women, whom it is unlawful to marry,
+even if one should find no believing women and fear [the distress of fornication]; yet it is better for you to
+be patient, and abstain from marrying slavegirls, lest the child should become enslaved also. God is
+Forgiving, Merciful, by allowing room for manoeuvre in these matters.
+[4:26]
+God desires to make clear to you, the laws of your religion and what is in your best interests, and to guide
+you in the ways, the paths, of those, prophets, before you, in the way of what is lawful and what is
+unlawful, so that you might follow them, and to turn [in forgiveness] towards you, bringing you back from
+the disobedience which you practised, to obedience to Him; God is Knowing, of you, Wise, in what He has
+ordained for you.
+[4:27]
+And God desires to turn [forgivingly] towards you (He repeats this in order to expand upon it), but those
+who follow their passions, the Jews and Christians, or the Magians and adulterers, desire that you deviate
+with a terrible deviation, transgressing what is right by committing what has been forbidden you, so that you
+might be like them.
+[4:28]
+God desires to lighten things for you, and make the rulings of the Law easier for you; for man was created
+weak, unable to abstain from women and passions.
+[4:29]
+O you who believe, consume not your goods between you wrongly, unlawfully according to the Law, through
+89
+
+usury or usurpation, except it be trading (tijāratan, also read tijāratun), so that the goods be from trade
+effected, through mutual agreement, through mutual good-will: such [goods] you may consume. And kill not
+yourselves, by committing what leads towards destruction on account of some affiliation, be it in this world
+or the Hereafter. Surely God is ever Merciful to you, when He forbids you such things.
+[4:30]
+And whoever does that, which he has been forbidden, through aggression (‘udwānan, a circumstantial
+qualifier), transgressing what is lawful, and injustice (zulman, [reiterated] for emphasis), him We shall
+certainly expose, admit, to a fire, wherein he shall burn; and that for God is an easy matter.
+[4:31]
+If you avoid the grave sins that are forbidden you, those for which the threat of punishment has been
+prescribed, like murder, fornication or theft — according to Ibn ‘Abbās, these number as much as seven
+hundred — We will absolve you of your, minor, evil deeds, on account of your acts of obedience, and admit
+you by an honourable gate (read mudkhalan or madkhalan), that is, [by an honourable] admittance or
+location, namely, Paradise.
+[4:32]
+Do not covet that in which God has preferred some of you above others, in the way of worldly affairs or
+religion, lest it lead to mutual envy and hatred. To men a share from, a reward for, what they have earned,
+for their acts in the struggle and so on, and to women a share from what they have earned, by way of being
+obedient to their spouses and guarding their private parts: this was revealed when Umm Salama said:
+‘Would that we were men, so that we could join the struggle and receive the reward they receive!’ And ask
+(read wa-s’alū or wa-salū) God of His bounty, what you need and He will give it to you; God is ever Knower
+of all things, including where merit is deserved and that for which you ask.
+[4:33]
+To each, man and woman, We have appointed heirs, relations to be given, of that, property, which parents
+and kinsmen leave, for them, and to those to whom your right hands (aymān, plural of yamīn, meaning
+‘oath’ or ‘hand’) were pledged (read ‘āqadat or ‘aqadat), that is, those allies with whom before the coming of
+Islam you made covenants of mutual assitance and inheritance. So give them, now, their share, their
+portions of the inheritance, which is a sixth. God is ever Witness over everything, [ever] aware [of it],
+including your circumstances: this verse was abrogated by His words, But those related by blood are nearer
+to one another [Q. 8:75 and 33:6].
+[4:34]
+Men are in charge of, they have authority over, women, disciplining them and keeping them in check,
+because of that with which God has preferred the one over the other, that is, because God has given them
+the advantage over women, in knowledge, reason, authority and otherwise, and because of what they
+expend, on them [the women], of their property. Therefore righteous women, among them, are obedient, to
+their husbands, guarding in the unseen, that is, [guarding] their private parts and otherwise during their
+spouses’ absence, because of what God has guarded, for them, when He enjoined their male spouses to
+look after them well. And those you fear may be rebellious, disobedient to you, when such signs appear,
+admonish them, make them fear God, and share not beds with them, retire to other beds if they manifest
+such disobedience, and strike them, but not violently, if they refuse to desist [from their rebellion] after
+leaving them [in separate beds]. If they then obey you, in what is desired from them, do not seek a way
+against them, a reason to strike them unjustly. God is ever High, Great, so beware of Him, lest He punish
+you for treating them unjustly.
+[4:35]
+
+90
+
+And if you fear, become aware of, a breach, a dispute, between the two, the married couple (the genitive
+construction shiqāqa baynihimā, ‘[any] breach between the two’, is for a range [of alternatives], in other
+words: shiqāqan baynihimā [is the normal construction]) send forth, for them with their consent, an arbiter,
+a just man, from his folk, his kinsmen, and an arbiter from her folk: the husband delegates to his arbiter the
+[matter of] divorce or the acceptance of compensation in its place, while she delegates to her arbiter the
+[matter of] separation. The two arbiters do their best and bid the one guilty of the injustice to desist, or they
+suggest separation if they see fit. God, exalted be He, says, if they, the two arbiters, desire to set things
+right, God will grant them, the married couple, success, determining for them what constitutes [an act of]
+obedience, be it reconciliation or separation. Surely God is ever Knower, of everything, Aware, of what is
+hidden and what is manifested.
+[4:36]
+And worship God, declare His Oneness, and associate nothing with Him. Be kind to parents, being dutiful
+and gentle-mannered, and near kindred, and to orphans, and to the needy, and to the neighbour who is
+near, to you in terms of [physical] vicinity or kinship, and to the neighbour who is a stranger, the one far
+from you in terms of [physical] vicinity or kinship; and to the friend at your side, a travelling companion, or a
+colleague at work, and, it is also said, one’s wife; and to the wayfarer, the one cut off during a journey, and
+to what your right hands own, of bondsmen. Surely God loves not the conceited, the arrogant, and the
+boastful, [the one who boasts] before people of what he has been given.
+[4:37]
+Those (alladhīna, the subject) who are niggardly, in their duty, and bid other people to be niggardly, in the
+same, and conceal what God has bestowed upon them of His bounty, in the way of knowledge and property:
+these are the Jews (the predicate of the [said] subject is [an implied] lahum wa‘īdun shadīd, ‘for them there
+is a promise of severe punishment’). And We have prepared for those that disbelieve, in this and other
+matters, a humbling chastisement, one of humiliation.
+[4:38]
+And those (wa’lladhīna, a supplement to the previous alladhīna, ‘those’) who expend of their substance to
+show off to people, to be seen of them, and believe not in God and the Last Day, the likes of the hypocrites
+and the Meccans. Whoever has Satan for a comrade, for a companion, whose command he follows, as these
+do, then an evil comrade has he.
+[4:39]
+And what burden is on them if they were to believe in God and the Last Day, and expend of what God has
+provided them?, that is to say, what harm would this cause them? In other words, there is no harm therein.
+Rather, harm lies in what they follow (the interrogative is meant as a disavowal; the law [of law āmanū, ‘if
+they were to believe’] conveys the sense of the verbal noun [sc. mādhā ‘alayhim īmānuhum, ‘what burden
+would their belief be upon them?’]). God is ever Aware of them, and will requite them for what they have
+done.
+[4:40]
+Surely God shall not wrong, anyone, so much as the weight of an atom, [the weight of] the smallest ant, by
+diminishing thereby a person’s good deeds or increase thereby his evil deeds; and if it, the atom, be a good
+deed (in taku hasanatan, ‘if it be a good deed’, is also read in taku hasanatun, in which case the kāna
+[construction] is [syntactically] complete), from a believer, He will double it (yudā‘ifuhā, also read
+yuda‘‘ifuhā), from ten times up to more than seven hundred times, and give from Himself, in addition to the
+doubling, a great wage, that no one can estimate.
+[4:41]
+
+91
+
+So how shall it be, the predicament of the disbelievers, when We bring forward from every community a
+witness, to testify against it regarding its deeds, and this shall be its prophet; and We bring you, O
+Muhammad (s), as witness against these?
+[4:42]
+Upon that day, the day of bringing forward; the disbelievers, those who have disobeyed the Messenger, will
+wish that (law, ‘if’, means an, ‘that’) the earth might be levelled with them (read passive tusawwā, or active
+tasawwā, or tassawwā), so that like it they might also become dust, [and this is] because of the terror of
+that day, as is stated in another verse: The disbeliever shall say, ‘O would that I were dust!’ [Q. 78:40]. And
+they will not hide from God any talk, of what they did, although at another stage they do actually hide it and
+say, ‘By God, our Lord, we never associated anything with You’ [Q. 6:23].
+[4:43]
+O you who believe, draw not near to prayer, that is, do not perform prayer, whilst you are inebriated, by a
+drink: this was revealed concerning being drunk during the congregational prayer; until you know what you
+are saying, when you have sobered up; nor whilst you are defiled, as a result of [sexual] penetration or
+ejaculation (junuban, ‘defiled’, is in the accusative because it is a circumstantial qualifier, and may be used
+to refer to the singular or plural) — unless you are traversing, crossing, a way, a route, that is, [unless] you
+are travelling — until you have washed yourselves, in which case you may perform prayer: a proviso is made
+for the traveller because a different stipulation applies to him, as will follow. It is said that the purpose [of
+this verse] is to prohibit the approach to places of prayer, that is, mosques, the exception being if one were
+merely passing through and not staying. But if you are sick, with an illness made worse by [contact with]
+water, or on a journey, that is, [or] travelling whilst you are [ritually] defiled or impure, or if any of you
+comes from the privy (al-ghā’it), a place designated for relieving nature, that is to say, [or if any of you]
+have defecated, or you have touched women (lāmastum, a variant reading has lamastum: both mean lams,
+that is, ‘touching with the hand’, as stated by Ibn ‘Umar; this is also the opinion of al-Shāfi‘ī, and it extends
+to touching with other parts of the skin; according to Ibn ‘Abbās, however, it is [referring to] sexual
+intercourse); and you can find no water, with which to purify yourselves for prayer, having made the effort
+to seek it out and search for it — the sick being exempt in this case — then resort to, seek, when the time
+[for the prayer] has commenced, wholesome soil, clean earth, strike it twice, and wipe your faces and your
+hands, with it, up to the elbows (the verb masaha, ‘to wipe’, may stand on its own with a direct object or
+take a particle [before the direct object, sc. masaha bi-]). God is ever Pardoning, Forgiving.
+[4:44]
+Have you not seen those who were given a share, a portion, of the Book, namely, the Jews, purchasing
+error, with guidance, and desiring that you should err from the way?, that you should stray from the path of
+truth and be like them.
+[4:45]
+God has better knowledge of your enemies, than you do, and He informs you of them in order that you
+avoid them. God suffices as a Protector, a Preserver of you from them, God suffices as a Helper, defending
+you against their plotting.
+[4:46]
+Some, group, from among the Jews distort, alter, the words, that God revealed in the Torah pertaining to
+the descriptions of Muhammad (s), from their contexts, those [contexts] in which they were placed, and
+they say, to the Prophet (s), when he commands them something, ‘We have heard, your words, and we
+disobey, your command; and hear as one who does not hear’ (wa’sma‘ ghayr musma‘in is a circumstantial
+qualifier, functioning as an invocation, in other words, ‘And may you not hear!’) and, they say to him, ‘Mind
+us’ (rā‘inā), [a term] with which it had been forbidden to address him, being a curse word in their language;
+twisting, distorting, with their tongues and slandering, defaming, religion, Islam. If they had said, ‘We have
+92
+
+heard and obey’, instead of ‘And we disobey’, and, only, ‘Hear’, and ‘Consider us,’ (unzur ilaynā) instead of
+rā‘inā, it would have been better for them, than what they said, and more upright, more just than that, but
+God has cursed them, removing them from His mercy, for their unbelief, so they believe not except a few,
+among them, such as ‘Abd Allāh b. Salām and his companions.
+[4:47]
+O you who have been given the Scripture, believe in what We have revealed, of the Qur’ān, confirming what
+is with you, of the Torah, before We obliterate faces, erasing the eyes, noses and eyebrows in them, and
+turn them inside out, and make them like the napes of the neck, a flat plate, or curse them, by transforming
+them into apes, as We cursed, [as] We transformed, those of the Sabbath, among them, and God’s
+command, His decree, is done: after this was revealed, ‘Abd Allāh b. Salām converted to Islam, and so it
+was said that this had been a conditional threat of punishment, so that when some of them converted to
+Islam, it [the threat] was lifted. It is also said that obliteration and transformation will take place before the
+rising of the Hour.
+[4:48]
+God forgives not that anything should be associated with Him. But He forgives other than, save, that, of
+sins, to whomever He wills, forgiveness for, by admitting him into Paradise without punishment. And
+whomever He wills of the believers He punishes for their sins, and then admits them into Paradise. Whoever
+associates anything with God, then he has indeed invented a tremendous, a great, sin.
+[4:49]
+Have you not seen those who praise themselves for purity? namely, the Jews, when they say, ‘We are God’s
+children and His beloved’, in other words, it is not a matter of their purifying themselves. Nay, God purifies
+whom He will, through faith, and they shall not be wronged, they shall not be diminished of their deeds, a
+single date-thread, as much as the peel on a date-stone.
+[4:50]
+Consider, in amazement, how they invent falsehood against God, in that way, and that suffices for a clear,
+an evident, sin.
+[4:51]
+The following was revealed regarding Ka‘b b. al-Ashraf and other such scholars from among the Jews, when
+they came to Mecca and saw those killed at Badr, and began to incite the idolaters to avenge them [their
+dead] by waging war against the Prophet (s): Have you not seen those who were given a share of the Book,
+how they believe in al-Jibt and al-Tāghūt, two idols belonging to Quraysh, and say to the disbelievers, to
+Abū Sufyān and his companions, when they [the latter] said to them: ‘Are we, who are the guardians of the
+House, who give drink to the pilgrim, offer hospitality to the guest, set free the captive, and do such and
+such … not more rightly guided than Muhammad, he who has contravened the religion of his forefathers,
+severed the ties of kinship, and abandoned the Sanctuary?’, ‘These, in other words, you, are more rightly
+guided, upon a more upright way, than the believers’?
+[4:52]
+Those are the ones whom God has cursed; and he whom God has cursed, you will never find for him any
+helper, anyone to protect him from His chastisement.
+[4:53]
+Or have they a share in the Kingdom?, that is to say, they have no share in it whatever, and even if they
+did, then they would not give the people a single date-spot, that is, [not even] something as worthless as
+93
+
+the tiny spot on the back of a date-pit, because of the extent of their niggardliness.
+[4:54]
+Or, nay, are they jealous of people, namely, of the Prophet (s), for the bounty that God has bestowed upon
+them, in the way of prophethood and abundance of women? In other words, they wish that he be deprived
+of such things, saying, ‘If he were truly a prophet, he would not be concerned with women’. For We gave
+the House of Abraham, his forefather, the likes of Moses, David and Solomon, the Book and wisdom, and
+prophethood, and We gave them a mighty kingdom: David had ninety–nine women, and Solomon had a
+thousand, free women and slavegirls.
+[4:55]
+And there are some of them who believe in him, in Muhammad (s), and some of them who bar from him,
+[who] reject [him] and do not believe. Hell suffices for a blaze, as a chastisement for those who do not
+believe.
+[4:56]
+Surely those who disbelieve in Our signs — We shall expose them, We shall admit them, to a Fire, wherein
+they shall burn; as often as their skins are consumed, burnt, We shall replace them with other skins,
+restoring them to their initial unburnt state, that they may taste the chastisement, that they may suffer its
+severity. Surely God is ever Mighty, nothing being beyond His power, Wise, in His creation.
+[4:57]
+And those that believe, and perform righteous deeds, We shall admit them to Gardens underneath which
+rivers flow, wherein they abide: they shall have therein spouses purified, of menstruation and every
+impurity, and We shall admit them to plenteous shade, that is everlasting [shade], never replaced by any
+sun, and this is the shade of Paradise.
+[4:58]
+Verily, God commands you to restore trusts, that is, the rights entrusted [to you by others], back to their
+owners: this was revealed when ‘Alī, may God be pleased with him, took the key of the Ka‘ba from its
+keeper, ‘Uthmān b. Talha al-Hajabī, by force, upon the arrival of the Prophet (s) in Mecca in the year of the
+Conquest, after he [‘Uthmān] had tried to prevent him [‘Alī from taking it] saying, ‘If I had known that he
+was the Messenger of God, I would not have prevented him’. The Messenger of God (s) then ordered him
+[‘Alī] to give it back to him [‘Uthmān] saying to him, ‘Here you are, [it is yours] now and always’. He
+[‘Uthmān] was amazed by this, whereupon ‘Alī recited to him this verse, and he accepted Islam. Upon his
+death, he [‘Uthmān] gave it [the key] to his brother, Shayba, and thus it remained in [the keep of] his
+descendants. Although the verse was revealed regarding a specific occasion, it holds true in general on
+account of the plural person [to which it is addressed]. And when you judge between people, He commands,
+that you judge with justice. Excellent is (ni‘immā, the mīm of ni‘ima has been assimilated with the indefinite
+particle mā, which is the object described, in other words, na‘ima shay’an, ‘an excellent thing [is]’) the
+admonition God gives you, to restore a trust and to judge with justice. God is ever Hearer, of what is said,
+Seer, of what is done.
+[4:59]
+O you who believe, obey God, and obey the Messenger and those in authority among you, that is, rulers,
+when they command you to obey God and His Messenger. If you should quarrel, disagree, about anything,
+refer it to God, that is, to His Book, and the Messenger, while he lives, and thereafter [refer] to his Sunna: in
+other words examine these [disputes] with reference to these two [sources], if you believe in God and the
+Last Day; that, reference to the two [sources], is better, for you than quarrelling or [adhering to] personal
+opinions, and more excellent in interpretation, in the end.
+94
+
+[4:60]
+The following verse was revealed when a Jew and a hypocrite fell into a dispute. The hypocrite called on
+Ka‘b b. al-Ashraf, to arbitrate between them, while the Jew called on the Prophet (s). When they came to
+him, the Prophet ruled in favour of the Jew. But the hypocrite was not satisfied, and so they went before
+‘Umar. The Jew told him what had happened, whereupon he [‘Umar] turned to the hypocrite and asked him,
+‘Is this true?’, and when he replied, ‘Yes’, he [‘Umar] killed him. Have you not seen those who claim that
+they believe in what has been revealed to you, and what was revealed before you, desiring to take their
+disputes to a false deity (tāghūt), one excessive in tempting [others] to falsehood (tughyān), namely, Ka‘b b.
+al-Ashraf, when they have been commanded to renounce him?, and not to associate with him. But Satan
+desires to mislead them, far astray, from the truth.
+[4:61]
+And when it is said to them, ‘Come to what God has revealed, as regards rulings in the Qur’ān, and the
+Messenger’, that he may judge between you, you see the hypocrites turn away from you vehemently, to
+others.
+[4:62]
+How would it be, [what] would they do, when an affliction, a punishment, befalls them for what their own
+hands have sent before them, of unbelief and acts of disobedience, that is to say, would they then be able
+to turn away and escape it? No! They then come to you (thumma jā’ūka, a supplement to yasuddūn, ‘they
+turn away’ [of the previous verse]), swearing by God that, in turning to other than you for arbitration, ‘We
+sought only virtue, settlement, and harmony’, reconciliation between the disputing parties by [any]
+approximate judgement without regard for the painful truth.
+[4:63]
+Those — God knows what is in their hearts, in the way of hypocrisy and the mendacity of their excuses; so
+turn away from them, with forgiveness, and admonish them, make them fear God, and say to them
+regarding, the issue of, their souls penetrating words, affecting them, in other words, reprimand them so
+that they repent of their unbelief.
+[4:64]
+We never sent any Messenger, but that he should be obeyed, in what he commands and judges, by the
+leave, by the command, of God, and not that he should be disobeyed or opposed. If, when they had
+wronged themselves, by seeking the judgement of the false idol, they had come to you, repentant, and
+asked forgiveness from God, and the Messenger had asked forgiveness for them (there is a shift from the
+second [to the third] person in this address, in deference to his [the Prophet’s (s)] status); they would have
+found God Relenting, to them, Merciful, to them.
+[4:65]
+But no, (fa-lā, the lā is extra) by your Lord! They will not believe until they make you judge over what has
+broken out, has become mixed up, between them and find in themselves no inhibition, [no] constraint or
+doubt, regarding what you decide, but submit, [but] comply with your ruling, in full submission, without
+objection.
+[4:66]
+And had We prescribed for them: (the particle an, ‘that’, is explicative) ‘Slay yourselves’ or ‘Leave your
+habitations’, as We did for the Children of Israel, they would not have done it, that is, what has been
+prescribed for them, save a few (read nominative qalīlun, as a substitution; or read accusative qalīlan, as an
+95
+
+exceptive clause) of them; yet if they had done what they were admonished to do, of obedience to the
+Messenger (s), it would have been better for them, and stronger in establishing, [a stronger] confirmation of
+their faith.
+[4:67]
+And then, that is, had they confirmed themselves, We would have surely given them from Us a great wage,
+that is, Paradise.
+[4:68]
+And We would have guided them to a straight path. Some Companions said to the Prophet (s): ‘How will we
+be able to see you in Paradise, when you will be in the highest stations and we will be lower than you?’, and
+so the following was revealed:
+[4:69]
+Whoever obeys God and the Messenger, in what he commands, they are with those whom God has blessed
+of the prophets and the truthful, that is, the most excellent of the Prophet’s Companions, because of the
+fullness of their truthfulness and their affirmation of the truth; and the martyrs, those slain in the path of
+God; and the righteous, [all those] other than the ones mentioned. What fine companions they are!, in
+Paradise, since in it one will enjoy seeing them, visiting them and being in their presence, even though they
+will be in the highest stations in relation to others.
+[4:70]
+That, namely, their being with those mentioned (dhālika, ‘that’, is the subject, the predicate of which is [the
+following]) is bounty from God, with which He has favoured them, and not because they have earned it
+through their obedience. God suffices as Knower, of the reward of the Hereafter, in other words, trust in
+what He has told you: None can tell you like One Who is aware [Q. 35:14].
+[4:71]
+O you who believe, take your precautions, against your enemy, that is, be wary of him and be vigilant
+against him; then move forward, prepare to fight him, in companies, in separate groups, one raiding party
+followed by the next; or move forward all together, in one assembly.
+[4:72]
+Verily, there are some of you who tarry, who indeed hesitate to join the fighting, such as ‘Abd Allāh b.
+Ubayy, the hypocrite, and his companions — counting him [the one who tarries] as one of them [the
+Muslims] is from the perspective of outward appearances — (the lām in the verb [la-yubatti’anna, ‘verily …
+who tarry’] is for oaths); then, if an affliction befalls you, such as slaughter or defeat, he says, ‘God has
+been gracious to me, for I was not a witness with them’, present [at the fighting], lest I should be hurt.
+[4:73]
+But if (wa-la-in, the lām is for oaths) a bounty from God befalls you, such as a conquest or booty, he will
+surely cry, in regret, as if (ka’an is softened, its subject having been omitted, in other words [it should be]
+ka’annahu) there had never been (read lam yakun, or lam takun) any affection, any acquaintance or
+friendship, between you and him: this [statement] refers back to the words [in the previous verse] ‘God has
+been gracious to me’, and comes as a parenthesis between the statement ‘that he will cry’ and the very
+words he cries, which are: ‘Oh (yā, is for exclamation), would that I had been with them, so that I might
+have won a great triumph!’, that is, [that] I might have taken a good share of the booty.
+[4:74]
+96
+
+God, exalted be He, says: So let them fight in the way of God, to elevate His religion, those who sell the life
+of this world for the Hereafter; and whoever fights in the way of God and is slain, dies a martyr, or
+conquers, overcomes his enemy, We shall give him a great wage, a plentiful reward.
+[4:75]
+What is wrong with you, that you do not fight: this is an interrogative of rebuke, in other words, there is
+nothing to prevent you from fighting, in the way of God, and for, the deliverance of, the oppressed men,
+women, and children, whom the disbelievers persecuted and prevented from emigrating. Ibn ‘Abbās, may
+God be pleased with him and his father, said, ‘My mother and I were among them’; who say, supplicating,
+‘O, our Lord, bring us forth from this town, Mecca, whose people are evildoers, through unbelief, and
+appoint for us a protector from You, to take charge of our affair, and appoint for us from You a helper’, to
+defend us against them. God responded to their supplication and facilitated escape for some of them, while
+others remained behind until Mecca was conquered — in charge of them the Prophet (s) placed ‘Attāb b.
+Asīd, who proceeded to seek justice for the wronged from those that had wronged them.
+[4:76]
+Those who believe fight in the way of God, and those who disbelieve fight in the way of a false deity, Satan.
+Fight therefore against the friends of Satan, the supporters of his religion and you will defeat them with the
+strength you draw from God; surely the plotting of Satan, against believers, is ever feeble, of no substance,
+and cannot stand up to God’s plotting against the disbelievers.
+[4:77]
+Have you not seen those to whom it was said, ‘Restrain your hands, from fighting the disbelievers when they
+desired it at Mecca, because of the harm the disbelievers had inflicted upon them — and these were a group
+from among the Companions — and establish the prayer, and pay the alms’? Then, as soon as fighting was
+prescribed, was made obligatory, for them, lo, a party of them fear people, the disbelievers, that is, [they
+fear] punishment at their hands through death, as they would fear, the punishment of, God, or with more
+fear, than their fear of Him (ashadda, ‘more’, is in the accusative because it is a circumstantial qualifier; the
+response to the lammā, ‘as soon as’, is indicated by idhā, ‘lo’, and what follows), in other words, they are
+taken aback by fear, and they said, frightened of death, ‘Our Lord, why have You prescribed fighting for us?
+Why not (lawlā is [to be understood as] hallā) defer us to a near term?’ Say, to them: ‘The enjoyment of this
+world, that which is enjoyed therein, or enjoying it [the world], is trifling, it will end up by perishing; and the
+Hereafter, Paradise, is better for him who fears God’s punishment by avoiding disobedience to Him; and you
+shall not be wronged (lā tuzlamūna, may also be read lā yuzlamūna, ‘they shall not be wronged’) you shall
+not be diminished of your deeds, a single date-thread, as much as the peel on a date-stone, so struggle [in
+the way of God].
+[4:78]
+Wherever you may be, death will overtake you, though you should be in raised-up, lofty, towers’, forts, so
+do not shrink from fighting for fear of death. And if a good thing, such as fertility and abundance, befalls
+them, the Jews, they say, ‘This is from God’; but if an evil thing, such as drought or misfortune, befalls
+them, as it did with them when the Prophet (s) arrived in Medina, they say, ‘This is from you’, O Muhammad
+(s), that is, from the bad luck [you bring]. Say, to them: ‘Everything, good and evil, is from God.’ What is
+wrong with this people that they do not understand, that is, they do not come close to comprehending, any
+words, delivered to them (the mā, ‘what’ [of mā li-hā’ūlā’, ‘what is wrong with these’] is an interrogative
+intended to provoke amazement at their extreme ignorance; to state that one cannot even come close to
+doing something is [rhetorically] more intense than saying that he cannot do it).
+[4:79]
+Whatever good (hasana means khayr) befalls you, O man, it is from God, it has come to you from His
+97
+
+bounty; whatever evil, misfortune, befalls you is from yourself, it has come to you as a necessary
+consequence of sins you have committed. We have sent you, O Muhammad (s), to people as a messenger
+(rasūlan, is a circumstantial qualifier for emphasis), and God suffices as Witness, of your Mission.
+[4:80]
+Whoever obeys the Messenger, verily obeys God; and whoever turns his back, [whoever] avoids obedience
+to you, do not be concerned with them: We have not sent you as a watcher over them, to keep watch over
+their deeds, but as a warner. Their affair is Ours [to deal with] and We will requite them. This [statement]
+was before the command to fight [them was revealed].
+[4:81]
+They say, that is, the hypocrites [say] when they come to you, ‘Our affair is [all about] Obedience, to you’;
+but when they sally forth, [when] they depart, from you, a party of them harbour (the [final] tā’ [of the
+feminine-ending in bayyatat, ‘harbour’] can either be elided with the following tā’ [of tā’ifa, ‘a party’] or
+simply omitted) they entertain secretly [feelings], other than what they say, to you in your presence in the
+way of [their] obedience, in other words, [they hide] disobedience to you. God writes down, He commands
+that it be written, what they harbour, in their scrolls [of deeds], so that they will be requited for it. So turn
+away from them, in forgiveness, rely on God, put your trust in Him, for He will suffice you; and God suffices
+as a Guardian, to Whom matters are entrusted.
+[4:82]
+What, do they not ponder, do they [not] contemplate, the Qur’ān?, and the marvellous truths contained in it.
+If it had been from other than God surely they would have found therein much inconsistency, [much]
+contradiction in meaning and irregularity in arrangement.
+[4:83]
+And when there comes to them an issue, [news] concerning the raiding parties sent by the Prophet (s) and
+what has happened to them, be it of security, through victory, or of fear, through defeat, they broadcast it,
+they make it widely-known: this was revealed regarding a group from among the hypocrites, or from among
+the feeble believers, who used to do this, and so the hearts of the believers would lose courage and the
+Prophet (s) would become distressed. If they had referred it, the news, to the Messenger and to those in
+authority among them, that is, the judicious elders among the Companions, in other words, if they had kept
+quiet about it until they were fully informed; those among them who are able to think it out, [those who]
+follow it up and seek knowledge of it, the ones who broadcast it, would have known it, and whether it is a
+matter that ought be broadcast or not, from them, from the Prophet (s) and those of authority. And but for
+the bounty of God to you, through Islam, and His mercy, to you through the Qur’ān, you would surely have
+followed Satan, in the abominations to which he commands you, except a few [of you].
+[4:84]
+So fight, O Muhammad (s), in the way of God; you are charged only with yourself, so do not be concerned
+with their failing to join you, the meaning being: fight, even if you are on your own, for you have been
+promised victory. And urge on the believers, incite them to fight and make them desire it; maybe God will
+restrain the might, the war, of the disbelievers; God is mightier, than them, and more severe in castigation,
+in punishment, than them. And so the Messenger of God (s) said: ‘By Him in Whose Hand is my soul, I shall
+sally forth [to fight], even if [I go] alone’. Thereupon, he sallied forth with seventy cavalrymen to the first
+[battle at] Badr, where God restrained the might of the disbelievers by casting terror into their hearts and
+preventing Abū Sufyān from sallying forth, as has already been mentioned in [sūrat] Āl ‘Imrān [Q. 3:151].
+[4:85]
+Whoever intercedes, between people, with a good intercession, one in accordance with the Law, shall
+98
+
+receive a share of, the reward for, it, because of it; and whoever intercedes with an evil intercession, one in
+contravention of it [the Law], shall receive the like, the share of the sin, from it, because of it. God
+conserves, He has power over, all things, and so requites every person according to his deeds.
+[4:86]
+And when you are greeted with a greeting, as when it is said to you, ‘Peace be upon you’, greet, the one
+that greeted you, with better than it, by responding to him with, ‘Peace be upon you, and God’s mercy and
+blessings’, or return it, by saying back to him what he said; in other words, it is a duty to greet in one of
+these two ways, the former being the preferred one. Surely God keeps count of, He holds [you] accountable
+for, all things, and requites accordingly, including things such as returning a greeting. The Sunna specifies
+that one should not return the greeting of an disbeliever, an innovator, a wicked person, and of the one that
+greets a person who is in the act of relieving himself, or one in the bath, or one eating — indeed it is
+actually disapproved with the exception of the last. To the disbeliever [who says ‘peace be upon you’] one
+should simply say, ‘And upon you’.
+[4:87]
+God — there is no god except Him, and by God, He will surely gather you, from your graves, to, on, the Day
+of Resurrection whereof there is no doubt, no uncertainty. And who is truer in statement, in speech, than
+God?, that is, no one is.</div>
+    <div class="companion-text companion-ar-orig" style="display:none;direction:rtl;text-align:right;font-family:'Amiri',serif;font-size:1.05rem;line-height:2;">[Arabic source forthcoming]</div>
+    <div class="companion-source">Tafsīr al-Jalālayn · Jalāl al-Dīn al-Maḥallī and Jalāl al-Dīn al-Suyūṭī · English trans. Feras Hamza (Royal Aal al-Bayt Institute, 2007)</div>
+  </div>
+</div>
+  <div class="companion-panel" id="outer-rab-13">
+  <button class="companion-toggle" onclick="toggleCompanion('rab-13',this)" aria-expanded="false">
+    <span class="companion-icon">&#128215;</span>
+    <span class="companion-label" dir="rtl">&#1585;&#1615;&#1608;&#1581;&#1615; &#1575;&#1604;&#1618;&#1576;&#1614;&#1610;&#1614;&#1575;&#1606;&#1616; &middot; <em style="font-style:italic;opacity:.8">R&#363;&#7717; al-Bay&#257;n</em></span>
+    <span class="companion-arrow">&#9662;</span>
+  </button>
+  <div class="companion-content" id="rab-13">
+    <div class="companion-header">
+      <div>
+        <div class="companion-title-ar">&#1585;&#1615;&#1608;&#1581;&#1615; &#1575;&#1604;&#1618;&#1576;&#1614;&#1610;&#1614;&#1575;&#1606;&#1616; &#1601;&#1616;&#1610; &#1578;&#1614;&#1601;&#1618;&#1587;&#1616;&#1610;&#1585;&#1616; &#1575;&#1604;&#1618;&#1602;&#1615;&#1585;&#1618;&#1570;&#1606;&#1616;</div>
+        <div class="companion-title-en">R&#363;&#7717; al-Bay&#257;n f&#299; Tafs&#299;r al-Qur&#702;&#257;n &middot; Ism&#257;&#703;&#299;l &#7716;aqq&#299; al-Bur&#363;saw&#299;</div>
+      </div>
+      <div class="companion-lang-btns">
+        <a href="https://usul.ai/t/ruh-bayan" target="_blank" rel="noopener"
+           style="font-family:'EB Garamond',serif;font-size:.75rem;color:rgba(100,180,120,0.7);border:1px solid rgba(100,180,120,0.3);padding:.2rem .6rem;border-radius:12px;text-decoration:none;white-space:nowrap;">
+          Open on Usul.ai &#8599;
+        </a>
+      </div>
+    </div>
+    <div class="companion-text" style="color:rgba(150,200,150,0.5);font-family:'EB Garamond',serif;font-size:.85rem;direction:ltr;font-style:italic;">
+      Arabic text for Sūrat al-Nisāʾ (Q. 4:24 area) — available at Usul.ai (link above).
+    </div>
+    <div class="companion-source">Ism&#257;&#703;&#299;l &#7716;aqq&#299; al-Bur&#363;saw&#299;, R&#363;&#7717; al-Bay&#257;n f&#299; Tafs&#299;r al-Qur&#702;&#257;n. Digital edition: usul.ai/t/ruh-bayan</div>
+  </div>
+</div>
+
+  <div class="sheikh-panel" dir="ltr">
+    <details>
+      <summary>&#x1F3A7; Sheikh Ibrāhīm Niasse — Arabic Audio (YouTube)</summary>
+      <p style="font-size:.8rem;color:rgba(201,168,76,0.5);direction:ltr;">Audio of Sheikh Ibrāhīm Niasse delivering الدرس الثالث عشر in Arabic. Use the YouTube playlist to locate the corresponding session.</p>
+      <a href="https://www.youtube.com/playlist?list=PLZ5oMWd9FHnMr2IxNaR6KFSmfMrfBHJOn" target="_blank" rel="noopener" style="color:rgba(201,168,76,0.6);font-size:.8rem;direction:ltr;">&#x1F517; Open Playlist on YouTube &#8599;</a>
+    </details>
+  </div>
+
+  <div class="arabic-block" dir="rtl">
+<p>أعوذ بالله من الشيطان الرجيم بسم اللّٰه الرحمن الرحيم اللهم صل على سيدنا محمد الفاتح لما أغلق والخاتم لما سبق ناصر الحق بالحق والهادي إلى صراطك المستقيم وعلى آله حق قدره ومقداره العظيم ورضي اللّٰه تعالى عن أصحاب رسول اللّٰه صلى اللّٰه عليه وسلم، ولا حول ولا قوة إلا بالله العلي العظير</p>
+<p>يا همة الشيخ احضري</p>
+<p>لنا بهذا المحضر</p>
+<p>ولتعطفي بنظرة تأتي لنا بالظفر</p>
+<p>(لاَ يُحِبُّ اللَّهُ الْجَهْرَ بِالسُّوءِ مِنَ الْفَوْلِ إِلَّ مَن ظلِمٌ سبب نزولها سب رجل أبا بكر الصديق رضي اللّٰه عنه في مجلس النبي صلى اللّٰه عليه وسلم فلم يرد عليه، فسبه ثانيا فلم يرد عليه، وسبه ثالثا فرد عليه، فقام المصطفى صلى اللّٰه عليه وسلم وانصرف عن المجلس فأدركه أبو بكر فقال له: الرجل تكلم لي مرارا ولم أتكلم ولما تكلمتُ ذهبتَ عنا، قال: لما سكتّ كان يرد عنك الملك، ولما تكلمتَ انصرف الملك وجاء الشيطان وأنا لا أجالسه فانصرفتُ، فنزلت هذه الآية 1 «لاَّ يُحِبُّ أللَّهُ الْجَهْرَ بِالسُّوءِ مِنَ الْفَوْلِ إِلاَّ مَن ظَلِمٌ) مثلَ أبي بكر الصديق</p>
+<p class="footnote">1- سبب نزول الآية ذكره الخازن في تفسيره عن مقاتل ج 416/1، وفي حاشية الصاوي ج 254/1 والحديث أخرجه أبو داود في سننه: عن سعيد بن المسيب أنه قال بينما رسول اللّٰه صلى اللّٰه عليه وسلم جالس ومعه أصحابه وقع رجل بأبي بكر فآذاه فصمت عنه أبو بكر، ثم آذاه الثانية فصمت عنه أبو بكر، ثم آذاه الثالثة فانتصر منه أبو بكر، فقام رسول اللّٰه حين انتصر أبو بكر، فقال أبو بكر:</p>
+<p>أوجدت علي يا رسول الله؟ فقال رسول اللّٰه صلى اللّٰه عليه وسلم: نزل ملك من السماء يكذبه بما قال لك، فلما انتصرت وقع الشيطان فلم أكن لأجلس إذ وقع الشيطان. وفيه عن أبي هريرة بمثله.</p>
+<p>3</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>رضي اللّٰه عنه. الإنسان ممنوع من الجهر بالسوء قولا وفعلا إلا في حق الظالم، إذا ظلمك إنسان فلك أن تتكلم في ظلمه بأن تقول فلان سرق مالي، فلان فعل لي ليس في هذا ذئب. أو إذا كان الإنسان يرتكب بدعة أو ضلالة أو فسقا وخلع جلباب الحياء، فمن خلع جلباب الحياء فلا غيبة لها لحديث (اذكروا الفاسق بما فيه لكي يحذروه)2 ومن الجهر بالسوء من القول الذي يجوز: الضيف إذا لم يكرم يجوز أن يصف مضيفه بأنه غير مكرم للضيف (لاّ يُجِبُّ ٱللَّهُ أَلْجَهْرَ) لا يثيب على الجهر {بِالسُّوءِ بل يعاقب عليه (مِ ألْفَوْلِ إلاَّمَى ظلِمٌ فلا يؤاخذه بالجهر به (وَكَانَ أللَّهُ سَمِيعاً لما يقال (عَلِيماه بما</p>
+<p>يُفعل. لا يحب الجهر بالسوء من القول في حق العوام ولا يحب التحدث به في النفس في حق الخواص، ولا يحب أن يخطر بالبال في حق خواص الخواص «لاَ يُحِبُّ أَللَّهُ الْجَهْرَ بِالسُّوّهِ مِنَ ألْفَوْلِ إِلَّمَن ظَلِمَ» ففيه الإشارة أن اللّٰه تبارك وتعالى لا يحب الجهر بأسرار الربوبية عند المحجوبين، كشف أسرار الربوبية بين المحجوبين أشد عند اللّٰه من الحرام 3، «إِلاَّ مَن ظَلِمٌ)</p>
+<p>إلا من غلبه الحال «وَكَانَ أللَّهُ سَمِيعاً عَلِيماً» بما يُفعل إِن تُبْدُوا) تظهروا وخَيْراً) من</p>
+<p>سنن أبي داود: كتاب الأدب/ باب في الانتصار (4251). وأخرجه أحمد في مسنده عن أبي هريرة مع اختلاف يسير في الألفاظ، مسند المكثرين من مسند أحمد (9251).</p>
+<p class="footnote">1- حديث (من ألقى جلباب الحياء فلا غيبة له) للبيهقي في السنن عن أنس، الجامع الصغير</p>
+<p>8525.</p>
+<p class="footnote">2- (اذكروا الفاجر بما فيه يحذره الناس) أخرجه العجلوني في كشف الخفاء/ باب الهمزة مع الذال المعجمة (305) وأخرج السيوطي في الجامع الصغير (ليس للفاسق غيبة) (7650).</p>
+<p class="footnote">3- جاء في إحياء علوم الدين للغزالي ج131/1 ما نصه: قال بعض العارفين إفشاء أسرار الربوبية</p>
+<p>كفر .</p>
+<p>4</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>أعمال البر (أوْ تُخْفُوهُ) تعملوه سرا {أَوْ تَعْفُواْ عَى سُوءٍ) ظلم (بَإِنَّ اللَّهَ كَانَ عَمُوّا فَدِيرَأَ)</p>
+<p>للمسلم أن يجهر بالسوء في حق من ظلمه، ولكن إن عفا فإن اللّٰه تبارك وتعالى يجازيه على ذلك ويرضى عنه، أكده بأنه تبارك وتعالى كان عفوا قديرا. فلذلك ورد أن من مكارم الأخلاق أن تعفو عمن ظلمك، وتصل من قطعك، وتعطي من حرمك 1 إِنَّ الذِينَ يَكْفُرُونَ بِاللهِ وَرْسُلِهِ، وَيُرِيدُونَ أَنْ يُقَرِّفُواْ بَيْنَ اللَّهِ وَرْسُلِهِ) بأن يؤمنوا به دوهم (وَيَفْولُونَ نُوصُ بِبَعْضِ) من الرسل (وَنَكْفُرْ بِبَعْضٍ) منهم، كما فعل اليهود والنصارى (وَيُرِيدُونَ أَنْ يَتَّخِذُواْ بَيْنَ ذَلِكَ الكفر والإيمان سَبِيلًا ) طريقا يذهبون إليه (أوْلَبِكَ هُمُ الْكَٰهِرُونَ حَفّا مصدر مؤكد لمضمون الجملة (وَأَعْتَدْنَا لِلْكَفِرِيَ عَذَاباً مِهِينام) ذا إهانة هو عذاب النار (وَالذِينَ ءَامَنُوا بِاللَهِ وَرُسُلِهِ) كلهم ( وَلَمْ يُعَرِّفُواْ بَيْنَ أَحَدٍ مِنْهُمُوَ أَوْلَيِكَ سَوْقَ نُوتِيهِمْو أجُورَهُمْ ثواب أعمالهم (وَكَانَ اللَّهُ غَبُوراً) لأوليائه ( رَحِيما) بأهل طاعته (يَسْلْكَ)</p>
+<p>يا محمد ( أَهْلُ الْكِتَبِ) اليهود (أَن تُنَزِّلَ عَلَيْهِمْ كِتَباً مِنَ السَّمَآءِ) قالوا إنّهم لا يؤمنون بالقرآن حتى يأتي جملة كما أتى التوراة جملة على موسى، وهذا قالوه تعنتا، فإن استكبرت ذلك، فَدْ سَأَلُوا آباؤهم ( مُوسى أَكْبَرَمِ ذَلِكَ الأولاد وإن بلغوا ما بلغوا من العناد والتعنت فآباؤهم أشد منهم تعنتا وعنادا، فقد سألوا موسى هذا السؤال قَفَالُواْ أَرِنَا اللَّةَ جَهْرَةَ ) عيانا (بَأَخَذَتْهُمْ الصَّعِفَةُ الموت عقابا لهم ( بِظُلْمِهِمْ )، حيث تعنتوا في السؤال، طلبوا رؤية اللّٰه تبارك وتعالى عيانا تعنتا لا شوقا، لو كان محبة وشوقا لما هلكوا ولكن استكبارا</p>
+<p class="footnote">1- (مكارم الأخلاق عند اللّٰه ثلاثة تعفو عمن ظلمك وتعطي من حرمك وتصل من قطعك) الجامع الكبير للسيوطي ج 744/1. وجاء في مسند الإمام أحمد عن معاذ بن أنس عن رسول اللّٰه صلى اللّٰه عليه وسلم أنه قال: (أفضل الفضائل أن تصل من قطعك وتعطي من منعك وتصفح عمن شتمك)</p>
+<p>مسند أحمد: مسند المكيين/ حديث معاذ بن أنس الجهني (15065)</p>
+<p>5</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>وتعنتا وتجبرا ولم يعتبروا بما وقع لنبيهم &quot;أرِنِة أَنظُرٍ إِلَيْتُ قَالَ لَى تَرِيْنِ&quot; لما كان موسى يجاب هذا الجواب مع جلالة قدره فمن باب أولى هم، ومع ذلك سألوا عنادا &quot;أَرِنَا اللَّهَ جَهْرَة&quot;</p>
+<p>طلبوا شيئا ليس لهم، طلبوا رؤية الله عيانا في الدنيا بأبصارهم وهذا ممنوع لوجوه: أن الدنيا دار أعدائه فلا تستحق أن تكون محل ظهوره لأحبائه. ثانيا أن الدنيا يقومون فيها بالأسباب ويعيشون فيها بالقيام بمعاشهم، ولو ظهر لهم لتركوا الدنيا جميعا، وهذا يوجب تعطل الأعمال وانقضاء الدنيا، وأيضا هي أكبر كرامة فلا تكون إلا في أكبر دار وهي الآخرة.</p>
+<p>والمستحيل هو رؤية اللّه اليوم بالبصر. أما الرؤية التي هي معرفة الله، معرفة اللّٰه أولا بالإيمان ثانيا بالإيقان، وثالثا بالعيان بعد موت الشخص كما يقول الرسول (موتوا قبل أن تموتوا)1 ومن أراد أن ينظر إلى ميت يمشي على وجه الأرض فلينظر إلى الصديق أبي بكر رضي اللّٰه عنه 2. فهذه لا بد لها من الولادة مرتين والموت مرتين. ورؤية اللّه بعد الموت غير ممنوعة من أحبابه جعلنا الله وإياكم منهم «جَأَخَذَتْهُمْ الصَّعِفَةُ» الموت عقابا لهم بظلمهم حيث تعنتوا في السؤال (ثُمَّ إتَّخَذُواْ الْعِجْلَ) إلها مِنْ بَعْدِ مَا جَاءَتْهُمُ الْبَيِّنَٰتُ) المعجزات على وحدانية</p>
+<p class="footnote">1 - موتوا قبل أن تموتوا. كشف الخفاء/ حرف الميم حديث رقم 2669.</p>
+<p>وقال فيه: قال الحافظ ابن حجر هو غير ثابت، وقال القاري هو من كلام الصوفية، والمعنى موتوا اختيارا بترك الشهوات قبل أن تموتوا اضطرارا بالموت الحقيقي. وذكره المباركفوري في تحفة الأحوذي في شرح جامع الترمذي عند شرح الحديث (كن في الدنيا كأنك غريب أو عابر سبيل وعد نفسك في أهل القبور) كتاب الزهد / باب ما جاء في قصر الأمل، قال في شرح قوله (وعد نفسك في أهل</p>
+<p>الأحوذي ج 7/ص38.</p>
+<p>القبور) قال: ففيه إشارة إلى ما قيل «موتوا قبل أن تموتوا وحاسبوا أنفسكم قبل أن تحاسبوا». تحفة</p>
+<p class="footnote">2- ورد هذا الحديث في إحياء علوم الدين للغزالي ج260/5.</p>
+<p>6</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>اللّٰه (بَعَبَوْنَا عَى ذَلِكَ) ولم نستأصلهم، ما أهلكناهم ( وَاتَيْنَا مُوسِىٰ سُلْطَناً مُبِينام تسلطا بينا ظاهرا عليهم حيث أمرهم بقتل أنفسهم توبة فأطاعوه (وَرَبَعْنَا قَوْفَهُمْ الطُورَ) الجبل (بِمِيتَفِهِمْ لما نزل التوراة امتنعوا من العمل به، فقلع جبريل جبل الطور قدر معسكرهم فدعاهم إلى العمل بالتوراة وإلا طبقه عليهم وَفُلْنَا لَهُمْ) وهو مظل عليهم أدْخُلُواْ أَلْبَابَ) أي القرية (سُجَّدا سجود انحناء (وَفُلْنَا لَهُمْ لا تَعَدُّوا بِي السَّبْتٌ) لا تعتدوا في السبت باصطياد الحيتان فيه (وَأَخَذْنَا مِنْهُم مِيثَفاً غَلِيظام على ذلك فنقضوه. هذه القصص كلا تقدمت في سورة البقرة فلهذا اقتضبها، يأخذ جملة ويقتصر حتى عدّد الأنواع كلا (بِمَا نَفْضِهِم) لعنّاهم بسبب نقضهم (مِيئَفَهُمْ وَكُبْرِهِم بِئَايَاتِ اللَّهِ وَفَثْلِهِمْ الاَنْبِيَّاءَ بِغَيْرِ حَقِّ ظلما (وَفَوْلِهِمْ) للنبي صلى اللّٰه عليه وسلم ((فُلُوبُنَا غُلْفُ لا تعي كلامك (بَلْ طَبَعَ اللَّه ختم اللّٰه (عَلَيْهَا بِكُبْرِهِمْ) فلا تعي وعظا (قَلا يُومِنُونَ إِلاَّا فَلِيلًا )) منهم كعبد اللّٰه بن سلام وأصحابه (وَبِكُفْرِهِمْ ، ثانيا بعيسى بن مريم، اليهود فعلوا هذا في زمن موسى وازدادوا كفرا لما كفروا بعيسى عليه السلام {وَفَوْلِهِمْ عَلَىٰ مَرْيَمَ بُهْتَٰناً عَظِيماً () حيث رموها بالزنا (وَقَوْلِهِمُو إِنَّا فَتَلْنَا الْمَسِيحَ عِيسَى إبْنَ مَرْيَمَ رَسُولَ ألَّهِ) في زعمهم. اليهود كذبوا بعيسى ورموا أمه أنّها زانية وعيسى ولد زنى وليس من الأنبياء، فدعا عيسى عليهم قال يا رب إن كنتُ روحك وكلمتك فأهلك من سبني وسب أمي وأمسخهم قردة وخنازير نمسخوا كلا قردة وخنازير</p>
+<p>1، فلما خاف اليهود من دعوة عيسى عليهم تآمروا على قتله،</p>
+<p>أرادوا أن يقتلوه فأرسلوا من يقتله في محله، فلما أرادوا قتله رفعه اللّٰه كما سيأتي إلى السماء وألقى شبهه على عدوه الذي دخل عليه ططيانوس، فلما رأوه وظنوا أنه عيسى وقتلوه وقالوا الوجه وجه عيسى والجسم جسم ططيانوس، فقالوا إن كان هذا عيسى فأين</p>
+<p class="footnote">1 - ذكره في روح البيان ج31712.</p>
+<p>7</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>ططيانوس؟ وإن كان هذا ططيانوس فأين عيسى؟ ومع ذلك تجرأوا على الكذب وقالوا إنا قتلنا المسيح عيسى بن مريم رسول الله، بمجموع ذلك كذبَهم اللّٰه تبارك وتعالى وقال تكذيبا لهم (وَمَا قَتَلُوهُ وَمَا صَلَبُوه وَلَكِ شُبِّةَ لَهُمْ ألقى اللّٰه شبهه على عدوه المقتول فقتل وصُلب (وَانَّ ألذِينَ إخْتَلَبُواْ بِيبِ) في عيسى (لَعِي شَكٍّ مِنْةَ من قتله، لما رأوا المقتول الوجه وجه عيسى والجسد ليس بجسده دخلهم شك عظيم {مَا لَهْم بِهِ) بقتله ( مِنْ عِلْم إلاَّإِقْبَاعَ ألظَّيَ) لكن اتبعوا الظن فقط الذي تخيلوه أنّهم قتلوه {وَمَا قَتَلَوهْ يَفِيناً )) الحق أنّهم ما قتلوا عيسى (بَل رَجَعَهُ اللَّهُ إِلَيْهِ) إلى محل رضاه، أو إلى سمائه وَكَالَ اللَّهُ عَزِيزاً) فِي ملكه حكيماً) في صنعه (قَان مِنَ آهْلِ الْكِتَبِ) أحد إِلاَّ لَيْومِنَنَّ بِدِ) بعيسى (قَبْلَ مَوْتِهِ وَيَوْمَ ٱلْفِيَامَةٍ يَكُونُ) عيسى (عَلَيْهِمْ شَهِيدا) بما فعلوه. هذا عيسى روح الله، ضل الفريقان في حق عيسى اليهود والنصارى؛ اليهود فرطوا في حقه حتى جعلوه ولد زنى وأمه زانية، والنصارى رفعوه فوق قدره حتى جعلوه ابنا لله أو هو الله. وهذا عادة اللّٰه في كل خليفة لابد من إفراط وتفريط. من فرط في حقه شقي به ومن أفرط حتى جعله فوق العبودية جعله إلها فهو أيضا شقي به. عيسى عليه الصلاة والسلام خلقه اللّٰه من روحه كما خلق آدم &quot;إِنَّ مَثَلَ عِيبِىٰ عِندَ اللَّهِ كَمَئَلِ عادَمٌ ولكن كل إنسان خلقه اللّٰه ينفخ فيه روحا من روحه فبهذا الروح يكون إنسانا، ولكن الغالب من بني البشر يكونون في أصلاب آبائهم وأرحام أمهاتهم فينزل هذا الروح، إذا نزل هذا الروح تميز الإنسان من جميع المخلوقات بهذا الروح، وهذا الروح دخل في مريم بغير واسطة الرجال فحملت بعيسى ووضعته في</p>
+<p class="footnote">1- حاشية الصاوي على الجلالين ج329/1.</p>
+<p>8</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>الحين 1 فجاء عيسى روحا محضا فلهذا أثر روحه أكثر من تأثير بني البشر لأنه لم يمر في أصلاب الرجال ولا في أرحام النساء، إنما نزل الروح ونفخ في مريم فحملت ووضعت في الحين. إن اللّٰه تبارك وتعالى كان ولا شيء معه وهو الآن على ما عليه كان 2، لما أراد إظهار وجود غير وجوده تجلى في الحقيقة المحمدية فهي أول تجل برز من الذات العلية، فلهذا يقول</p>
+<p class="footnote">1 - قال جلال الدين المحلي: الحمل والتصوير والولادة في ساعة قال الصاوي وهو الصحيح ترجيحا له على أقوال أخرى. ج35 - 34 /3. ونقل عن ابن عباس أنه قال: ما هو إلا أن حملت ووضعت ولم يكن بين الحمل والوضع والإنتباذ إلا ساعة واحدة لأن اللّٰه تعالى لم يذكر بينها فصلا قال اللّٰه عز وجل &quot;بَحَمَلَتْهُ جَانتَبَذَتْ بِهِ، مَكَاناً فَصِيَّاً، قال القرطبي: وهذا أصح وأظهر، ج93/11.</p>
+<p class="footnote">2 - أخرج البخاري في صحيحه: عن عمران بن حصين رضي اللّٰه عنه قال: دخلت على النبي صلى اللّه عليه وسلم وعقلت ناقتي بالباب فأتاه ناس من بني تميم فقال: اقبلوا البشرى يا بني تميم، قالوا: قد بشرتنا فأعطنا مرتين ثم دخل عليه ناس من أهل اليمن فقال: اقبلوا البشرى يا أهل اليمن إذ لم يقبلها بنو تميم، قالوا: قد قبلنا يا رسول الله، قالوا: جئناك نسألك عن هذا الأمر، قال: كان اللّٰه ولم يكن شيء غيره وكان عرشه على الماء وكتب في الذكر كل شيء وخلق السموات والأرض، فنادى مناد ذهبت ناقتك يا ابن الحصين فانطلقت فإذا هي يقطع دونها السراب فوالله لوددت أني كنت تركتها.</p>
+<p>صحيح البخاري: كتاب بدء الخلق/ باب ما جاء في قوله تعالى: &quot;وَهُوَ ألذِى يَبْدَؤُاْ الْخَلْقَ ثُمَّ يُعِيدُهُ )</p>
+<p>(3192). وجاء في تفسير القرطبي ج216/18 لقوله تعالى: &quot;امِنتُم مَل فِي السَّمَاءٍ أَنْ يَخْسِقَ بِكُمْ الْأَرْضَ&quot;... الآية قوله: وكان في أزله قبل أن خلق المكان والزمان ولا مكان له ولا زمان وهو الآن على ما عليه كان. وقال الثعالبي في تفسيره لقوله تعالى: &quot;وَهُوَ أْللَّهُ فِىِ السَّمَوَاتِ وَفِىِ الأَرْضِ يَعْلَمٌ سِرَّكُمْ وَجَهْرَكُمْ&quot;: قاعدة الكلام في هذه الآية أن حلول اللّه في الأماكن مستحيل تعالى أن يحويه مكان كما تقدس أن يحده زمان بل كان قبل أن خلق المكان والزمان وهو الآن على ما عليه كان. ج505/1 وقال: كان سبحانه قبل أن يخلق المكان والزمان وهو الآن على ما عليه كان، انظر كلامه عن الاستواء في تفسيره لقوله تعالى &quot;ثُمَّ اسْتَوىٰ عَلَى الْعَرْشِ&quot; ج263/2</p>
+<p>9</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>الرسول صلى اللّٰه عليه وسلم (أنا من اللّٰه والمومنون مني) 1 (ولولاك ما خلقت شيئا) (أن من نور اللّه والمومنون من نوري) (أنا من اللّٰه والمومنون من روحي)2 هذا الروح هو الحقيقة المحمدية. سمي في الحديث بأسماء منها: النور، منها الدرة البيضاء، منها الروح، منها ملك كروي، ملك عبط بالملالكة كما أن الملالكة محيطة ببني البشر وهذا كلا عبارة عن معمد صلى اللّٰه عليه وسلم. وذكر اللّٰه أنه لما أوجد آدم نفخ فيه من روحه، ذلك الروح هو روح</p>
+<p class="footnote">1 - أخرجه السيوطي في كتابه الدرر المنتثرة / حرف الهمزة وقال: أورده الديلمي عن عبد اللّٰه بن جراد بلا إسناد. وللإمام العجلوني في كشف الخفاء: باب حرف الهمزة مع النون (619) وقال: وعند الديلمي بلا إسناد عن عبد اللّٰه بن جراد: أنا من اللّٰه عز وجل والمؤمنون مني فمن آذى مؤمنا فقد آذاني - الحديث.. وأورده كذلك السخاوي في المقاصد الحسنة: كتاب الفضائل / الباب الثاني.</p>
+<p>وهو الحديث السادس والثلاثون من كتاب التذكرة في الأحاديث المشتهرة لمؤلفه محمد بن عبد اللّٰه الزركشي.</p>
+<p class="footnote">2 - روح البيان ج319/2.</p>
+<p class="footnote">3 - جاء في تفسير روح البيان ما نصه: وأما قوله صلى اللّٰه عليه وسلم أول ما خلق اللّٰه جوهرة وأول ما خلق اللّٰه روحي وأول ما خلق اللّٰه العقل وأول ما خلق اللّٰه القلم وقول بعض الكبراء من الأئمة إن أول المخلوقات على الاطلاق ملك كروبي يسمى العقل وهو صاحب القلم وتسميته قلما كتسمية صاحب السيف سيفا كما قيل لخالد بن الوليد رضي اللّٰه عنه سيف اللّٰه وهو أول لقب في الإسلام وقول اللّه تعالى &quot; يَوْمَ يَفُومُ أَلرُّوحُ وَالْمَلِّبِكَةُ صَبّا وقد جاء في الخبر أن الروح ملك يقوم صفا فلا يعد أن يكون هذا الملك العظيم هو أول المخلوقات هو الروح النبوي فإن المخلوق الأول مسمى واحد وله أسماء مختلفة فبحسب كل صفة فيه سمي باسم آخر ولا ريب أن أصل الكون كان النبي عليه السلام لقوله (لولاك ما خلقت الكون) ... إلى أن قال بعد كلام: فيلزم من ذلك أن يكون روحه صلى اللّه عليه وسلم أول شيء تعلقت به القدرة وأن يكون المسمى بالأسماء المختلفة فباعتبار أنه كان درة</p>
+<p>10</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>محمد صلى اللّٰه عليه وسلم، ولما خلق ابن آدم من سلالة من ماء مهين نفخ فيه من روحه، وعيسى عليه الصلاة والسلام نفخ فيه من روحه أيضا، ولما كان الأرواح في الأزل صفوفا كان روح عيسى عليه الصلاة والسلام هو الذي يلي روح محمد صلى اللّٰه عليه وسلم مباشرة، فلهذا لم يكن بينه وبينه نبي، ولهذا لم يأت بواسطة الآباء إنما أبوه محمد صلى اللّٰه عليه وسلم، فكان عيسى قويا بهذه القوة أكثر من روح غيره، على أن كل روح تجرد من الأغيار واشتغل بالله تبارك وتعالى وفني عن وجوده واستغرق في وجود الحق تصرف في الكائنات قل أو كثر، وعيسى لما كان أقواهم وأقربَهم إلى روح محمد وأقلهم ملابسة مع الأشياء كان تأثير روحه أعظم من تأثير روح غيره، وليس إلا جزء من روح محمد فقط، كذلك جبريل سمي روحا وهو من روح محمد صلى اللّه عليه وسلم. «وَمَا فَتَلُوهُ وَمَا صَلَبُوهُ وَلَكِر شبِّهَ لَهُمْ وَإِنَّ ألذِينَ إخْتَلَمُواْ فِيهِ لَهِى شَكٍ مِنْةٌ مَا لَهُم بِهِ» بقتله «مِنْ عِلْمِ إِلَّ إتِّبَاعَ ألظَرِّ» لكن يتبعون الظن الذي تخيلوه «وَمَا فَتَلُوهُ يَفِيناً بَل رَبَعَهُ اللَّهُ إِلَيْهِ» إلى محل رضاه «وَكَانَ اللَّهُ عَزِيزاً حَكِيمةٌ» ولما كان الولد سر أبيه، كان من حق عيسى عليه الصلاة والسلام أن يكون روحانيا لا يظهر له جسم لكن بحيث أنه نفخ الروح في مريم ومريم التذت بذلك النفخ فنزل منها مني كسائر النساء، من مني مريم بني جسد عيسى، لولا ذلك لكان</p>
+<p>صدف الموجودات سمي درة وجوهرة كما جاء في الخبر أول ما خلق اللّٰه جوهرة وفي رواية درة فنظر إليها فذابت فخلق منها كذا وكذا، وباعتبار نورانيته سمي نورا وباعتبار وفور عقله سمي عقلا وباعتبار غلبات الصفات الملكية عليه سمي ملكا وباعتبار أنه صاحب القلم سمي قلما ... من تفسير روح البيان ج199 /5.</p>
+<p class="footnote">1 - (الولد سر أبيه) كشف الخفاء: حرف الواو ( 2911)</p>
+<p>11</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>روحانيا ليس له جسد!. ولما كان الولد غالبا يشبه ما تشاهده المرأة حال الوقاع شابه عيسى جبريل. المرأة حال المواقعة مهما تنظر إلى شيء يأتي الولد يشبه ذلك، وقع هذا في الناس مرارا، فلهذا لا يمكن نفي الولد عن أبيه بعدم شبه او بشبه. جاء رجل إلى رسول اللّه صلى اللّٰه عليه وسلم فقال أنا رجل أبيض وامرأتي بيضاء وخرج لنا ولد أسود ليس مني، قال الرسول صلى اللّٰه عليه وسلم: هل عندكم من إبل؟ قال: نعم، هل فيها أسود؟ قال:</p>
+<p>نعم، قال: نزعه عرق من ذلك الجمل الأسود2، فعلى هذا يأتي الشبه بمجرد رؤية المرأة لشيء. كانت امرأة يواقعها زوجها وهي تنظر إلى دبَّين اختلطا بين يديها فجاء الولد بأربع قوائم وأربع أعين شبه ما كانت تنظر حال المواقعة، فلهذا جاء عيسى عليه الصلاة والسلام أشبه بالروحانيين منه من الجسمانيين «وَان مِسَ آهْلِ الْكِتَٰبِ» أحد «إِلاَّ لَيْومِنَّنَّ بِدِ» بعيسى «قَبْلَ مَوْتِهِ» الكتابي لا يموت حتى يؤمن بعيسى. وفد نجران قسمان فيهم يهود وفيهم نصارى، قال لهم الرسول صلى اللّٰه عليه وسلم: أسلموا، ويلكم أسلموا، أنتم تعلمون أني أنا النبي الذي ذكر في التوراة والإنجيل فقال اليهود: معاذ اللّٰه أن نؤمن بك وأنت تعد عيسى</p>
+<p class="footnote">1 - ذكره البروسوي في روح البيان قال: قيل خلق عيسى عليه السلام من ماء مريم ومن النفخ لا أحدهما فقط وهو الأصح عند المحققين. ج329/2.</p>
+<p class="footnote">2 - أخرجه الشيخان ولفظ البخاري: عن أبي هريرة أن رجلا أتى النبي صلى اللّٰه عليه وسلم فقال يا رسول اللّٰه ولد لي غلام أسود، فقال: هل لك من إبل؟ قال: نعم، قال: ما ألوانها؟ قال: حمر، قال:</p>
+<p>هل فيها من أورق؟ قال: نعم، قال: فأنى ذلك؟ قال: لعله نزعه عرق، قال: فلعل ابنك هذا نزعه)</p>
+<p>(2756).</p>
+<p>صحيح البخاري: كتاب الطلاق/ باب إذا عرض بنفي الولد (5305)، صحيح مسلم: كتاب اللعان/</p>
+<p class="footnote">3 - روح البيان ج330/2.</p>
+<p>12</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>من الأنبياء وهو ما هو إلا ولد حرام، وقالت فرقة النصارى معاذ اللّٰه أن نؤمن بك وأنت تسب عيسى عليه الصلاة والسلام. قال الرسول صلى اللّٰه عليه وسلم: كيف أسبه؟ قالوا:</p>
+<p>تقول عبدٌ لله، قال لهم الرسول صلى اللّٰه عليه وسلم: &quot;لَنْ يَسْتَنكِفَ ٱلْمَسِيحُ أَنْ يَكُونَ عَبْداً</p>
+<p>&quot; قالوا: ليس عبدا لله إنما هو ولد له أو هو اللّٰه أو الآلهة ثلاثة 1. كفر الفريقان، فلهذا كل أحد منهم إذا أتاه الموت وعاين ملك الموت يأتيه الملك بعيسى يقول له حتى تؤمن بعيسى فيؤمن به قبل موته أو أن اللّٰه سيؤخر نزول عيسى، اللّٰه تبارك وتعالى لما رفع عيسى إلى السماء كان يمكن أن يرده حينا حتى يعلموا أنه ليس هو المقتول، ولكن أخر اللّٰه نزوله إلى آخر الزمان، قال الرسول صلى اللّٰه عليه وسلم: (سينزل فيكم ابن مريم حكما عدلا يقتل الخنزير ويكسر الصليب ويرفع الجزية ويعدل يقيم العدالة في الأرض حتى يفيض المال حتى لا يقبله أحد) 2 إذاً «فَبْلَ مَوْتِهِ» الضمير عائد إلى عيسى، ليس من أهل الكتاب أحد إلا وسيؤمن بعيسى قبل موت عيسى 3 حين ينزله اللّٰه في آخر الزمان خاتما للولاية المحمدية تشريفا لهذه الأمة، فلا ولاية بعد نزول عيسى، هو الختم الأكبر {وَيَوْمَ الْفِيَمَةِ يَكُولُ عَلَيْهِمْ شَهِيداً بما فعلوه مَبِظُلْمِ) بسبب ظلم ومِّ ألذِيرَ هَادُوا وهم اليهود</p>
+<p class="footnote">1 - حاشية الصاوي على الجلالين ج138/2.</p>
+<p class="footnote">2 - عن ابن شهاب أن سعيد بن المسيب سمع أبا هريرة رضي اللّٰه عنه قال قال رسول اللّٰه صلى اللّٰه عليه وسلم (والذي نفسي بيده ليوشكن أن ينزل فيكم ابن مريم حكما عدلا فيكسر الصليب ويقتل الخنزير ويضع الجزية ويفيض المال حتى لا يقبله أحد حتى تكون السجدة الواحدة خيرا من الدنيا وما فيها) صحيح البخاري: كتاب أحاديث الأنبياء/ باب نزول عيسى (3448) صحيح مسلم: كتاب الإيمان / باب نزول عيسى ابن مريم حاكما بشريعة نبينا محمد (220).</p>
+<p class="footnote">3 - ذكره ابن كثير في تفسيره ج577/1.</p>
+<p>13</p>
+<p>سورة النسا</p>
+<p>في رياض التفسير</p>
+<p>{حَرَّمْنَا عَلَيْهِمْ طَيِّبَتٍ اجِلَّتْ لَهُمْ ) هي التي في قوله &quot; حَرَّمْنَا كُلَّ ذِ ظُمْرِ&quot; الآية، اليهور ارتكبوا المحرمات فحرم اللّٰه عليهم طيبات أحلت لهم، لهذا نعلم أن ارتكاب المحظورات يوجب حرمان الطيبات وارتكاب الطيبات من الحلال يمنع مناجاة اللّٰه تبارك وتعالى، إذا لابد من الزهد في الحرام مخافة أن يمنعك اللّٰه من الحلال الطيب، ولا بد من الزهد في الحلال لعلا تحرم مناجاة اللّٰه تبارك وتعالى. (وَبِصَدِّحِمْ ) الناس (عَى سَبِيلِ الَّدِي) دينه صدا ( كَثِيرا وَأَحْذِهِمْ أَلزِّبَوْ وَقَدْ نَهَوأ عَنْهُ) في التوراة (وَأَكْلِهِمْ دَ أَمُوَلَ التَّاسِ بِالْبَاطِلِ) كل هذه ارتكبرها، فلهذا حرم اللّٰه عليهم الطيبات من الرزق (وَأَعْتَدْنَا لِلْكَفِرِيلَ مِنْهُمْ نَّاً الِامَ</p>
+<p>مؤلما هو النار .</p>
+<p>جملة الكبائر تنشأ من ثلاثة أشياء: اتباع الهوى &quot;وَلا تَتَّبِعِ اِلْهَوِىٰ فَيْضِلَّكَ عَى سَبِبِلِ اللَّهِ الضلالة والبدعة والتفسخ والتكبر كل هذه الكبائر تنشأ من اتباع الهوى؛ فاتباع الهوى أولا وحب الدنيا ثانية، (حب الدنيا رأس كل خطيئة) كما قال الرسول صلى اللّٰه عليه وسلم، بحب الدنيا يقتل الإنسان النفس ويأكل الربا، يأكل أموال الناس بالباطل ويأكل أموال اليتامى ويقسم بالله اليمين الغموس ويعادي المسلمين ويبغضهم ويحسدهم ويتكبر عليهم ويغتائهم ويسعى بالنميمة بينهم، كل هذا - ولا نهاية للكبائر - منشؤه حب الدنيا؛ والثالث رؤية ما سوى اللّٰه تبارك وتعالى، رؤية غير اللّٰه تحمل الإنسان على حب الرياسة وحب الرياسة هو الكعبة التي يطوف بِها جميع الشرور. اتباع الهوى وحب الدنيا ورؤية غير الله، هذه الثلاثة منشأ جملة الكبائر .</p>
+<p class="footnote">1 - (حب الدنيا رأس كل خطيمة) لليهقي في شعب الإيمان الجامع الصغير للسيوطي 3662.</p>
+<p>14</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>قال الرسول صلى اللّٰه عليه وسلم: (يوشك أن ينزل فيكم ابن مريم إذا رأيتموه فاعرفوه رجل مربوع القامة أحمر شعره جعد كأنما يقطر منه ماء كأنه خرج من حمام)1 عيسى عليه الصلاة والسلام سينزل في آخر الزمان وليس في هذا تفضيله على الرسول صلى اللّٰه عليه وسلم فإنما الولاية المحمدية بدئت بنبي وهو آدم وستختم بنبي وهو عيسى عليه الصلاة والسلام.</p>
+<p>نعم يوجد ختم عام وخاص بين هذين الختمين، إذا توفي عيسى سوف يدفن عند قبر النبي صلى اللّٰه عليه وسلم وأبي بكر وعمر وراء عمر 2 فيخرج أبو بكر وعمر يوم القيامة بين محمد رسول اللّٰه وعيسى رسول الله، بيد أن عيسى إذا نزل آخرا لا يأتي بصفته نبيا يأتي وليا واحدا من الأمة فقط يحكم بشريعة محمد صلى اللّٰه عليه وسلم 3، لا يأتي بصفته نبيا</p>
+<p class="footnote">1 - عن أبي هريرة أن النبي صلى اللّٰه عليه وسلم قال: (ليس بيني وبينه نبي يعني عيسى وإنه نازل فإذا رأيتموه فاعرفوه رجل مربوع إلى الحمرة والبياض بين ممصرتين كأن رأسه يقطر وإن لم يصبه بلل فيقاتل الناس على الإسلام فيدق الصليب ويقتل الخنزير ويضع الجزية ويهلك اللّٰه في زمانه الملل كلها إلا الإسلام ويهلك المسيح الدجال فيمكث في الأرض أربعين سنة ثم يتوفى فيصلي عليه المسلمون) سنن أبي داود: كتاب الملاحم/ باب خروج الدجال (3766).</p>
+<p class="footnote">2 - انظر ابن كثير ج585/1، وحاشية الصاوي على الجلالين ج332/1، وفي قصص الأنبياء لابن كثير ص580.</p>
+<p class="footnote">3 - جاء في صحيح مسلم عن أبي هريرة أنه قال: قال رسول اللّٰه صلى اللّٰه عليه وسلم: (والله لينزلن ابن مريم حكما عادلا فليكسرن الصليب وليقتلن الخنزير وليضعن الجزية ولتُتركن القلاصُ فلا يُسعى عليها ولتذهبن الشحناء والتباغض والتحاسد وليدعون إلى المال فلا يقبله أحد) كتاب الإيمان / باب</p>
+<p>نزول عيسى ابن مريم حاكما بشريعة نبينا محمد (221). وقال الخازن في تفسيره بعد ذكر الحديث:</p>
+<p>وفي هذا الحديث دليل على أن عيسى ينزل في آخر الزمان في هذه الأمة ويحكم بشريعة محمد صلى</p>
+<p>15</p>
+<p>سورة النس.</p>
+<p>في رياض التفسير</p>
+<p>بل يأتي وليا ليس له استقلال. النبي مستقل والولي تابع، وهو إذا جاء آخر الزمان يكون وليا تابعا لا نبيا مستقلا، فيحشر أبو بكر وعمر بين نبيين، هذا من مزاياهما. «فَبِظَلِّمٍ فِيَ أَلذِينَ هَادُوا حَرَمْنَا عَلَيْهِمْ طَيِّبَتِ أَحِلَّتْ لَهُمْ وَبِصَدِّهِمْ عَى سَبِيلِ اِللَّهِ كَثِيراً وَأخْذِهِمُ أَلرِّبَوا وَا.</p>
+<p>نهُرا عَنْه» في التوراة «وَأَكْلِهِمْدَ أَمْوَلَ التَّاسِ بِالْبَطِلِ» بالرشا في الحكم «وَأَعْتَدْنَا لِلْكَيِرِينَ مِنْهَمْ عَذَاباً أَلِيماً) مؤلما ولْكِل الرّسِخُونَ الثابتون م الْعِلّمِ مِنْهُمْ) كعبد اللّٰه بن سلام وَالْمُومِنُونَ المهاجرون والأنصار يُومِنّونَ بِمَآ أُنزِلَ إِلَيْكَ وَمَآ أُنزِلَ مِ قَبْلِكَ من الكتب، الرسوخ في العلم هو الذي ينفع ومن قرأ العلم ولم يجد فهما ولا نورا يقوده إلى ألحق يكون كمثل حمار يحمل أسفارا، فعلماء التوراة كلهم قرأوا التوراة وما فيها، وعبد اللّٰه بن سلام قرأ التوراة وفهم ورسخ فيه العلم، عندما قابل النبي صلى اللّٰه عليه وسلم نطق بالشهادتين: أشهد أن لا إله إلا اللّه وأشهد أن محمدا رسول الله، قال ما هذا بوجه كذاب !، وقال: لما رأيته واللّه وجدتني أعرفه أشد من معرفتي لابني كما قال القرآن، وهذا لرسوخ علم عبد اللّٰه بن سلام، واليهود الذين قرأوا ولم يفهموا وجمدوا مع النصوص احتجبوا عن</p>
+<p>اللّه عليه وسلم وأنه لا ينزل نبيا برسالة مستقلة وشريعة ناسخة بل حاكما من حكام هذه الأمة وإماما من أئمتهم. الخازن ج420/1.</p>
+<p class="footnote">1- أخرج الترمذي عن عبد اللّٰه بن سلام قال: لما قدم رسول اللّٰه صلى اللّٰه عليه وسلم المدينة انجفل الناس إليه وقيل قدم رسول اللّٰه صلى اللّٰه عليه وسلم قدم رسول اللّٰه صلى اللّٰه عليه وسلم قدم رسول الله صلى الله عليه وسلم فجئت في الناس لأنظر إليه فلما استثبت وجه رسول اللّٰه صلى اللّٰه عليه وسلم عرفت أن وجهد ليس بوجه كذاب، وكان أول شيء تكلم به أن قال: (أيها الناس أفشوا السلام وأطعموا الطعام وصلوا والناس نيام تدخلوا الجنة بسلام) قال أبو عيسى هذا حديث صحيح، سنن الترمذي: كتاب صفة القيامة والرقائق والورع/ (2409).</p>
+<p class="footnote">2 - انظر تفسير الخازن ج9/2.</p>
+<p>16</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>رسول اللّٰه صلى اللّٰه عليه وسلم لما رأوه ما عرفوه بل كفروا به (وَالْمُفِيمِينَ ألصَّلَوةَ أمدح الذين يقيمون الصلاة، الصلاة أفضل مشروع، أفضل ما فرض اللّٰه على هذه الأمة وعلى الأمم قبلها، يقول الرسول صلى اللّٰه عليه وسلم: من حافظ على الصلوات الخمس حيث كان وأينما كان تجاوز على الصراط كاللمح البارق ودخل الجنة مع السابقين 1 وله كل يوم ما دام محافظا عليها حارس من اللّٰه وله كل يوم أجر شهيد 2، فلهذا مدح المقيمين الصلاة (وَالْمُوتُونَ الزَّكَوةَ) إذا ذكرت الصلاة وهي أكبر عبادات البدن قرنَها غالبا بالزكاة لأنّها أكبر عبادات المال ( وَالْمُومِنُونَ بِاللَّهِ وَالْيَوْمِ الآَخِرِ أوْلُبِكَ سَنُوتِيهِمْ أَجْراً عَظِيماً هو الجنة (نَا أَوْحَيْنَآ إِلَيْكَ كَمَآ أَوْحَيْنَآ إِلَىٰ نُوحٍ وَالتَّبِيِّيَ مِنْ بَعْدِهُ وَ) كما ( أَوْحَيْنَآ إِلَى إِبْرَهِيمَ وَاِسْمَعِيلَ وَإسْحَقَ ابنيه (وَيَعْفُوبَ) ابن إسحاق (وَالاسْبَاطِ) أولاده (وَعِيبسى وَأَيُّوبَ وَيُونْسَ وَهَرُونَ وَسْلَيْمَنّ وَءاتَيْنَا) أباه ( دَاوُودَ زَبُورا اسم الكتاب المؤتى بمعنى مزبورا أي مكتوبا، نزل على داود مائة وخمسون سورة، وكان داود إذا قرأ الزبور اجتمعت الطيور وأظلته بأجنحتها وحشرت الوحوش حوله كلهم ينصتون لحسن صوته 3 حتى وقع منه ما وقع وهو تزويجه بزوجة أوريا ولم ينتظر الأمر من جبريل، تزوج قبل أن يأتيه الإذن من الحضرة فقط، هذا هو الصحيح في ذنب داود. قرأ ولم يحضر معه الطيور ولا الوحوش فشكا إلى</p>
+<p class="footnote">1 - أخرج أحمد في مسنده عن حنظلة الكاتب قال سمعت رسول اللّٰه صلى اللّٰه عليه وسلم يقول:</p>
+<p>(من حافظ على الصلوات الخمس ركوعهن وسجودهن ووضوئهن ومواقيتهن وعلم أنهن حق من عند اللّٰه دخل الجنة أو قال وجبت له الجنة) مسند أحمد: مسند الكوفيين/ حديث حنظلة الكاتب الأسيدي</p>
+<p>(17622).</p>
+<p class="footnote">2 - روح البيان ج321/2.</p>
+<p class="footnote">3 - حاشية الصاوي على الجلالين ج133/2.</p>
+<p>17</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>اللّٰه فقال له تلك أنس العبادة وهذه وحشة المخالفة، فبكى وتاب إلى اللّٰه حتى غفر اللّٰه لد ذلك كما سيأتي في سورة ص. وكان أبو موسى الأشعري حسن الصوت في قراءة القرآن فقال له الرسول صلى اللّٰه عليه وسلم يوما: لو رأيتني وأنا أستمع لقراءتك يا أبا موسا، قال: لو علمت أنك تسمع يا رسول اللّٰه لحبرته لك تحبيرا. يقول الرسول صلى اللّٰه عليه وسلم: ما سمعت بربطاا ولا عودا ولا مزمارا أحسن من تلاوة آبي موسى الأشعري كأنما أعطي مزمارا من مزامير آل داود4. قال الصحابة كان أبو موسى يصلي بنا إماما في الصام ونتمنى أنه يقرأ سورة البقرة لحسن صوته في التلاوة وكان عمر إذا رآه يقول آت ذكرنا ريناً فيتلو القرآن بتلاوة حسنة حتى ترق قلوهم (وَرَسَلًا قَدْ قَصَصْتَاهَمْ عَلَيْكَ صٍ قَبْلُ وَرْسَلاكُمْ.</p>
+<p class="footnote">1 - عن أبي بردة عن أبي موسى قال: قال رسول اللّٰه صلى اللّٰه عليه وسلم لأبي موسى (لو رأيتني وأنا أستمع لقراءتك البارحة لقد أوتيت مزمارا من مزامير آل داود) صحيح مسلم: كتاب صلاة المسافرين وقصرها/ باب استحباب تحسين الصوت بالقرآن (1322)</p>
+<p class="footnote">2 - عن أبي موسى أن النبي صلى اللّٰه عليه وسلم وعائشة مرا بأبي موسى وهو يقرأ في بيته فقاما يستمعان لقراءته ثم إنهما مضيا فلما أصبح لقي أبا موسى رسول اللّٰه صلى اللّٰه عليه وسلم فقال يا أبا موسى مررت بك البارحة ومعي عائشة وأنت تقرأ في بيتك فقمنا فاستمعنا فقال له أبو موسى أما إني يا رسول اللّٰه لو علمت لمكانك لحبرت لك القرآن تحبيرا. ابن أبي يعلى وابن عساكر في تاريخه. مسند أبي موسى من الجامع الكبير للسيوطي ج674/2.</p>
+<p class="footnote">3 - جاء في اللسان: البربط العود، أعجمي ليس من ملاهي العرب.. وفي حديث علي بن الحسين:</p>
+<p>لا قُدِّست إنه فيها البربط .</p>
+<p class="footnote">4 - روح البيان ج323/2.</p>
+<p class="footnote">5 - أخرج الدارمي في سننه: عن أبي سلمة أن أبا موسى كان يأتي عمر فيقول له عمر ذكرنا زبنا فيقرأ عنده. سنن الدارمي: كتاب فضائل القرآن/ باب التغني بالقرآن (3360).</p>
+<p>18</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>تَفْصُصْهُمْ عَلَيْكَ ذكر في هذه الآية أن اللّٰه بعث رسلا قص قصصهم على رسول الله صلى اللّٰه عليه وسلم وبعث رسلا لم يقصصهم عليه، قال جلال: روي أنه تعالى بعث ثمانية آلاف نبي، أربعة آلاف من بني إسرائيل وأربعة آلاف من سائر الناس، قاله في سورة غافر، وقد تبرأ السيوطي من هذا القول لضعفه ووهنه، هذه رواية ضعيفة جدا فلهذا تبرأ المفسر من نسبتها إليه ونسبها لقائلها الذي هو جلال المحلي 1. والمشهور أن اللّٰه بعث من الأنبياء</p>
+<p>&quot;ألف كقد&quot; مائة ألف وأربعة وعشرين ألفا نصفهم من بني إسرائيل ونصفهم من سائر الناس، الرسل منهم ثلاثمائة وثلاثة عشر أو أربعة عشر أو خمسة عشر على اختلاف الروايات2، وقيل مائتا ألف وأربعة وعشرون ألفا، كل هذا أقوال العلماء، وحيث أن اللّٰه</p>
+<p class="footnote">1 - ذكره الصاوي في حاشيته على الجلالين ج134/2</p>
+<p class="footnote">2 - أخرج الحاكم في مستدركه: حدثني أبو أمامة رضي اللّٰه عنه أن رجلا قال: يا رسول اللّٰه أنبي كان آدم؟ قال: «نعم معلم مكلم»، قال: كم بينه وبين نوح؟ قال: «عشر قرون» قال: كم كان بين نوح وإبراهيم؟ قال: «عشر قرون»، قالوا: يا رسول اللّٰه كم كانت الرسل؟ قال: «ثلاثمائة وخمس عشرة جما غفيرا». هذا حديث صحيح على شرط مسلم ولم يخرجاه. المستدرك: كتاب التفسير / باب كانت الرسل ثلاثمائة وخمس عشرة (3089) ولأحمد من حديث أبي ذر: قال قلت يا رسول اللّٰه كم وفى عدة الأنبياء قال: (مائة ألف وأربعة وعشرون ألفا الرسل من ذلك ثلاث مائة وخمسة عشر جما غفيرا)</p>
+<p>مسند أحمد: مسند الأنصار / حديث أبي أمامة الباهلي (21257)</p>
+<p>وأخرج الحاكم في مستدركه عن أبي ذر رضي اللّٰه عنه قال: دخلت على رسول اللّٰه صلى اللّٰه عليه وسلم وهو في المسجد فاغتنمت خلوته، فقال لي: «يا أبا ذر إن للمسجد تحية» قلت: وما تحيته يا رسول الله؟ قال: «ركعتان»، فركعتهما ثم التفت إلي فقلت: يا رسول اللّٰه إنك أمرتني بالصلاة فما الصلاة؟ قال: «خير موضوع فمن شاء أقل ومن شاء أكثر» قلت: يا رسول اللّٰه أي الأعمال أحب إلى الله؟ قال: «الإيمان بالله»، ثم ذكر الحديث إلى أن قال: فقلت يا رسول اللّٰه كم النبيون؟ قال: «مائة ألف</p>
+<p>19</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>بقول «وَرْسُلا فَدْ قَصَصْتَٰهُمْ عَنَيْكَ صِ قَبْلُ وَرْسُلًا لَمْ تَفْصُصْهُمْ عَلَيْكَ» لم نعرف أين يهتدي أحد لمعرفة عددهم، فيهم من قص اللّه وفيهم من لم يقص. والحق أن اللّٰه تبارك وتعالى تجلى بسائر أسمائه على الأنبياء كل اسم تجلى في نبي كما أن كل نبي تحلى في ولي، فعلى هذا عدد الأولياء وعدد الأنبياء لا يعرفهم إلا اللّٰه لأنهم عدد الأسماء، وكثرة الأسماء تعريفه بأن كل ذرة في الوجود تحلى فيها اسم غير الذي بحلى في الأخرى، كما أن حضرة الذات لا نحاية لها ولا يحيط بما أحد وحضرة الصفات كذلك، فحضرة الأسماء كذلك، وإذا تجلن الأسماء في الأنياء أو تجلت حضرة النبوءة في الأولياء بقي الأمر على ما هو عليه (وَكَلَّهُ ألَّهُ مُوبى تَكْلِيما بلا واسطة. إن اللّٰه تبارك وتعالى كلم موسى عند جبل الطور في المناجاة بعدما ضرب حجابا من الظلمة وراء ستمائة فرسخ فتجلى بنوره فتنحى الشياطين والجن والوحوش وحتى الحشرات، فسمع موسى كلام اللّٰه تبارك وتعالى بلا حرف ولا صوت ولا كلمة، وهذا الكلام قال موسى إنه أشد عليه من الرعود تتوارد عليه وألذ من لذة الجماع بعشرة آلاف ضعف 1، وهو يسمع بكليته، كل ذاته صارت سمعا، ويسمع الكلام من كل جهة ليس له جهة ولا حرف ولا لغة ولا صوت هذا كلام الله، قيل له: أين موسى؟ قال:</p>
+<p>لست موسى ولا أعرف موسى، وهذا عند الطور. إذا كانت هذه المناجاة مقاما رفيعا،</p>
+<p>وأربعة وعشرون ألف نبي» قلت: كم المرسلون منهم؟ قال: «ثلاثمائة وثلاثة عشر»، وذكر باقي الحديث. كتاب تواريخ المتقدمين من الأنبياء والمرسلين/ ذكر حرف الأنبياء عليهم السلام (4216).</p>
+<p class="footnote">1 - جاء في جواهر المعاني ج149/2: قيل للكليم عليه السلام في أي حالة كنت في وقت المكالمة فقال أما في الهيبة فتصور مواقعة الصواعق تنصب حولك متصلة فلا يوصف خوف صاحبه في هذا الحال، وأما في اللذة فلا يوصف، وقد قيل لذة الجماع في ذلك الحال ليست بشيء في ذلك الأمر،</p>
+<p>فاللذة غايتها والهيبة غايتها.</p>
+<p>20</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>فالمناجاة التي صاحبها تجاوز السماوات السبع والعرش والكرسي وتجاوز مقام &quot;</p>
+<p>&quot;دَنَا قَتَدَلِّبى</p>
+<p>وَكَاتَ فَابَ فَوْسَيْنِ&quot; إلى مقامِ &quot;آدْنيى&quot;، فذلك المقام أرفع من هذا المقام. (رُسُلًا ) أرسلنا رسلا (مُبَشِّرِيَ) بالثواب من آمن {وَمُنذِرِيرَ) بالعقاب من كفر وأرسلناهم (لِيَلاَّ يَكُونَ لِلنَّاسِ عَلَى اللَّهِ حُجَّةً تُقال (بَعْدَ الرُّسُلِ) أرسل اللّٰه الرسل قطعا للمعذرة، سماه اللّٰه حجة تكرما وليس لعبد أن يجد حجة يحتج بِها على الله، ولكن لما قطع عذرهم حيث أنّهم لو لم يأتهم الرسل لقالوا &quot;لَوْلَا أَرْسَلْتَ إِلَيْنَا رَسُولًا فَنَتَّبِعَ ءَايِئِكَ وَنَكُونَ مِنَ الْمُومِنِينَ&quot; بعث اللّٰه هذه الرسل لقطع ذلك العذر وهو الذي سماه لئلا يكون للناس على اللّٰه حجة ( وَكَانَ اللَّهُ عَزِيزاً في ملكه حَكِيماً في صنعه، اللّٰه تبارك وتعالى خلق الإنسان وجعله على هذه الصورة، إن اللّٰه خلق آدم على صورته 1 ميزه عن سائر الأشياء بأن له عقلا وله بصرا نافذا ليس بصره كبصر الحيوانات، أنت تبصر والحيوان يبصر ولكن أنت نبصر وتميز ما تبصر: هذا إنسان، هذا حجر، هذا شيء أخافه، هذا شيء أحبه، هذا شيء أعرفه، هذا شيء لا أعرفه، هذا أبيض هذا أسود، وله سمع كذلك نافذ يسمع: هذه اللغة لغة أعرفها، ولغة لا أعرفها، هذا كلام يتوجه إلي، هذا كلام تحبه، كلام لا تحبه، كلام يحتاج لجواب، لا يحتاج لجواب؛ وقلب يميز كل شيء، وعقل يدرك كل شيء؛ فلما كان</p>
+<p class="footnote">1 - عن أبي هريرة عن النبي صلى اللّه عليه وسلم قال (خلق اللّٰه آدم على صورته طوله ستون ذراعا، فلما خلقه قال: اذهب فسلم على أولئك النفر من الملائكة جلوس فاستمع ما يحيونك فإنها تحيتك وتحية ذريتك، فقال: السلام عليكم فقالوا: السلام عليك ورحمة اللّٰه فزادوه ورحمة اللّٰه فكل من يدخل الجنة على صورة آدم فلم يزل الخلق ينقص بعد حتى الآن) صحيح البخاري: كتاب الاستئذان/ باب بدء السلام (6227)، وفي صحيح مسلم: كتاب الجنة وصفة نعيمها وأهلها/ باب يدخل الجنة أقوام أفئدتهم مثل أفئدة الطير (5075).</p>
+<p>21</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>الإنسان بهذه الصورة كان من حقه أن يعرف اللّٰه تبارك وتعالى بدون واسطة الرسل، لأن الإنسان يعلم بعقله أن كل صنعة لا بد لها من صانع، الصنعة لا تقوم إلا بصانع، إذا رأى بناء يعلم أن هناك بانيا، حتى الحمار الذي لا عقل عنده إذا أتته ضربة فر من جهة الضربة يعلم أن هناك ضاربا. الله لما عرَّفنا بنفسه أول ما قال كما في سورة النحل &quot;خَلَقَ ألسَّمَوَتِ وَالأَرْضَ&quot;، &quot;خَلَقَ الانسَنَ صِ نُطْعَةٍ&quot;، من نظر في السماء والأرض ونظر في الإنسان يعلم أن هذه الصنعة لابد لها من صانع، إذاً كان عقلنا يوصلنا إلى معرفة أن هناك إلها، ولكن معرفة ذلك الإله بصفاته وأسمائه وأفعاله، ومعرفة أمره ونهيه وعذابه ونعيمه ورضاه من غضبه، هذا لو لم يأت الأنبياء لا يهتدي إليه أحد، لا يمكن أن العقل يدرك شريعة بلا نبي، فلهذا لولم يأت الأنبياء والرسل ما يمكننا أن نعبد اللّٰه تبارك وتعالى، وإن كان يمكننا أن نعرف وجود اللّٰه تبارك وتعالى فأرسل الرسل قطعا لحجة أي محتج بالجهل، الآن إذا وقع إنسان في كفر أو ضلالة ووقف بين يدي اللّٰه تبارك وتعالى إن ادعى جهلا قال اللّٰه أرسلت الرسل، وبعد الرسل بقي العلماء والعلماء ورثة الأنبياء 1، فقطع بذلك عذرهم.</p>
+<p>( لَكِن اللَّهُ يَشْهَدُه) نزل لما سئل اليهود عن نبوته صلى اللّٰه عليه وسلم فأنكروه، جاء الكفار للرسول صلى اللّٰه عليه وسلم قالوا: من يشهد لك على نبوتك وعلماء الكتابين</p>
+<p class="footnote">1 - عن أبي الدرداء قال سمعت رسول اللّٰه صلى اللّٰه عليه وسلم يقول: (من سلك طريقا يبتغي فيه علما سلك اللّٰه به طريقا إلى الجنة، وإن الملائكة لتضع أجنحتها رضاء لطالب العلم، وإن العالم ليستغفر له من في السماوات ومن في الأرض حتى الحيتان في الماء، وفضل العالم على العابد كفضل القمر على سائر الكواكب، إن العلماء ورثة الأنبياء، إن الأنبياء لم يورثوا دينارا ولا درهما إنما ورثوا العلم، فمن أخذ به أخذ بحظ وأفر) سنن الترمذي: كتاب العلم/ باب ما جاء في فضل الفقه على العبادة</p>
+<p>(2606)، وفي سنن أبي داود: كتاب العلم/ باب الحث على طلب العلم (3157).</p>
+<p>22</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>كلهم أنكروا نبوتك أين الشاهد؟ قال الله: &quot;لَكِرِ اللَّهُ يَشْهَدْ&quot; إن أبوا أن يؤدوا الشهادة فالله يبين نبوتك (بِمَآ أَنزَلَ إِلَيْكَ) من القرآن المعجز (أَنْزَلَهُو بِعِلْمِهِ،) عالما به، اللّٰه تبارك وتعالى كل نبي بعثه يقرن بعثته بإعطاء معجزة، تلك المعجزة تقوم مقام أن اللّٰه قام وشهد لهذا النبي بالصدق، ومحمد صلى اللّٰه عليه وسلم أعطي من المعجزات ما لم يعط نبي قبله، تلك المعجزات هي شهادة اللّٰه للرسول صلى اللّٰه عليه وسلم، فلهذا لا يتأتى من عاقل أن يكفر بمحمد ويؤمن بنبي لأن الأنبياء كلهم حجتهم إنما هي المعجزات وهو أتى بالمعجزات، فكيف يكفر بمحمد من أراد أن يصدق بنبي غيره؟ وإذا اعتقد إنسان أن محمدا ليس بنبي علم كل من شاهد الرسول صلى اللّٰه عليه وسلم وتأثيره في العالم أنه أفضل من الأنبياء، (وَالْمَلْبِكَةُ يَشْهَدُونَ)) لك، كل الملائكة يشهدون أن لا إله إلا اللّه وأن محمدا رسول الله ( وَكَهِىٰ بِاللهِ شَهِيداً) 1 أنت غني عن شهادة الملائكة لأن اللّه كافيك وحسبك &quot;شَهِدَ أْللَّهُ أَنَّهُو لَا إِلَهَ إِلَّ هُوَ وَالْمَلِّبِكَةُ وَأَوْلُواْ الْعِلْمِ&quot; &quot;امَرَ اْلرَّسُولُ بِمَا أَنْزِلَ إِلَيْهِ صِ رَبِّهِ وَالْمُومِنُونَ&quot; أول من شهد بوحدانية اللّٰه هو اللّٰه تبارك وتعالى، وأول من آمن بالرسول هو الرسول صلى اللّٰه عليه وسلم وأولوا العلم بعده. سئل رسول اللّٰه صلى اللّٰه عليه وسلم عن أفضل الأعمال، قال: العلم، قالوا: نسأل عن العمل وتجيب عن العلم؟ قال: إن العلم ينفع معه قليل العمل، والجهل لا ينفع معه كثير العمل 2.</p>
+<p class="footnote">1 - جاء في تفسير ابن كثير عن ابن عباس قال: دخل على رسول اللّٰه صلى اللّٰه عليه وسلم جماعة من اليهود فقال لهم: إني لأعلم والله أنكم لتعلمون أني رسول الله، فقالوا ما نعلم ذلك فأنزل اللّٰه عز وجل &quot;لَكِرِ اللَّهُ يَشْهَدْ بِمَآ أَنزَلَ إِلَيْكَ أَنزَلَهُو بِعِلْمِهِ &quot; الآية. ج590/1.</p>
+<p class="footnote">2 - (أفضل الأعمال العلم بالله، إن العلم ينفعك معه قليل العمل وكثيره، وإن الجهل لا ينفعك معه قليل العمل ولا كثيره). الجامع الصغير ج1/ رقم الحديث 1240.</p>
+<p>23</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>(إِنَّ ألذين كبرواك بالله وَصَدُّوا) الناس وعَى سَبِيلِ اللَّهِ دين الإسلام بكتمهم نعت محمد صلى الله عليه وسلم وهم اليهود فَد ضَلُّواْ ضَلَلًا بَعِيداً) عن الحق للَّ ألذِين كقَروا بالله { وَظَلَمُوا نبيه بكتمان نعته ؤلَمْ يَكْرِ اِللَّهُ لِيَغْمِرَ لَهُمْ وَلَا لِيَهْدِيَهُمْ طَرِبِا</p>
+<p>من الطرق (الا طرِيق جَهَنَّمَ الطريق المؤدي إليها وخَلِدِينَ) مقدرين الخلود بِيهَا )) إذا دخلوها (أَبَداً وَكَاتَ ذَلِكَ عَلَى اللَّهِ يَسِيرًا هينا (يَأَيُّهَا النَّاس) أهل مكة {فَدْ جَآءَكُمْ الرَّسُولُ محمد صلى اللّٰه عليه وسلم {بِالْحَقِ مِ رَبِّكُمْ قًامِنُوا به واقصدوا (خَيْرِا لَكُنّه آمنوا بالرسول واقصدوا خيرا، أو آمنوا بالرسول يكن خيرا لكم مما أنتم فيه هوال تكْفُرُ أ به (جَإِنَّ لِلِهِ مَا مِ السَّمَوَاتِ وَالأَرْضِ) ملكا وخلقا وعبيدا فلا يضره كفركم</p>
+<p>(وَكَانَ اللّه عَلِيما بخلقه حكيماً في صنعه ( يَأَهْلَ الْكِتَبِ) أهل الإنجيل (وَ)</p>
+<p>تَعْلُوا لا تتجاوزوا الحد ( دِينِكُمْ) لا ترتكبوا غلوا في دينكم وَلا تَفُولُواْ عَلَى اللّهِ إلا ألْحَقَّ إلا القول الحق من تنزيهه عن الشريك والولد (إِنَّمَا الْمَسِيحُ عِيسَى أَبْنُ مَرْيَمَ رَسُولُ اللَّهِ وَكَلِمَتْهُ  أَلْفِيهَا أوصلها (إِلَى مَرْيَمَ وَرُوحٌ) ذو روح مِنْهُ من اللّٰه تبارك وتعالى.</p>
+<p>عيسى عليه الصلاة والسلام ابنٌ لمريم حملته ووضعته كسائر النساء وأرضعته، رسول الله أرسله اللّٰه رسولا كسائر الأنبياء والرسل، وكلمة اللّٰه لأنه صدر من كلمة فقط بلا أب، وروح ذو روح منه، هذه إضافة تشريف ليس كما زعموا أنه (الما كان روحا من اللّٰه اقتضى ذلك أن يكون جزء من اللّه فهو ابنه ›». كان عند الرشيد غلام نصراني كان طبيبا له وبارعا في العلم والصناعة فأحبه الرشيد كثيرا ودعاه إلى الإسلام وامتنع، وكلما دعاه إلى الإسلام امتنع، ويوما من الأيام قال له الرشيد: ألا إني أود أنك تكون مسلما فلو كنت مسلما لفعلت لك كذا وكذا وكذا، قال له: تمنعني من الإسلام آية في كتابكم تؤيد ما ذهبت إليه، قال له الرشيد وما هي؟ قال: «إِنَّمَا لمَسِيحُ عِيسَى إَيْنَ مَرْيَمَ رَسُولُ ألَّهِ وَكَلَ أَيْهَا</p>
+<p>24</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>إِلَىٰ مَرْيَمَ وَرُوحٌ مِنْهُ» &lt; القرآن يقول إن عيسى روح من الله، وهذا يقتضي أنه جزء من اللّٰه ولا يصح ذلك إلا إذا كان ولدا له&gt;، فتحير الرشيد وجمع العلماء فسألهم، قالوا له: قدم هنا حُجَّاج من خراسان وفيهم عالم بتفسير القرآن لا بد أن يكون عنده جواب سؤالك، فأرسلوا إلى الحسين بن علي المروزي فأتى، قال لهم: ما هذه الشبهة التي ألقى علي عدو الله؟ تفكر، قال: سبق في الأزل أن هذا السؤال يقع لي في مجلسك وليس عندي جوابه الآن، ولكن علي أن لا اكل ولا أشرب حتى أؤدي الحق الذي هو الجواب عن هذه الشبهة، افتحوا لي بيتا، ففتحوا له بيتا فأغلق البيت عليه وقرأ القرآن من أوله، صار يتلو القرآن بتدبر حتى وصل إلى سورة الجاثية &quot;وَسَخَّرَ لَكُم مَا فِي السَّمَٰوَاتِ وَمَا فِى الأَرْضِ جَمِيعاً منةً فقال: افتحوا عني افتحوا عني فقد وجدت جوابا ففتحوا فأخبر الغلام وقال له: إن كان &quot;وَرُوحٌ مِنْةٌ&quot; يقتضي أن عيسى جزء من اللّٰه فكل ما في السماوات وما في الأرض جميعا جزء من اللّٰه لأنه قال &quot;وَرُوحٌ مِنْهَ&quot; وقال &quot;وَسَخَّرَ لَكْم مَا فِى السَّمَوَاتِ وَمَا فِيِ ٱلْأَرْضِ جَبِيعاً مِنْةٌ&quot; فأسلم النصراني وفرح الرشيد فرحا عظيما وأجازه بمال كثير 1. هذا الروح هو الذي به ضل النصارى فسماهم اللّٰه الضالين، ضلوا عن معرفة الحق، أما اليهود فقد عرفوا الحق ولم يعملوا به فغضب اللّٰه عليهم، والنصارى ضلوا عن الصراط المستقيم. روح اللّٰه حقيقة هو محمد صلى اللّٰه عليه وسلم من روحه نفخ في آدم، ومن روحه نفخ في عيسى، ومن روحه نفخ في ماء مهين فصار إنسانا، ومن روحه نفخ في جبريل، ومن روحه القرآن هذا الذي نتلوه ويهدينا إلى صراط مستقيم ( جًامِنُواْ بِاللَّهِ وَرُسُلِهِ، وَلا تَفُولُوا الآلهة ( ثَلَئَةُ ٣)</p>
+<p>لا تقولوا إن الآلهة ثلاثة، هم ضلوا بعد عيسى وافترقوا على أربع فرق: فرقة قالوا إن عيسى</p>
+<p class="footnote">1- انظر تفسير روح البيان ج328/2، والقرطبي ج23/6، وحاشية النسفي على الخازن</p>
+<p>.426/1z</p>
+<p>25</p>
+<p>سورة النساء.</p>
+<p>في رياض التفسير</p>
+<p>عبد اللّه ورسوله هم الذين بقوا على دين عيسى، وفرقة ادعوا أن عيسى ولد لله، وفرقة ادعوا أن عيسى هو الله، وفرقة ادعوا أن الآلهة ثلاثة: عيسى وأمه والله. وثالث ثلاثة نهى اللّٰه عنه كما سيأتي &quot;لَفَدْ كَبَرَ الذِيرَ فَالَوّا إِنَّ اللَّهَ ثَالِثُ ثَلَثَةٍ ومن تشبه بقوم فهو منهم، حيث أن ثالث ثلاثة كفر. اللّه تبارك وتعالى ذكر في القرآن &quot;مَا يَكُولُ مِن نَجْوِىٰ ثَلَئَةٍ إِلأَّ هُوَ رَابِعَهُمْ وَلَا خَمْسَةٍ إلاَّ هُوَ سَادِسُهُمْ وَلَا أَدْنِىٰ مِ ذَلِكَ وَلَا أَكْثَرَ إِلاّ هُوَ مَعَهُمُو&quot; ولكن لم يقل هو ثالثهم، ابتداً الكلام &quot;مَا يَكُونُ مِن نَجْوِىٰ ثَلَكَةِ الأَهْوَ رَابِعُهُمْ&quot; حذرا من أن يقول هو ثالثه، واثنين كل اثنين الله ثالثهم ولكن لما كان ثالث ثلاثة عقيدة كفر تجنب القرآن هذه العبارة فقال: &quot;مَا يَكُونٌ مِن نَجْوِىٰ ثَلّئَةِ الأَ هُوَ رَابِعُهُمْ وَلا خَمْسَةٍ إِلاّ هُوَ سَادِسُهُمْ وَلَاَ أَدْنِيى مِ ذَلِكَ وَلَا أَكْثَرَ إِلَّ هُوَ مَعَهُمْ &quot; لهذا الإنسان يفر من التشبه بهم، (من تشبه بقوم فهو منهم)!</p>
+<p>( إنتَهُوا ) عن ذلك وآتوا خَيْراً لَكْم منه وهو التوحيد، اتركوا هذه العقيدة واتوا بالتوحيد، في التوراة عبارات هي التي</p>
+<p>أضلت النصارى وعقولهم قاصرة. القرآن فيه آيات</p>
+<p>محكمات ومتشابهات ولكن هذه الأمة عقولهم وافرة، إدراكهم تام، شرف اللّٰه محمدا تشريفا أعظم من تشريف عيسى كلهم نشأ ضعيفا عاداه قومه وحاربوه وبقي عيسى ضعيفا حتى تغلب عليه أعداؤه وادعوا أنّهم قتلوه وصلبوه، ومحمد نشأ ضعيفا فنصره اللّٰه حتى غلب الجماهير وانتصر عليهم فصاروا كلهم عيالا له، لو كان عقول هذه الأمة كعقول النصارى لضللنا بمحمد وجعلناه غير عبد، فوق العباد، ولكن كلنا يعلم أنه مع كرامته وشرفه ورفعة قدره فهو عبد لله فقط، وهؤلاء ضلوا فجعلوا نبيهم إلها أو ابنا لله والأب في عبارة الإنجيل السيد، كلما جاءت كلمة الأب في الإنجيل فتعني السيد، جعلوه على ظاهره فقط. وفي</p>
+<p class="footnote">1 - عن ابن عمر قال قال رسول اللّٰه صلى اللّٰه عليه وسلم (من تشبه بقوم فهو منهم) سنن أبي داود:</p>
+<p>كتاب اللباس/ باب في لبس الشهرة (3512).</p>
+<p>26</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>التوراة جاء اللّٰه إلى الزيتون وسار إلى طور سيناء وسكن فاران بعد ذلك، الزيتون الجبل الذي كان يعيش عليه عيسى في زمانه، فهو خليفة اللّٰه فقال إن اللّٰه جاء الزيتون وهو يعني خليفة اللّٰه الذي هو عيسى، ثم سار إلى طور، جاء من طور سيناء، طور سيناء كان فيه موسى خليفة لله فانتقلت الخلافة إلى الزيتون الذي هو عيسى ثم انتقل إلى فاران وسكنها، فاران اسم مكة1، هذا يشير إلى ثلاثة خلفاء عن اللّه تبارك وتعالى: موسى وعيسى ومحمد.</p>
+<p>وإليه يشير &quot;وَالزَّيْتُولِ وَطُورِ سِينِينَ وَهَٰذَا الْبَلَدِ&quot; كلهم محل واحدٍ من هؤلاء الخلفاء (إِنَّمَا اللَّه إِلَهُ وَاحِدٌ سُبْحَنَهُ وه تنزيها له (أَنْ يَكُولَ لَهُو وَلَدم لا يليق به الولد لَهُ مَا مِى السَّمَٰوَاتِ وَمَا مِ الأَرْضِ) خلقا وملكا والملكية تنافي البنوة (وَكَبِى بِاللَّهِ وَكِيلًا) شهيدا على ذلك. فقدان الولد نقص بالنسبة إلى الإنسان والولد نقص بالنسبة إلى الحق تبارك وتعالى لأن الإنسان يحب أن يكون له ولد يكون عونا له فيما يقوم به من أعمال، ووارثا له بعد موته والله غني بذاته لا يحب عونا، وباق إلى الأبد لا يموت فيورث، ما حاجته في الولد؟ فلهذا احتج عليهم بقوله &quot;سُبْحَنَةٌ و هُوَ أُلْغَنِيُّ هو الغني ما له وللولد؟ نحن نحب الأولاد الفقرنا واحتياجنا، وهو غني ما له وللولد؟ فلهذا فقْدُ الولد نقصٌ في حقنا والولد نقص في</p>
+<p class="footnote">1 - جاء في معجم البلدان: فاران: بعد الألف راء، وآخره نون، كلمة عبرانية معربة: وهي من أسماء مكة ذكرها في التوراة، قيل: هو اسم لجبال مكة، وفي التوراة: جاء اللّٰه من سيناء وأشرق من ساعير واستعلن من فاران، مجيئه من سيناء تكليمه لموسى عليه السلام، وإشراقه من ساعير وهي جبال فلسطين هو إنزاله الإنجيل على عيسى عليه السلام، واستعلانه من جبال فاران إنزاله القرآن على محمد صلى اللّٰه عليه وسلم قالوا: وفاران جبال مكة. معجم البلدان / مادة فاران.</p>
+<p>27</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>حقه وشتُم. (كذبني ابن آدم وشتمني، أما شتمه فقوله اتخذ اللّٰه ولدا) لَىْ يَسْتَنكِنَ)</p>
+<p>يتكبر وبأنف {المسيخ أَن يَكُونَ عَبْدا لِلِ) لما قال نصارى نجران إن النبي صلى الّه على وسلم سب عيسى لأنه قال إنه عبد فقط وعيسى فوق ذلك، قال لهم الرسول صلى اللّٰه عليه وسلم: عيسى لن يستكف أن يكون عبدا له2 (وَلاَ ٱلْمَلْبِكَةَ اَلْمُقَرَبونَ) حن الملائكة عند اللّه لم يستنكفوا أن يكونوا عبيدا لله. صحيح أن عيسى روح تلابس بالجسم وغلبت روحانيته على جسمانيته، ولكن لما كان الملائكة الذين هم روحانيون صرفا ما لابسوا جسما لم يستنكفوا أن يكونوا عبيدا فمن باب أولى عيسى الذي له على كل حال جسم كأجسام البشر (وَمَنْ يَسْتَنكِفْ عَنْ عِبَادَتِهِ، وَيَسْتَكْبِرْ فَسَيَحْشُرُهُمُوَ إِلَيْهِ جَمِيعَاً) من تكبر أن يكون عبدا الله سيأتي يوم القيامة عبدا (قَأَمَّا ألذِيرَ ءَامَنُواْ وَعَمِلُواْ الصَّلِحَنِ قَيُوَقِّيهِمُ وَ أُجُورَهُمْ} ثواب أعمالهم ({وَيَزِيدُهُم مِ قَضْلِهِ،) ما لا عين رأت ولا أذن سمعت ولا خطر على قلب بشر، اقرأوا إن شئتم &quot;بَلا تَعْلَمْ نَمْسٌ مَا أُخْصِىَ لَهُم مِ فُرَّةِ أَعْيِ جَزَآءٍ الْ</p>
+<p class="footnote">1 - عن أبي هريرة رضي اللّٰه عنه عن النبي صلى اللّٰه عليه وسلم قال: قال اللّٰه كذبني ابن آدم ولم يكن له ذلك وشتمني ولم يكن له ذلك فأما تكذيبه إياي فقوله لن يعيدني كما بدأني وليس أول الخلق بأهون علي من إعادته وأما شتمه إياي فقوله اتخذ الله ولدا وأنا الأحد الصمد لم ألد ولم أولد ولم يكن لي كفؤا أحد) صحيح البخاري: كتاب تفسير القرآن/ باب يقال لا ينون أحد أي واحد (4974)</p>
+<p class="footnote">2 - حاشية الصاوي على الجلالين ج261/1.</p>
+<p class="footnote">3 - عن أبي هريرة رضي اللّه عنه قال قال رسول اللّٰه صلى اللّٰه عليه وسلم: قال اللّٰه أعددت لعبادي الصالحين ما لا عين رأت ولا أذن سمعت ولا خطر على قلب بشر فاقرءوا إن شئتم &quot;وَلَاَ تَعْلَمْ نَجْسَ ما أُخْصِىَ لَهُم صِ فُرَّةِ أَعْيِنِ&quot;. متفق عليه، صحيح البخاري: كتاب بدء الخلق/ باب ما جاء في صفة الجنة وأنها مخلوقة (3244)، صحيح مسلم: كتاب الجنة وصفة نعيمها وأهلها/ (5050).</p>
+<p>28</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>(وَأَمَّا ألذِينَ إسْتَنكَمُواْ وَاسْتَكْبَرُوا) عن عبادته (بَيُعَذِّبُهُمْ عَذَاباً آلِيما) مؤلما هو عذاب النار (وَلا يَجِدُولَ لَهُم مِ دُولِ اللَّهِ غيره وَلِيّا يدفعه عنهم (وَلا نَصِير ا يمنعهم منه (يَأيَّهَا التَّاس أمة محمد (قَدْ جَاءَكُم بُرْهَل) حجة (صِ رَبِّكُمْ) عليكم وهو محمد صلى اللّٰه عليه وسلم، كل رسول يأتي معه برهان، ونحن جاءنا رسول هو نفسه برهان من ربنا تبارك وتعالى، حيث كان موسى برهانه في عصاه &quot;فَأَلْفِى عَصَاهُ وَإِذَا هِىَ ثُعْبَالٌ مُبِينٌ&quot;</p>
+<p>وعيسى نزلت مائدة من السماء، وصالح أخرج ناقة من الجبل، كلهم له برهان في غير ذاته، فالرسول صلى اللّٰه عليه وسلم هو نفسه برهان من اللّٰه تبارك وتعالى، وكل جزء من أجزائه برهان من اللّٰه تبارك وتعالى، فبرهان عينيه كان يقول: (أقيموا الصفوف فإني أراكم من ورائي كما أنظركم أمامي)1، وبرهان بصره: &quot;مَا زَاغَ الْبَصَرْ وَمَا طَغِىٌ&quot; وبرهان أنفه قال: (إني أجد نفَس الرحمن قبل اليمن) 2 أي شم رائحة اللّٰه تبارك وتعالى قبل اليمن، فبعد وفاته في خلافة عمر خرج أويس القرني 3 خليفة اللّه في اليمن هو الذي كان يشم الرسول صلى اللّٰه عليه</p>
+<p class="footnote">1 - عن أنس بن مالك رضي اللّٰه عنه أنه سمع النبي صلى اللّٰه عليه وسلم يقول (أتموا الركوع والسجود فوالذي نفسي بيده إني لأراكم من بعد ظهري إذا ما ركعتم وإذا ما سجدتم) متفق عليه، صحيح البخاري: كتاب الأيمان والنذور / باب كيف كانت يمين النبي (6644)، وفي صحيح مسلم: كتاب الصلاة/ باب الأمر بتحسين الصلاة وإتمامها والخشوع فيها (645).</p>
+<p class="footnote">2 - عن أبي هريرة قال: قال النبي صلى اللّٰه عليه وسلم (ألا إن الإيمان يمان والحكمة يمانية وأجد نفس ربكم من قبل اليمن) مسند أحمد: من مسند المكثرين/ (10555).</p>
+<p class="footnote">3 - جاء في صحيح مسلم: عن أسير بن جابر قال كان عمر بن الخطاب إذا أتى عليه أمداد أهل اليمن سألهم: أفيكم أويس بن عامر؟ حتى أتى على أويس فقال: أنت أويس بن عامر؟ قال نعم، قال: من مراد ثم من قرن؟ قال نعم، قال: فكان بك برص فبرأت منه إلا موضع درهم؟ قال: نعم،</p>
+<p>29</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>وسلم رائحته في حياته، هذا برهان أنفه. وبرهان يديه: &quot;وَمَا رَمَيْتَ إِذْ رَمَيْتَ وَلَكِنَّ ألَه رَمن&quot;، &quot;إِنَّ ألذِسَ يْبَايِعُونَكَ إِنَّمَا يُبَابِعُونَ اللَّةَ يَدُ اللَّهِ قَوْقَ أَيْدِيهِمْ&quot; وبرهان قلبه: &quot;تَاكَذَّبَ ألْمُؤَادُ مَا رَأىَّ&quot; وبرهان صدره: (كان يصلي ولصدره أزيز كأزيز المرجل من خوف اللّه تبارك وتعالى) ! وبرهان لسانه: &quot;وَمَا يَنطِ عَيِ الْهَوِىّ إِنْ هُوَ إِلاَّ وَحْىٌ يُوجئً&quot;، فلما تجمعت هذه الأعضاء كلا صارت نفسه كلا برهانا خرج من الأرض وتجاوز السماوات السبع والعرش والكرسي حتى وصل إلى مقام &quot;دَنَا مَتَدَلّى&quot; فتجاوزه إلى مقام &quot;قَابَ فَوْسَيْيِ&quot; فتجاوزه إلى مقام &quot;اذبى 21 فلهذا قال اللّه تبارك وتعالى &quot;قَدْ جَآءَكُم بَرْهَلٌ صِ رَبِّكُمْ&quot; محمد نفسه برهان وكل جزه من أجزائه برهان حيث أن الأنبياء قبله كلهم له برهان في غيره. &quot;سَرِيهِمْ فَإينًا فِي الابَابِ وَمِحَ أَنْمُسِهِمْ حَتَّىٰ يَتَبَيَّىَ لَهمْ  أَنَّهُ الْحَقّ ( وَأَنزَلْتَآ إِلَيْكُمْ نُوراً مُبِينَا) هو محمد صلى اللّه عليه وسلم سماه نورا، أو القرآن سماه نورا لأنه يبين الحق من الباطل (&quot;جَأَمَّا ألذِينَ عَامَنُوا بِاللهِ وَاعْتَصَمُواْ بِهِ، فَسَيُدْخِلُّهُمْ فِي رَحْمَةٍ مِنْهُ وَفَضْلٍ وَيَهْدِيهِمْ إِلَيْهِ صِرَاطاً مُسْتَفِيما) طريقا</p>
+<p>قال: لك والدة؟ قال نعم، قال: سمعت رسول اللّٰه صلى اللّٰه عليه وسلم يقول (يأتي عليكم أويس بن عامر مع أمداد أهل اليمن من مراد ثم من قرن كان به برص فبرأ منه إلا موضع درهم له والدة هو بها بر لو أقسم على اللّٰه لأبره فإن استطعت أن يستغفر لك فافعل) فاستغفر لي فاستغفر له ... الحديث.</p>
+<p>صحيح مسلم: كتاب فضائل الصحابة/ من فضائل أويس القرني (4613).</p>
+<p class="footnote">1 - عن مطرف عن أبيه قال أتيت النبي صلى اللّه عليه وسلم وهو يصلي ولجوفه أزيز كأزيز المرجل يعني يبكي. سنن النسائي: كتاب السهو/ باب البكاء في الصلاة (1199) وفي رواية أحمد عن مطرف بن عبد اللّٰه عن أبيه (... وفي صدره أزيز) مسند أحمد: مسند المدنيين/ باب حديث مطرف بن عبد اللّٰه (15722)</p>
+<p class="footnote">2 - روح البيان ج121/5.</p>
+<p>30</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>مستقيما هو دين الإسلام (يَسْتَجْتُونَكَم في الكلالة فُلِ اللَّهُ يُفْتِيكُمْ مِى الْكَلَةِ) سألوه</p>
+<p>إي إمروّا إن هَلَكَ امرؤ، مات لَيْسَ لَهُ وَلَدْ ولا والد وهو الكلالة وَلَمْر</p>
+<p>أخْتّ) من أبويه أو أب {قَلَهَا نِصْفُ مَا تَرَكَّ ترث من أخيها النصف (وَهُوَ) الأخ (يَرِثَّهَا إن لَمْ يَكّر لَهَا وَلَتَ فإن كان لها ولد ذكر فلا شيء له أو أنثى فله ما فضل عن نصيبها، ولو كانت الأخت أو الأخ من أمِّ وفرضه السدس كما تقدم أول السورة وقَإن كَانَتَا) الأختان (إثْنَتَيْنِ) فصاعدا لأنّها نزلت في جابر وقد مات عن أخوات 1 (بَلَهْمَا التُّلْقَرِ مِمَّا تَرَكٍّ وَإِن كَانُوا الورثة (إِخْوَةَ رِجَالًا وَنِسَاءَ بَلِلذَّكَرِ مِثْلُ حَظِّ الأَنثَيَيْنِ يُبَيِّنُ أَللَّهُ لَكُمُ ) شرائع دينكم (أَن تَضِلُّوا) أن لا تضلوا وَاللَّهُ بِكُلِّ شَيْءٍ عَلِيمٌ) ومنه الميراث، نزلت في جابر 2 مات ليس له ولد ولا والد. قال سعد بن أبي وقاص يا رسول اللّٰه أنا أترك</p>
+<p class="footnote">1 - قاله جلال الدين السيوطي في تفسير الآية. حاشية الصاوي على الجلالين ج263/1.</p>
+<p class="footnote">2 - جاء في صحيح البخاري عن جابر رضي اللّه عنه قال عادني النبي صلى اللّٰه عليه وسلم وأبو بكر في بني سلمة ماشيين فوجدني النبي صلى اللّٰه عليه وسلم لا أعقل شيئا فدعا بماء فتوضأ منه ثم رش علي فأفقت فقلت ما تأمرني أن أصنع في مالي يا رسول اللّٰه فنزلت &quot;يُوصِيكُمُ اللَّهُ فِيّ أَوْتَدِكُمْ&quot;</p>
+<p>كتاب تفسير القرآن/ باب قوله يوصيكم اللّٰه في أولادكم (4577). وأخرجه مسلم من رواية حجاج بن محمد عن ابن جريج، كتاب الفرائض/ باب ميراث الكلالة (3032). قال في العجاب في بيان الأسباب ج842/2 وقد اختلف الرواة عن ابن المنكدر فالأكثر أبهموا الآية وكشفها ابن جريج وابن عبينة فممن أبهمها سفيان الثوري ولفظه نزلت آية الميراث وكذا قال شعبة وقال مرة آية الفرض، فأما ابن عيينة فقال حتى نزلت يستفتونك الآية.</p>
+<p>وقد روى أبو داود وأحمد من طريق أبي الزبير عن جابر قال: اشتكيت وعندي سبع أخوات، فدخل علي رسول اللّٰه صلى اللّٰه عليه وسلم فنفخ في وجهي فأفقت فقلت يا رسول الله: ألا أوصي لأخواتي بالثلث، قال: أحسِنْ، قلت: الشطر؟ قال: أحسن، ثم خرج وتركني فقال يا جابر لا أراك ميتا من</p>
+<p>31</p>
+<p>سورة النساء</p>
+<p>في رياض التفسير</p>
+<p>أموالا كثيرة وليس عندي ولد أفأتصدق بها؟ قال: لا، قال: أأتصدق بالنصف؟ قال: لا النصف كثير، قال: بالثلث؟ قال: نعم والثلث كثير، لأن تدع ورثتك أغنياء أفضل لك من أن تتركهم عالة يتكففون الناس 1. فنزلت هذه الآية في حق جابر. والله بين أحكام الميراث وتولى قسم التركات بنفسه، فإن اللّٰه لم يوكل رسولا ولا نبيا مقربا في قسم التركات. أوجب</p>
+<p>وجعك هذا وإن اللّٰه قد أنزل فبين الذي لأخواتك فجعل لهن الثلثين، قال فكان جابر يقول: أنزلت هذه الآية فِي &quot; يَسْتَجْتُونَكّ فُلِ اللَّهُ يُفْتِيكُمْ مِي الْكَتَلَةٍ&quot; سنن أبي داود: كتاب الفرائض / باب من كان ليس له ولد وله أخوات (2501)، وفي مسند أحمد: من مسند جابر بن عبد اللّٰه (14468).</p>
+<p>وذكر لقوله &quot;يُوصِيكُمُ اللَّهُ فِي أَوْلَدِكُمْ &quot; سبب نزول آخر غير الذي تقدم في جابر: روى الترمذي واللفظ له وأبو داود وابن ماجه عن جابر بن عبد اللّٰه قال جاءت امرأة سعد بن الربيع بابنتيها من سعد إلى رسول اللّٰه صلى اللّٰه عليه وسلم فقالت يا رسول اللّٰه هاتان ابنتا سعد بن الربيع قتل أبوهما معك يوم أحد شهيدا وإن عمهما أخذ مالهما فلم يدع لهما مالا ولا تنكحان إلا ولهما مال قال يقضي اللّٰه في ذلك فنزلت آية الميراث فبعث رسول اللّٰه صلى اللّٰه عليه وسلم إلى عمهما فقال أعط ابنتي سعد الثلثين وأعط أمهما الثمن وما بقي فهو لك. وعند أبي داود فنزلت سورة النساء &quot;يُوصِيكُمْ اللَّهُ مِحّ أَوْلَدِكُمْ . سنن الترمذي: كتاب الفرائض/ باب ما جاء في ميراث البنات (2018) وقال السيوطي في لباب النقول في أسباب النزول إن الآية نزلت في الأمرين معا.</p>
+<p class="footnote">1- عن سعد بن أبي وقاص رضي اللّٰه عنه قال جاء النبي صلى اللّٰه عليه وسلم يعودني وأنا بمكة وهو يكره أن يموت بالأرض التي هاجر منها قال: يرحم اللّٰه ابن عفراء، قلت: يا رسول اللّٰه أوصي بمالي كله؟ قال: لا قلت: فالشطر؟ قال: لا، قلت: الثلث؟ قال: فالثلث والثلث كثير إنك أن تدع ورثتك أغنياء خير من أن تدعهم عالة يتكففون الناس في أيديهم وإنك مهما أنفقت من نفقة فإنها صدقة حتى اللقمة التي ترفعها إلى في امرأتك وعسى اللّٰه أن يرفعك فينتفع بك ناس ويضر بك آخرون ولم يكن له يومئذ إلا ابنة. صحيح البخاري: كتاب الوصايا/ باب أن يترك ورثته أغنياء خير من أن يتكففوا الناس (2742) صحيح مسلم: كتاب الوصية/ باب الوصية بالثلث (3076).</p>
+<p>32</p>
+<p>في رياض التفسير</p>
+<p>سورة النساء</p>
+<p>علينا الصلاة والصيام والزكاة والحج ووكل الرسول صلى اللّٰه عليه وسلم بتبيين هذه الأشياء لنا، هو الذي بين لنا كيفية الصلاة أنّها خمس صلوات، هذه أربع ركعات، هذه ثلاث ركعات، هذه ركعتان، وبين لنا الزكاة، وبين لنا الصيام، وبين لنا الحج، بل وكله صلى اللّٰه عليه وسلم بتبيين القرآن كله، &quot;لِتُبَيِّرَ لِلنَّاسِ مَا نُزِّلَ إِلَيْهِمْ&quot; هو الذي فصل لنا القرآن كلا.</p>
+<p>أما التركات فتولى اللّٰه تبارك وتعالى تقسيمها، لأن الناس جبلوا على حب الدنيا والحرص على المال، والميراث حيث أنه يعطي أناسا ويحرم أناسا آخرين، فلو تولى الرسول بنفسه هذا لكان في قلوب بعضهم شيء من جانبه صلى اللّٰه عليه وسلم وهو من أبغضه شقي شقاوة لا سعادة بعدها أبدا. فتولى اللّٰه قسم التركات ولم يوكل أحدا، وعِلْم الفرائض وصف بأنه نصف العلم1 وهي نبذة قليلة الإنسان يستكملها في مدة قصيرة. كيف يكون نصف العلم والعلم متكاثر لا نهاية له؟ ذلك أن الإنسان له حالتان فقط حياة أو موت، ما دام حيا فجميع الأحكام تجري عليه، وإذا مات لم يبق له إلا الفرائض، إلا علم الميراث فقط، فلهذا جاء نصف العلم.</p>
+<p>سورة المائدة</p>
+<p>مدنية مائة واثنتان وعشرون آية، آخر سورة نزلت.</p>
+<p>(بِسْمِ اللَّهِ الرَّحْمَنِ الرَّحِيمِ يَأَيِّهَا ألذِينَ ءَامَنُوا أَوْجُوا بِالْعُفُودِ العهود المؤكدة التي بينكم وبين الله، والتي بينكم وبين الناس (أحِلَّتْ لَكْم بَهِيمَةُ أَلانْعَمِ البهائم كلا حلال، الإبل والبقر</p>
+<p class="footnote">1 - عن أبي هريرة قال قال رسول اللّٰه صلى اللّٰه عليه وسلم يا أبا هريرة تعلموا الفرائض وعلموها فإنه نصف العلم وهو ينسى وهو أول شيء ينزع من أمتي) سنن ابن ماجه: كتاب الفرائض / باب الحث على تعليم الفرائض (2710)</p>
+<p>33</p>
+<p>سورة المائدة</p>
+<p>في رياض التفسير</p>
+<p>والعنم اكلا بعد الذبح (إلأَمَا يَقْلِى عَلَيْكُمْ) تحرعه في &quot;حَرّمَتْ عَلَيْكُمْ الْعَيْتَةُ.. &quot; الأَيْ الاستثناء منقطع ويجوز أن يكون متصلل (غَيْرَ مُحِلِّ الصَّيْدِ لا تحللوا الصيد وَانتُمْ خَرَمّك ما دمتم حرما محرمين بالحج أو العمرة (الَّ ألَيَحْكُمُ مَا يَرِيدَ) من التحليل وغوه لا اعتراض عليه. كان النقَّاش رجلا بليغا فصيحا في العربية فدعي يوما فقيل له: تقدر أن تصنع لنا سطرين فقط مثل القرآن؟ قال: سطرين فقط نعم، لأن اللّٰه تحدى بثلاث آيات، أما سطران فأقدر فأغلقوا عليه بيتا ومكث ثلاثة أيام وخرج، قال: لا أقدر ولا أحد يقدر فتحتُ المصحف عندما دخلت البيت فخرج علي أول سورة المائدة «يَأَيُّهَا ألذِيرَ ءَامَنُوا أَوْجُواْ بِالْعُفُودِ أحِلَّتْ لَكْم بَهِيمَةُ الأَنْعَمِ إِلاَّ مَا يُثْلىٰ عَلَيْكُمْ غَيْرَ مُحِلِي ٱلصَّيْدِ وَأَنتُمْ حُرُّ للَّ أللَّهَ يَحْكُمْ مَا يُرِيدٌ» سطران أحل فيهما جميع ما أحل إحلالا مطلقا وحرم جميع ما حرم تحريما مطلقا واستثنى مرتين، وأمر ونَهى ومدح نفسه في سطر واحد 1 « إنَّ اللَّهَ يَحْكُمُ مَا يُرِيدٌ» (يَأَيِّهَا الذِينَ ءَامَنُوا لاَ تُحِلُّواْ شَغِيرَ اللَّهِ جاء رجل يطير منه الشرر جاء إلى الرسول صلى اللّٰه عليه وسلم بالمدينة المنورة فلما أراد أن يدخل قال الرسول صلى اللّٰه عليه وسلم:</p>
+<p>يدخل عليكم رجل لسانه لسان منافق وقلبه قلب شيطان فدخل وادعى أنه يريد الإسلام فلقنه الشهادتين وخرج فوجد إبل الصحابة خارج المدينة فسرقها كلا وساقها وفر إلى أهله، ففتشوا فما وجدوا له خبرا، وفي العام القابل خرج الصحابة إلى الحج، فلما دخلوا الحرم رأوه يسوق القلائد، قالوا هذا فلان سائق إبلنا لابد أن نقتله وهم في الحرم، فنزلت 2 وتَّهَا ألذِيَ ءَامَنُواْ لا تُحِلُّواْ شَغِيِرَ أللَّهِ) أي معالم دينه بالصيد أو التعرض للظالم في الحرم وَلا الشَّهْرَ الْحَرَامَ) بالقتال فيه (وَلَاَ ألْهَدْىَ) أحد ساق هديه (وَلَا الْفَلِّبِدَ) وقلدهم فلا</p>
+<p class="footnote">1 - ذكره القرطبي في تفسيره الجامع لأحكام القرآن ج31/6.</p>
+<p class="footnote">2 - تفسير القاسمي ج1796 /6، القرطبي ج43/6.</p>
+<p>34</p>
+<p>في رياض التفسير</p>
+<p>سورة المائدة</p>
+<p>تتعرضوا له وَلا تحلوا آمِسَ أَلْبَيْتَ الْحَرَامَ القاصدين البيت الحرام للحج لا تقاتلوهم</p>
+<p>( يَبْتَغُولَ قَصْلًا رزقا صِ رَبِّهِمْ بالتجارة وَرِضْوَانام منه بقصده بزعمهم الفاس (وَإذَا</p>
+<p>حَلَلْتُمْ) من الإحرام (بَاصْطَادُوا ) أمر إباحة (وَلَا يَجْرِمَنَّكُمْ) يكسبنكم ( شَتَقَانْ فَوْمِ)</p>
+<p>أي بغض قوم وآن صَدُّوكُمْ عَرِ اِلْمَسْجِدِ اِلْحَرَامِ أَن تَعْتَدْواْ) حتى كفار قريش الذين منعوكم عن البيت الحرام لا تعتدوا عليهم بالقتل فيه ولاسيما غيرهم ( وَتَعَاوَنُواْ عَلَى ألْبِرِّ فعل ما أمرتم به وَالتَّفْوِى) بترك ما هُيتم عنه وَلا تَعَاوَنُوا فيه ( عَلَى الاثْمِ) المعاصي (وَالْعَدْوَانِ) التعدي في حدود اللّٰه (وَاتَّفُوا اللَّهُ) خافوا عقابه بأن تطيعوه (إِنَّ اللَّهَ شَدِيدٌ الْعِفَابِ) لمن خالفه حَرِّمَتْ عَلَيْكُمْ الْمَيْتَةُ) المحرمات من الطعام هذه: أكل الميتة حرام، ما مات بنفسه وَالدَّمْ) المسفوح، الدم الذي يخرج حالة الذبح ( وَلَحْمُ الْخِنزِيرِ) حرام، ذبح أو لم يذبح {وَمَآ أهِلَّ لِغَيْرِ اللَّهِ بِهِ،) بأن ذبح على اسم غيره. الذبح باسم اللّٰه فقط، لا يجزئ باسم غير اللّه حتى ذِكر الرسول محمد عند الذبح حرام (وَالْمُنْخَنِفَةُ) الميتة خنقا، فإذا اختنقت بقرة أو شاة فماتت فهي ميتة والْمَوْفُوذَةُ المقتولة ضربا إذا ضربت بعصا فسقطت ميتة فلا تؤكل ( وَالْمُتَرَدِّيَةُ الساقطة من علو إلى سفل فماتت وَالتَّطِيحَةُ )</p>
+<p>المقتولة بنطح أخرى لها ( وَمَآ أَكَلَ السَّبْعُ) منه (إِلَّ مَا ذَكَّيْتُمْ) أدركتم فيه الروح من هذه الأشياء فذبحتم، هذه الأشياء إذا ماتت أو وصلت إلى حالة لابد أن تموت ذبحت أو لم تذبح فهي ميْتة، وما أدركتم فيه الروح فذبحتموه وتحرك بعد الذبح وسال منه الدم فحلال (وَمَا ذُبِحَ عَلَى التُّصْبِ) على اسم الصنم (وَأَن تَسْتَفْسِمُوا) تطلبوا القسمة والحكم ( بِالازْلَمْ) الأقداح التي كان الكفار يأخذون منها علم الغيب. كان لهم سبعة أقداح عند سادن الكعبة واحد: أمرني ربي، وواحد: نهاني ربي، واحد: منكم، واحد: من غيركم،</p>
+<p>35</p>
+<p>سورة المائدة</p>
+<p>في رياض التفسير</p>
+<p>واحد: عقل أو دية، واحد: مهمل 1. إذا أراد إنسان أن يفعل أي نأمر يأتي إلى الصنم ويأتي سادن الكعبة بشيء من الماء فيحرك الأقداح ويضع، إذا ظهر له القدح الذي مكتوب عليه &quot;أمرني ربي&quot; خرج إلى ما يريد وقال إن الصنم أمره بذلك، وجهد الإذن من ربة، وإذا خرج &quot;&#x27;نَهاني ربي&quot; ترك وقال نهاه ربه، وإذا اختلفوا في نسب ولد ولد وتنازعوا في أبيه جاءوا إلى القدح، إن خرج &quot;منكم&quot; ألحقوه بالنسب، وإن خرج &quot;من غيالكم&quot; نفوه، وإذا قتل قتيل إن خرج &quot;عقل&quot; أوجبوا فيه الدية، وإن خرج &quot;مهمل&quot; أهملوه أن لا دية فيه، هذه هي الأزام التي كانوا يستقسمون يِها قبل الإسلام. ودخل فيه كل تطلع للغيب على طريق غير شرعي، دخل فيه من يأتي العراف والكهنة والاستخارات النومية والجداول كل هذا داخل في هذا القسم. أما الاستخارة النبوية أن تصلي ركعتين لله وتدعو أن يختار اللّٰه لك ما هو خير لك فما وقع بعد ذلك فهو خير 2، ذلك هو الموافق للشرع. أما التطلع إلى الغيب فذلك مخالف للشرع ( ذَلِكُمْ مِسْوُ) خروج عن الطاعة. ونزل بعرفة عام حجة الوداع وٱلْيَوْمَ يَئِسَ أَلذِينَ كَبَرْواْ صِ دِينِكُمْ ) الرسول صلى اللّٰه عليه وسلم لما هاجر إلى المدينة وجاء العام التاسع</p>
+<p class="footnote">1 - حاشية الصاوي على تفسير الجلالين ج149/2.</p>
+<p class="footnote">2 - عن جابر رضي اللّه عنه قال كان النبي صلى اللّٰه عليه وسلم يعلمنا الاستخارة في الأمور كلها كالسورة من القرآن إذا هم بالأمر فليركع ركعتين ثم يقول اللهم إني أستخيرك بعلمك وأستقدرك بقدرتك وأسألك من فضلك العظيم فإنك تقدر ولا أقدر وتعلم ولا أعلم وأنت علام الغيوب اللهم إن كنت تعلم أن هذا الأمر خير لي في ديني ومعاشي وعاقبة أمري أو قال في عاجل أمري وأجله فاقدره لي وإن كنت تعلم أن هذا الأمر شر لي في ديني ومعاشي وعاقبة أمري أو قال في عاجل أمري وآجله فاصرفه عني واصرفني عنه واقدر لي الخير حيث كان ثم رضني به ويسمي حاجته. صحيح البخاري: كتاب الدعوات/ باب الدعاء عند الاستخارة (6382).</p>
+<p>36</p>
+<p>في رياض التفسير</p>
+<p>سورة المائده</p>
+<p>أمَّر أبا بكر على الحجاج وهو ما حج بنفسه صلى اللّٰه عليه وسلم، فلما خرج أبو بكر أردفه بعلي يركب ناقة رسول اللّٰه صلى اللّٰه عليه وسلم، فلما جاء قال له أبو بكر: أنا مبعوث وأنت أمير أم لا؟ قال: لا، أنت أمير وأنا مبعوث معك بآيات براءة ثلاثين آية من أول سورة التوبة1، نقض فيها القرآن العهود التي كانت بين المسلمين والكافرين في بداية الإسلام، وحرم أن يطوف مشرك بالبيت بعد ذلك العام، منعوا من الحج، كان العرب مع كفرهم يحجون كل عام وفي ذلك العام منعوا أن يحج البيت مشرك بعد العام، وفي العام العاشر خرج صلى اللّٰه عليه وسلم بنفسه وحج حجة الوداع، لما أحرم من ذي الحليفة أحرم معه سبعون ألف نفر 2. لما قال لبيك اللهم لبيك وقاله الجماعة، وصلت أصوات الحجيج إلى السماء، ولما دخلوا مكة ورأى المسلمون جمع الحجاج نزلت هذه الآية وٱلْيَوْمَ يَبِسَ ألذِيَ كَبَرُواْ مِ دِينِكُمْ الكفار ما يئسوا من ردة المسلمين إلا يوم حجة الوداع لما رأوا من قوته صلى اللّٰه عليه وسلم ( لا تَخْشَوْهُمْ وَاخْشَوْبِ) لا تخشوا الكفار، لا تخافوا إلا اللّٰه تبارك وتعالى، فلما وقف بعرفات نزلت ( ٱلْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ) أحكامه وفرائضه لم ينزل بعد هذه الآية فريضة لا حلال ولا حرام 3 (وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِه) بإكماله وقيل بدخول مكة (وَرَضِيتُ اخترت (لَكُم الاسْلَمَ دِينا قال يهودي لعمر بن الخطاب رضي اللّٰه عنه: آية في كتابكم لو علينا معشرَ اليهود نزلت لا تخذنا يوم نزولها عيدا، قال عمر: وأية آية؟ قال: «ٱلْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِهِ وَرَضِيتُ لَكُمُ الاسْلَمَ دِينَا) قال عمر: عرفنا يوم نزولها والنبي صلى اللّٰه عليه وسلم واقف بعرفات يوم</p>
+<p class="footnote">1 - راجع تفسير القرطبي (الجامع لأحكام القرآن) 67/8.</p>
+<p class="footnote">2 - ذكره في نور الأبصار ص 45 ضمن أقوال.</p>
+<p class="footnote">3 - نقله ابن كثير في تفسيره عن السدي. ج13/2.</p>
+<p>37</p>
+<p>سورة المائدة</p>
+<p>في رياض التفسير</p>
+<p>الجمعة ا، أجابه عمر بأن المسلمين اتخذوا يوم نزولها عيدين: يوم الجمعة يوم عيد وعرفة يوم عيد. وفي ذلك اليوم اجتمعت أعياد الملل كلا، يوم الجمعة ويوم عرفة ويوم عيد النصاري ويوم عيد اليهود ويوم عيد المجوس كلهم وافقوا ذلك اليوم، وما توافقت أعياد الملل في يوم واحد قبله ولا بعده. لما نزلت هذه الآية بكى عمر بن الخطاب رضي اللّه عنه، قال له رسول اللّٰه صلى اللّٰه عليه وسلم: ولِم؟ قال لأننا كنا في زيادة دائما واليوم لما أكمل لنا ديننا علمنا أن الزيادة انتهت، وشيء لا يزداد لابد أن ينتقص 2، فكان عمر أفهم الصحابة، فكانت هذه الآية تنبئ بقرب وفاة الرسول صلى اللّٰه عليه وسلم، بعد اثنين أو ثلاثة وثمانين يوما توفي صلى اللّٰه عليه وسلم. «اليوم أكملت لكم دينكم وأتممت عليكم نعمتي ورضين لكم الإسلام دينا» فقال النبي صلى اللّٰه عليه وسلم وهو واقف بعرفات إن عبدا خيره الّه فيما عنده وفي البقاء في الدنيا أي مدة شاء فاختار ما عند اللّه 3. فبكى أبو بكر فقال</p>
+<p class="footnote">1 - عن طارق بن شهاب عن عمر بن الخطاب أن رجلا من اليهود قال له: يا أمير المؤمنين آية في كتابكم تقرأونها لو علينا معشر اليهود نزلت لاتخذنا ذلك اليوم عيدا. قال: أي آية؟ قال: &quot;لِلْيَوْمَ أَكْتَلْتُ لَكُمْ دِينَكُمْ وَأَثْمَمْتُ عَلَيْكُمْ نِعْمَتِه وَرَضِيتُ لَكْمُ الْإِسْلَمَ دِينًا قال عمر: قد عرفنا ذلك اليوم والمكان الذي نزلت فيه على النبي صلى اللّٰه عليه وسلم وهو قائم بعرفة يوم جمعة. متفق عليه، صحيح البخاري: كتاب الإيمان/ باب زيادة الإيمان ونقصانه (45)، وفي صحيح مسلم: كتاب</p>
+<p>التفسير / (5334).</p>
+<p class="footnote">2- ابن كثير ج14/2. القرطبي ج61/6.</p>
+<p class="footnote">3- عن أبي سعيد الخدري رضي اللّه عنه أن رسول اللّه صلى اللّٰه عليه وسلم جلس على المنبر فقال (إن عبدا خيره اللّه بين أن يؤتيه من زهرة الدنيا ما شاء وبين ما عنده فاختار ما عنده) فبكى أبو بكر وقال: فديناك بآبائنا وأمهاتنا، فعجبنا له وقال الناس: انظروا إلى هذا الشيخ يخبر رسول اللّٰه صلى اله عليه وسلم عن عبد خيره اللّه بين أن يؤتيه من زهرة الدنيا وبين ما عنده وهو يقول فديناك بأبائا</p>
+<p>38</p>
+<p>في رياض التفسير</p>
+<p>سورة المائدة</p>
+<p>الناس انظروا هذا الشيخ يذكر الرسول صلى اللّٰه عليه وسلم عبدا خيره اللّٰه فاختار شيئا عنده، ما لأبي بكر وللبكاء في هذا؟ وأبو بكر كان يفهم أن العبد المخير هو الرسول صلى اللّٰه عليه وسلم وعلم أنه إن خيره اللّٰه بين ما عنده وبين الدنيا لا يختار الدنيا أبدا، فكان هذا نعيا للرسول صلى اللّٰه عليه وسلم. في وقفته صلى اللّٰه عليه وسلم تلك قال: خذوا عني مناسككم فلعلي لا أحج بعد هذا العام &quot;</p>
+<p>1، فكان كما قال صلى اللّٰه عليه وسلم. وفي ذلك</p>
+<p>الموقف قال: ألا لا ترجعوا بعدي كفارا يضرب بعضكم رقاب بعض، أي يوم هذا، أي بلد هذا، أي شهر هذا؟ سأل حتى ظننا أنه سيغير الاسم، قال: أي بلد هذا أي بلد هذا؟ قالوا: اللّٰه ورسوله أعلم. قال: أليس البلدة؟ قالوا: نعم. قال: أي يوم هذا أي يوم هذا أي يوم هذا؟ أليس يوم العيد؟ قالوا: بلى. قال: أي شهر هذا؟ أليس ذا الحجة؟ قالوا: بلى.</p>
+<p>قال: إن اللّٰه حرم عليكم دماء المسلمين وأعراضهم وأموالهم كحرمة يومكم هذا في شهركم هذا في بلدكم هذا، ألا هل بلغت؟ قالوا: نشهد أنك قد بلغت. قال: اللهم اشهد، اللهم</p>
+<p>وأمهاتنا، فكان رسول اللّه صلى اللّٰه عليه وسلم هو المخير وكان أبو بكر هو أعلمنا به وقال رسول اللّٰه صلى اللّه عليه وسلم: إن من أمنِّ الناس علي في صحبته وماله أبا بكر ولو كنت متخذا خليلا من أمتي لا تخذت أبا بكر إلا خلة الإسلام لا يبقين في المسجد خوخة إلا خوخة أبي بكر. صحيح البخاري: كتاب المناقب/ باب هجرة النبي وأصحابه إلى المدينة (3904)، صحيح مسلم: كتاب فضائل الصحابة/ باب من فضائل أبي بكر الصديق (4390)</p>
+<p class="footnote">1 - عن جابر: رأيت النبي صلى اللّٰه عليه وسلم يرمي على راحلته يوم النحر ويقول ( لتأخذوا مناسككم فإني لا أدري لعلي لا أحج بعد حجتي هذه). صحيح مسلم: كتاب الحج/ باب استحباب رمي جمرة العقبة يوم النحر راكبا (2286).</p>
+<p>39</p>
+<p>سورة المائدة</p>
+<p>في رياض التفسير</p>
+<p>اشهد، ويشير بسبابته إلى السماء ألا هل بلغت؟ يقولون: قد بلغت الرسالة وأديت الأمانة.</p>
+<p>يقول: اللهم اشهدا.</p>
+<p>في تلك الوقفة أخبر الرسول صلى اللّه عليه وسلم بكل ما كان وما سيكون إلى يوم القيامة حتى آخر مولود يولد فتقوم الساعة ذكره الرسول صلى اللّٰه عليه وسلم. كان الصحابة يقولون: كنا إذا تجدد شيء نعرفه من مقالة الرسول صلى اللّٰه عليه وسلم كما تنسى شخصا غاب عنك فإذا حضر عندك تتذكره، كلما جاء شيء نتذكره فقط مما أخبرنا به الرسول صلى اللّٰه عليه وسلم 2 (جَمَنْ أصْطَرّ بِي مَخْمَصَةٍ) مجاعة إلى أكل شيء مما حرم عليه فاكل ( غَيْرَ مُتَجَانِبٍ مائل لاثْمِ معصية وقَإِنَّ اللَّهَ غَقُور) له ما أكل ورَّحِيمَ) به في إباحته (يَسْئَلُونَكَ مَاذَا أُحِلَّ لَهُمْ) من الطعام (فُلْ احِلَّ لَكُمُ الطَّيِّبَاتُ) المستلذات كلا حلال (وَمَا عَلَّمْتُم) وصيد ما علمتم (مِسَ الْجَوَارِجِ) الكواسب من الكلاب والسباع والطير (مُكَّلِّيِنَ) أي مرسلين على الصيد (تَعَلِّمُونَهَّ) أي تؤدبونَهن (مِمَّا عَلَّمَكُمْ أَلَّةُ) من آداب الصيد (بَكُلُواْ مِمَّآ أَمْسَكْرَ عَلَيْكُمْ) وإن قتلنه، يحل أكل الصيد إذا</p>
+<p class="footnote">1 - الحديث متفق عليه في الصحيحين عن أبي بكرة رضي اللّٰه عنه، صحيح البخاري: كتاب الحج باب الخطبة أيام منى (1741)، صحيح مسلم: كتاب القسامة والمحاربين والقصاص والديات/ باب تغليظ تحريم الدماء والأعراض والأموال (3180)</p>
+<p class="footnote">2 - أخرجاه في الصحيحين عن حذيفة قال: قام فينا رسول اللّٰه صلى اللّٰه عليه وسلم مقاما ما ترك شيعا يكون في مقامه ذلك إلى قيام الساعة إلا حدث به حفظه من حفظه ونسيه من نسيه قد علمه أصحابي هؤلاء، وإنه ليكون منه الشيء قد نسيته فأراه فأذكره كما يذكر الرجل وجه الرجل إذا غاب عنه ثم إذا رآه عرفه. صحيح مسلم: كتاب الفتن وأشراط الساعة/ باب إخبار النبي بما يكون إلى قيام الساعة (5147)، وفي صحيح البخاري: كتاب القدر/ باب وكان أمر اللّٰه قدرا مقدورا (6604).</p>
+<p>40</p>
+<p>سورة المائدة</p>
+<p>في رياض التفسير</p>
+<p>كان الكلب معلما ومرسلا باسم اللّٰه وقتل ولم يأكل (وَاذْكْرُواْ إسْمَ اللَّهِ عَلَيْهِ) عند إرساله ( زَاتِّفُوا اللَّهُ إِنَّ أللَّهَ سَرِيعُ الْحِسَابُ الْيَوْمَ أُجِلَّ لَكُمْ الطَّيِّبَاتُ) المستلذات من الأطعمة (وَطَعَامُ ألذِيرَ أُوتُواْ الْكِتَبَ أي ذبائح اليهود والنصارى وجِلٌّ لَكُمْ) حلال. الطعام هنا المقصود منه الذبح فقط لأن ما سوى الذبح في الأطعمة لا إشكال فيه، إذا ذبح يهودي أو نصراني حيوانا فأكل لحمه حلال على كل مسلم (وَطَعَامُكُمْ حِلٌّ لَهُمْ) طعام المسلمين أيضا حل لأهل الكتاب (وَالْمُحْصَنَتُ مِنَ الْمُومِنَٰتِ) الحرائر من المؤمنات ترويجهن حلال (وَالْمُحْصَنَتُ الحرائر (منَ ألذِيسَ أُوتُوا الْكِتَبَ صِ فَبْلِكُمُ ) حرائر اليهود وحرائر النصارى جائز تزويجهن، حل لكم أن تنكحوهن (إِذَا ءَاتَيْتُمُوهَُّ أُجُورَهُنَّ)</p>
+<p>مهورهن (مُحْصِنِيَ غَيْرَ مُسَمِحِينَ) معلنين بالزنا بهن. الزناسمي بالسفاح. السفاح الصب، لأن الناكح له مقصد محمود هو طلب الولد وامتثال أمر اللّٰه تبارك وتعالى، والزاني ليس له مقصد إلا صب المني فقط فلهذا سمي سفاحا ومسافحا. أحل اللّٰه تبارك وتعالى في هذه الآية تزويج المؤمنات على بعضهم لأنّهم على دين صحيح وتزويج اليهود والنصارى لأنّهم أهل كتاب، وإن حرفوا وبدلوا وحادوا عن الصراط فدينهم سماوي. أما المشركات اللاتي لم يتدين بدين سماوي فلا حق لهن في النكاح من المسلمين. تزويج المشركات والمجوس حرام، والفرق بينهم وبين هؤلاء أن أولائك وإن كانوا كفارا فهم على تربية سماوية، وهؤلاء لم يسبق لهم تربية سماوية ولا ينبغي لمسلم أن يتزوج منهم (وَلَا مُتَّخِذِة أَخْدَابٍ) منهن تسرون بالزنا بهن. كان التزويج في الجاهلية على أربعة أوجه: النكاح المتعارف اليوم، أن يأتي الرجل إلى ولي المرأة ويسوق مهرا ويعقد له عليها، وكانت المرأة يأتيها رجل وينكحها ويأتي آخر وينكحها، فإذا ولدت ولدا جمعوا القافة ينظرون إذا قالوا الولد فيه دم فلان ألحقوه بفلان فيكون هو الوالد. وكان العرب يحبون نجابة الأولاد، إذا رأوا أهل بيت أخلاقهم حميدة وهم</p>
+<p>41</p>
+<p>سورة المائدة</p>
+<p>في رياض التفسير</p>
+<p>أبطال وعندهم مكارم الأخلاق يحب أحد أن يجد ولدا كمثلهم يقول لزوجته إذا طهرز تذهبين إلى فلان تكونين معه زوجة له حتى تحملي، إذا حملت ترجعين إلي. فتأتي الزوجة إلى رجل ترضى بأن تبقى معه زوجة له حتى إذا حملت منه رجعت إلى زوجها ليخرج الولد نجيبا وينسبونه إلى الأب. والنساء ذوات الرايات البغايا اللواتي لهن رايات وهن كالدكاكين فقط كالحوانيت، كل رجل يأتيهن. أثبتت الشريعة المحمدية النكاح الأول وهو العقد بواسطة ولي ومهر وشهود، وأبطلت جميع أنواع الأنكحة الأخرى ولكن إذا أسلم رجل ثبت على نكاحه والأولاد الذين نشئوا من الكفر أولاد يلحقون إذا دخلوا في الإسلام فلهذا الشريعة اعتبرت أنكحتهم بعد دخولهم في الإسلام تأنيسا لهم. الكفار ليس فيهم ولد</p>
+<p class="footnote">1 - عن عروة بن الزبير أن عائشة زوج النبي صلى اللّه عليه وسلم أخبرته أن النكاح في الجاهلية كان على أربعة أنحاء فنكاح منها نكاح الناس اليوم يخطب الرجل إلى الرجل وليته أو ابنته فيصدقها ثم ينكحها ونكاح آخر كان الرجل يقول لامرأته إذا طهرت من طمثها أرسلي إلى فلان فاستبضعي منه ويعتزلها زوجها ولا يمسها أبدا حتى يتبين حملها من ذلك الرجل الذي تستبضع منه فإذا تبين حملها أصابها زوجها إذا أحب وإنما يفعل ذلك رغبة في نجابة الولد فكان هذا النكاح نكاح الاستبضاع ونكاح آخر يجتمع الرهط ما دون العشرة فيدخلون على المرأة كلهم يصيبها فإذا حملت ووضعت ومر عليها ليال بعد أن تضع حملها أرسلت إليهم فلم يستطع رجل منهم أن يمتنع حتى يجتمعوا عندها تقول لهم: قد عرفتم الذي كان من أمركم وقد ولدت فهو ابنك يا فلان تسمي من أحبت باسمه فيلحق ب ولدها لا يستطيع أن يمتنع به الرجل، ونكاح الرابع يجتمع الناس الكثير فيدخلون على المرأة لا تمتع ممن جاءها وهن البغايا كن ينصبن على أبوابهن رايات تكون علما فمن أرادهن دخل عليهن فإذا حملت إحداهن ووضعت حملها جمعوا لها ودعوا لهم القافة ثم ألحقوا ولدها بالذي يرون فالتاط به ودعي ابنه لا يمتنع من ذلك، فلما بعث محمد صلى اللّٰه عليه وسلم بالحق هدم نكاح الجاهلية كله إلا نكاح الناس اليوم. صحيح البخاري: كتاب النكاح/ باب من قال لا نكاح إلا بولي (5127).</p>
+<p>42</p>
+<p>في رياض التفسير</p>
+<p>سورة المائدة</p>
+<p>زنى لأنّهم عقودهم وغيرها متساوية إذا دخلوا في الإسلام فكلهم نسبه صحيح. (وَمَنْ بَكْبَرْ بِالإيمَنِ) يرتد (بَقَدْ حَبِطَ عَمَلَهُ و) الصالح قبل ذلك فلا يعتد به ولا يثاب عليه</p>
+<p>و(وَهُوَبِى الآخِرَةِ مِ ألْعَيِرِينَ يَأَيَهَا ألذِّسَ ءَامَتَوْا إِذَا فَتَمَ أرد تم القيام (والَى الصَّلَوَةِ ) وأنتم</p>
+<p>محدثون (بَاغْسِلُوا وُجُوهَكُمْ وَأَيْدِيَكُمُوَ إِلَى الْمَرَابِوِ) الوضوء {وَامْسَحُوا بِرَءُوسِكُمْ وَأَرْجَلَكُمَ) أغسلوا أرجلكم (إِلَى الْكَعْبَيْيِ وَإن كُنتُمْ جُنُباً بَاطَّهَرَوا) فاغتسلوا (وَان عُنتُم مَرْضِىٍّ) مرضا يضره الماء {أَوْ عَلَىٰ سَبَرٍ) مسافرين {آوْ جَآءَ احَدٌ مِنكُم مِنَ الْغَابِطِ) أحدث (أَوْ لَمَسْتُمُ أَلنِّسَاءَ) سبق مثله في آية النساء (لَمْ تَجِدُوا مَاءً بعد طلبه ( تَتَيَمَّموا اقصدوا صَعِيداً طَيِّباً) ترابا طاهرا ( جَامْسَحُواْ بِوُجُوهِكُمْ وَأَيْدِيكُمْ مع المرفقين مِنْة بضربتين مَا يُرِيدُ اللَّهُ لِيَجْعَلَ عَلَيْكُم مِنْ حَرَجٍ) ضيق. إن اللّٰه تبارك وتعالى رخص في التيمم عند فقد الماء أو العجز عن استعماله لأن دين اللّٰه يسر ما فيه حرج (وَلَكِنْ يُرِيدٌ لِيُطَهِرَكُمْ) من الأحداث والذنوب (وَلِيْتِمَّ نِعْمَتَهُ عَلَيْكُمْ) بالإسلام تبيان شرائع الدين (لَعَلَّكُمْ تَشْكْرُونُ نعمه (وَاذْكُرُواْ نِعْمَةَ اللَّهِ عَلَيْكُمْ) بالإسلام (وَمِيثَفَهُ ألذِى وَاتَفَكُم بِهِ) عاهدكم (إِذْ فُلْتُمْ سَمِعْنَا وَأَطَعْنَا وَاتَّفُواْ اللَّةُ إِنَّ اللَّهَ عَلِيمٌ بِذَاتِ الصِّدُورِ بما في القلوب وبغيره أولى. الله تبارك وتعالى فرض على الجنب أن يغتسل، يغسل سائر جسده، وعلى المحدث أن يتوضأ، فالمحدث سواء بال أو تغوط يتوضأ فقط. لِمَ يجب الغسل بخروج المني ولا يجب الغسل بخروج الغائط وهو أنجس بكثير من المني وأقذر؟ لأن شهوة الجماع تستغرق بدن الإنسان فيستعمل جميع قوة بدنه ظاهرا وباطنا، فلهذا يجب عليه غسل سائر جسده، بخلاف الطعام أو الشراب تتناولهما بطرف واحد، الأكل بالفم والشرب كذلك، فلهذا ما وجب هما إلا غسل الأطراف. أو لأن الجماع قليل فأوجب فيه الغسل، والبول والغائط يتكرر كثيرا فاكتفى بغسل الأطراف التي تظهر من الناس كالوجه</p>
+<p>43</p>
+<p>سورة المائدة</p>
+<p>في رياض التفسير</p>
+<p>واليدين والرجلين إلى الكعبين رفعا للحرج، لأنه لو وجب في كل حدث غسل لكان حرجا على المسلمين. [جواب حول التيمم قال &quot; جَتَتَمَوا صَعِيد ا طَيَباً جَامْسَحُواْ يِوَجُوجِكُمْ وَأَنِيضُ مِنْةُ&quot; لأنه ما بين مبلغ المسح، بينت السنة استيعاب العضوين بالمسح فاكتفى الشافعي بمسح الكوعين وقال مالك إنه إلى المرفقين، آما الوضوء فنص بالمرفقين فلهذا وجب إلى</p>
+<p>المرفقين]</p>
+<p>( يَّهَا ألذِينَ ءَامَنُواْ كُونُواْ فَوْمِينَ) قائمين (يهِ) بحقوقه (شُهَدَآءَ بِالْفِسْطُ) بالعدل (وَلا</p>
+<p>يَجْرِمَتَّكُمْ) يحملنّكم (شَنَئَان) بعض (قَوْم عَلَى أَلَ تَعْدِلُواْ إعْدِلُوا) في العدو ولول (هُوَ) العدل (أَفْرَبُ لِلتَّفْوِىُ) لا توجد شريعة تأمر بالعدل مع العدو إلا شريعتنا، شريعتنا أمرتنا بالعدل مع الصديق والعدل مع العدو (وَاتَّفُواْ اللَّةَ إِلَّ اللَّهَ خَبِير بِمَا تَعْلُونَ فيجازيكم (وَعَدَ ٱللَّهُ الذِينَ ءامَنُوا) منكم (وَعَمِلُواْ الصَّلِحَٰتِ) وعدا حسنا (ولَهُم مَغْيِزَّا وَأَجْرٌ عَظِيمٌ) هو الجنة (وَالذِينَ كَبَرْوا وَكَذَّبُواْ بِئَايَتِنَآ أوْلَبِكَ أَصْحَبُ الْجَحِيم) («بَأَّها ألذِيسَ ءَامَنُواْ أذْكُرُواْ نِعْمَتَ اللَّهِ عَلَيْكُمُت» سبب نزول هذه الآية أن الرسول صلى اللّٰه عليه وسلم لما أتى الحديبية همّ قوم من قريش أن يبسطوا إليهم أيديهم ليفتكوا يهم فردهم اله، أو لما أتى لخيبر يطلب أن يعينه المسلمون في دية قتيل فقالوا له: يا أبا القاسم اجلس حتى ناتيك بطعام فذهبوا وصعد يهودي وأخذ رحى من حديد عندهم وأراد أن يسقطها على المصطفى صلى اللّه عليه وسلم ليموت، فأتاه جبريل فأخبره فخرج ورجع إلى المدينة، أو في القضية التي ذكرنا بالأمس في غورث لما نظره بعيدا من أصحابه قال هذا محمد بعيدا من أصحابه قتلني اللّٰه إن لم أقتله فأتاه وأراد أن يقتله بالسيف فرده الله، أو زينب بنت الحرث</p>
+<p>44</p>
+<p>في رياض التفسير</p>
+<p>سورة المائدة</p>
+<p>سمت شاة فأطعمته (يَيَّهَا ألذِيرَ ءامَنُوا اذْكُرُواْ نِعْمَتَ اللَّهِ عَلَيْكُمُ إِذْ هَمَّ فَوْمُ آنْ يَبْسُطَوَاً)</p>
+<p>عدوا (إِلَيْكُمْوَ أَيْدِيَهُمْ) ليفتكوا بكم (بَكَفَّ أَيْدِيَهُمْ عَنكُمْ) وعصمكم مما أرادوا</p>
+<p>(وَاتَّفُوا اللَّهُ وَعَلَى اللَّهِ جَلْيْتَوَكِّلِ الْمُومِنُونَ وَلَفَدَ آخَذَ أْللَّهُ مِيئَقَ بَنِهِ إِسْرَاءِيلَ) بما سيذكر بعد (وَبَعَثْنَا) أقمنا (مِنْهُمْ إثْنَىْ عَشَرَ نَفِيباً) من كل سبط، أسباط بني إسرائيل كانوا ائني عشر، فاختار موسى نقيبا من كل سبط فكانوا اثني عشر هم نقباء موسى (وَقَالَ أَللَّهْ إِنِّ مَعَكَّمْ) بالعون والنصرة (لَبِنَ افَمْتُمُ الصَّلَوْةَ وَءَاتَيْتُمْ الزَّكَوةَ وَءَامَنتُم بِرُسُلِي وَعَزَّرْتُمُوهُمْ)</p>
+<p>نصرتموهم (وَأَفْرَضْتُمْ أُللَّةَ فَرْضاً حَسَنا) بالإنفاق (لَه كَقِّرَىّ عَنكُمْ سَيِّئَاتِكُمْ وَلَأَدْخِلَنَّكُمْ جَنَّتِ تَجْرِى مِ تَحْتِهَا ألاَنْهَرّ جَمَى كَبَرَ بَعْدَ ذَٰلِكَ مِنكُمْ بَفَد ضَلَّ سَوَاءَ السَّبِيلِ) فنقضوا الميثاق. قال تعالى (قَبِمَا نَفْضِهِم مِيثَفَهُمْ لَعَنَّهُمْ) أبعدناهم عن رحمتنا «قَبِمَا نَفْضِهِم » بنقضهم ميثاقهم {وَجَعَلْنَا فُلُوبَهُمْ فَسِيَةً لا تلين لقبول الحق يُحَرِّقونَ الْكَلِمَ) الذي في التوراة من نعت محمد صلى اللّٰه عليه وسلم عَ مَوَاضِعِهِ التي وضعه اللّٰه عليها أي يبدلونه ونَسُوا تركوا حظا نصيبا مِمَّا ذُكِّرُوا) أمروا بِهِ) في التوراة من إتباع</p>
+<p>محمد (وَلا تَزَالُ) يا محمد ( تَطَّلِعُ) تظهر (عَلَى خَآينَةٍ حيانة مِنْهُمْ و بنقض العهد</p>
+<p>(إِلَّ فَلِيلًا مِنْهُمْ) ممن أسلم (جَاعْفُ عَنْهُمْ وَاصْبَحٌ لِنَّ أللَّهَ يُحِبُّ الْمُحْسِنِينَ) وهذا منسوخ بآية السيف (وَمِنَ ألذِينَ فَالَوْ إِنَّا نَصَرِىّ أَخَذْنَا مِيثَافَهُمْ) أيضا كما أخذنا ميثاق بني إسرائيل (جَنَسُواْ حَظَا مِمَّا ذُكِّرُوا بِهِ،) في الإنجيل (بَأَغْرَيْنَا) أوقعنا {بَيْنَهُمُ الْعَدَوَةَ وَالْبَغْضَاءَ إِلَىٰ</p>
+<p class="footnote">1 - قال جلال الدين السيوطي في تفسير الجلالين عند قوله تعالى &quot;إِذْ هَمَّ قَوْمٌ&quot; قال هم قريش، وجاء ذكر باقي الأقوال في التفاسير انظر الطبري عند تفسير الآية وكذلك حاشية الصاوي على الجلالين ج272/1، وفي ابن كثير ج32/2، وفي التسهيل لعلوم التنزيل ج171/1 وفيه قال: &#x27;</p>
+<p>&quot; والرابع أنها على الإطلاق في دفع اللّٰه الكفار عن المسلمين&quot; ومثله عند الصاوي وقد رجحه.</p>
+<p>45</p>
+<p>سورة المالي</p>
+<p>في رياض التفسير</p>
+<p>يَوْمِ الْغِيمَةِ بتفرقهم واختلاف أهوائهم فكل فرقة تكفر الأخرى (وَسَوْقَ يُنَبِّيَّهُمْ ألَّهَ لِ الآخرة يِمَا كَانُواْ يَصْنَعَونَ) فيجازيهم يَأْهُلَ الْكِتَبِ اليهود والنصارى {فَدْ جَاءُهُمْ رَسُونَتَا ) محمد { يُبَيّن لَكْمْ كَثِيراً مِمَّا كَنتُمْ تُخْمُونَ) تكتمون (منَ الْكِتَبِ) الميرة</p>
+<p>والإنجيل (وَبَعْبّوا عَى كَثِير من ذلك {قَدْ جَاءَكْم مِسَ اللَّهِ نُورٌ هو محمد صلى لله عليه وسلم (وَكِتَب قرآن ( مُبِسٌ يَهْدِى بِهِ بالكتاب واللَّهُ مَيِ إتْبَعَ رِضْوَنَهُ ) بال</p>
+<p>آمن لاستل ألسَلَم وَيَخْرِجَهم مِنَ ألظُلَتِ إلى ألثور الإيمان يذي ) بارادته (وتقعية</p>
+<p>الَى صِرَطٍ مُسْتَهِبٌ لَقَدْ كَبَرَ ألِيَ فَلُوْ إِنَّ ٱللَهَ هُوَ ٱلْمَسِيحَ إِبْنَ مَرْيَةَ ) حيث جعلوه إذا وعم</p>
+<p>اليعقوية فرقة من النصارى (فَلْ جَمَنْ يَمْلِكُ أن يدفع (مِلَ) عذاب ( ألَّ يْأل إِن</p>
+<p>أَنْ يُهْلِكَ ٱلْمَسِيحَ آَبْنَ مَرْيَمَ وَأْمَّهُ و وَصَى فِي الأَرْضِ جَمِيعاً )) لا أحد يملك ذلك ولو كاد المسيح إلها لقدر عليه (وَلِلِهِ مُلْكُ السَّمَوَاتِ وَالأَرْضِ وَمَا بَيْنَهُمَا يَخْلُوُ مَا يَشَآءٌ وَللَّهُ عَى كُلِّ شَيْءٍ فَدِيرٌ وَفَالَتِ اِلْيَهُودُ وَالنَّصَرِى نَحْرُ أَبْتُؤّاْ اللَّهِ) كل منهما قالوا نحن أبناء اللّٰه أي كأبنائه في القرب والمنزلة، أبناء اللّٰه لأنّهم قالوا (إنهم أبناء عزير وعزير ابن اللّه، ( وَأَحِّوْ )</p>
+<p>قالوا إنّهم أحباء اللّٰه اعتمادا على أنّهم من ذرية إبراهيم وإبراهيم خليل الله، ادعوا هذا (قل)</p>
+<p>لهم يا محمد قَلِمَ يُعَذِّبُكُم بِذُنُوبِكُمْ) إن صدقتم في ذلك؟ الأب لا يعذب ولده، والحيب لا يعذب حبيبه وقد عذبكم اللّٰه فأنتم كاذبون (بَلَ آَنتُم بَشَرٌ مِمَّنْ خَلَقَ) جنس من في</p>
+<p>آدم فقط لكم ما لهم وعليكم ما عليهم (يَعْمِرُ لِمَنْ يَشَآءُ المغفرة له {وَيَعَّب وَنَاً)</p>
+<p>تعذيه لا اعتراض عليه (وَلِهِ مُلْكَ السَّمَوَاتِ وَالاَرْضِ وَمَا بَيْتَهُمَا وَالَيْهِ الْعَصِيرٌ يَأَهَلَ أَلكِّا</p>
+<p>قَد جَاءَكَمْ رَسَولتا ه محمد يَّنَ لَكَمْ) شرائع الدين (عَلَى ثْرَة) انقطاع وَرَها</p>
+<p>46</p>
+<p>سورة المالي</p>
+<p>في رياض التفسير</p>
+<p>يَوْمِ الْغِيمَةِ بتفرقهم واختلاف أهوائهم فكل فرقة تكفر الأخرى (وَسَوْقَ يُنَبِّيَّهُمْ ألَّهَ لِ الآخرة يِمَا كَانُواْ يَصْنَعَونَ) فيجازيهم يَأْهُلَ الْكِتَبِ اليهود والنصارى {فَدْ جَاءُهُمْ رَسُونَتَا ) محمد { يُبَيّن لَكْمْ كَثِيراً مِمَّا كَنتُمْ تُخْمُونَ) تكتمون (منَ الْكِتَبِ) الميرة</p>
+<p>والإنجيل (وَبَعْبّوا عَى كَثِير من ذلك {قَدْ جَاءَكْم مِسَ اللَّهِ نُورٌ هو محمد صلى لله عليه وسلم (وَكِتَب قرآن ( مُبِسٌ يَهْدِى بِهِ بالكتاب واللَّهُ مَيِ إتْبَعَ رِضْوَنَهُ ) بال</p>
+<p>آمن لاستل ألسَلَم وَيَخْرِجَهم مِنَ ألظُلَتِ إلى ألثور الإيمان يذي ) بارادته (وتقعية</p>
+<p>الَى صِرَطٍ مُسْتَهِبٌ لَقَدْ كَبَرَ ألِيَ فَلُوْ إِنَّ ٱللَهَ هُوَ ٱلْمَسِيحَ إِبْنَ مَرْيَةَ ) حيث جعلوه إذا وعم</p>
+<p>اليعقوية فرقة من النصارى (فَلْ جَمَنْ يَمْلِكُ أن يدفع (مِلَ) عذاب ( ألَّ يْأل إِن</p>
+<p>أَنْ يُهْلِكَ ٱلْمَسِيحَ آَبْنَ مَرْيَمَ وَأْمَّهُ و وَصَى فِي الأَرْضِ جَمِيعاً )) لا أحد يملك ذلك ولو كاد المسيح إلها لقدر عليه (وَلِلِهِ مُلْكُ السَّمَوَاتِ وَالأَرْضِ وَمَا بَيْنَهُمَا يَخْلُوُ مَا يَشَآءٌ وَللَّهُ عَى كُلِّ شَيْءٍ فَدِيرٌ وَفَالَتِ اِلْيَهُودُ وَالنَّصَرِى نَحْرُ أَبْتُؤّاْ اللَّهِ) كل منهما قالوا نحن أبناء اللّٰه أي كأبنائه في القرب والمنزلة، أبناء اللّٰه لأنّهم قالوا (إنهم أبناء عزير وعزير ابن اللّه، ( وَأَحِّوْ )</p>
+<p>قالوا إنّهم أحباء اللّٰه اعتمادا على أنّهم من ذرية إبراهيم وإبراهيم خليل الله، ادعوا هذا (قل)</p>
+<p>لهم يا محمد قَلِمَ يُعَذِّبُكُم بِذُنُوبِكُمْ) إن صدقتم في ذلك؟ الأب لا يعذب ولده، والحيب لا يعذب حبيبه وقد عذبكم اللّٰه فأنتم كاذبون (بَلَ آَنتُم بَشَرٌ مِمَّنْ خَلَقَ) جنس من في</p>
+<p>آدم فقط لكم ما لهم وعليكم ما عليهم (يَعْمِرُ لِمَنْ يَشَآءُ المغفرة له {وَيَعَّب وَنَاً)</p>
+<p>تعذيه لا اعتراض عليه (وَلِهِ مُلْكَ السَّمَوَاتِ وَالاَرْضِ وَمَا بَيْتَهُمَا وَالَيْهِ الْعَصِيرٌ يَأَهَلَ أَلكِّا</p>
+<p>قَد جَاءَكَمْ رَسَولتا ه محمد يَّنَ لَكَمْ) شرائع الدين (عَلَى ثْرَة) انقطاع وَرَها</p>
+<p>46</p>
+<p>في رياض التفسير</p>
+<p>سورة المائدة</p>
+<p>إذ لم يكن بينه وبين عيسى رسول ومدة ذلك خمسمائة وتسع وستون سنة1 (أَن تَفُولُواْ مَا جَاءَنَا مِنْ بَشِيرٍ وَلا نَذِيرِ) لو لم يأت محمد لقلتم ما جاءنا من بشير ولا نذير ( بَفَدْ جَآءَكُم بَيْبَرّ وَتَذِيرٌ وَاللَّهُ عَلَىٰ كُلِّ شَيْءِ قَدِيرَ) الآن محمد أتى وهو بشير ونذير. بين آدم ونوح ألف سنة، وبين نوح وإبراهيم ألف سنة، وبين إبراهيم وموسى ألفا سنة، وبين موسى وعيسى ألف سنة، وبين عيسى ومحمد خمسمائة وتسع وستون عاما أو ستمائة عام 2 وبعثَ الرسول صلى اللّٰه عليه وسلم والآن بعد هجرة الرسول صلى اللّٰه عليه وسلم ألف وثلاثمائة وثلاث وثمانون سنة3. والدنيا سبعة أيام وإن يوما عند ربك كألف سنة مما تعدون، الدنيا سبعة أيام &quot;</p>
+<p>4، سبعة آلاف سنة مضت لا تبلغ ألفا أبدا ولا علم إلا عند اللّٰه تبارك وتعالى (و) اذكر (إِذْ فَالَ مُوسِى لِفَوْمِهِ، يَفَوْمِ إِذْكُرُواْ نِعْمَةَ اللَّهِ عَلَيْكُمُ  إِذْ جَعَلَ جِيكُمُ,)</p>
+<p>منكم (أَنبِيَّاء) جعل اللّه بعض النبيئين من بني إسرائيل (وَجَعَلَكُم مُلُوكا) أصحاب خدم وحشم، الملك كل من عنده زوجة وخادم وخادمة كأنه ملك 5، أو جعل منكم ملوكا</p>
+<p class="footnote">1- ذكره القرطبي عن ابن عباس قال: وكان بين ميلاد عيسى والنبي صلى اللّٰه عليه وسلم خمسمائة سنة وتسع وستون سنة. ج122/6.</p>
+<p class="footnote">2 - هذه التواريخ أقوال مختلفة وردت في كتب التفسير دون ترجيح لبعضها على بعض في الغالب انظرها في تفسير ابن كثير ج36/2، وفي القرطبي ج122/6، وفي حاشية الصاوي على الجلالين ج 276 - 275/1.</p>
+<p class="footnote">3 - وهي السنة التي فسر فيها الشيخ القرآن هذا التفسير الذي بين أيدينا</p>
+<p class="footnote">4 - (الدنيا سبعة أيام من أيام الآخرة) للديلمي في مسند الفردوس، الجامع الصغير 4277.</p>
+<p class="footnote">5 - عن أبي عبد الرحمن الحبلى سمعت عبد اللّٰه بن عمرو بن العاص وسأله رجل فقال ألسنا من فقراء المهاجرين؟ فقال له عبد الله: ألك امرأة تأوي إليها؟ قال: نعم، قال: ألك مسكن تسكنه؟ قال: نعم،</p>
+<p>47</p>
+<p>سورة على</p>
+<p>في رياض التفسير</p>
+<p>(وَءَاتِيْكُم مَا لَمْ يُوتِ أَحْدَامِّنَ الْعَلَمِينَ) من المن والسلوى وفلق البحر وغير ذلك (يمن لادْخُلُوا الأَرْضِ الْمَفْدَّسَةَ) المطهرة (ألتِى كَتَبَ اللَّهَ لَكُمْ) أمركم بدخوها وهي الشام (١ قَرْتَدُّواْ عَلَّى أَذْيِرِكُمْ) تنهزموا خوف العدو (بَتَنقَلِبُوا خَيرِين) في سعيكم (فَالُوأْ بَسوين إِنَّ جِيهَا فَوْما جَبَّارِينَ) بقايا عاد طوالا ذوي قوة {وَإِنَّا لَى نَدْخُلَهَا حَشْىٰ يَخْرُجُواْ مِنْها فذ يَحْرُجُواْ مِنْهَا بَإِنَّا دَاجِلُونَ) لها، جبنوا وخافوا ورفضوا أمر اللّٰه تبارك وتعالى وأمر الرمول</p>
+<p>اللهم صل على سيدنا محمد وسلم.</p>
+<p>قال: فأنت من الأغنياء، قال: فإن لي خادما، قال: فأنت من الملوك. صحيح مسلم: كتاب أردد</p>
+<p>والرقائق/ (5290)</p>
+<p>48</p>
+<p>في رياض التفسير</p>
+<p>سورة المائدة</p>
+  </div>
+
+  <div class="english-block" dir="ltr">
+    <p style="color:rgba(201,168,76,0.35);font-style:italic;font-size:.9rem;">English translation of الدرس الثالث عشر forthcoming.</p>
+  </div>
+
+  <div class="lesson-bottom-nav">
+    <a href="/lesson-12.html" class="nav-btn nav-btn-prev">&#8592; Lesson Twelve</a>
+    <a href="/" class="nav-btn nav-btn-toc">&#x21A9; Table of Contents</a>
+    <div style="display:flex;flex-direction:column;align-items:flex-end;gap:.3rem">
+      <a href="/lesson-14.html" class="nav-btn nav-btn-next">Lesson Fourteen &#8594;</a>
+      <div class="nav-lesson-title">الدرس الرابع عشر · Lesson Fourteen</div>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-ar">فِي رِيَاضِ تَفْسِيرِ الْقُرْآنِ الْكَرِيمِ</div>
+  <div style="font-family:'EB Garamond',serif;font-size:.8rem;color:rgba(201,168,76,0.3);margin-top:.3rem">niassetafsir.com</div>
+</footer>
+
+<script>
+
+function togglePanel(btn){
+  const p=btn.nextElementSibling;
+  const exp=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',!exp);
+  p.classList.toggle('hidden',exp);
+  btn.querySelector('.sheikh-arrow').style.transform=exp?'':'rotate(180deg)';
+}
+function setView(mode){
+  document.querySelectorAll('.view-btn').forEach(b=>b.classList.remove('active'));
+  const btn=document.getElementById('btn'+mode.charAt(0).toUpperCase()+mode.slice(1));
+  if(btn)btn.classList.add('active');
+  document.querySelectorAll('.arabic-block').forEach(el=>el.style.display=mode==='english'?'none':'block');
+  document.querySelectorAll('.english-block').forEach(el=>el.style.display=mode==='arabic'?'none':'block');
+}
+
+function toggleCompanion(id,btn){
+  const c=document.getElementById(id);
+  const exp=btn.getAttribute('aria-expanded')==='true';
+  btn.setAttribute('aria-expanded',!exp);
+  c.classList.toggle('open',!exp);
+  btn.querySelector('.companion-arrow').style.transform=exp?'':'rotate(180deg)';
+}
+
+
+function toggleCompanionLang(panelId, lang) {
+  const panel = document.getElementById(panelId);
+  if (!panel) return;
+  const enEl = panel.querySelector('.companion-en');
+  const arEl = panel.querySelector('.companion-ar-orig');
+  const btns = panel.querySelectorAll('.clb');
+  btns.forEach(b => b.classList.remove('active'));
+  const activeBtn = panel.querySelector('.clb[data-lang="' + lang + '"]');
+  if (activeBtn) activeBtn.classList.add('active');
+  if (lang === 'en') {
+    if (enEl) enEl.style.display = 'block';
+    if (arEl) arEl.style.display = 'none';
+  } else if (lang === 'ar') {
+    if (enEl) enEl.style.display = 'none';
+    if (arEl) arEl.style.display = 'block';
+  } else {
+    if (enEl) enEl.style.display = 'block';
+    if (arEl) arEl.style.display = 'block';
+  }
+}
+
+
+</script>
+</body>
+</html>
